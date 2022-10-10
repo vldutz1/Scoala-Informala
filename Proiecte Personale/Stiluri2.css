@@ -4,19 +4,13 @@ body, html {
 
 /* The hero image */
 .hero-image {
-  background-image: url("bg_pic2.jpg");
-
-  /* Set a specific height */
-  height: 50%;
-
-  /* Position and center the image to scale nicely on all screens */
+  background-image: url("bg_pic.jpg");
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
-
-/* Place text in the middle of the image */
 .hero-text {
   text-align: center;
   position: absolute;
