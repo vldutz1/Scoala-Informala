@@ -2,56 +2,93 @@
 <html>
 <head>
 <title>Recensamant</title>
-
+<meta name ="description" content ="Recensamant Oficial De Stat">
+<meta name ="author" content="Vlad Chereches">
+<meta name="keywords" content="recensamant, guvern, government">
+<link rel="stylesheet" href="Stiluri.css">
+<link rel="icon" type="image/x-icon" href="favicon.png">
 </head>
 <body>
-
-    <h3>Recensamant</h3>
-    <form>
-        <label for="nume" >Nume:</label> 
-        <input for="nume" type="text" name="nume"></input>
-        <label for="prenume">Prenume:</label> 
-        <input for="prenume"type="text" name="prenume"></input>
+    <h2 id="titlu">Recensamant</h2>
+    <p id="description">Completati datele de mai jos</p>
+    <p id="description"><b class="star">ATENTIE!</b> Campurile marcate cu <b class="star">*</b> sunt obligatorii</p>
+    <form action="Success.html" id="formular">
+        <label for="nume"><b class="star">*</b>Nume:</label> 
+        <input for="nume" type="text" name="nume" placeholder="Becali" required></input>
+        <label for="prenume"><b class="star">*</b>Prenume:</label> 
+        <input for="prenume"type="text" name="prenume" placeholder="Gigi" required></input>
         <br>
+        <br>     
+        <label for="CNP" name="CNP"><b class="star">*</b>CNP:</label> 
+        <input for="CNP"type="text" name="CNP" placeholder="1870505123456" required></input>
         <br>
-        <label for="CNP" name="CNP">CNP:</label> 
-        <input for="CNP"type="text" name="CNP"></input>
+        <label for="starecivila"><b class="star">*</b>Stare civila:</label> 
+        <input for="starecivila" type="radio" name="starecivila" required>Casatorit(a)</input>
+        <input for="starecivila" type="radio" name="starecivila" required>Necasatorit(a)</input>
         <br>
-        <label for="starecivila">Stare civila:</label> 
-        <input for="starecivila" type="radio" name="starecivila">Casatorit</input>
-        <input for="starecivila" type="radio" name="starecivila">Necasatorit</input>
+        <label for="varsta" name="varsta"><b class="star">*</b>Varsta:</label> 
+        <input for="varsta" type="number" name="varsta" min="18" max="100" required></input>
         <br>
-        <label for="varsta" name="varsta">Varsta:</label> 
-        <input for="varsta"type="text" name="varsta"></input>
+        <label for="sex"><b class="star">*</b>Sex:</label> 
+        <input for="sex" type="radio" name="sex" required>Masculin</input>
+        <input for="sex" type="radio" name="sex" required>Feminin</input>
+        <input for="sex" type="radio" name="sex">Extraterestru</input>
         <br>
-        <label for="sex">Sex:</label> 
-        <input for="sex" type="radio" name="sex">Masculin</input>
-        <input for="sex" type="radio" name="sex">Feminin</input>
-        <br>
-        <label for="judet">Judet:</label>
-        <select name="judet">
-            <option>Brasov</option>
+        <label for="judet"><b class="star">*</b>Judet:</label>
+        <select name="judet" required>
+            <option></option>
             <option>Alba</option>
-            <option selected="selected">Cluj</option>
+            <option>Bucuresti</option>
+            <option>Brasov</option>
+            <!-- <option selected="selected">Cluj</option> -->
+            <option>Craiova</option>
+            <option>Iasi</option>
+            <option>Pitesti</option>
             <option>Iasi</option>
         </select>
         <br>
-        <label for="Adresa">Adresa:</label>
+        <label for="Adresa"></b>Adresa:</label>
         <br>
-        <textarea name="Adresa">Strada, numarul...</textarea>
+        <textarea name="Adresa" placeholder="Strada, numarul, apartament, etaj"></textarea>
         <br>
-        <label for="studii" name="studii">Ultimele studii absolvite:</label>
+        <label for="telefon" name="telefon">Nr. de Telefon</label>
         <br>
-        <input type="radio" name="studii" value="">Gimnaziu</input>
-        <input type="radio" name="studii" value="">Liceu</input>
-        <input type="radio" name="studii" value="">Facultate</input>
+        <input type="tel" name="telefon" placeholder="0744123321"></input>
+        <br><br>
+        <label for="studii" name="studii"><b class="star">*</b>Ultimele studii absolvite:</label>
+        <br>
+        <input type="radio" name="studii" required>Gimnaziu</input>
+        <input type="radio" name="studii" required>Liceu</input>
+        <input type="radio" name="studii" required>Facultate</input>
+        <br><br><br>
+        <label for="venituri" name="venituri"><b class="star">*</b>Venit anual</label>
+        <br>
+        <input type="radio" name="venituri" required>Peste 100.000$</input>
+        <input type="radio" name="venituri" required>Peste 50.000$</input>
+        <input type="radio" name="venituri" required>Peste 25.000$</input>
+        <input type="radio" name="venituri" required>Sub 25.000$</input>
+        <br><br>
+        <label for="sursavenituri" name="sursavenituri"><b class="star">*</b>Sursa Veniturilor</label>
+        <br>
+        <input type="radio" name="sursavenituri" required>Salar</input>
+        <input type="radio" name="sursavenituri" required>Firme</input>
+        <input type="radio" name="sursavenituri" required>Investitii</input>
+        <input type="radio" name="sursavenituri" required>Altele</input>
         <br>
         <br>
         <br>
         <br>
-        <p>Sunt de acord cu <a href="termeni.html">termenii si conditiile</a> programului</p>
-        <input type="submit" value="Submit"></input>
-        <input type="reset" value="Reset"></input>
+        <img src="captcha.jpg" width="100">
+        <br>
+        <label for="captcha"><b class="star">*</b>Introdu textul din imagine:</label>
+        <br>
+        <input type="text" name="captcha" required></input>
+        <br><br><br>
+        <input type="checkbox" name="termeni" required></input>
+        Sunt de acord cu <a href="termeni.html"><i>termenii si conditiile</i></a> programului
+        <br><br>
+        <button type="submit" class="Sending">Trimite</button>
+        <button type="reset" class="Reset">Sterge</button>
     </form>
 </body>
 

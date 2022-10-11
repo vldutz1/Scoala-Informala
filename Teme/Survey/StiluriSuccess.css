@@ -1,0 +1,24 @@
+body{
+    background-color: rgb(255, 155, 5);
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+#buton1 {
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 5px solid #fadcb8;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+  }
+#buton1:hover {
+    background-color: rgb(255, 119, 119);
+    cursor: pointer;
+}
+#div {
+    text-align: center;
+}
