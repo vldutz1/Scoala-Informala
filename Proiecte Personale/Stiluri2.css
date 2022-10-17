@@ -1,15 +1,42 @@
 body, html {
     height: 100%;
+    background-color: black;
+    margin: 0;
 }
-
-/* The hero image */
+body::-webkit-scrollbar {
+  display: none;
+}
+#scroll {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: mandatory;
+}
+#two {
+  background: url(Images/bg_pic2.jpg);
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#three {
+  background: url(Images/bg_pic3.jpg);
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .hero-image {
-  background-image: url("bg_pic.jpg");
+  background-image: url("Images/bg_pic.jpg");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  margin: 0;
 }
 .hero-text {
   text-align: center;
@@ -17,5 +44,82 @@ body, html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  color: white;
+}
+#contact_button {
+  background-color: #fff;
+  padding: 5%; 
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  width: 150px;
+  border: 1px rgb(255, 255, 255) solid;
+  color: rgb(0, 0, 0);
+  font-size: 19px;
+}
+@keyframes contact_animation { 
+  100% { transform:rotate(720deg); } 
+}
+#contact_button:hover {
+  background-color: transparent;
+  padding: 5%; 
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  width: 150px;
+  border: 1px #fff solid;
+  color: rgb(255, 255, 255);
+  font-size: 19px;
+  cursor: pointer;
+  animation: contact_animation 1s;
+}
+.text1 {
+  color: #fff;
+  border: 5px #fff solid;
+  border-radius: 5%;
+}
+.icon-bar {
+  position: fixed;
+  top: 60%;
+  margin: 0;
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
   color: white;
 }

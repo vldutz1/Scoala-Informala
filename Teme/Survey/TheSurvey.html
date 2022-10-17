@@ -1,38 +1,40 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Recensamant</title>
-<meta name ="description" content ="Recensamant Oficial De Stat">
-<meta name ="author" content="Vlad Chereches">
-<meta name="keywords" content="recensamant, guvern, government">
-<link rel="stylesheet" href="Stiluri.css">
-<link rel="icon" type="image/x-icon" href="favicon.png">
+    <title>Recensamant</title>
+    <meta name="description" content="Recensamant Oficial De Stat">
+    <meta name="author" content="Vlad Chereches">
+    <meta name="keywords" content="recensamant, guvern, government">
+    <link rel="stylesheet" href="Stiluri.css">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
 </head>
+
 <body>
     <h2 id="titlu">Recensamant</h2>
-    <p id="description">Completati datele de mai jos</p>
-    <p id="description"><b class="star">ATENTIE!</b> Campurile marcate cu <b class="star">*</b> sunt obligatorii</p>
+    <p class="description">Completati datele de mai jos</p>
+    <p class="description"><b class="star">ATENTIE!</b> Campurile marcate cu <b class="star">*</b> sunt obligatorii</p>
     <form action="Success.html" id="formular">
-        <label for="nume"><b class="star">*</b>Nume:</label> 
+        <label for="nume"><b class="star">*</b>Nume:</label>
         <input for="nume" type="text" name="nume" placeholder="Becali" required></input>
-        <label for="prenume"><b class="star">*</b>Prenume:</label> 
-        <input for="prenume"type="text" name="prenume" placeholder="Gigi" required></input>
+        <label for="prenume"><b class="star">*</b>Prenume:</label>
+        <input for="prenume" type="text" name="prenume" placeholder="Gigi" required></input>
         <br>
-        <br>     
-        <label for="CNP" name="CNP"><b class="star">*</b>CNP:</label> 
-        <input for="CNP"type="text" name="CNP" placeholder="1870505123456" required></input>
         <br>
-        <label for="starecivila"><b class="star">*</b>Stare civila:</label> 
+        <label for="CNP" name="CNP"><b class="star">*</b>CNP:</label>
+        <input for="CNP" type="text" name="CNP" placeholder="1870505123456" required></input>
+        <br>
+        <label for="starecivila"><b class="star">*</b>Stare civila:</label>
         <input for="starecivila" type="radio" name="starecivila" required>Casatorit(a)</input>
-        <input for="starecivila" type="radio" name="starecivila" required>Necasatorit(a)</input>
+        <input for="starecivila" type="radio" name="starecivila" >Necasatorit(a)</input>
         <br>
-        <label for="varsta" name="varsta"><b class="star">*</b>Varsta:</label> 
+        <label for="varsta" name="varsta"><b class="star">*</b>Varsta:</label>
         <input for="varsta" type="number" name="varsta" min="18" max="100" required></input>
         <br>
-        <label for="sex"><b class="star">*</b>Sex:</label> 
-        <input for="sex" type="radio" name="sex" required>Masculin</input>
-        <input for="sex" type="radio" name="sex" required>Feminin</input>
-        <input for="sex" type="radio" name="sex">Extraterestru</input>
+        <label for="sex"><b class="star">*</b>Sex:</label>
+        <input type="radio" name="sex" required>Masculin</input>
+        <input type="radio" name="sex" >Feminin</input>
+        <input type="radio" name="sex">Extraterestru</input>
         <br>
         <label for="judet"><b class="star">*</b>Judet:</label>
         <select name="judet" required>

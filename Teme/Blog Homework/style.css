@@ -1,0 +1,98 @@
+body {
+    background-color: rgb(255, 255, 255);
+    margin-top: 100px;
+    margin-left: 500px;
+    margin-right: 500px;
+}
+
+.header {
+    display: grid;
+    width: 540px;
+    grid-template-columns: 300px 220px 320px;
+    align-items: start;
+    justify-content: space-between;
+}
+
+#menu {
+    text-align: right;
+}
+
+#logo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: small;
+}
+
+/* #main {
+    width: 540px;
+} */
+.menu_buttons {
+    border: 0px;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+.menu_buttons:hover {
+    cursor: pointer;
+    /* font-size: larger; */
+    animation: text-pop-up-top 0.5s 2s both;
+}
+
+.posted_date {
+    font-style: italic;
+    font-size: small;
+}
+
+.footer {
+    text-align: center;
+    font-size: small;
+}
+
+.email_button {
+    animation: email_button 10.3s linear infinite both
+}
+
+@keyframes email_button {
+    0% {
+        transform: translate(0)
+    }
+
+    20% {
+        transform: translate(-200px, 0px)
+    }
+
+    40% {
+        transform: translate(200px, 0px)
+    }
+
+    60% {
+        transform: translate(-200px, 0px)
+    }
+
+    80% {
+        transform: translate(200px, 0px)
+    }
+
+    100% {
+        transform: translate(0)
+    }
+}
+
+.credits {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    animation-name: credits;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes credits {
+    0% {
+        color: blue;
+    }
+    50% {
+        color: red;
+    }
+    100% {
+        color: cyan;
+    }
+}
