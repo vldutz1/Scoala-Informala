@@ -35,7 +35,7 @@ body {
 .menu_buttons:hover {
     cursor: pointer;
     /* font-size: larger; */
-    animation: text-pop-up-top 0.5s 2s both;
+    color: red;
 }
 
 .posted_date {
