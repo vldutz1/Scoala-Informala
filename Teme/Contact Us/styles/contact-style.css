@@ -70,6 +70,7 @@ html {
     border-radius: 2px;
     border-style: solid;
     box-shadow: 1px 1px 5px rgb(63, 63, 63);
+    margin-top: 20px;
 }
 
 .submit-button:hover {

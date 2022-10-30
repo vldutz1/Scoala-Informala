@@ -10,9 +10,10 @@
 <body class="background">
     <main class="main-page">
         <h1 class="contact-title">Contact Us</h1>
-        <p class="short-info">Got a question? We'd love to hear from you. Send us a message <br>and we'll respond as soon as possible.</p>
+        <p class="short-info">Got a question? We'd love to hear from you. Send us a message <br>and we'll respond as
+            soon as possible.</p>
         <div class="the-form">
-            <form action="pages/thank-you.html">
+            <form action="pages/send.php" method="post">
                 <label for="name" class="form-text">Name*</label>
                 <br>
                 <input class="inputs" type="text" name="name" required>
@@ -23,7 +24,7 @@
                 <br>
                 <label for="message" class="form-text">Message</label>
                 <br>
-                <textarea class="message"></textarea>
+                <textarea class="message" name="text"></textarea>
                 <br>
                 <button class="submit-button" type="submit">Send Message</button>
             </form>
