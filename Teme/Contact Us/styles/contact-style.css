@@ -2,7 +2,7 @@ html {
     background-color: blue; 
     background: linear-gradient(to bottom, rgb(71, 47, 130), rgb(64, 143, 162));
     background-repeat: no-repeat;
-    height: 115vh;
+    height: 100%;
 }
 
 @font-face {

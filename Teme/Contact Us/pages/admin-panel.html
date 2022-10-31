@@ -22,38 +22,55 @@
 </html> -->
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Table with database</title>
-<style>
-table {
-border-collapse: collapse;
-width: 100%;
-color: #588c7e;
-font-family: monospace;
-font-size: 25px;
-text-align: left;
-}
-th {
-background-color: #588c7e;
-color: white;
-}
-tr:nth-child(even) {background-color: #f2f2f2}
-</style>
+    <title>Table with database</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            color: #588c7e;
+            font-family: monospace;
+            font-size: 25px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #588c7e;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2
+        }
+    </style>
 </head>
+
 <body>
-<table>
-<tr>
-<th>Id</th>
-<th>name</th>
-<th>email</th>
-</tr>
-<?php
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>name</th>
+                <th>email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php
+            echo "<tr>
+                <td>id</td>
+                <td>name</td>
+                <td>text</td>
+            </tr>"
+            ?>
+        </tbody>
+        <?php
 $conn = mysqli_connect("localhost", "root", "", "contact");
 // Check connection
 if ($conn->connect_error) {
 die("Connection failed: " . $conn->connect_error);
 }
-$sql = "SELECT id, name, email FROM contact";
+$sql = "SELECT * FROM contact";
 $result = $conn->query($sql);
 if ($result->num_rows > 0) {
 // output data of each row
@@ -65,6 +82,7 @@ echo "</table>";
 } else { echo "0 results"; }
 $conn->close();
 ?>
-</table>
+    </table>
 </body>
+
 </html>
