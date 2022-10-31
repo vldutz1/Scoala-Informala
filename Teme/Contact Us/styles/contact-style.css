@@ -3,6 +3,7 @@ html {
     background: linear-gradient(to bottom, rgb(71, 47, 130), rgb(64, 143, 162));
     background-repeat: no-repeat;
     height: 100%;
+    width: 100%;
 }
 
 @font-face {
