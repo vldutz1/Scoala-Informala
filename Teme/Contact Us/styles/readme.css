@@ -1,0 +1,67 @@
+html {
+    background-color: blue;
+    background: linear-gradient(to bottom, rgb(71, 47, 130), rgb(64, 143, 162));
+    background-repeat: no-repeat;
+    height: 115vh;
+}
+
+.info-area {
+    display: flex;
+    height: 500px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-title {
+    color: white;
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.info {
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.go-back-container {
+    display: flex;
+    justify-content: center;
+    height: 300px;
+}
+
+.go-back-button {
+    position: relative;
+    font-family: Helvetica, sans-serif;
+    color: white;
+    background-color: rgb(3, 137, 206);
+    padding-left: 109px;
+    padding-right: 109px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 20px;
+    border-color: rgb(0, 108, 166);
+    border-radius: 2px;
+    border-style: solid;
+    box-shadow: 1px 1px 5px rgb(63, 63, 63);
+    text-align: center;
+    width: 15%;
+    height: 20px;
+    margin-top: 20px;
+}
+
+.go-back-button:hover {
+    cursor: pointer;
+    background-color: rgb(5, 127, 188);
+}
+
+.go-back-button:active {
+    background-color: rgb(2, 100, 149);
+}
+
+.steps {
+    color: white;
+    font-family: Arial, sans-serif;
+}
