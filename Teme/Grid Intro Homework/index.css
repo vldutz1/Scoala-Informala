@@ -15,10 +15,12 @@ body {
         "footertext footertext";
     background-color: grey;
     height: 4300px;
-    margin: 0px 0px;
-    max-width: 100%;
-    overflow: hidden; 
+    max-height: 4300px;
+    overflow: hidden;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
 }
+
 /* Header */
 .header {
     grid-area: header;
@@ -29,14 +31,6 @@ body {
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-}
-
-.footerimgs {
-    grid-area: footerimgs;
-}
-
-.footertext {
-    grid-area: footertext;
 }
 
 .nav {
@@ -119,17 +113,20 @@ body {
     top: 100px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 .arrow-container {
     display: flex;
     justify-content: center;
     margin-top: 120px;
 }
+
 .header-arrow {
     display: flex;
     justify-content: center;
     width: 100px;
     top: 100px;
 }
+
 /* Layer 2 left */
 .text1 {
     grid-area: text1;
@@ -139,12 +136,14 @@ body {
     align-items: center;
     flex-direction: column;
     overflow: hidden;
+    max-height: 1fr;
 }
 
 .layer2-container {
     text-align: left;
     width: fit-content;
 }
+
 .layer2-title {
     color: rgb(5, 0, 31);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -154,6 +153,7 @@ body {
     color: grey;
     max-width: fit-content;
 }
+
 /* Layer 2 right */
 .img1 {
     grid-area: img1;
@@ -163,36 +163,43 @@ body {
     background-position-y: -400px;
     overflow: hidden;
 }
+
 /* Layer 3 left */
 .img2 {
     grid-area: img2;
     background-color: rgb(255, 55, 0);
 }
+
 /* Layer 3 right */
 .text2 {
     grid-area: text2;
     background-color: white;
 }
+
 /* Layer 4 left */
 .img3 {
     grid-area: img3;
     background-color: teal;
 }
+
 /* Layer 4 right */
 .img4 {
     grid-area: img4;
     background-color: aquamarine;
 }
+
 /* Layer 5 Left+Right */
 .testimonials {
     grid-area: testimonials;
     background-color: white;
 }
+
 /* Layer 6 Left+Right */
 .footerimgs {
     grid-area: footerimgs;
-    background-image: linear-gradient(red,teal);
+    background-image: linear-gradient(red, teal);
 }
+
 /* Layer 7 Left+Right */
 .footertext {
     grid-area: footertext;
