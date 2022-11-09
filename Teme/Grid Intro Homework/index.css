@@ -17,9 +17,9 @@ body {
     height: 4300px;
     margin: 0px 0px;
     max-width: 100%;
-    overflow: hidden;
+    overflow: hidden; 
 }
-
+/* update */
 .header {
     grid-area: header;
     background-color: teal;
