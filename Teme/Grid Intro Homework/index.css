@@ -8,7 +8,7 @@ body {
     grid-template-areas:
         "header header"
         "text1 img1"
-        "text2 img2"
+        "img2 text2"
         "img3 img4"
         "testimonials testimonials"
         "footerimgs footerimgs"
@@ -19,33 +19,16 @@ body {
     max-width: 100%;
     overflow: hidden; 
 }
-/* update */
+/* Header */
 .header {
     grid-area: header;
     background-color: teal;
     background-image: url(images/header.jpg);
     background-position: bottom;
     background-position-y: -600px;
-    /* background-size: 50%; */
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-}
-
-.text2 {
-    grid-area: text2;
-}
-
-.img3 {
-    grid-area: img3;
-}
-
-.img4 {
-    grid-area: img4;
-}
-
-.testimonials {
-    grid-area: testimonials;
 }
 
 .footerimgs {
@@ -165,7 +148,6 @@ body {
 .layer2-title {
     color: rgb(5, 0, 31);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    /* padding-right: 100px; */
 }
 
 .layer2-text {
@@ -180,4 +162,39 @@ body {
     background-size: 1200px;
     background-position-y: -400px;
     overflow: hidden;
+}
+/* Layer 3 left */
+.img2 {
+    grid-area: img2;
+    background-color: rgb(255, 55, 0);
+}
+/* Layer 3 right */
+.text2 {
+    grid-area: text2;
+    background-color: white;
+}
+/* Layer 4 left */
+.img3 {
+    grid-area: img3;
+    background-color: teal;
+}
+/* Layer 4 right */
+.img4 {
+    grid-area: img4;
+    background-color: aquamarine;
+}
+/* Layer 5 Left+Right */
+.testimonials {
+    grid-area: testimonials;
+    background-color: white;
+}
+/* Layer 6 Left+Right */
+.footerimgs {
+    grid-area: footerimgs;
+    background-image: linear-gradient(red,teal);
+}
+/* Layer 7 Left+Right */
+.footertext {
+    grid-area: footertext;
+    background-color: aquamarine;
 }
