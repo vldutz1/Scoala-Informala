@@ -16,7 +16,8 @@ body {
     background-color: grey;
     height: 4300px;
     margin: 0px 0px;
-    max-width: 300vh;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 .header {
@@ -154,6 +155,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .layer2-container {
@@ -177,4 +179,5 @@ body {
     background-image: url(images/egg.jpg);
     background-size: 1200px;
     background-position-y: -400px;
+    overflow: hidden;
 }
