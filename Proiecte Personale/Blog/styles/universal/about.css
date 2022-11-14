@@ -3,11 +3,9 @@
         margin-left: 1em;
         margin-right: 1em;
         margin-top: 6em;
-      }
-    .body {
-        background-color: aliceblue;
     }
-  }
+}
+
 html {
     background-color: aqua;
 }
@@ -18,4 +16,18 @@ body {
 
 .main {
     height: 100vh;
+}
+
+@media only screen and (max-width: 560px) {
+    .responsive-font2 {
+        margin-top: 1em;
+    }
+}
+
+@media only screen and (min-width: 360px) {
+    .responsive-font2 {
+        margin-top: 1em;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
 }
