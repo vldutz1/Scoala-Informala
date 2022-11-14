@@ -1,0 +1,21 @@
+@media only screen and (min-width: 768px) {
+    .responsive-font2 {
+        margin-left: 1em;
+        margin-right: 1em;
+        margin-top: 6em;
+      }
+    .body {
+        background-color: aliceblue;
+    }
+  }
+html {
+    background-color: aqua;
+}
+
+body {
+    height: 100vh;
+}
+
+.main {
+    height: 100vh;
+}

@@ -1,0 +1,27 @@
+.main-course-text {
+    color: white;
+    margin-left: 5em;
+    margin-right: 5em;
+    margin-top: 6em;
+}
+
+.main-course-title {
+    color: white;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    margin-top: 3em;
+}
+
+.index-main-course {
+    background-color: rgb(255, 42, 38);
+    height: auto;
+    width: 100vh;
+    flex: 1 1 auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
