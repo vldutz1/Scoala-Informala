@@ -78,10 +78,10 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
 
 .btn {
-    color: rgb(255, 255, 255);
+    color: rgb(255, 7, 7);
     cursor: pointer;
     font-size:16px;
-    font-weight: 400;
+    font-weight: 800;
     line-height: 45px;
     margin: 0 0 2em;
     max-width: 160px; 
@@ -89,7 +89,7 @@
     text-decoration: none;
     text-transform: uppercase;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0); 
+    background-color: rgb(255, 255, 255); 
     text-align: center;
     margin-top: 5em;
 }

@@ -1,0 +1,5 @@
+body {background: black;}
+canvas {
+    display:block;
+    z-index: 0;
+}

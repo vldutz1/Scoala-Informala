@@ -1,8 +1,12 @@
 .main-course-text {
-    color: white;
+    color: rgb(15, 15, 15);
     margin-left: 5em;
     margin-right: 5em;
     margin-top: 6em;
+}
+
+.main-course-second-color {
+    color: white;
 }
 
 .main-course-title {
@@ -16,7 +20,7 @@
 }
 
 .index-main-course {
-    background-color: rgb(255, 42, 38);
+    /* background-color: rgb(255, 42, 38); */
     height: auto;
     width: 100vh;
     flex: 1 1 auto;
@@ -27,5 +31,11 @@
 }
 
 body {
-    background-color: rgb(255, 42, 38);
+    background: linear-gradient(180deg, #F44B4B 25.86%, rgba(244, 75, 75, 0.76) 51.63%, #F44B4B 82.9%);
+}
+
+@media only screen and (min-width: 300px) {
+    .main-course-text {
+        margin: 1em 1em;
+    }
 }
