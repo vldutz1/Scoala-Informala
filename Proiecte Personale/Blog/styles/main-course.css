@@ -64,3 +64,12 @@ body {
         margin: 1em 1em;
     }
 }
+
+ul li {
+    margin-bottom: 8px;
+}
+
+.about-main {
+    display: flex;
+    flex-direction: column;
+}

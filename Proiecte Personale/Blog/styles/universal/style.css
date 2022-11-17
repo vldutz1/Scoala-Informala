@@ -258,6 +258,10 @@ p {
   transition: 0.6s;
 }
 
+.image {
+  align-self: center;
+}
+
 .menu .images .image-link .image::before {
   position: absolute;
   content: attr(data-label);

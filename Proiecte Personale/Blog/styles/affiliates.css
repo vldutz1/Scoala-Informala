@@ -1,0 +1,27 @@
+.affiliate-main {
+    display: flex;
+    flex-direction: column;
+}
+
+.affiliate-title-container {
+    display: flex;
+    justify-content: center;
+}
+
+.affiliate-title {
+    color: white;
+}
+
+.main-affiliate-text {
+    color: white;
+    margin: 30px 30px;
+}
+
+/*  Added in HTML but it is not required yet
+.responsive-font-affiliate {
+    
+} */
+
+.affiliate-color2 {
+    color: red;
+}
