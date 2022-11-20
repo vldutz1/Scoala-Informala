@@ -137,3 +137,12 @@
         text-align: center;
     }
   }
+
+  /* Thank you page */
+.form-link {
+    color: blueviolet;
+}
+
+.form-link:hover {
+    color:aqua
+}
