@@ -21,7 +21,7 @@ body {
 }
 
 .computer {
-    color: rgb(255, 0, 0);
+    color: rgb(0, 232, 178);
 }
 
 .player {
@@ -45,9 +45,50 @@ main {
 }
 
 #play {
+    color: rgb(255, 0, 0);
+    padding: 1% 3%;
+    font-size: 20px;
+    border-color: chartreuse;
+    background-color: rgb(42, 169, 0);
+}
+
+.buttons {
     color: rgb(255, 255, 255);
     padding: 1% 3%;
     font-size: 20px;
     border-color: chartreuse;
     background-color: rgb(42, 169, 0);
+}
+
+#player-points {
+    color: green;
+}
+
+#computer-points {
+    color: rgb(0, 232, 178);;
+}
+
+.points {
+    display: flex;
+    justify-content: center;
+}
+
+.end-result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    /* width: 100vh;
+    height: 100vh; */
+    background-color: aqua;
+    position:absolute;
+    top:0px;
+    margin: 5vh 50vh;
+    padding: 20vh 50vh;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
 }

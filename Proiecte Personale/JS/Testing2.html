@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            x = 1;
+            console.log("Initial value of x is ", x);
+
+            function changeX(){
+                if (x == 1) {
+                    x += 2;
+                    console.log("X is now ", x)
+                }
+                else {
+                    console.log("X is not 1")
+                }
+            }
+
+            changeX();
+            changeX();
+
+            function changeX2(){
+                if (x < 10) {
+                    x++;
+                    console.log("Change 2 - X is now: ", x)
+                }
+            }
+
+            changeX2();
+
+        </script>
+    </head>
+    <body>
+        <button onclick="changeX2()">Press</button>
+    </body>
+</html>

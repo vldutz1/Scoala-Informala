@@ -9,18 +9,32 @@
         <header>
             <h1 class="main-title">Rock Paper Scissors</h1>
         </header>
-        <main class="main-class">
-            <button id="play" href="#" onclick="play()">Play!</button>
-            <hr>
-            <h2 class="computer">Computer's Choice: </h2><h2 id="computer-choice" class="computer"></h2>
+        <main>
+            <button id="play" href="#" onclick="play()">Random</button>
+            <button href="#" onclick="playRock()" class="buttons">Rock</button>
+            <button href="#" onclick="playPaper()" class="buttons">Paper</button>
+            <button href="#" onclick="playScissors()" class="buttons">Scissors</button>
+            <button href="#" onclick="end()" class="buttons">Test</button>
             <hr>
             <h2 class="player">Player's Choice: </h2><h2 id="player-choice" class="player"></h2>
+            <hr>
+            <h2 class="computer">Computer's Choice: </h2><h2 id="computer-choice" class="computer"></h2>
             <hr>
             <h2 class="result">Result</h2>
             <h2 id="final-result"></h2>
             <hr>
-            <h2>Player Points: </h2><h2 id="player-points">0</h2>
-            <h2>Computer Points: </h2><h2 id="computer-points">0</h2>
+            <div class="points"><h2 class="player">Player Points:</h2><h2 id="player-points">0</h2><h2 class="player">/10</h2></div>
+            <div class="points"><h2 class="computer">Computer Points: </h2><h2 id="computer-points">0<h2 class="computer">/10</h2></div>
         </main>
+        <audio id="wrong" src="audio/wrong.mp3"></audio>
+        <audio id="good" src="audio/good.mp3"></audio>
+        <audio id="game-win" src="audio/game-win.mp3"></audio>
+        <audio id="game-lost" src="audio/game-lost.mp3"></audio>
+        <div class="end-result hidden" id="end-result-id">
+            <h1>Game Over!</h1>
+            <h1>Winner:</h1>
+            <h1 id="winner"></h1>
+            <button href="#" onclick="end()" class="buttons">Play Again!</button>
+        </div>
     </body>
 </html>
