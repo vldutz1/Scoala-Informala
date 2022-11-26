@@ -240,12 +240,10 @@ function playPaper() {
     var computerPointsShow = document.getElementById("computer-points");
 
     if (x === 0 && playWithImages === true) {
-        // playerChoice.innerText = "Paper";
         playerChoice.innerHTML = '<img src="images/paper.png">';
     }
     else if (x === 0 && playWithImages === false) {
         playerChoice.innerText = "Paper";
-        // playerChoice.innerHTML = '<img src="images/paper.png">';
     }
 
     if (y === 0) {
@@ -253,7 +251,6 @@ function playPaper() {
     }
 
     if (y === 0 && playWithImages === true) {
-        // computerChoice.innerText = "Rock";
         computerChoice.innerHTML = '<img src="images/rock.png">';
         result.innerHTML = '<span style="color:green">Player Wins!</span>';
         playerPoints += 1;
@@ -263,7 +260,6 @@ function playPaper() {
     }
     if (y === 0 && playWithImages === false) {
         computerChoice.innerText = "Rock";
-        // computerChoice.innerHTML = '<img src="images/rock.png">';
         result.innerHTML = '<span style="color:green">Player Wins!</span>';
         playerPoints += 1;
         playerPointsShow.innerText = playerPoints;
@@ -271,17 +267,14 @@ function playPaper() {
         endGame();
     }
     else if (y === 1 && playWithImages === true) {
-        // computerChoice.innerText = "Paper";
         computerChoice.innerHTML = '<img src="images/paper.png">';
         result.innerHTML = '<span style="color:red">Draw!</span>';
     }
     else if (y === 1 && playWithImages === false) {
         computerChoice.innerText = "Paper";
-        // computerChoice.innerHTML = '<img src="images/paper.png">';
         result.innerHTML = '<span style="color:red">Draw!</span>';
     }
     else if (y === 2 && playWithImages === true) {
-        // computerChoice.innerText = "Scissors";
         computerChoice.innerHTML = '<img src="images/scissors.png">';
         result.innerHTML = '<span style="color:red">Computer Wins!</span>';
         computerPoints += 1;
@@ -291,7 +284,6 @@ function playPaper() {
     }
     else if (y === 2 && playWithImages === false) {
         computerChoice.innerText = "Scissors";
-        // computerChoice.innerHTML = '<img src="images/scissors.png">';
         result.innerHTML = '<span style="color:red">Computer Wins!</span>';
         computerPoints += 1;
         computerPointsShow.innerText = computerPoints;
@@ -380,7 +372,7 @@ function endGame() {
         playerWinnings += 1;
         playerWinsShow.innerText = playerWinnings;
     }
-    else if (computerPoints === 10) {
+    else if (computerPoints === totalPointsToWin || computerPoints > totalPointsToWin) {
         playerPoints = 0;
         computerPoints = 0;
         playerPointsShow.innerText = "0";
