@@ -200,3 +200,8 @@ main {
     justify-content: space-between;
     width: 9em;
 }
+
+.result-align {
+    display:flex;
+    justify-content: center;
+}

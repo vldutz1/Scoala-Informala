@@ -48,22 +48,24 @@
         </div>
         <hr>
         <div class="hidden" id="total-wins">
-            <div class="total-winnings-container">
-                <h2 class="winnings">Total Winnings</h2>
-                <div class="winnings">
-                    <div class="player-winnings-container">
-                        <h2 class="winning-points">Player:</h2>
-                        <h2 id="player-winnings">0</h2>
+            <div class="result-align">
+                <div class="total-winnings-container">
+                    <h2 class="winnings">Total Winnings</h2>
+                    <div class="winnings">
+                        <div class="player-winnings-container">
+                            <h2 class="winning-points">Player:</h2>
+                            <h2 id="player-winnings">0</h2>
+                        </div>
+                        <h2 class="winning-vs">vs</h2>
+                        <div class="computer-winnings-container">
+                            <h2 class="winning-points">Computer:</h2>
+                            <h2 id="computer-winnings">0</h2>
+                        </div>
                     </div>
-                    <h2 class="winning-vs">vs</h2>
-                    <div class="computer-winnings-container">
-                        <h2 class="winning-points">Computer:</h2>
-                        <h2 id="computer-winnings">0</h2>
+                    <div class="total-winning-buttons-container">
+                        <button class="close-button" onclick="resultsShow()">Close</button>
+                        <button class="close-button" onclick="location.reload()">Reset</button>
                     </div>
-                </div>
-                <div class="total-winning-buttons-container">
-                    <button class="close-button" onclick="resultsShow()">Close</button>
-                    <button class="close-button" onclick="location.reload()">Reset</button>
                 </div>
             </div>
         </div>
@@ -82,18 +84,20 @@
     </div>
     <div id="cheats-div" onclick="cheatsShow()">Secret Cheats</div>
     <div class="hidden" id="cheat-area">
-        <div class="cheats-area">
-            <button class="buttons" onclick="addPointsToPlayer()">Add 5 Points to Player</button>
-            <button class="buttons" onclick="addPointsToComputer()">Add 5 Points to Computer</button>
-            <button class="buttons" onclick="animationToggle()">Toggle Title Animation</button>
-            <hr>
-            <h2>Set the maximum points to win</h2>
-            <button class="buttons" onclick="setMaxPointsToWin5()">5</button>
-            <button class="buttons" onclick="setMaxPointsToWin10()">10(default)</button>
-            <button class="buttons" onclick="setMaxPointsToWin15()">15</button>
-            <button class="buttons" onclick="setMaxPointsToWin20()">20</button>
-            <hr>
-            <button class="close-button" onclick="cheatsShow()">Close</button>
+        <div class="result-align">
+            <div class="cheats-area">
+                <button class="buttons" onclick="addPointsToPlayer()">Add 5 Points to Player</button>
+                <button class="buttons" onclick="addPointsToComputer()">Add 5 Points to Computer</button>
+                <button class="buttons" onclick="animationToggle()">Toggle Title Animation</button>
+                <hr>
+                <h2>Set the maximum points to win</h2>
+                <button class="buttons" onclick="setMaxPointsToWin5()">5</button>
+                <button class="buttons" onclick="setMaxPointsToWin10()">10(default)</button>
+                <button class="buttons" onclick="setMaxPointsToWin15()">15</button>
+                <button class="buttons" onclick="setMaxPointsToWin20()">20</button>
+                <hr>
+                <button class="close-button" onclick="cheatsShow()">Close</button>
+            </div>
         </div>
     </div>
 </body>
