@@ -403,17 +403,17 @@ function cheatsShow() {
 }
 
 function addPointsToPlayer() {
-    playerPoints += 9;
+    playerPoints += 5;
     var playerPointsShow = document.getElementById("player-points");
     playerPointsShow.innerText = playerPoints;
-    alert("9 Points added to Player")
+    alert("5 Points added to Player")
 }
 
 function addPointsToComputer() {
-    computerPoints += 9;
+    computerPoints += 5;
     var playerPointsShow = document.getElementById("computer-points");
     playerPointsShow.innerText = computerPoints;
-    alert("9 Points added to Computer")
+    alert("5 Points added to Computer")
 }
 
 function resultsShow() {
