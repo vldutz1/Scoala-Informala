@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The GAME</title>
+        <!-- <script src="script/game.js"></script> -->
+        <link rel="stylesheet" href="styles/index.css">
+    </head>
+
+    <body>
+        <audio src="audio/dice-sound.mp3" id="dice-sound"></audio>
+        <main>
+            <div class="dice-system">
+                <img src="images/dice.png" width="70vh" id="dice-img">
+                <p class="dice-result" id="diceResult">0</p>
+                <button class="dicebtn" onclick="diceRollPlayer1()" id="rollbtn">P1 ROLL</button>
+                <button class="hidden" id="rollbtnfake">ROLLING</button>
+            </div>
+            <div class="player1-stats">
+                <h3 style="text-align: center;">Player 1</h3>
+                <h4>Points:</h4>
+                <h4>Lucky 6's:<span id="p1-lucky6-points">0</span></h4>
+            </div>
+            <div class="points-div">
+                <h3>Turn: <span>Player 1</span></h3>
+            </div>
+            <div class="board">
+                <div class="start-square">Start
+                    <img src="images/grey-pawn.png" class="pawn" id="p1-0">
+                </div>
+                <div class="normal-square" id="square1">1<img src="images/grey-pawn.png" class="pawn hidden" id="p1-1"></div>
+                <div class="normal-square" id="square2">2<img src="images/grey-pawn.png" class="pawn hidden" id="p1-2"></div>
+                <div class="normal-square" id="square3">3<img src="images/grey-pawn.png" class="pawn hidden" id="p1-3"></div>
+                <div class="normal-square" id="square4">4<img src="images/grey-pawn.png" class="pawn hidden" id="p1-4"></div>
+                <div class="normal-square" id="square5">5<img src="images/grey-pawn.png" class="pawn hidden" id="p1-5"></div>
+                <div class="normal-square" id="square6">6<img src="images/grey-pawn.png" class="pawn hidden" id="p1-6"></div>
+                <div class="normal-square" id="square7">7<img src="images/grey-pawn.png" class="pawn hidden" id="p1-7"></div>
+                <div class="normal-square" id="square8">8<img src="images/grey-pawn.png" class="pawn hidden" id="p1-8"></div>
+                <div class="normal-square" id="square9">9<img src="images/grey-pawn.png" class="pawn hidden" id="p1-9"></div>
+                <div class="normal-square" id="square10">10<img src="images/grey-pawn.png" class="pawn hidden" id="p1-10"></div>
+                <div class="normal-square">11<img src="images/grey-pawn.png" class="pawn hidden" id="p1-11"></div>
+                <div class="normal-square">12<img src="images/grey-pawn.png" class="pawn hidden" id="p1-12"></div>
+                <div class="normal-square">13<img src="images/grey-pawn.png" class="pawn hidden" id="p1-13"></div>
+                <div class="normal-square">14<img src="images/grey-pawn.png" class="pawn hidden" id="p1-14"></div>
+                <div class="normal-square">15<img src="images/grey-pawn.png" class="pawn hidden" id="p1-15"></div>
+                <div class="normal-square">16<img src="images/grey-pawn.png" class="pawn hidden" id="p1-16"></div>
+                <div class="normal-square">17<img src="images/grey-pawn.png" class="pawn hidden" id="p1-17"></div>
+                <div class="normal-square">18<img src="images/grey-pawn.png" class="pawn hidden" id="p1-18"></div>
+                <div class="normal-square">19<img src="images/grey-pawn.png" class="pawn hidden" id="p1-19"></div>
+                <div class="normal-square">20<img src="images/grey-pawn.png" class="pawn hidden" id="p1-20"></div>
+                <div class="normal-square">21<img src="images/grey-pawn.png" class="pawn hidden" id="p1-21"></div>
+                <div class="normal-square">22<img src="images/grey-pawn.png" class="pawn hidden" id="p1-22"></div>
+                <div class="normal-square">23<img src="images/grey-pawn.png" class="pawn hidden" id="p1-23"></div>
+                <div class="normal-square">24<img src="images/grey-pawn.png" class="pawn hidden" id="p1-24"></div>
+                <div class="normal-square">25<img src="images/grey-pawn.png" class="pawn hidden" id="p1-25"></div>
+                <div class="normal-square">26<img src="images/grey-pawn.png" class="pawn hidden" id="p1-26"></div>
+                <div class="normal-square">27<img src="images/grey-pawn.png" class="pawn hidden" id="p1-27"></div>
+                <div class="normal-square">28<img src="images/grey-pawn.png" class="pawn hidden" id="p1-28"></div>
+                <div class="normal-square">29<img src="images/grey-pawn.png" class="pawn hidden" id="p1-29"></div>
+                <div class="normal-square">30<img src="images/grey-pawn.png" class="pawn hidden" id="p1-30"></div>
+                <div class="normal-square">31<img src="images/grey-pawn.png" class="pawn hidden" id="p1-31"></div>
+                <div class="normal-square">32<img src="images/grey-pawn.png" class="pawn hidden" id="p1-32"></div>
+                <div class="normal-square">33<img src="images/grey-pawn.png" class="pawn hidden" id="p1-33"></div>
+                <div class="normal-square">34<img src="images/grey-pawn.png" class="pawn hidden" id="p1-34"></div>
+                <div class="normal-square">35<img src="images/grey-pawn.png" class="pawn hidden" id="p1-35"></div>
+                <div class="normal-square">36<img src="images/grey-pawn.png" class="pawn hidden" id="p1-36"></div>
+                <div class="normal-square">37<img src="images/grey-pawn.png" class="pawn hidden" id="p1-37"></div>
+                <div class="normal-square">38<img src="images/grey-pawn.png" class="pawn hidden" id="p1-38"></div>
+                <div class="normal-square">39<img src="images/grey-pawn.png" class="pawn hidden" id="p1-39"></div>
+                <div class="win-square">40<img src="images/grey-pawn.png" class="pawn hidden" id="p1-40"></div>
+            </div>
+        </main>
+        <script src="script/game.js"></script>
+    </body>
+</html>
+
+<!-- Game Notes and To-Do List -->
+<!-- Let it be a board game
+A div (Square or so) on a corner where the dice system works
+A div with many divs as squares for the board
+Pawn selection system
+Multiple players system 
+A rule page
+a computer/player selector as player2
+special squares to give the user another roll
+special squares to move the user forward/behind-->

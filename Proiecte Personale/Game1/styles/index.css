@@ -1,0 +1,111 @@
+body {
+    background-color: steelblue;
+}
+
+.dice-system {
+    height: 20vh;
+    width: 20vh;
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 2vh;
+    top: 2vh;
+}
+
+.dice-result {
+    margin: 3px 3px;
+    font-size: large;
+    font-weight: bolder;
+}
+
+@keyframes diceAnim {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(2520deg);
+    }
+}
+
+.dice-roll {
+    animation: diceAnim 2s;
+}
+
+.hidden {
+    display: none;
+}
+
+.points-div {
+    background-color: burlywood;
+    height: 20vh;
+    width: 20vh;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: 2vh;
+    top:2vh;
+}
+
+.player1-stats {
+    background-color: burlywood;
+    height: 20vh;
+    width: 20vh;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 25vh;
+    top:2vh;
+}
+
+.board {
+    background-color: darkseagreen;
+    height: 80vh;
+    margin-top: 25vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.start-square {
+    background-color: goldenrod;
+    height: 10vh;
+    width: 10vh;
+    margin: 2vh 2vh;
+    overflow: hidden;
+    border-radius: 10%;
+}
+
+.normal-square {
+    background-color: rgb(255, 220, 169);
+    height: 10vh;
+    width: 10vh;
+    margin: 2vh 2vh;
+    overflow: hidden;
+    border-radius: 10%;
+}
+
+.pawn {
+    width: 4vh;
+}
+
+.win-square {
+    background-color: rgb(253, 0, 0);
+    height: 10vh;
+    width: 10vh;
+    margin: 2vh 2vh;
+    overflow: hidden;
+    border-radius: 10%;
+}
+
+.dicebtn {
+    color: red;
+    background-color: rgb(255, 225, 0);
+    border-color: rgb(215, 41, 41);
+    border-radius: 30%;
+    font-weight: bolder;
+    padding: 0.2em 2em;
+}
