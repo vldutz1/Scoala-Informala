@@ -5,6 +5,7 @@
     <title>Rock Paper Scissors Game</title>
     <link rel="stylesheet" href="styles/theGame2.css">
     <script src="scripts/theGame2.js"></script>
+    <link rel="icon" type="image/x-icon" href="images/rock.png">
 </head>
 
 <body>
@@ -60,7 +61,10 @@
                         <h2 id="computer-winnings">0</h2>
                     </div>
                 </div>
-                <button class="close-button" onclick="resultsShow()">Close</button>
+                <div class="total-winning-buttons-container">
+                    <button class="close-button" onclick="resultsShow()">Close</button>
+                    <button class="close-button" onclick="location.reload()">Reset</button>
+                </div>
             </div>
         </div>
     </main>
@@ -79,8 +83,8 @@
     <div id="cheats-div" onclick="cheatsShow()">Secret Cheats</div>
     <div class="hidden" id="cheat-area">
         <div class="cheats-area">
-            <button class="buttons" onclick="addPointsToPlayer()">Add 9 Points to Player</button>
-            <button class="buttons" onclick="addPointsToComputer()">Add 9 Points to Computer</button>
+            <button class="buttons" onclick="addPointsToPlayer()">Add 5 Points to Player</button>
+            <button class="buttons" onclick="addPointsToComputer()">Add 5 Points to Computer</button>
             <button class="buttons" onclick="animationToggle()">Toggle Title Animation</button>
             <hr>
             <h2>Set the maximum points to win</h2>

@@ -15,7 +15,7 @@ body {
 
 @keyframes main-title-animation {
     0% {
-        transform: translateX(-50vh);
+        transform: translateX(-40vh);
     }
 
     50% {
@@ -23,7 +23,7 @@ body {
     }
 
     100% {
-        transform: translateX(-50vh);
+        transform: translateX(-40vh);
     }
 }
 
@@ -193,4 +193,10 @@ main {
 .game-over-text {
     font-size: 70px;
     color: red;
+}
+
+.total-winning-buttons-container {
+    display: flex;
+    justify-content: space-between;
+    width: 9em;
 }
