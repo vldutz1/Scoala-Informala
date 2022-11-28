@@ -1,15 +1,15 @@
-var player1Points = 0;
-var player2Points = 0;
-var player1Position = 0;
-var player2Position = 0;
-var dice = 0;
-var p1Lucky6 = 0;
-var p2Lucky6 = 0;
-var P1Turn = true;
-var P2Turn = false;
+let player1Points = 0;
+let player2Points = 0;
+let player1Position = 0;
+let player2Position = 0;
+let dice = 0;
+let p1Lucky6 = 0;
+let p2Lucky6 = 0;
+let P1Turn = true;
+let P2Turn = false;
 
 function diceRollSound() {
-    var diceSound = document.getElementById("dice-sound");
+    let diceSound = document.getElementById("dice-sound");
     diceSound.play();
 }
 
@@ -88,10 +88,11 @@ function diceRollPlayer2() {
     var diceImg = document.getElementById("dice-img");
     diceImg.classList.toggle("dice-roll");
     var rollButton = document.getElementById("rollbtn");
-    rollButton.classList.toggle("hidden");
+    // rollButton.classList.toggle("hidden");
+    var rollButtonP2 = document.getElementById("rollbtn2");
+    rollButtonP2.classList.toggle("hidden");
     var rollButtonFake = document.getElementById("rollbtnfake");
     rollButtonFake.classList.toggle("hidden");
-    console.log("P2 Rolled Dices");
     setTimeout(() => {
         var diceShow = document.getElementById("diceResult");
         if (dice === 0) {

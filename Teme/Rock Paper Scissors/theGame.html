@@ -6,17 +6,13 @@
     <script>
         console.log("-----The Game Begins-----");
 
-        var OptionsArray = ["rock", "paper", "scissors"];
+        const OptionsArray = ["rock", "paper", "scissors"];
 
-        var x = 5; // default value
-        var y = 5; // default value
-        // function random(){
-        // var x = Math.floor(Math.random() * 4);
-        // return x;
-        // }
+        let x = 5; // default value
+        let y = 5; // default value
 
         if (x === 5) {
-            var x = Math.floor(Math.random() * 3);
+            x = Math.floor(Math.random() * 3);
         }
 
         if (x === 0) {
@@ -30,7 +26,7 @@
         }
 
         if (y === 5) {
-            var y = Math.floor(Math.random() * 3);
+            y = Math.floor(Math.random() * 3);
         }
 
         if (y === 0) {
@@ -70,6 +66,11 @@
             padding: 10px 10px;
             background-color: rgb(255, 0, 0);
             color: white;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: rgb(148, 4, 4);
         }
     </style>
 </head>

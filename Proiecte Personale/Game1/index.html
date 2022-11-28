@@ -14,17 +14,15 @@
                 <p class="dice-result" id="diceResult">0</p>
                 <button class="dicebtn" onclick="diceRollPlayer1()" id="rollbtn">P1 ROLL</button>
                 <button class="dicebtn hidden" onclick="diceRollPlayer2()" id="rollbtn2">P2 ROLL</button>
-                <button class="hidden" id="rollbtnfake">ROLLING</button>
+                <button class="hidden dicebtn" id="rollbtnfake">ROLLING</button>
             </div>
             <div class="player1-stats">
-                <h3 style="text-align: center;">Player 1</h3>
-                <h4>Points:</h4>
-                <h4>Lucky 6's:<span id="p1-lucky6-points">0</span></h4>
+                <h3 class="player1-stats-align">Player 1</h3>
+                <h4 class="player1-stats-align">Lucky 6's:&nbsp;<span id="p1-lucky6-points">0</span></h4>
             </div>
             <div class="player2-stats">
-                <h3 style="text-align: center;">Player 2</h3>
-                <h4>Points:</h4>
-                <h4>Lucky 6's:<span id="p2-lucky6-points">0</span></h4>
+                <h3 class="player1-stats-align">Player 2</h3>
+                <h4 class="player1-stats-align">Lucky 6's:&nbsp;<span id="p2-lucky6-points">0</span></h4>
             </div>
             <div class="points-div">
                 <h3>Turn: <span>Player 1</span></h3>
@@ -197,6 +195,9 @@
                 </div>
             </div>
         </main>
+        <div class="winner-container">
+                
+        </div>
         <script src="script/game.js"></script>
     </body>
 </html>

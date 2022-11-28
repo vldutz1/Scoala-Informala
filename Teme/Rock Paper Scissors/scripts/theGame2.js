@@ -1,49 +1,45 @@
 console.log("-----The Game Begins-----");
 
-var OptionsArray = ["rock", "paper", "scissors"];
+const OptionsArray = ["rock", "paper", "scissors"];
 
-// function random(){
-// var x = Math.floor(Math.random() * 4);
-// return x;
-// }
-var playerPoints = 0;
-var computerPoints = 0;
-var playerWinnings = 0;
-var computerWinnings = 0;
-var totalPointsToWin = 10;
+let playerPoints = 0;
+let computerPoints = 0;
+let playerWinnings = 0;
+let computerWinnings = 0;
+let totalPointsToWin = 10;
 
-var playWithImages = true;
+let playWithImages = true;
 
 function looseSound() {
-    var looseSound = document.getElementById("wrong");
+    const looseSound = document.getElementById("wrong");
     looseSound.play();
 }
 
 function winSound() {
-    var winSound = document.getElementById("good");
+    const winSound = document.getElementById("good");
     winSound.play();
 }
 
 function winner() {
-    var winner = document.getElementById("game-win");
+    const winner = document.getElementById("game-win");
     winner.play();
 }
 
 function looser() {
-    var looser = document.getElementById("game-lost");
+    const looser = document.getElementById("game-lost");
     looser.play();
 }
 
 function cheatAccess() {
-    var cheatAccess = document.getElementById("cheat-zone");
+    const cheatAccess = document.getElementById("cheat-zone");
     cheatAccess.play();
 }
 
-var playing = false;
+let playing = false;
 
 function gameMusic() {
-    var gameMusic = document.getElementById("game-music");
-    var musicBtn = document.getElementById("music-status");
+    const gameMusic = document.getElementById("game-music");
+    const musicBtn = document.getElementById("music-status");
     if (playing === false) {
         playing = true;
         gameMusic.play();
@@ -57,13 +53,13 @@ function gameMusic() {
 }
 
 function play() {
-    var x = 5; // default value
-    var y = 5; // default value
+    let x = 5; // default value
+    let y = 5; // default value
 
     if (x === 5) {
-        var x = Math.floor(Math.random() * 3);
+        x = Math.floor(Math.random() * 3);
     }
-    var computerChoice = document.getElementById("computer-choice");
+    const computerChoice = document.getElementById("computer-choice");
     if (x === 0 && playWithImages === false) {
         computerChoice.innerText = "Rock"
     }
@@ -84,10 +80,10 @@ function play() {
     }
 
     if (y === 5) {
-        var y = Math.floor(Math.random() * 3);
+        y = Math.floor(Math.random() * 3);
     }
 
-    var playerChoice = document.getElementById("player-choice");
+    const playerChoice = document.getElementById("player-choice");
 
     if (y === 0 && playWithImages === false) {
         playerChoice.innerText = "Rock"
@@ -108,9 +104,9 @@ function play() {
         playerChoice.innerHTML = '<img src="images/scissors.png">';
     }
 
-    var result = document.getElementById("final-result");
-    var playerPointsShow = document.getElementById("player-points");
-    var computerPointsShow = document.getElementById("computer-points");
+    let result = document.getElementById("final-result");
+    let playerPointsShow = document.getElementById("player-points");
+    let computerPointsShow = document.getElementById("computer-points");
 
     if (x === y) {
         result.innerHTML = '<span style="color:red">Draw!</span>';
@@ -160,16 +156,15 @@ function play() {
 }
 
 function playRock() {
-    var x = 0;
-    var y = 0;
-    var playerChoice = document.getElementById("player-choice");
-    var computerChoice = document.getElementById("computer-choice");
-    var result = document.getElementById("final-result");
-    var playerPointsShow = document.getElementById("player-points");
-    var computerPointsShow = document.getElementById("computer-points");
+    let x = 0;
+    let y = 0;
+    const playerChoice = document.getElementById("player-choice");
+    const computerChoice = document.getElementById("computer-choice");
+    const result = document.getElementById("final-result");
+    const playerPointsShow = document.getElementById("player-points");
+    const computerPointsShow = document.getElementById("computer-points");
 
     if (x === 0 && playWithImages === true) {
-        // playerChoice.innerText = "Rock";
         playerChoice.innerHTML = '<img src="images/rock.png">';
     }
     else if (x === 0 && playWithImages === false) {
@@ -177,23 +172,20 @@ function playRock() {
     }
 
     if (y === 0) {
-        var y = Math.floor(Math.random() * 3);
+        y = Math.floor(Math.random() * 3);
     }
 
     if (y === 0 && playWithImages === true) {
-        // computerChoice.innerText = "Rock";
         computerChoice.innerHTML = '<img src="images/rock.png">';
         result.innerHTML = '<span style="color:red">Draw!</span>';
 
     }
     else if (y === 0 && playWithImages === false) {
         computerChoice.innerText = "Rock";
-        // computerChoice.innerHTML = '<img src="images/rock.png">';
         result.innerHTML = '<span style="color:red">Draw!</span>';
 
     }
     else if (y === 1 && playWithImages === true) {
-        // computerChoice.innerText = "Paper";
         computerChoice.innerHTML = '<img src="images/paper.png">';
         result.innerHTML = '<span style="color:red">Computer Wins!</span>';
         computerPoints += 1;
@@ -203,7 +195,6 @@ function playRock() {
     }
     else if (y === 1 && playWithImages === false) {
         computerChoice.innerText = "Paper";
-        // computerChoice.innerHTML = '<img src="images/paper.png">';
         result.innerHTML = '<span style="color:red">Computer Wins!</span>';
         computerPoints += 1;
         computerPointsShow.innerText = computerPoints;
@@ -211,7 +202,6 @@ function playRock() {
         endGame();
     }
     else if (y === 2 && playWithImages === true) {
-        // computerChoice.innerText = "Scissors";
         computerChoice.innerHTML = '<img src="images/scissors.png">';
         result.innerHTML = '<span style="color:green">Player Wins!</span>';
         playerPoints += 1;
@@ -221,7 +211,6 @@ function playRock() {
     }
     else if (y === 2 && playWithImages === false) {
         computerChoice.innerText = "Scissors";
-        // computerChoice.innerHTML = '<img src="images/scissors.png">';
         result.innerHTML = '<span style="color:green">Player Wins!</span>';
         playerPoints += 1;
         playerPointsShow.innerText = playerPoints;
@@ -231,13 +220,13 @@ function playRock() {
 }
 
 function playPaper() {
-    var x = 0;
-    var y = 0;
-    var playerChoice = document.getElementById("player-choice");
-    var computerChoice = document.getElementById("computer-choice");
-    var result = document.getElementById("final-result");
-    var playerPointsShow = document.getElementById("player-points");
-    var computerPointsShow = document.getElementById("computer-points");
+    let x = 0;
+    let y = 0;
+    const playerChoice = document.getElementById("player-choice");
+    const computerChoice = document.getElementById("computer-choice");
+    const result = document.getElementById("final-result");
+    const playerPointsShow = document.getElementById("player-points");
+    const computerPointsShow = document.getElementById("computer-points");
 
     if (x === 0 && playWithImages === true) {
         playerChoice.innerHTML = '<img src="images/paper.png">';
@@ -247,7 +236,7 @@ function playPaper() {
     }
 
     if (y === 0) {
-        var y = Math.floor(Math.random() * 3);
+        y = Math.floor(Math.random() * 3);
     }
 
     if (y === 0 && playWithImages === true) {
@@ -293,13 +282,13 @@ function playPaper() {
 }
 
 function playScissors() {
-    var x = 0;
-    var y = 0;
-    var playerChoice = document.getElementById("player-choice");
-    var computerChoice = document.getElementById("computer-choice");
-    var result = document.getElementById("final-result");
-    var playerPointsShow = document.getElementById("player-points");
-    var computerPointsShow = document.getElementById("computer-points");
+    let x = 0;
+    let y = 0;
+    const playerChoice = document.getElementById("player-choice");
+    const computerChoice = document.getElementById("computer-choice");
+    const result = document.getElementById("final-result");
+    const playerPointsShow = document.getElementById("player-points");
+    const computerPointsShow = document.getElementById("computer-points");
 
     if (x === 0 && playWithImages === true) {
         playerChoice.innerHTML = '<img src="images/scissors.png">';
@@ -309,7 +298,7 @@ function playScissors() {
     }
 
     if (y === 0) {
-        var y = Math.floor(Math.random() * 3);
+        y = Math.floor(Math.random() * 3);
     }
 
     if (y === 0 && playWithImages === true) {
@@ -355,11 +344,11 @@ function playScissors() {
 }
 
 function endGame() {
-    var playerPointsShow = document.getElementById("player-points");
-    var computerPointsShow = document.getElementById("computer-points");
-    var winnerShow = document.getElementById("winner");
-    var playerWinsShow = document.getElementById("player-winnings");
-    var computerWinsShow = document.getElementById("computer-winnings");
+    const playerPointsShow = document.getElementById("player-points");
+    const computerPointsShow = document.getElementById("computer-points");
+    const winnerShow = document.getElementById("winner");
+    const playerWinsShow = document.getElementById("player-winnings");
+    const computerWinsShow = document.getElementById("computer-winnings");
 
     if (playerPoints === totalPointsToWin || playerPoints > totalPointsToWin) {
         playerPoints = 0;
@@ -386,44 +375,44 @@ function endGame() {
 }
 
 function end() {
-    var element = document.getElementById("end-result-id");
+    const element = document.getElementById("end-result-id");
     element.classList.toggle("hidden");
-    var playerChoice = document.getElementById("player-choice");
-    var computerChoice = document.getElementById("computer-choice");
-    var result = document.getElementById("final-result");
+    const playerChoice = document.getElementById("player-choice");
+    const computerChoice = document.getElementById("computer-choice");
+    const result = document.getElementById("final-result");
     playerChoice.innerText = "";
     computerChoice.innerText = "";
     result.innerText = "";
 }
 
 function cheatsShow() {
-    var cheatList = document.getElementById("cheat-area");
+    const cheatList = document.getElementById("cheat-area");
     cheatList.classList.toggle("hidden");
     cheatAccess();
 }
 
 function addPointsToPlayer() {
     playerPoints += 5;
-    var playerPointsShow = document.getElementById("player-points");
+    const playerPointsShow = document.getElementById("player-points");
     playerPointsShow.innerText = playerPoints;
     alert("5 Points added to Player")
 }
 
 function addPointsToComputer() {
     computerPoints += 5;
-    var playerPointsShow = document.getElementById("computer-points");
+    const playerPointsShow = document.getElementById("computer-points");
     playerPointsShow.innerText = computerPoints;
     alert("5 Points added to Computer")
 }
 
 function resultsShow() {
-    var results = document.getElementById("total-wins");
+    const results = document.getElementById("total-wins");
     results.classList.toggle("hidden");
 }
 
 function setMaxPointsToWin5() {
-    var setMaxP = document.getElementById("max-points-p");
-    var setMaxC = document.getElementById("max-points-c");
+    const setMaxP = document.getElementById("max-points-p");
+    const setMaxC = document.getElementById("max-points-c");
     totalPointsToWin = 5;
     setMaxP.innerText = "/5";
     setMaxC.innerText = "/5";
@@ -431,8 +420,8 @@ function setMaxPointsToWin5() {
 }
 
 function setMaxPointsToWin10() {
-    var setMaxP = document.getElementById("max-points-p");
-    var setMaxC = document.getElementById("max-points-c");
+    const setMaxP = document.getElementById("max-points-p");
+    const setMaxC = document.getElementById("max-points-c");
     totalPointsToWin = 10;
     setMaxP.innerText = "/10";
     setMaxC.innerText = "/10";
@@ -440,8 +429,8 @@ function setMaxPointsToWin10() {
 }
 
 function setMaxPointsToWin15() {
-    var setMaxP = document.getElementById("max-points-p");
-    var setMaxC = document.getElementById("max-points-c");
+    const setMaxP = document.getElementById("max-points-p");
+    const setMaxC = document.getElementById("max-points-c");
     totalPointsToWin = 15;
     setMaxP.innerText = "/15";
     setMaxC.innerText = "/15";
@@ -449,8 +438,8 @@ function setMaxPointsToWin15() {
 }
 
 function setMaxPointsToWin20() {
-    var setMaxP = document.getElementById("max-points-p");
-    var setMaxC = document.getElementById("max-points-c");
+    const setMaxP = document.getElementById("max-points-p");
+    const setMaxC = document.getElementById("max-points-c");
     totalPointsToWin = 20;
     setMaxP.innerText = "/20";
     setMaxC.innerText = "/20";
@@ -458,33 +447,33 @@ function setMaxPointsToWin20() {
 }
 
 function animationToggle() {
-    var animation = document.getElementById("title");
+    const animation = document.getElementById("title");
     animation.classList.toggle("animation");
 }
 
 function playWithImagesToggle() {
     if (playWithImages === true) {
         playWithImages = false;
-        var imagesStatus = document.getElementById("images-status");
+        const imagesStatus = document.getElementById("images-status");
         imagesStatus.innerText = 'Off';
         imagesStatus.style = "color:red";
-        var rockBtn = document.getElementById("rock-btn");
+        const rockBtn = document.getElementById("rock-btn");
         rockBtn.innerHTML = '<span style="color:white">Rock</span>'
-        var paperBtn = document.getElementById("paper-btn");
+        const paperBtn = document.getElementById("paper-btn");
         paperBtn.innerHTML = '<span style="color:white">Paper</span>'
-        var scissorsBtn = document.getElementById("scissors-btn");
+        const scissorsBtn = document.getElementById("scissors-btn");
         scissorsBtn.innerHTML = '<span style="color:white">Scissors</span>'
     }
     else if (playWithImages === false) {
         playWithImages = true;
-        var imagesStatus = document.getElementById("images-status");
+        const imagesStatus = document.getElementById("images-status");
         imagesStatus.innerText = 'On';
         imagesStatus.style = "color:white";
-        var rockBtn = document.getElementById("rock-btn");
+        const rockBtn = document.getElementById("rock-btn");
         rockBtn.innerHTML = '<img src="images/rock.png">'
-        var paperBtn = document.getElementById("paper-btn");
+        const paperBtn = document.getElementById("paper-btn");
         paperBtn.innerHTML = '<img src="images/paper.png">'
-        var scissorsBtn = document.getElementById("scissors-btn");
+        const scissorsBtn = document.getElementById("scissors-btn");
         scissorsBtn.innerHTML = '<img src="images/scissors.png">'
     }
 }
