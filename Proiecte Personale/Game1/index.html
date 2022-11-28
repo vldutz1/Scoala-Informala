@@ -8,6 +8,7 @@
 
     <body>
         <audio src="audio/dice-sound.mp3" id="dice-sound"></audio>
+        <audio src="audio/win.mp3" id="win-sound"></audio>
         <main>
             <div class="dice-system">
                 <img src="images/dice.png" width="70vh" id="dice-img">
@@ -195,8 +196,9 @@
                 </div>
             </div>
         </main>
-        <div class="winner-container">
-                
+        <div class="winner-container hidden" id="win-container">
+                <h1>Player <span id="who-wins"></span> Wins!</h1>
+                <button onclick="winnerWindow()">Play Again</button>
         </div>
         <script src="script/game.js"></script>
     </body>
@@ -207,7 +209,7 @@
 [x]A div (Square or so) on a corner where the dice system works
 [x]A div with many divs as squares for the board
 Pawn selection system
-Multiple players system 
+[x]Multiple players system 
 A rule page
 A music button
 a computer/player selector as player2

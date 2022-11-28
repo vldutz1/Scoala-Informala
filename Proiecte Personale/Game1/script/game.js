@@ -9,22 +9,22 @@ let P1Turn = true;
 let P2Turn = false;
 
 function diceRollSound() {
-    let diceSound = document.getElementById("dice-sound");
+    const diceSound = document.getElementById("dice-sound");
     diceSound.play();
 }
 
 function diceRollPlayer1() {
     diceRollSound();
     dice = Math.floor(Math.random() * 7);
-    var diceImg = document.getElementById("dice-img");
+    const diceImg = document.getElementById("dice-img");
     diceImg.classList.toggle("dice-roll");
-    var rollButton = document.getElementById("rollbtn");
+    const rollButton = document.getElementById("rollbtn");
     rollButton.classList.toggle("hidden");
-    var rollButtonP2 = document.getElementById("rollbtn2");
-    var rollButtonFake = document.getElementById("rollbtnfake");
+    const rollButtonP2 = document.getElementById("rollbtn2");
+    const rollButtonFake = document.getElementById("rollbtnfake");
     rollButtonFake.classList.toggle("hidden");
     setTimeout(() => {
-        var diceShow = document.getElementById("diceResult");
+        const diceShow = document.getElementById("diceResult");
         if (dice === 0) {
             diceShow.innerText = "1";
             dice = 1;
@@ -85,16 +85,15 @@ function diceRollPlayer1() {
 function diceRollPlayer2() {
     diceRollSound();
     dice = Math.floor(Math.random() * 7);
-    var diceImg = document.getElementById("dice-img");
+    const diceImg = document.getElementById("dice-img");
     diceImg.classList.toggle("dice-roll");
-    var rollButton = document.getElementById("rollbtn");
-    // rollButton.classList.toggle("hidden");
-    var rollButtonP2 = document.getElementById("rollbtn2");
+    const rollButton = document.getElementById("rollbtn");
+    const rollButtonP2 = document.getElementById("rollbtn2");
     rollButtonP2.classList.toggle("hidden");
-    var rollButtonFake = document.getElementById("rollbtnfake");
+    const rollButtonFake = document.getElementById("rollbtnfake");
     rollButtonFake.classList.toggle("hidden");
     setTimeout(() => {
-        var diceShow = document.getElementById("diceResult");
+        const diceShow = document.getElementById("diceResult");
         if (dice === 0) {
             diceShow.innerText = "1";
             dice = 1;
@@ -152,89 +151,89 @@ function diceRollPlayer2() {
     P2Turn = false;
 }
 
-var p0 = document.getElementById("p1-0");
-var p1 = document.getElementById("p1-1");
-var p2 = document.getElementById("p1-2");
-var p3 = document.getElementById("p1-3");
-var p4 = document.getElementById("p1-4");
-var p5 = document.getElementById("p1-5");
-var p6 = document.getElementById("p1-6");
-var p7 = document.getElementById("p1-7");
-var p8 = document.getElementById("p1-8");
-var p9 = document.getElementById("p1-9");
-var p10 = document.getElementById("p1-10");
-var p11 = document.getElementById("p1-11");
-var p12 = document.getElementById("p1-12");
-var p13 = document.getElementById("p1-13");
-var p14 = document.getElementById("p1-14");
-var p15 = document.getElementById("p1-15");
-var p16 = document.getElementById("p1-16");
-var p17 = document.getElementById("p1-17");
-var p18 = document.getElementById("p1-18");
-var p19 = document.getElementById("p1-19");
-var p20 = document.getElementById("p1-20");
-var p21 = document.getElementById("p1-21");
-var p22 = document.getElementById("p1-22");
-var p23 = document.getElementById("p1-23");
-var p24 = document.getElementById("p1-24");
-var p25 = document.getElementById("p1-25");
-var p26 = document.getElementById("p1-26");
-var p27 = document.getElementById("p1-27");
-var p28 = document.getElementById("p1-28");
-var p29 = document.getElementById("p1-29");
-var p30 = document.getElementById("p1-30");
-var p31 = document.getElementById("p1-31");
-var p32 = document.getElementById("p1-32");
-var p33 = document.getElementById("p1-33");
-var p34 = document.getElementById("p1-34");
-var p35 = document.getElementById("p1-35");
-var p36 = document.getElementById("p1-36");
-var p37 = document.getElementById("p1-37");
-var p38 = document.getElementById("p1-38");
-var p39 = document.getElementById("p1-39");
-var p40 = document.getElementById("p1-40");
+let p0 = document.getElementById("p1-0");
+let p1 = document.getElementById("p1-1");
+let p2 = document.getElementById("p1-2");
+let p3 = document.getElementById("p1-3");
+let p4 = document.getElementById("p1-4");
+let p5 = document.getElementById("p1-5");
+let p6 = document.getElementById("p1-6");
+let p7 = document.getElementById("p1-7");
+let p8 = document.getElementById("p1-8");
+let p9 = document.getElementById("p1-9");
+let p10 = document.getElementById("p1-10");
+let p11 = document.getElementById("p1-11");
+let p12 = document.getElementById("p1-12");
+let p13 = document.getElementById("p1-13");
+let p14 = document.getElementById("p1-14");
+let p15 = document.getElementById("p1-15");
+let p16 = document.getElementById("p1-16");
+let p17 = document.getElementById("p1-17");
+let p18 = document.getElementById("p1-18");
+let p19 = document.getElementById("p1-19");
+let p20 = document.getElementById("p1-20");
+let p21 = document.getElementById("p1-21");
+let p22 = document.getElementById("p1-22");
+let p23 = document.getElementById("p1-23");
+let p24 = document.getElementById("p1-24");
+let p25 = document.getElementById("p1-25");
+let p26 = document.getElementById("p1-26");
+let p27 = document.getElementById("p1-27");
+let p28 = document.getElementById("p1-28");
+let p29 = document.getElementById("p1-29");
+let p30 = document.getElementById("p1-30");
+let p31 = document.getElementById("p1-31");
+let p32 = document.getElementById("p1-32");
+let p33 = document.getElementById("p1-33");
+let p34 = document.getElementById("p1-34");
+let p35 = document.getElementById("p1-35");
+let p36 = document.getElementById("p1-36");
+let p37 = document.getElementById("p1-37");
+let p38 = document.getElementById("p1-38");
+let p39 = document.getElementById("p1-39");
+let p40 = document.getElementById("p1-40");
 
-var p2P0 = document.getElementById("p2-0");
-var p2P1 = document.getElementById("p2-1");
-var p2P2 = document.getElementById("p2-2");
-var p2P3 = document.getElementById("p2-3");
-var p2P4 = document.getElementById("p2-4");
-var p2P5 = document.getElementById("p2-5");
-var p2P6 = document.getElementById("p2-6");
-var p2P7 = document.getElementById("p2-7");
-var p2P8 = document.getElementById("p2-8");
-var p2P9 = document.getElementById("p2-9");
-var p2P10 = document.getElementById("p2-10");
-var p2P11 = document.getElementById("p2-11");
-var p2P12 = document.getElementById("p2-12");
-var p2P13 = document.getElementById("p2-13");
-var p2P14 = document.getElementById("p2-14");
-var p2P15 = document.getElementById("p2-15");
-var p2P16 = document.getElementById("p2-16");
-var p2P17 = document.getElementById("p2-17");
-var p2P18 = document.getElementById("p2-18");
-var p2P19 = document.getElementById("p2-19");
-var p2P20 = document.getElementById("p2-20");
-var p2P21 = document.getElementById("p2-21");
-var p2P22 = document.getElementById("p2-22");
-var p2P23 = document.getElementById("p2-23");
-var p2P24 = document.getElementById("p2-24");
-var p2P25 = document.getElementById("p2-25");
-var p2P26 = document.getElementById("p2-26");
-var p2P27 = document.getElementById("p2-27");
-var p2P28 = document.getElementById("p2-28");
-var p2P29 = document.getElementById("p2-29");
-var p2P30 = document.getElementById("p2-30");
-var p2P31 = document.getElementById("p2-31");
-var p2P32 = document.getElementById("p2-32");
-var p2P33 = document.getElementById("p2-33");
-var p2P34 = document.getElementById("p2-34");
-var p2P35 = document.getElementById("p2-35");
-var p2P36 = document.getElementById("p2-36");
-var p2P37 = document.getElementById("p2-37");
-var p2P38 = document.getElementById("p2-38");
-var p2P39 = document.getElementById("p2-39");
-var p2P40 = document.getElementById("p2-40");
+let p2P0 = document.getElementById("p2-0");
+let p2P1 = document.getElementById("p2-1");
+let p2P2 = document.getElementById("p2-2");
+let p2P3 = document.getElementById("p2-3");
+let p2P4 = document.getElementById("p2-4");
+let p2P5 = document.getElementById("p2-5");
+let p2P6 = document.getElementById("p2-6");
+let p2P7 = document.getElementById("p2-7");
+let p2P8 = document.getElementById("p2-8");
+let p2P9 = document.getElementById("p2-9");
+let p2P10 = document.getElementById("p2-10");
+let p2P11 = document.getElementById("p2-11");
+let p2P12 = document.getElementById("p2-12");
+let p2P13 = document.getElementById("p2-13");
+let p2P14 = document.getElementById("p2-14");
+let p2P15 = document.getElementById("p2-15");
+let p2P16 = document.getElementById("p2-16");
+let p2P17 = document.getElementById("p2-17");
+let p2P18 = document.getElementById("p2-18");
+let p2P19 = document.getElementById("p2-19");
+let p2P20 = document.getElementById("p2-20");
+let p2P21 = document.getElementById("p2-21");
+let p2P22 = document.getElementById("p2-22");
+let p2P23 = document.getElementById("p2-23");
+let p2P24 = document.getElementById("p2-24");
+let p2P25 = document.getElementById("p2-25");
+let p2P26 = document.getElementById("p2-26");
+let p2P27 = document.getElementById("p2-27");
+let p2P28 = document.getElementById("p2-28");
+let p2P29 = document.getElementById("p2-29");
+let p2P30 = document.getElementById("p2-30");
+let p2P31 = document.getElementById("p2-31");
+let p2P32 = document.getElementById("p2-32");
+let p2P33 = document.getElementById("p2-33");
+let p2P34 = document.getElementById("p2-34");
+let p2P35 = document.getElementById("p2-35");
+let p2P36 = document.getElementById("p2-36");
+let p2P37 = document.getElementById("p2-37");
+let p2P38 = document.getElementById("p2-38");
+let p2P39 = document.getElementById("p2-39");
+let p2P40 = document.getElementById("p2-40");
 
 function getP1Position() {
     if (dice === 1) {
@@ -305,7 +304,6 @@ function getP2Position() {
 }
 
 function moveP1() {
-    // setTimeout(() => {
         if (player1Position === 0) {
             p0.classList.remove("hidden");
         }
@@ -428,16 +426,16 @@ function moveP1() {
         }
         else if (player1Position === 40) {
             p40.classList.remove("hidden");
+            decideWinner();
         }
         else if (player1Position > 40) {
             p40.classList.remove("hidden");
             player1Position = 40;
+            decideWinner();
         }
-    // }, 1000);
 }
 
 function moveP2() {
-    // setTimeout(() => {
         if (player2Position === 0) {
             p2P0.classList.remove("hidden");
         }
@@ -560,12 +558,13 @@ function moveP2() {
         }
         else if (player2Position === 40) {
             p2P40.classList.remove("hidden");
+            decideWinner();
         }
         else if (player2Position > 40) {
             p2P40.classList.remove("hidden");
             player2Position = 40;
+            decideWinner();
         }
-    // }, 1000);
 }
 
 function p1Vanish() {
@@ -657,11 +656,32 @@ function p2Vanish() {
 }
 
 function Player1Stats(){
-    var p1Lucky6Show = document.getElementById("p1-lucky6-points");
+    const p1Lucky6Show = document.getElementById("p1-lucky6-points");
     p1Lucky6Show.innerText = p1Lucky6;
 }
 
-function Player2Stats(){
-    var p2Lucky6Show = document.getElementById("p2-lucky6-points");
+function Player2Stats() {
+    const p2Lucky6Show = document.getElementById("p2-lucky6-points");
     p2Lucky6Show.innerText = p2Lucky6;
+}
+
+function winnerWindow() {
+    const winWindow = document.getElementById("win-container");
+    winWindow.classList.toggle("hidden");
+}
+
+function decideWinner() {
+    const winAudio = document.getElementById("win-sound");
+    if (player1Position === 40 || player1Position > 40) {
+        winnerWindow();
+        winAudio.play();
+        const P1Won = document.getElementById("who-wins");
+        P1Won.innerText = "1";
+    }
+    else if (player2Position === 40 || player2Position > 40) {
+        winnerWindow();
+        winAudio.play();
+        const P2Won = document.getElementById("who-wins");
+        P2Won.innerText = "2";
+    }
 }

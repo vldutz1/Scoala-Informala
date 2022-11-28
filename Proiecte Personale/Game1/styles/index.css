@@ -138,12 +138,6 @@ body {
 }
 
 .dicebtn {
-    /* color: red;
-    background-color: rgb(255, 225, 0);
-    border-color: rgb(215, 41, 41);
-    border-radius: 30%;
-    font-weight: bolder;
-    padding: 0.2em 2em; */
 	background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
 	background-color:#c62d1f;
 	border-radius:42px;
@@ -159,7 +153,10 @@ body {
 
 @keyframes winnerAreaAnim {
     0% {
-        translateX:100px ;
+        transform: translateY(-50vh);
+    }
+    100% {
+        transform: translateY(-102vh);
     }
 }
 
@@ -167,6 +164,7 @@ body {
     height: 95vh;
     background-color: #810e05;
     z-index: 10;
-    top: 10px;
-    left: 10px;
+    animation: winnerAreaAnim 1s;
+    animation-iteration-count: 1;
+    transform: translateY(-102vh);
 }
