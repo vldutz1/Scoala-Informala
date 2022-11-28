@@ -1,8 +1,0 @@
-@font-face {
-    font-family: matrix;
-    src: url(matrix.ttf);
-}
-
-.matrix-font {
-    font-family: matrix, system-ui,'Open Sans', 'Helvetica Neue', sans-serif;
-}
