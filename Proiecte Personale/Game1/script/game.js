@@ -267,6 +267,7 @@ function getP1Position() {
         p1Vanish();
     }
     moveP1();
+    moveBack();
 }
 
 function getP2Position() {
@@ -301,6 +302,7 @@ function getP2Position() {
         p2Vanish();
     }
     moveP2();
+    moveBack();
 }
 
 function moveP1() {
@@ -683,5 +685,20 @@ function decideWinner() {
         winAudio.play();
         const P2Won = document.getElementById("who-wins");
         P2Won.innerText = "2";
+    }
+}
+
+function moveBack() {
+    if (player1Position === 6) {
+        setTimeout(() => {
+            player1Position = 2;
+        }, 2000);
+        getP1Position();    
+    }
+    else if (player2Position === 6) {
+        setTimeout(() => {
+            player2Position = 2;
+        }, 2000);
+        getP2Position(); 
     }
 }

@@ -43,12 +43,12 @@ function gameMusic() {
     if (playing === false) {
         playing = true;
         gameMusic.play();
-        musicBtn.classList.add("music-btn")
+        musicBtn.classList.add("music-btn");
     }
     else if (playing === true) {
         playing = false;
         gameMusic.pause();
-        musicBtn.classList.remove("music-btn")
+        musicBtn.classList.remove("music-btn");
     }
 }
 
