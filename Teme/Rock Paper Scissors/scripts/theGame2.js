@@ -53,54 +53,46 @@ function gameMusic() {
 }
 
 function play() {
-    let x = 5; // default value
-    let y = 5; // default value
-
-    if (x === 5) {
-        x = Math.floor(Math.random() * 3);
-    }
+    let computerRandomChoice = Math.floor(Math.random() * 3);
     const computerChoice = document.getElementById("computer-choice");
-    if (x === 0 && playWithImages === false) {
+    if (computerRandomChoice === 0 && playWithImages === false) {
         computerChoice.innerText = "Rock"
     }
-    else if (x === 0 && playWithImages === true) {
+    else if (computerRandomChoice === 0 && playWithImages === true) {
         computerChoice.innerHTML = '<img src="images/rock.png">';
     }
-    else if (x === 1 && playWithImages === false) {
+    else if (computerRandomChoice === 1 && playWithImages === false) {
         computerChoice.innerText = "Paper"
     }
-    else if (x === 1 && playWithImages === true) {
+    else if (computerRandomChoice === 1 && playWithImages === true) {
         computerChoice.innerHTML = '<img src="images/paper.png">';
     }
-    else if (x === 2 && playWithImages === false) {
+    else if (computerRandomChoice === 2 && playWithImages === false) {
         computerChoice.innerText = "Scissors"
     }
-    else if (x === 2 && playWithImages === true) {
+    else if (computerRandomChoice === 2 && playWithImages === true) {
         computerChoice.innerHTML = '<img src="images/scissors.png">';
     }
-
-    if (y === 5) {
-        y = Math.floor(Math.random() * 3);
-    }
+        let playerRandomChoice = Math.floor(Math.random() * 3);
 
     const playerChoice = document.getElementById("player-choice");
 
-    if (y === 0 && playWithImages === false) {
+    if (playerRandomChoice === 0 && playWithImages === false) {
         playerChoice.innerText = "Rock"
     }
-    else if (y === 0 && playWithImages === true) {
+    else if (playerRandomChoice === 0 && playWithImages === true) {
         playerChoice.innerHTML = '<img src="images/rock.png">';
     }
-    else if (y === 1 && playWithImages === false) {
+    else if (playerRandomChoice === 1 && playWithImages === false) {
         playerChoice.innerText = "Paper"
     }
-    else if (y === 1 && playWithImages === true) {
+    else if (playerRandomChoice === 1 && playWithImages === true) {
         playerChoice.innerHTML = '<img src="images/paper.png">';
     }
-    else if (y === 2 && playWithImages === false) {
+    else if (playerRandomChoice === 2 && playWithImages === false) {
         playerChoice.innerText = "Scissors"
     }
-    else if (y === 2 && playWithImages === true) {
+    else if (playerRandomChoice === 2 && playWithImages === true) {
         playerChoice.innerHTML = '<img src="images/scissors.png">';
     }
 
@@ -108,45 +100,45 @@ function play() {
     let playerPointsShow = document.getElementById("player-points");
     let computerPointsShow = document.getElementById("computer-points");
 
-    if (x === y) {
+    if (computerRandomChoice === playerRandomChoice) {
         result.innerHTML = '<span style="color:red">Draw!</span>';
     }
-    else if (x === 0 && y === 1) {
+    else if (computerRandomChoice === 0 && playerRandomChoice === 1) {
         result.innerHTML = '<span style="color:green">Player Wins!</span>';
         playerPoints += 1;
         playerPointsShow.innerText = playerPoints;
         winSound();
         endGame();
     }
-    else if (x === 0 && y === 2) {
+    else if (computerRandomChoice === 0 && playerRandomChoice === 2) {
         result.innerHTML = '<span style="color:red">Computer Wins!</span>';
         computerPoints += 1;
         computerPointsShow.innerText = computerPoints;
         looseSound();
         endGame();
     }
-    else if (x === 1 && y === 0) {
+    else if (computerRandomChoice === 1 && playerRandomChoice === 0) {
         result.innerHTML = '<span style="color:red">Computer Wins!</span>';
         computerPoints += 1;
         computerPointsShow.innerText = computerPoints;
         looseSound();
         endGame();
     }
-    else if (x === 1 && y === 2) {
+    else if (computerRandomChoice === 1 && playerRandomChoice === 2) {
         result.innerHTML = '<span style="color:green">Player Wins!</span>';
         playerPoints += 1;
         playerPointsShow.innerText = playerPoints;
         winSound();
         endGame();
     }
-    else if (x === 2 && y === 0) {
+    else if (computerRandomChoice === 2 && playerRandomChoice === 0) {
         result.innerHTML = '<span style="color:green">Player Wins!</span>';
         playerPoints += 1;
         playerPointsShow.innerText = playerPoints;
         winSound();
         endGame();
     }
-    else if (x === 2 && y === 1) {
+    else if (computerRandomChoice === 2 && playerRandomChoice === 1) {
         result.innerHTML = '<span style="color:red">Computer Wins!</span>';
         computerPoints += 1;
         computerPointsShow.innerText = computerPoints;
@@ -156,36 +148,36 @@ function play() {
 }
 
 function playRock() {
-    let x = 0;
-    let y = 0;
+    let playerChoiceRock = 0;
+    let ComputerChoices = 0;
     const playerChoice = document.getElementById("player-choice");
     const computerChoice = document.getElementById("computer-choice");
     const result = document.getElementById("final-result");
     const playerPointsShow = document.getElementById("player-points");
     const computerPointsShow = document.getElementById("computer-points");
 
-    if (x === 0 && playWithImages === true) {
+    if (playerChoiceRock === 0 && playWithImages === true) {
         playerChoice.innerHTML = '<img src="images/rock.png">';
     }
-    else if (x === 0 && playWithImages === false) {
+    else if (playerChoiceRock === 0 && playWithImages === false) {
         playerChoice.innerText = "Rock";
     }
 
-    if (y === 0) {
-        y = Math.floor(Math.random() * 3);
+    if (ComputerChoices === 0) {
+        ComputerChoices = Math.floor(Math.random() * 3);
     }
 
-    if (y === 0 && playWithImages === true) {
+    if (ComputerChoices === 0 && playWithImages === true) {
         computerChoice.innerHTML = '<img src="images/rock.png">';
         result.innerHTML = '<span style="color:red">Draw!</span>';
 
     }
-    else if (y === 0 && playWithImages === false) {
+    else if (ComputerChoices === 0 && playWithImages === false) {
         computerChoice.innerText = "Rock";
         result.innerHTML = '<span style="color:red">Draw!</span>';
 
     }
-    else if (y === 1 && playWithImages === true) {
+    else if (ComputerChoices === 1 && playWithImages === true) {
         computerChoice.innerHTML = '<img src="images/paper.png">';
         result.innerHTML = '<span style="color:red">Computer Wins!</span>';
         computerPoints += 1;
@@ -193,7 +185,7 @@ function playRock() {
         looseSound();
         endGame();
     }
-    else if (y === 1 && playWithImages === false) {
+    else if (ComputerChoices === 1 && playWithImages === false) {
         computerChoice.innerText = "Paper";
         result.innerHTML = '<span style="color:red">Computer Wins!</span>';
         computerPoints += 1;
@@ -201,7 +193,7 @@ function playRock() {
         looseSound();
         endGame();
     }
-    else if (y === 2 && playWithImages === true) {
+    else if (ComputerChoices === 2 && playWithImages === true) {
         computerChoice.innerHTML = '<img src="images/scissors.png">';
         result.innerHTML = '<span style="color:green">Player Wins!</span>';
         playerPoints += 1;
@@ -209,7 +201,7 @@ function playRock() {
         winSound();
         endGame();
     }
-    else if (y === 2 && playWithImages === false) {
+    else if (ComputerChoices === 2 && playWithImages === false) {
         computerChoice.innerText = "Scissors";
         result.innerHTML = '<span style="color:green">Player Wins!</span>';
         playerPoints += 1;
@@ -220,26 +212,22 @@ function playRock() {
 }
 
 function playPaper() {
-    let x = 0;
-    let y = 0;
+    let PlayerChoicePaper = true;
+    let ComputerChoices = Math.floor(Math.random() * 3);
     const playerChoice = document.getElementById("player-choice");
     const computerChoice = document.getElementById("computer-choice");
     const result = document.getElementById("final-result");
     const playerPointsShow = document.getElementById("player-points");
     const computerPointsShow = document.getElementById("computer-points");
 
-    if (x === 0 && playWithImages === true) {
+    if (PlayerChoicePaper === true && playWithImages === true) {
         playerChoice.innerHTML = '<img src="images/paper.png">';
     }
-    else if (x === 0 && playWithImages === false) {
+    else if (PlayerChoicePaper === true && playWithImages === false) {
         playerChoice.innerText = "Paper";
     }
 
-    if (y === 0) {
-        y = Math.floor(Math.random() * 3);
-    }
-
-    if (y === 0 && playWithImages === true) {
+    if (ComputerChoices === 0 && playWithImages === true) {
         computerChoice.innerHTML = '<img src="images/rock.png">';
         result.innerHTML = '<span style="color:green">Player Wins!</span>';
         playerPoints += 1;
@@ -247,7 +235,7 @@ function playPaper() {
         winSound();
         endGame();
     }
-    if (y === 0 && playWithImages === false) {
+    if (ComputerChoices === 0 && playWithImages === false) {
         computerChoice.innerText = "Rock";
         result.innerHTML = '<span style="color:green">Player Wins!</span>';
         playerPoints += 1;
@@ -255,15 +243,15 @@ function playPaper() {
         winSound();
         endGame();
     }
-    else if (y === 1 && playWithImages === true) {
+    else if (ComputerChoices === 1 && playWithImages === true) {
         computerChoice.innerHTML = '<img src="images/paper.png">';
         result.innerHTML = '<span style="color:red">Draw!</span>';
     }
-    else if (y === 1 && playWithImages === false) {
+    else if (ComputerChoices === 1 && playWithImages === false) {
         computerChoice.innerText = "Paper";
         result.innerHTML = '<span style="color:red">Draw!</span>';
     }
-    else if (y === 2 && playWithImages === true) {
+    else if (ComputerChoices === 2 && playWithImages === true) {
         computerChoice.innerHTML = '<img src="images/scissors.png">';
         result.innerHTML = '<span style="color:red">Computer Wins!</span>';
         computerPoints += 1;
@@ -271,7 +259,7 @@ function playPaper() {
         looseSound();
         endGame();
     }
-    else if (y === 2 && playWithImages === false) {
+    else if (ComputerChoices === 2 && playWithImages === false) {
         computerChoice.innerText = "Scissors";
         result.innerHTML = '<span style="color:red">Computer Wins!</span>';
         computerPoints += 1;
@@ -282,26 +270,22 @@ function playPaper() {
 }
 
 function playScissors() {
-    let x = 0;
-    let y = 0;
+    let PlayerChoiceScissors = true;
+    let ComputerChoices = Math.floor(Math.random() * 3);
     const playerChoice = document.getElementById("player-choice");
     const computerChoice = document.getElementById("computer-choice");
     const result = document.getElementById("final-result");
     const playerPointsShow = document.getElementById("player-points");
     const computerPointsShow = document.getElementById("computer-points");
 
-    if (x === 0 && playWithImages === true) {
+    if (PlayerChoiceScissors === true && playWithImages === true) {
         playerChoice.innerHTML = '<img src="images/scissors.png">';
     }
-    else if (x === 0 && playWithImages === false) {
+    else if (PlayerChoiceScissors === true && playWithImages === false) {
         playerChoice.innerText = "Scissors";
     }
 
-    if (y === 0) {
-        y = Math.floor(Math.random() * 3);
-    }
-
-    if (y === 0 && playWithImages === true) {
+    if (ComputerChoices === 0 && playWithImages === true) {
         computerChoice.innerHTML = '<img src="images/rock.png">';
         result.innerHTML = '<span style="color:red">Computer Wins!</span>';
         computerPoints += 1;
@@ -309,7 +293,7 @@ function playScissors() {
         looseSound();
         endGame();
     }
-    if (y === 0 && playWithImages === false) {
+    if (ComputerChoices === 0 && playWithImages === false) {
         computerChoice.innerText = "Rock";
         result.innerHTML = '<span style="color:red">Computer Wins!</span>';
         computerPoints += 1;
@@ -317,7 +301,7 @@ function playScissors() {
         looseSound();
         endGame();
     }
-    else if (y === 1 && playWithImages === true) {
+    else if (ComputerChoices === 1 && playWithImages === true) {
         computerChoice.innerHTML = '<img src="images/paper.png">';
         result.innerHTML = '<span style="color:green">Player Wins!</span>';
         playerPoints += 1;
@@ -325,7 +309,7 @@ function playScissors() {
         winSound();
         endGame();
     }
-    else if (y === 1 && playWithImages === false) {
+    else if (ComputerChoices === 1 && playWithImages === false) {
         computerChoice.innerText = "Paper";
         result.innerHTML = '<span style="color:green">Player Wins!</span>';
         playerPoints += 1;
@@ -333,11 +317,11 @@ function playScissors() {
         winSound();
         endGame();
     }
-    else if (y === 2 && playWithImages === true) {
+    else if (ComputerChoices === 2 && playWithImages === true) {
         computerChoice.innerHTML = '<img src="images/scissors.png">';
         result.innerHTML = '<span style="color:red">Draw!</span>';
     }
-    else if (y === 2 && playWithImages === false) {
+    else if (ComputerChoices === 2 && playWithImages === false) {
         computerChoice.innerText = "Scissors";
         result.innerHTML = '<span style="color:red">Draw!</span>';
     }
