@@ -46,10 +46,11 @@ main {
     display: none;
 }
 
-.points-div {
+.menu-div {
     background-color: burlywood;
     height: 20vh;
     width: 20vh;
+    display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -222,6 +223,28 @@ main {
 	padding:6px 34px;
 	text-decoration:none;
 	text-shadow:5px 1px 4px #810e05;
+}
+
+.musicbtn {
+	background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+	background-color:#c62d1f;
+	border-radius:42px;
+	border:1px solid #d02718;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: Squirk, Arial;
+	font-size:17px;
+	padding:6px 34px;
+	text-decoration:none;
+	text-shadow:5px 1px 4px #810e05;
+}
+
+.musicbtn:hover {
+    background:linear-gradient(to bottom, #871f15 5%, #c6382e 100%);
+}
+
+.musicbtn:active {
+    background:linear-gradient(to bottom, #893028 5%, #c6483f 100%);
 }
 
 @keyframes winnerAreaAnim {

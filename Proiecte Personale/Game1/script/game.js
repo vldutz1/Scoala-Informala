@@ -8,6 +8,42 @@ let p2Lucky6 = 0;
 let P1Turn = true;
 let P2Turn = false;
 
+const music1 = document.getElementById("game-music-stranger-things");
+const pauseMusic1Btn = document.getElementById("pause-music1")
+const pauseMusic2Btn = document.getElementById("pause-music2")
+const music1Btn = document.getElementById("music1-btn");
+const music2Btn = document.getElementById("music2-btn");
+
+function gameMusic1() {
+    music1.play();
+    music1.volume = 0.1;
+    music2.pause();
+    music1Btn.classList.toggle("hidden");
+    pauseMusic1Btn.classList.toggle("hidden");
+}
+
+function pauseMusic1() {
+    music1.pause();
+    pauseMusic1Btn.classList.toggle("hidden");
+    music1Btn.classList.toggle("hidden");
+}
+
+function pauseMusic2() {
+    music2.pause();
+    pauseMusic2Btn.classList.toggle("hidden");
+    music2Btn.classList.toggle("hidden");
+}
+
+const music2 = document.getElementById("game-music-night-run");
+
+function gameMusic2() {
+    music2.play();
+    music2.volume = 0.1;
+    music1.pause();
+    music2Btn.classList.toggle("hidden");
+    pauseMusic2Btn.classList.toggle("hidden");
+}
+
 function diceRollSound() {
     const diceSound = document.getElementById("dice-sound");
     diceSound.play();
