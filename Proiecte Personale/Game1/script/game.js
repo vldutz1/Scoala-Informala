@@ -23,6 +23,8 @@ function diceRollPlayer1() {
     const rollButtonP2 = document.getElementById("rollbtn2");
     const rollButtonFake = document.getElementById("rollbtnfake");
     rollButtonFake.classList.toggle("hidden");
+    const Player1BoxAnim = document.getElementById("player1-stats");
+    Player1BoxAnim.classList.remove("player-anim");
     setTimeout(() => {
         const diceShow = document.getElementById("diceResult");
         if (dice === 0) {
@@ -33,50 +35,46 @@ function diceRollPlayer1() {
             rollButtonP2.classList.toggle("hidden");
         }
         else if (dice === 1) {
-            dice = 1;
             diceShow.innerText = "1";
             diceImg.classList.toggle("dice-roll");
             rollButtonFake.classList.toggle("hidden");
             rollButtonP2.classList.toggle("hidden");
         }
         else if (dice === 2) {
-            dice = 2;
             diceShow.innerText = "2";
             diceImg.classList.toggle("dice-roll");
             rollButtonFake.classList.toggle("hidden");
             rollButtonP2.classList.toggle("hidden");
         }
         else if (dice === 3) {
-            dice = 3;
             diceShow.innerText = "3";
             diceImg.classList.toggle("dice-roll");
             rollButtonFake.classList.toggle("hidden");
             rollButtonP2.classList.toggle("hidden");
         }
         else if (dice === 4) {
-            dice = 4;
             diceShow.innerText = "4";
             diceImg.classList.toggle("dice-roll");
             rollButtonFake.classList.toggle("hidden");
             rollButtonP2.classList.toggle("hidden");
         }
         else if (dice === 5) {
-            dice = 5;
             diceShow.innerText = "5";
             diceImg.classList.toggle("dice-roll");
             rollButtonFake.classList.toggle("hidden");
             rollButtonP2.classList.toggle("hidden");
         }
         else if (dice === 6) {
-            dice = 6;
             diceShow.innerText = "6";
             diceImg.classList.toggle("dice-roll");
             rollButtonFake.classList.toggle("hidden");
             rollButtonP2.classList.toggle("hidden");
-            p1Lucky6 +=1;
+            p1Lucky6 += 1;
             Player1Stats();
         }
         getP1Position();
+        const Player2BoxAnim = document.getElementById("player2-stats");
+        Player2BoxAnim.classList.toggle("player-anim");
     }, 2000);
     P1Turn = false;
     P2Turn = true;
@@ -92,6 +90,8 @@ function diceRollPlayer2() {
     rollButtonP2.classList.toggle("hidden");
     const rollButtonFake = document.getElementById("rollbtnfake");
     rollButtonFake.classList.toggle("hidden");
+    const Player2BoxAnim = document.getElementById("player2-stats");
+    Player2BoxAnim.classList.remove("player-anim");
     setTimeout(() => {
         const diceShow = document.getElementById("diceResult");
         if (dice === 0) {
@@ -142,10 +142,12 @@ function diceRollPlayer2() {
             diceImg.classList.toggle("dice-roll");
             rollButtonFake.classList.toggle("hidden");
             rollButton.classList.toggle("hidden");
-            p2Lucky6 +=1;
+            p2Lucky6 += 1;
             Player2Stats();
         }
         getP2Position();
+        const Player1BoxAnim = document.getElementById("player1-stats");
+        Player1BoxAnim.classList.toggle("player-anim");
     }, 2000);
     P1Turn = true;
     P2Turn = false;
@@ -238,32 +240,26 @@ let p2P40 = document.getElementById("p2-40");
 function getP1Position() {
     if (dice === 1) {
         player1Position += 1;
-        console.log("Player Position: ", player1Position);
         p1Vanish();
     }
     else if (dice === 2) {
         player1Position += 2;
-        console.log("Player Position: ", player1Position);
         p1Vanish();
     }
     else if (dice === 3) {
         player1Position += 3;
-        console.log("Player Position: ", player1Position);
         p1Vanish();
     }
     else if (dice === 4) {
         player1Position += 4;
-        console.log("Player Position: ", player1Position);
         p1Vanish();
     }
     else if (dice === 5) {
         player1Position += 5;
-        console.log("Player Position: ", player1Position);
         p1Vanish();
     }
     else if (dice === 6) {
         player1Position += 6;
-        console.log("Player Position: ", player1Position);
         p1Vanish();
     }
     moveP1();
@@ -273,32 +269,26 @@ function getP1Position() {
 function getP2Position() {
     if (dice === 1) {
         player2Position += 1;
-        console.log("Player2 Position: ", player2Position);
         p2Vanish();
     }
     else if (dice === 2) {
         player2Position += 2;
-        console.log("Player2 Position: ", player2Position);
         p2Vanish();
     }
     else if (dice === 3) {
         player2Position += 3;
-        console.log("Player2 Position: ", player2Position);
         p2Vanish();
     }
     else if (dice === 4) {
         player2Position += 4;
-        console.log("Player2 Position: ", player2Position);
         p2Vanish();
     }
     else if (dice === 5) {
         player2Position += 5;
-        console.log("Player Position: ", player2Position);
         p2Vanish();
     }
     else if (dice === 6) {
         player2Position += 6;
-        console.log("Player Position: ", player2Position);
         p2Vanish();
     }
     moveP2();
@@ -306,267 +296,267 @@ function getP2Position() {
 }
 
 function moveP1() {
-        if (player1Position === 0) {
-            p0.classList.remove("hidden");
-        }
-        else if (player1Position === 1) {
-            p1.classList.remove("hidden");
-        }
-        else if (player1Position === 2) {
-            p2.classList.remove("hidden");
-        }
-        else if (player1Position === 3) {
-            p3.classList.remove("hidden");
-        }
-        else if (player1Position === 4) {
-            p4.classList.remove("hidden");
-        }
-        else if (player1Position === 5) {
-            p5.classList.remove("hidden");
-        }
-        else if (player1Position === 6) {
-            p6.classList.remove("hidden");
-        }
-        else if (player1Position === 7) {
-            p7.classList.remove("hidden");
-        }
-        else if (player1Position === 8) {
-            p8.classList.remove("hidden");
-        }
-        else if (player1Position === 9) {
-            p9.classList.remove("hidden");
-        }
-        else if (player1Position === 10) {
-            p10.classList.remove("hidden");
-        }
-        else if (player1Position === 11) {
-            p11.classList.remove("hidden");
-        }
-        else if (player1Position === 12) {
-            p12.classList.remove("hidden");
-        }
-        else if (player1Position === 13) {
-            p13.classList.remove("hidden");
-        }
-        else if (player1Position === 14) {
-            p14.classList.remove("hidden");
-        }
-        else if (player1Position === 15) {
-            p15.classList.remove("hidden");
-        }
-        else if (player1Position === 16) {
-            p16.classList.remove("hidden");
-        }
-        else if (player1Position === 17) {
-            p17.classList.remove("hidden");
-        }
-        else if (player1Position === 18) {
-            p18.classList.remove("hidden");
-        }
-        else if (player1Position === 19) {
-            p19.classList.remove("hidden");
-        }
-        else if (player1Position === 20) {
-            p20.classList.remove("hidden");
-        }
-        else if (player1Position === 21) {
-            p21.classList.remove("hidden");
-        }
-        else if (player1Position === 22) {
-            p22.classList.remove("hidden");
-        }
-        else if (player1Position === 23) {
-            p23.classList.remove("hidden");
-        }
-        else if (player1Position === 24) {
-            p24.classList.remove("hidden");
-        }
-        else if (player1Position === 25) {
-            p25.classList.remove("hidden");
-        }
-        else if (player1Position === 26) {
-            p26.classList.remove("hidden");
-        }
-        else if (player1Position === 27) {
-            p27.classList.remove("hidden");
-        }
-        else if (player1Position === 28) {
-            p28.classList.remove("hidden");
-        }
-        else if (player1Position === 29) {
-            p29.classList.remove("hidden");
-        }
-        else if (player1Position === 30) {
-            p30.classList.remove("hidden");
-        }
-        else if (player1Position === 31) {
-            p31.classList.remove("hidden");
-        }
-        else if (player1Position === 32) {
-            p32.classList.remove("hidden");
-        }
-        else if (player1Position === 33) {
-            p33.classList.remove("hidden");
-        }
-        else if (player1Position === 34) {
-            p34.classList.remove("hidden");
-        }
-        else if (player1Position === 35) {
-            p35.classList.remove("hidden");
-        }
-        else if (player1Position === 36) {
-            p36.classList.remove("hidden");
-        }
-        else if (player1Position === 37) {
-            p37.classList.remove("hidden");
-        }
-        else if (player1Position === 38) {
-            p38.classList.remove("hidden");
-        }
-        else if (player1Position === 39) {
-            p39.classList.remove("hidden");
-        }
-        else if (player1Position === 40) {
-            p40.classList.remove("hidden");
-            decideWinner();
-        }
-        else if (player1Position > 40) {
-            p40.classList.remove("hidden");
-            player1Position = 40;
-            decideWinner();
-        }
+    if (player1Position === 0) {
+        p0.classList.remove("hidden");
+    }
+    else if (player1Position === 1) {
+        p1.classList.remove("hidden");
+    }
+    else if (player1Position === 2) {
+        p2.classList.remove("hidden");
+    }
+    else if (player1Position === 3) {
+        p3.classList.remove("hidden");
+    }
+    else if (player1Position === 4) {
+        p4.classList.remove("hidden");
+    }
+    else if (player1Position === 5) {
+        p5.classList.remove("hidden");
+    }
+    else if (player1Position === 6) {
+        p6.classList.remove("hidden");
+    }
+    else if (player1Position === 7) {
+        p7.classList.remove("hidden");
+    }
+    else if (player1Position === 8) {
+        p8.classList.remove("hidden");
+    }
+    else if (player1Position === 9) {
+        p9.classList.remove("hidden");
+    }
+    else if (player1Position === 10) {
+        p10.classList.remove("hidden");
+    }
+    else if (player1Position === 11) {
+        p11.classList.remove("hidden");
+    }
+    else if (player1Position === 12) {
+        p12.classList.remove("hidden");
+    }
+    else if (player1Position === 13) {
+        p13.classList.remove("hidden");
+    }
+    else if (player1Position === 14) {
+        p14.classList.remove("hidden");
+    }
+    else if (player1Position === 15) {
+        p15.classList.remove("hidden");
+    }
+    else if (player1Position === 16) {
+        p16.classList.remove("hidden");
+    }
+    else if (player1Position === 17) {
+        p17.classList.remove("hidden");
+    }
+    else if (player1Position === 18) {
+        p18.classList.remove("hidden");
+    }
+    else if (player1Position === 19) {
+        p19.classList.remove("hidden");
+    }
+    else if (player1Position === 20) {
+        p20.classList.remove("hidden");
+    }
+    else if (player1Position === 21) {
+        p21.classList.remove("hidden");
+    }
+    else if (player1Position === 22) {
+        p22.classList.remove("hidden");
+    }
+    else if (player1Position === 23) {
+        p23.classList.remove("hidden");
+    }
+    else if (player1Position === 24) {
+        p24.classList.remove("hidden");
+    }
+    else if (player1Position === 25) {
+        p25.classList.remove("hidden");
+    }
+    else if (player1Position === 26) {
+        p26.classList.remove("hidden");
+    }
+    else if (player1Position === 27) {
+        p27.classList.remove("hidden");
+    }
+    else if (player1Position === 28) {
+        p28.classList.remove("hidden");
+    }
+    else if (player1Position === 29) {
+        p29.classList.remove("hidden");
+    }
+    else if (player1Position === 30) {
+        p30.classList.remove("hidden");
+    }
+    else if (player1Position === 31) {
+        p31.classList.remove("hidden");
+    }
+    else if (player1Position === 32) {
+        p32.classList.remove("hidden");
+    }
+    else if (player1Position === 33) {
+        p33.classList.remove("hidden");
+    }
+    else if (player1Position === 34) {
+        p34.classList.remove("hidden");
+    }
+    else if (player1Position === 35) {
+        p35.classList.remove("hidden");
+    }
+    else if (player1Position === 36) {
+        p36.classList.remove("hidden");
+    }
+    else if (player1Position === 37) {
+        p37.classList.remove("hidden");
+    }
+    else if (player1Position === 38) {
+        p38.classList.remove("hidden");
+    }
+    else if (player1Position === 39) {
+        p39.classList.remove("hidden");
+    }
+    else if (player1Position === 40) {
+        p40.classList.remove("hidden");
+        decideWinner();
+    }
+    else if (player1Position > 40) {
+        p40.classList.remove("hidden");
+        player1Position = 40;
+        decideWinner();
+    }
 }
 
 function moveP2() {
-        if (player2Position === 0) {
-            p2P0.classList.remove("hidden");
-        }
-        else if (player2Position === 1) {
-            p2P1.classList.remove("hidden");
-        }
-        else if (player2Position === 2) {
-            p2P2.classList.remove("hidden");
-        }
-        else if (player2Position === 3) {
-            p3P3.classList.remove("hidden");
-        }
-        else if (player2Position === 4) {
-            p2P4.classList.remove("hidden");
-        }
-        else if (player2Position === 5) {
-            p2P5.classList.remove("hidden");
-        }
-        else if (player2Position === 6) {
-            p2P6.classList.remove("hidden");
-        }
-        else if (player2Position === 7) {
-            p2P7.classList.remove("hidden");
-        }
-        else if (player2Position === 8) {
-            p2P8.classList.remove("hidden");
-        }
-        else if (player2Position === 9) {
-            p2P9.classList.remove("hidden");
-        }
-        else if (player2Position === 10) {
-            p2P10.classList.remove("hidden");
-        }
-        else if (player2Position === 11) {
-            p2P11.classList.remove("hidden");
-        }
-        else if (player2Position === 12) {
-            p2P12.classList.remove("hidden");
-        }
-        else if (player2Position === 13) {
-            p2P13.classList.remove("hidden");
-        }
-        else if (player2Position === 14) {
-            p2P14.classList.remove("hidden");
-        }
-        else if (player2Position === 15) {
-            p2P15.classList.remove("hidden");
-        }
-        else if (player2Position === 16) {
-            p2P16.classList.remove("hidden");
-        }
-        else if (player2Position === 17) {
-            p2P17.classList.remove("hidden");
-        }
-        else if (player2Position === 18) {
-            p2P18.classList.remove("hidden");
-        }
-        else if (player2Position === 19) {
-            p2P19.classList.remove("hidden");
-        }
-        else if (player2Position === 20) {
-            p2P20.classList.remove("hidden");
-        }
-        else if (player2Position === 21) {
-            p2P21.classList.remove("hidden");
-        }
-        else if (player2Position === 22) {
-            p2P22.classList.remove("hidden");
-        }
-        else if (player2Position === 23) {
-            p2P23.classList.remove("hidden");
-        }
-        else if (player2Position === 24) {
-            p2P24.classList.remove("hidden");
-        }
-        else if (player2Position === 25) {
-            p2P25.classList.remove("hidden");
-        }
-        else if (player2Position === 26) {
-            p2P26.classList.remove("hidden");
-        }
-        else if (player2Position === 27) {
-            p2P27.classList.remove("hidden");
-        }
-        else if (player2Position === 28) {
-            p2P28.classList.remove("hidden");
-        }
-        else if (player2Position === 29) {
-            p2P29.classList.remove("hidden");
-        }
-        else if (player2Position === 30) {
-            p2P30.classList.remove("hidden");
-        }
-        else if (player2Position === 31) {
-            p2P31.classList.remove("hidden");
-        }
-        else if (player2Position === 32) {
-            p2P32.classList.remove("hidden");
-        }
-        else if (player2Position === 33) {
-            p2P33.classList.remove("hidden");
-        }
-        else if (player2Position === 34) {
-            p2P34.classList.remove("hidden");
-        }
-        else if (player2Position === 35) {
-            p2P35.classList.remove("hidden");
-        }
-        else if (player2Position === 36) {
-            p2P36.classList.remove("hidden");
-        }
-        else if (player2Position === 37) {
-            p2P37.classList.remove("hidden");
-        }
-        else if (player2Position === 38) {
-            p2P38.classList.remove("hidden");
-        }
-        else if (player2Position === 39) {
-            p2P39.classList.remove("hidden");
-        }
-        else if (player2Position === 40) {
-            p2P40.classList.remove("hidden");
-            decideWinner();
-        }
-        else if (player2Position > 40) {
-            p2P40.classList.remove("hidden");
-            player2Position = 40;
-            decideWinner();
-        }
+    if (player2Position === 0) {
+        p2P0.classList.remove("hidden");
+    }
+    else if (player2Position === 1) {
+        p2P1.classList.remove("hidden");
+    }
+    else if (player2Position === 2) {
+        p2P2.classList.remove("hidden");
+    }
+    else if (player2Position === 3) {
+        p2P3.classList.remove("hidden");
+    }
+    else if (player2Position === 4) {
+        p2P4.classList.remove("hidden");
+    }
+    else if (player2Position === 5) {
+        p2P5.classList.remove("hidden");
+    }
+    else if (player2Position === 6) {
+        p2P6.classList.remove("hidden");
+    }
+    else if (player2Position === 7) {
+        p2P7.classList.remove("hidden");
+    }
+    else if (player2Position === 8) {
+        p2P8.classList.remove("hidden");
+    }
+    else if (player2Position === 9) {
+        p2P9.classList.remove("hidden");
+    }
+    else if (player2Position === 10) {
+        p2P10.classList.remove("hidden");
+    }
+    else if (player2Position === 11) {
+        p2P11.classList.remove("hidden");
+    }
+    else if (player2Position === 12) {
+        p2P12.classList.remove("hidden");
+    }
+    else if (player2Position === 13) {
+        p2P13.classList.remove("hidden");
+    }
+    else if (player2Position === 14) {
+        p2P14.classList.remove("hidden");
+    }
+    else if (player2Position === 15) {
+        p2P15.classList.remove("hidden");
+    }
+    else if (player2Position === 16) {
+        p2P16.classList.remove("hidden");
+    }
+    else if (player2Position === 17) {
+        p2P17.classList.remove("hidden");
+    }
+    else if (player2Position === 18) {
+        p2P18.classList.remove("hidden");
+    }
+    else if (player2Position === 19) {
+        p2P19.classList.remove("hidden");
+    }
+    else if (player2Position === 20) {
+        p2P20.classList.remove("hidden");
+    }
+    else if (player2Position === 21) {
+        p2P21.classList.remove("hidden");
+    }
+    else if (player2Position === 22) {
+        p2P22.classList.remove("hidden");
+    }
+    else if (player2Position === 23) {
+        p2P23.classList.remove("hidden");
+    }
+    else if (player2Position === 24) {
+        p2P24.classList.remove("hidden");
+    }
+    else if (player2Position === 25) {
+        p2P25.classList.remove("hidden");
+    }
+    else if (player2Position === 26) {
+        p2P26.classList.remove("hidden");
+    }
+    else if (player2Position === 27) {
+        p2P27.classList.remove("hidden");
+    }
+    else if (player2Position === 28) {
+        p2P28.classList.remove("hidden");
+    }
+    else if (player2Position === 29) {
+        p2P29.classList.remove("hidden");
+    }
+    else if (player2Position === 30) {
+        p2P30.classList.remove("hidden");
+    }
+    else if (player2Position === 31) {
+        p2P31.classList.remove("hidden");
+    }
+    else if (player2Position === 32) {
+        p2P32.classList.remove("hidden");
+    }
+    else if (player2Position === 33) {
+        p2P33.classList.remove("hidden");
+    }
+    else if (player2Position === 34) {
+        p2P34.classList.remove("hidden");
+    }
+    else if (player2Position === 35) {
+        p2P35.classList.remove("hidden");
+    }
+    else if (player2Position === 36) {
+        p2P36.classList.remove("hidden");
+    }
+    else if (player2Position === 37) {
+        p2P37.classList.remove("hidden");
+    }
+    else if (player2Position === 38) {
+        p2P38.classList.remove("hidden");
+    }
+    else if (player2Position === 39) {
+        p2P39.classList.remove("hidden");
+    }
+    else if (player2Position === 40) {
+        p2P40.classList.remove("hidden");
+        decideWinner();
+    }
+    else if (player2Position > 40) {
+        p2P40.classList.remove("hidden");
+        player2Position = 40;
+        decideWinner();
+    }
 }
 
 function p1Vanish() {
@@ -657,7 +647,7 @@ function p2Vanish() {
     p2P40.classList.add("hidden");
 }
 
-function Player1Stats(){
+function Player1Stats() {
     const p1Lucky6Show = document.getElementById("p1-lucky6-points");
     p1Lucky6Show.innerText = p1Lucky6;
 }
@@ -688,17 +678,74 @@ function decideWinner() {
     }
 }
 
+function moveBackSound() {
+    const moveBackSound = document.getElementById("go-back-sound");
+    moveBackSound.play();
+}
+
 function moveBack() {
     if (player1Position === 6) {
+        moveBackSound();
         setTimeout(() => {
             player1Position = 2;
-        }, 2000);
-        getP1Position();    
+            p1Vanish();
+            moveP1();
+        }, 1000);
     }
     else if (player2Position === 6) {
+        moveBackSound();
         setTimeout(() => {
             player2Position = 2;
-        }, 2000);
-        getP2Position(); 
+            p2Vanish();
+            moveP2();
+        }, 1000);
+    }
+    else if (player1Position === 18) {
+        moveBackSound();
+        setTimeout(() => {
+            player1Position = 6;
+            p1Vanish();
+            moveP1();
+        }, 1000);
+    }
+    else if (player2Position === 18) {
+        moveBackSound();
+        setTimeout(() => {
+            player2Position = 6;
+            p2Vanish();
+            moveP2();
+        }, 1000);
+    }
+    else if (player1Position === 25) {
+        moveBackSound();
+        setTimeout(() => {
+            player1Position = 9;
+            p1Vanish();
+            moveP1();
+        }, 1000);
+    }
+    else if (player2Position === 25) {
+        moveBackSound();
+        setTimeout(() => {
+            player2Position = 9;
+            p2Vanish();
+            moveP2();
+        }, 1000);
+    }
+    else if (player1Position === 33) {
+        moveBackSound();
+        setTimeout(() => {
+            player1Position = 2;
+            p1Vanish();
+            moveP1();
+        }, 1000);
+    }
+    else if (player2Position === 33) {
+        moveBackSound();
+        setTimeout(() => {
+            player2Position = 2;
+            p2Vanish();
+            moveP2();
+        }, 1000);
     }
 }
