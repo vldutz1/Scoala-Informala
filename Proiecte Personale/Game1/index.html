@@ -14,6 +14,7 @@
     <audio src="audio/go-back.mp3" id="go-back-sound"></audio>
     <audio src="audio/stranger-things-music.mp3" id="game-music-stranger-things"></audio>
     <audio src="audio/night-run-music.mp3" id="game-music-night-run"></audio>
+    <audio src="audio/jump.mp3" id="jump-sound"></audio>
     <main>
         <div class="dice-system">
             <img src="images/dice.png" width="70vh" id="dice-img">
@@ -24,18 +25,27 @@
         </div>
         <div class="player1-stats player-anim" id="player1-stats">
             <h3 class="player1-stats-align">Player 1</h3>
-            <h4 class="player1-stats-align">Lucky 6's:&nbsp;<span id="p1-lucky6-points">0</span></h4>
+            <h4 class="player1-stats-align">Jumps:&nbsp;<span id="p1-lucky6-points">0</span></h4>
+            <button onclick="p1Jump()" class="player1-stats-align jumpbtn">Jump</button>
         </div>
         <div class="player2-stats" id="player2-stats">
             <h3 class="player1-stats-align">Player 2</h3>
-            <h4 class="player1-stats-align">Lucky 6's:&nbsp;<span id="p2-lucky6-points">0</span></h4>
+            <h4 class="player1-stats-align">Jumps:&nbsp;<span id="p2-lucky6-points">0</span></h4>
+            <button onclick="p2Jump()" class="player1-stats-align jumpbtn">Jump</button>
         </div>
-        <div class="menu-div">
+        <div class="music-div">
             <h3>Music Box</span></h3>
             <button onclick="gameMusic1()" class="musicbtn" loop id="music1-btn">Music 1</button>
             <button onclick="gameMusic2()" class="musicbtn" loop id="music2-btn">Music 2</button>
             <button onclick="pauseMusic1()" class="musicbtn hidden" loop id="pause-music1">Pause</button>
             <button onclick="pauseMusic2()" class="musicbtn hidden" loop id="pause-music2">Pause</button>
+        </div>
+        <div class="key-roll-div">
+            <h3>Key Roll</span></h3>
+            <input type="text" size="1" maxlength="1" onkeydown="keyRoll()">
+            <div class="tooltip">?
+                <span class="tooltiptext">Click on the box above and press any key to roll the dices</span>
+            </div>
         </div>
         <div class="board">
             <div class="start-square">Start
@@ -111,7 +121,7 @@
                 <img src="images/grey-pawn.png" class="pawn hidden" id="p1-17">
                 <img src="images/red-pawn.png" class="pawn hidden" id="p2-17">
             </div>
-            <div class="go-back-square">18<br>Go to 6
+            <div class="go-back-square">18<br>Go to 5
                 <img src="images/grey-pawn.png" class="pawn hidden" id="p1-18">
                 <img src="images/red-pawn.png" class="pawn hidden" id="p2-18">
             </div>

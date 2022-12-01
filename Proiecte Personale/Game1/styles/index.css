@@ -10,7 +10,7 @@ main {
     height: 20vh;
     width: 20vh;
     background-color: brown;
-    background-image: linear-gradient(brown,rgb(129, 35, 35));
+    background-image: linear-gradient(brown, rgb(129, 35, 35));
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -30,10 +30,11 @@ main {
 }
 
 @keyframes diceAnim {
-    0%{
+    0% {
         transform: rotate(0deg);
     }
-    100%{
+
+    100% {
         transform: rotate(2520deg);
     }
 }
@@ -46,7 +47,7 @@ main {
     display: none;
 }
 
-.menu-div {
+.music-div {
     background-color: burlywood;
     height: 20vh;
     width: 20vh;
@@ -56,7 +57,21 @@ main {
     align-items: center;
     position: absolute;
     right: 2vh;
-    top:2vh;
+    top: 2vh;
+    border-radius: 10%;
+}
+
+.key-roll-div {
+    background-color: burlywood;
+    height: 20vh;
+    width: 20vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: 25vh;
+    top: 2vh;
     border-radius: 10%;
 }
 
@@ -64,9 +79,11 @@ main {
     0% {
         background-color: burlywood;
     }
+
     50% {
         background-color: rgb(203, 127, 27);
     }
+
     100% {
         background-color: burlywood;
     }
@@ -85,10 +102,11 @@ main {
     align-items: center;
     position: absolute;
     left: 25vh;
-    top:2vh;
+    top: 2vh;
     border-radius: 10%;
     background-image: url("../images/grey-pawn.png");
     background-size: contain;
+    display: flex;
 }
 
 @font-face {
@@ -102,6 +120,7 @@ main {
     -webkit-text-stroke: 0.7px black;
     font-size: larger;
     font-family: Squirk;
+    margin: 0.6em 0.6em;
 }
 
 .player2-stats {
@@ -113,10 +132,11 @@ main {
     align-items: center;
     position: absolute;
     left: 50vh;
-    top:2vh;
+    top: 2vh;
     border-radius: 10%;
     background-image: url("../images/red-pawn.png");
     background-size: contain;
+    display: flex;
 }
 
 .board {
@@ -157,10 +177,11 @@ main {
     0% {
         border-image: linear-gradient(green, yellow);
     }
+
     100% {
         border-image: linear-gradient(yellow, green);
     }
-  }
+}
 
 .go-back-square {
     background-color: rgb(255, 220, 169);
@@ -184,11 +205,13 @@ main {
 @keyframes win-square-anim {
     0% {
         background-color: red;
-       
+
     }
+
     50% {
         background-color: #c72e2e;
     }
+
     100% {
         background-color: red;
     }
@@ -212,45 +235,76 @@ main {
 }
 
 .dicebtn {
-	background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
-	background-color:#c62d1f;
-	border-radius:42px;
-	border:1px solid #d02718;
-	cursor:pointer;
-	color:#ffffff;
-	font-family: Squirk, Arial;
-	font-size:17px;
-	padding:6px 34px;
-	text-decoration:none;
-	text-shadow:5px 1px 4px #810e05;
+    background: linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+    background-color: #c62d1f;
+    border-radius: 42px;
+    border: 1px solid #d02718;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Squirk, Arial;
+    font-size: 17px;
+    padding: 6px 34px;
+    text-decoration: none;
+    text-shadow: 5px 1px 4px #810e05;
+}
+
+.dicebtn:hover {
+    background: linear-gradient(to bottom, #871f15 5%, #c6382e 100%);
+}
+
+.dicebtn:active {
+    background: linear-gradient(to bottom, #893028 5%, #c6483f 100%);
 }
 
 .musicbtn {
-	background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
-	background-color:#c62d1f;
-	border-radius:42px;
-	border:1px solid #d02718;
-	cursor:pointer;
-	color:#ffffff;
-	font-family: Squirk, Arial;
-	font-size:17px;
-	padding:6px 34px;
-	text-decoration:none;
-	text-shadow:5px 1px 4px #810e05;
+    background: linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+    background-color: #c62d1f;
+    border-radius: 42px;
+    border: 1px solid #d02718;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Squirk, Arial;
+    font-size: 17px;
+    padding: 6px 34px;
+    text-decoration: none;
+    text-shadow: 5px 1px 4px #810e05;
 }
 
 .musicbtn:hover {
-    background:linear-gradient(to bottom, #871f15 5%, #c6382e 100%);
+    background: linear-gradient(to bottom, #871f15 5%, #c6382e 100%);
 }
 
 .musicbtn:active {
-    background:linear-gradient(to bottom, #893028 5%, #c6483f 100%);
+    background: linear-gradient(to bottom, #893028 5%, #c6483f 100%);
+}
+
+.jumpbtn {
+    background: linear-gradient(to bottom, #ff1b06 5%, #720800 100%);
+    background-color: #c62d1f;
+    border-radius: 42px;
+    border: 1px solid #d02718;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Squirk, Arial;
+    font-size: 17px;
+    padding: 6px 34px;
+    text-decoration: none;
+    text-shadow: 5px 1px 4px #810e05;
+}
+
+.jumpbtn:hover {
+    background: linear-gradient(to bottom, #871f15 5%, #c6382e 100%);
+}
+
+.jumpbtn:active {
+    background: linear-gradient(to bottom, #893028 5%, #c6483f 100%);
 }
 
 @keyframes winnerAreaAnim {
     0% {
         transform: translateY(-50vh);
     }
+
     100% {
         transform: translateY(-102vh);
     }
@@ -259,11 +313,21 @@ main {
 .winner-container {
     height: 95vh;
     background-color: #810e05;
-    background-image: linear-gradient(#a71208, #810e05);
-    z-index: 10;
     animation: winnerAreaAnim 1s;
     animation-iteration-count: 1;
     transform: translateY(-105vh);
+}
+
+.winner-container-player1 {
+    background-image: url("../images/grey-pawn.png"), linear-gradient(#b9160a, #810e05);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.winner-container-player2 {
+    background-image: url("../images/red-pawn.png"), linear-gradient(#b9160a, #810e05);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .winner-container-styling {
@@ -276,7 +340,7 @@ main {
 }
 
 @keyframes play-again-anim {
-    0%{
+    0% {
         transform: translateY(1vh);
     }
 }
@@ -301,9 +365,9 @@ main {
     padding: 10px 20px 10px 20px;
     text-decoration: none;
     font-family: Squirk, Arial;
-  }
-  
-  .play-again-btn:hover {
+}
+
+.play-again-btn:hover {
     background: #e89d41;
     background-image: -webkit-linear-gradient(top, #e89d41, #c7802e);
     background-image: -moz-linear-gradient(top, #e89d41, #c7802e);
@@ -315,5 +379,42 @@ main {
     font-family: Squirk, Arial;
     animation: play-again-anim 1s;
     animation-iteration-count: 1;
+}
+
+/* .tooltip {
+    border-bottom: 1px dotted black;
+    cursor: help;
+}
+
+.tooltiptext {
+    visibility: hidden;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+} */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    cursor: help;
   }
   
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }

@@ -7,6 +7,7 @@ let p1Lucky6 = 0;
 let p2Lucky6 = 0;
 let P1Turn = true;
 let P2Turn = false;
+let rolling = false;
 
 const music1 = document.getElementById("game-music-stranger-things");
 const pauseMusic1Btn = document.getElementById("pause-music1")
@@ -49,6 +50,15 @@ function diceRollSound() {
     diceSound.play();
 }
 
+function keyRoll() {
+    if (P1Turn === true && rolling === false) {
+        diceRollPlayer1();
+    }
+    else if (P2Turn === true && rolling === false) {
+        diceRollPlayer2();
+    }
+}
+
 function diceRollPlayer1() {
     diceRollSound();
     dice = Math.floor(Math.random() * 7);
@@ -61,6 +71,7 @@ function diceRollPlayer1() {
     rollButtonFake.classList.toggle("hidden");
     const Player1BoxAnim = document.getElementById("player1-stats");
     Player1BoxAnim.classList.remove("player-anim");
+    rolling = true;
     setTimeout(() => {
         const diceShow = document.getElementById("diceResult");
         if (dice === 0) {
@@ -111,6 +122,7 @@ function diceRollPlayer1() {
         getP1Position();
         const Player2BoxAnim = document.getElementById("player2-stats");
         Player2BoxAnim.classList.toggle("player-anim");
+        rolling = false;
     }, 2000);
     P1Turn = false;
     P2Turn = true;
@@ -128,6 +140,7 @@ function diceRollPlayer2() {
     rollButtonFake.classList.toggle("hidden");
     const Player2BoxAnim = document.getElementById("player2-stats");
     Player2BoxAnim.classList.remove("player-anim");
+    rolling = true;
     setTimeout(() => {
         const diceShow = document.getElementById("diceResult");
         if (dice === 0) {
@@ -184,6 +197,7 @@ function diceRollPlayer2() {
         getP2Position();
         const Player1BoxAnim = document.getElementById("player1-stats");
         Player1BoxAnim.classList.toggle("player-anim");
+        rolling = false;
     }, 2000);
     P1Turn = true;
     P2Turn = false;
@@ -700,17 +714,20 @@ function winnerWindow() {
 
 function decideWinner() {
     const winAudio = document.getElementById("win-sound");
+    const winBackground = document.getElementById("win-container");
     if (player1Position === 40 || player1Position > 40) {
         winnerWindow();
         winAudio.play();
         const P1Won = document.getElementById("who-wins");
         P1Won.innerText = "1";
+        winBackground.classList.add("winner-container-player1");
     }
     else if (player2Position === 40 || player2Position > 40) {
         winnerWindow();
         winAudio.play();
         const P2Won = document.getElementById("who-wins");
         P2Won.innerText = "2";
+        winBackground.classList.add("winner-container-player2");
     }
 }
 
@@ -739,7 +756,7 @@ function moveBack() {
     else if (player1Position === 18) {
         moveBackSound();
         setTimeout(() => {
-            player1Position = 6;
+            player1Position = 5;
             p1Vanish();
             moveP1();
         }, 1000);
@@ -747,7 +764,7 @@ function moveBack() {
     else if (player2Position === 18) {
         moveBackSound();
         setTimeout(() => {
-            player2Position = 6;
+            player2Position = 5;
             p2Vanish();
             moveP2();
         }, 1000);
@@ -783,5 +800,29 @@ function moveBack() {
             p2Vanish();
             moveP2();
         }, 1000);
+    }
+}
+
+function p1Jump() {
+    const jumpSound = document.getElementById("jump-sound");
+    if (p1Lucky6 > 0) {
+        p1Lucky6 -= 1;
+        player1Position += 1;
+        p1Vanish();
+        getP1Position();
+        Player1Stats();
+        jumpSound.play();
+    }
+}
+
+function p2Jump() {
+    const jumpSound = document.getElementById("jump-sound");
+    if (p2Lucky6 > 0) {
+        p2Lucky6 -= 1;
+        player2Position += 1;
+        p2Vanish();
+        getP2Position();
+        Player2Stats();
+        jumpSound.play();
     }
 }
