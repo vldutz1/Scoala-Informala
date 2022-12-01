@@ -11,6 +11,8 @@
 <body>
     <audio src="audio/dice-sound.mp3" id="dice-sound"></audio>
     <audio src="audio/win.mp3" id="win-sound"></audio>
+    <audio src="audio/go-back.mp3" id="go-back-sound"></audio>
+    <audio src="audio/stranger-things-music.mp3" id="game-music-stranger-things"></audio>
     <main>
         <div class="dice-system">
             <img src="images/dice.png" width="70vh" id="dice-img">
@@ -19,11 +21,11 @@
             <button class="dicebtn hidden" onclick="diceRollPlayer2()" id="rollbtn2">P2 ROLL</button>
             <button class="hidden dicebtn" id="rollbtnfake">ROLLING</button>
         </div>
-        <div class="player1-stats">
+        <div class="player1-stats player-anim" id="player1-stats">
             <h3 class="player1-stats-align">Player 1</h3>
             <h4 class="player1-stats-align">Lucky 6's:&nbsp;<span id="p1-lucky6-points">0</span></h4>
         </div>
-        <div class="player2-stats">
+        <div class="player2-stats" id="player2-stats">
             <h3 class="player1-stats-align">Player 2</h3>
             <h4 class="player1-stats-align">Lucky 6's:&nbsp;<span id="p2-lucky6-points">0</span></h4>
         </div>
@@ -57,7 +59,7 @@
                 <img src="images/grey-pawn.png" class="pawn hidden" id="p1-5">
                 <img src="images/red-pawn.png" class="pawn hidden" id="p2-5">
             </div>
-            <div class="normal-square">6<br>Go to 2
+            <div class="go-back-square">6<br>Go to 2
                 <img src="images/grey-pawn.png" class="pawn hidden" id="p1-6">
                 <img src="images/red-pawn.png" class="pawn hidden" id="p2-6">
             </div>
@@ -105,7 +107,7 @@
                 <img src="images/grey-pawn.png" class="pawn hidden" id="p1-17">
                 <img src="images/red-pawn.png" class="pawn hidden" id="p2-17">
             </div>
-            <div class="normal-square">18
+            <div class="go-back-square">18<br>Go to 6
                 <img src="images/grey-pawn.png" class="pawn hidden" id="p1-18">
                 <img src="images/red-pawn.png" class="pawn hidden" id="p2-18">
             </div>
@@ -133,7 +135,7 @@
                 <img src="images/grey-pawn.png" class="pawn hidden" id="p1-24">
                 <img src="images/red-pawn.png" class="pawn hidden" id="p2-24">
             </div>
-            <div class="normal-square">25
+            <div class="go-back-square">25<br>Go to 9
                 <img src="images/grey-pawn.png" class="pawn hidden" id="p1-25">
                 <img src="images/red-pawn.png" class="pawn hidden" id="p2-25">
             </div>
@@ -165,7 +167,7 @@
                 <img src="images/grey-pawn.png" class="pawn hidden" id="p1-32">
                 <img src="images/red-pawn.png" class="pawn hidden" id="p2-32">
             </div>
-            <div class="normal-square">33
+            <div class="go-back-square">33<br>Go to 2
                 <img src="images/grey-pawn.png" class="pawn hidden" id="p1-33">
                 <img src="images/red-pawn.png" class="pawn hidden" id="p2-33">
             </div>
@@ -193,7 +195,7 @@
                 <img src="images/grey-pawn.png" class="pawn hidden" id="p1-39">
                 <img src="images/red-pawn.png" class="pawn hidden" id="p2-39">
             </div>
-            <div class="win-square">40
+            <div class="win-square">40<br>FINISH
                 <img src="images/grey-pawn.png" class="pawn hidden" id="p1-40">
                 <img src="images/red-pawn.png" class="pawn hidden" id="p2-40">
             </div>
@@ -222,4 +224,4 @@ A rule page
 A music button
 a computer/player selector as player2
 special squares to give the user another roll
-special squares to move the user forward/behind-->
+[x]special squares to move the user forward/behind-->
