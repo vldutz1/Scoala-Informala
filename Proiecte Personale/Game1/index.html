@@ -34,14 +34,14 @@
             <button onclick="p2Jump()" class="player1-stats-align jumpbtn">Jump</button>
         </div>
         <div class="music-div">
-            <h3>Music Box</span></h3>
+            <h3 class="music-box">Music Box</h3>
             <button onclick="gameMusic1()" class="musicbtn" loop id="music1-btn">Music 1</button>
-            <button onclick="gameMusic2()" class="musicbtn" loop id="music2-btn">Music 2</button>
             <button onclick="pauseMusic1()" class="musicbtn hidden" loop id="pause-music1">Pause</button>
+            <button onclick="gameMusic2()" class="musicbtn" loop id="music2-btn">Music 2</button>
             <button onclick="pauseMusic2()" class="musicbtn hidden" loop id="pause-music2">Pause</button>
         </div>
         <div class="key-roll-div">
-            <h3>Key Roll</span></h3>
+            <h3 class="key-roll-box">Key Roll</span></h3>
             <input type="text" size="1" maxlength="1" onkeydown="keyRoll()">
             <div class="tooltip">?
                 <span class="tooltiptext">Click on the box above and press any key to roll the dices</span>
@@ -214,12 +214,11 @@
                 <img src="images/red-pawn.png" class="pawn hidden" id="p2-40">
             </div>
         </div>
-        <button onclick="winnerWindow()">Play Again</button>
+        <!-- <button onclick="winnerWindow()">Play Again</button> -->
     </main>
     <div class="winner-container hidden" id="win-container">
         <div class="winner-container-styling">
             <h1>Player <span id="who-wins"></span> Wins!</h1>
-            <!-- <button onclick="winnerWindow()" class="play-again-btn">Play Again</button> -->
             <button onclick="location.reload()" class="play-again-btn">Play Again</button>
         </div>
     </div>
@@ -235,7 +234,7 @@
 Pawn selection system
 [x]Multiple players system 
 A rule page
-A music button
+[x]A music button
 a computer/player selector as player2
 special squares to give the user another roll
 [x]special squares to move the user forward/behind-->

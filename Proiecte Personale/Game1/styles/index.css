@@ -139,6 +139,16 @@ main {
     display: flex;
 }
 
+.key-roll-box {
+    color: white;
+    -webkit-text-stroke: 0.7px black;
+}
+
+.music-box {
+    color: white;
+    -webkit-text-stroke: 0.7px black;
+}
+
 .board {
     background-color: darkseagreen;
     height: 80vh;

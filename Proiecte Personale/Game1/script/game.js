@@ -807,9 +807,9 @@ function p1Jump() {
     const jumpSound = document.getElementById("jump-sound");
     if (p1Lucky6 > 0) {
         p1Lucky6 -= 1;
-        player1Position += 1;
+        player1Position += 2;
         p1Vanish();
-        getP1Position();
+        moveP1();
         Player1Stats();
         jumpSound.play();
     }
@@ -819,9 +819,9 @@ function p2Jump() {
     const jumpSound = document.getElementById("jump-sound");
     if (p2Lucky6 > 0) {
         p2Lucky6 -= 1;
-        player2Position += 1;
+        player2Position += 2;
         p2Vanish();
-        getP2Position();
+        moveP2();
         Player2Stats();
         jumpSound.play();
     }
