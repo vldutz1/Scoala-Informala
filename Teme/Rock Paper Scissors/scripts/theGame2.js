@@ -149,7 +149,7 @@ function play() {
 
 function playRock() {
     let playerChoiceRock = 0;
-    let ComputerChoices = 0;
+    let ComputerChoices = Math.floor(Math.random() * 3);
     const playerChoice = document.getElementById("player-choice");
     const computerChoice = document.getElementById("computer-choice");
     const result = document.getElementById("final-result");
@@ -161,10 +161,6 @@ function playRock() {
     }
     else if (playerChoiceRock === 0 && playWithImages === false) {
         playerChoice.innerText = "Rock";
-    }
-
-    if (ComputerChoices === 0) {
-        ComputerChoices = Math.floor(Math.random() * 3);
     }
 
     if (ComputerChoices === 0 && playWithImages === true) {
