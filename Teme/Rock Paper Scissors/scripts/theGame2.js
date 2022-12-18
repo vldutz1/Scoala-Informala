@@ -73,7 +73,7 @@ function play() {
     else if (computerRandomChoice === 2 && playWithImages === true) {
         computerChoice.innerHTML = '<img src="images/scissors.png">';
     }
-        let playerRandomChoice = Math.floor(Math.random() * 3);
+    let playerRandomChoice = Math.floor(Math.random() * 3);
 
     const playerChoice = document.getElementById("player-choice");
 
@@ -223,14 +223,31 @@ function playPaper() {
         playerChoice.innerText = "Paper";
     }
 
-    if (ComputerChoices === 0 && playWithImages === true) {
-        computerChoice.innerHTML = '<img src="images/rock.png">';
-        result.innerHTML = '<span style="color:green">Player Wins!</span>';
-        playerPoints += 1;
-        playerPointsShow.innerText = playerPoints;
-        winSound();
-        endGame();
+    if (ComputerChoices === 0) {
+        if (playWithImages === true) {
+            computerChoice.innerHTML = '<img src="images/rock.png">';
+            result.innerHTML = '<span style="color:green">Player Wins!</span>';
+            playerPoints += 1;
+            playerPointsShow.innerText = playerPoints;
+            winSound();
+            endGame();
+        } else {
+            computerChoice.innerText = "Rock";
+            result.innerHTML = '<span style="color:green">Player Wins!</span>';
+            playerPoints += 1;
+            playerPointsShow.innerText = playerPoints;
+            winSound();
+            endGame();
+        }
     }
+        //  && playWithImages === true) {
+        // computerChoice.innerHTML = '<img src="images/rock.png">';
+        // result.innerHTML = '<span style="color:green">Player Wins!</span>';
+        // playerPoints += 1;
+        // playerPointsShow.innerText = playerPoints;
+        // winSound();
+        // endGame();
+    // }
     if (ComputerChoices === 0 && playWithImages === false) {
         computerChoice.innerText = "Rock";
         result.innerHTML = '<span style="color:green">Player Wins!</span>';

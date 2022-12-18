@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<head>
+    
+</head>
+
+<body>
+    <div>
+        <div id="player-points">Test</div>
+        <div class="red">I'm red</div>
+        <div class="red">I'm red2</div>
+        <div class="red">I'm red3</div>
+        <div class="red">I'm red4</div>
+    </div>
+    <script>
+        function setColor() {
+            // const colorArea = document.getElementById("THISDIV");
+            // colorArea.innerHTML = '1';
+            const playerPointsShow = document.getElementById("player-points");
+            playerPointsShow.innerText = "0";
+        }
+        setColor();
+        const redClass = document.getElementsByClassName("red");
+        // redClass[1].innerText = "not anymore";
+        for (i = 0; i < redClass.length; i++) {
+            redClass[i].innerText += "not Anymore";
+        }
+    </script>
+</body>
