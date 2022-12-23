@@ -7,17 +7,21 @@
     <title>Document</title>
     <style>
         .blue {
-            color:blue;
+            color: blue;
         }
+
         .green {
             color: green;
         }
+
         .yellow {
             color: yellow;
         }
+
         .red {
             color: red;
         }
+
         .teal {
             color: teal;
         }
@@ -25,48 +29,44 @@
 </head>
 
 <body>
-
-    <!-- <h1><span id="name">Name</span>|<span id="gender">Gender</span>|BMI: <span id="bmi-points">BMI Points</span>|<span
-            id="weight">Weight</span></h1> -->
-
     <script>
 
-        var person1 = {
+        const person1 = {
             name: "John Doe",
             gender: "M",
             height: 1.77,
             weight: 90
         }
 
-        var person2 = {
+        const person2 = {
             name: "Mary Anne",
             gender: "F",
             height: 1.65,
             weight: 60
         }
 
-        var person3 = {
+        const person3 = {
             name: "John Smith",
             gender: "M",
             height: 1.95,
             weight: 160
         }
 
-        var person4 = {
+        const person4 = {
             name: "Mr. Real Person",
             gender: "M",
             height: 1.75,
             weight: 120
         }
 
-        var personArray = [person1, person2, person3, person4];
+        const personArray = [person1, person2, person3, person4];
 
-        for (var i = 0; i < personArray.length; i++) {
-            var currentPerson = personArray[i];
+        for (const i = 0; i < personArray.length; i++) {
+            const currentPerson = personArray[i];
 
-            var currentPersonBMI = calculateBMI(currentPerson.weight, currentPerson.height);
+            const currentPersonBMI = calculateBMI(currentPerson.weight, currentPerson.height);
 
-            var bmiStatus = decideWeightStatus(currentPersonBMI);
+            const bmiStatus = decideWeightStatus(currentPersonBMI);
 
             logOutputMessage(currentPerson, currentPersonBMI, bmiStatus)
             // console.log(currentPerson.name + " | " + currentPerson.gender + " | BMI: " + currentPersonBMI + " | " + bmiStatus);
@@ -115,53 +115,53 @@
             else if (weightStatus === "Obese") {
                 createH1.setAttribute("class", "red");
             }
-        
+
         }
 
-class BMI {
-        person1 = {
-            name: "John Doe",
-            gender: "M",
-            height: 1.77,
-            weight: 90
+        class BMI {
+            person1 = {
+                name: "John Doe",
+                gender: "M",
+                height: 1.77,
+                weight: 90
+            }
+
+            person2 = {
+                name: "Mary Anne",
+                gender: "F",
+                height: 1.65,
+                weight: 60
+            }
+
+            person3 = {
+                name: "John Smith",
+                gender: "M",
+                height: 1.95,
+                weight: 160
+            }
+
+            person4 = {
+                name: "Mr. Real Person",
+                gender: "M",
+                height: 1.75,
+                weight: 120
+            }
+
+            personArray = [person1, person2, person3, person4];
+
+            constructor(personArray) {
+                for (var i = 0; i < personArray.length; i++) {
+                    var currentPerson = personArray[i];
+
+                    var currentPersonBMI = calculateBMI(currentPerson.weight, currentPerson.height);
+
+                    var bmiStatus = decideWeightStatus(currentPersonBMI);
+
+                    logOutputMessage(currentPerson, currentPersonBMI, bmiStatus)
+                    console.log(currentPerson.name + " | " + currentPerson.gender + " | BMIIIIII: " + currentPersonBMI + " | " + bmiStatus);
+                }
+            }
         }
-
-        person2 = {
-            name: "Mary Anne",
-            gender: "F",
-            height: 1.65,
-            weight: 60
-        }
-
-        person3 = {
-            name: "John Smith",
-            gender: "M",
-            height: 1.95,
-            weight: 160
-        }
-
-        person4 = {
-            name: "Mr. Real Person",
-            gender: "M",
-            height: 1.75,
-            weight: 120
-        }
-
-        personArray = [person1, person2, person3, person4];
-
-        constructor(personArray) {
-            for (var i = 0; i < personArray.length; i++) {
-            var currentPerson = personArray[i];
-
-            var currentPersonBMI = calculateBMI(currentPerson.weight, currentPerson.height);
-
-            var bmiStatus = decideWeightStatus(currentPersonBMI);
-
-            logOutputMessage(currentPerson, currentPersonBMI, bmiStatus)
-            console.log(currentPerson.name + " | " + currentPerson.gender + " | BMIIIIII: " + currentPersonBMI + " | " + bmiStatus);
-        }
-        }
-}
     </script>
 
 
