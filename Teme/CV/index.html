@@ -1,10 +1,140 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Vlad Chereches's Online CV</title>
-        <link rel="stylesheet" href="style/index.css">
-    </head>
-    <body>
-        
-    </body>
+
+<head>
+  <title>Vlad Chereches's Online CV</title>
+  <link rel="stylesheet" href="style/index.css">
+  <link rel="stylesheet" href="style/menu.css">
+  <link rel="stylesheet" href="style/fonts.css">
+  <link rel="stylesheet" href="style/responsivness.css">
+  <link rel="stylesheet" href="style/right-menu.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <!-- menu -->
+  <aside id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="side-bar-align-profile">
+      <div class="img-container">
+        <img src="images/avatar.png" class="side-bar-profile-img">
+      </div>
+      <div class="profile-text main-color">Vlad Chereches</div>
+      <div class="profile-subtext sec-color">Front-End Developer</div>
+    </div>
+    <div class="menu-margins">
+      <div class="side-bar-residence">
+        <p class="main-color">Country:</p>
+        <p class="sec-color">Romania</p>
+      </div>
+      <div class="menu-text-spread">
+        <p class="main-color">City:</p>
+        <p class="sec-color">Cluj-Napoca</p>
+      </div>
+      <div class="menu-text-spread">
+        <p class="main-color">Age:</p>
+        <p class="sec-color">25</p>
+      </div>
+      <div class="menu-divider"></div>
+      <label class="menu-text-spread">
+        <p class="main-color">HTML</p>
+        <p class="sec-color">85%</p>
+      </label>
+      <div class="progress-bar-bg">
+        <div class="progress-bar-fill" style="width:85%;">
+        </div>
+      </div>
+      <label class="menu-text-spread">
+        <p class="main-color">CSS</p>
+        <p class="sec-color">60%</p>
+      </label>
+      <div class="progress-bar-bg">
+        <div class="progress-bar-fill" style="width:60%">
+        </div>
+      </div>
+      <label class="menu-text-spread">
+        <p class="main-color">JavaScript</p>
+        <p class="sec-color">50%</p>
+      </label>
+      <div class="progress-bar-bg">
+        <div class="progress-bar-fill" style="width:50%;">
+        </div>
+      </div>
+      <label class="menu-text-spread">
+        <p class="main-color">WordPress</p>
+        <p class="sec-color">70%</p>
+      </label>
+      <div class="progress-bar-bg">
+        <div class="progress-bar-fill" style="width:70%;">
+        </div>
+      </div>
+      <label class="menu-text-spread menu-labels">
+        <p class="main-color">Photoshop</p>
+        <p class="sec-color">60%</p>
+      </label>
+      <div class="progress-bar-bg">
+        <div class="progress-bar-fill" style="width:60%;">
+        </div>
+      </div>
+      <div class="menu-divider"></div>
+      <label class="menu-text-spread">
+        <p class="main-color">Romanian</p>
+        <p class="sec-color">100%</p>
+      </label>
+      <div class="progress-bar-bg">
+        <div class="progress-bar-fill" style="width:100%;">
+        </div>
+      </div>
+      <label class="menu-text-spread">
+        <p class="main-color">English</p>
+        <p class="sec-color">90%</p>
+      </label>
+      <div class="progress-bar-bg">
+        <div class="progress-bar-fill" style="width:90%;">
+        </div>
+      </div>
+      <div class="menu-divider"></div>
+      <p class="sec-color"><span class="yellow">&#x2713;</span> Git Knowledge</p>
+      <p class="sec-color"><span class="yellow">&#x2713;</span> Visual Studio Code Knowledge</p>
+      <p class="sec-color"><span class="yellow">&#x2713;</span> Video Editing</p>
+      <div class="menu-divider"></div>
+      <h4 class="sec-color">Download CV<img src="images/download.png"></h4>
+    </div>
+  </aside>
+  <span class="open-btn" onclick="openNav()">&#9776;</span>
+  <!-- menu end -->
+  <!-- Right Side Menu -->
+  <div class="right-side-menu-btn" onclick="openRightMenu()">
+    <span class="dot" onclick="openRightMenu()"></span>
+    <span class="dot" onclick="openRightMenu()"></span>
+    <span class="dot" onclick="openRightMenu()"></span>
+  </div>
+  <aside class="right-menu" id="right-menu">
+      <div class="right-menu-close-btn" onclick="closeRightMenu()">&times;</div>
+      <img src="images/color-theme.png" width="24px" height="24px" onclick="toggleTheme()" class="color-theme-icon">
+  </aside>
+  <!-- Right Side Menu End -->
+  <div class="main-container">
+    <section class="section1" id="s1">
+      <div class="section1-img">
+        <h1 class="section1-header-text">Discover My Incredible</h1>
+        <h1 class="section1-header-text">Potential</h1>
+      </div>
+      <div class="text-under-header-img">
+        <span>Projects Completed: 2</span>
+        <span>Projects Completed: 2</span>
+        <span>Projects Completed: 2</span>
+      </div>
+    </section>
+    <section class="section2" id="s2">
+    </section>
+    <section class="section3" id="s3">
+    </section>
+
+  </div>
+  <script src="scripts/menu.js"></script>
+  <script src="scripts/colorTheme.js"></script>
+</body>
+
 </html>

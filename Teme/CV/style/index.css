@@ -1,4 +1,71 @@
-body {
+* {
     margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: poppins;
+    letter-spacing: 0.5px;
 }
 
+section {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: center;
+    width: 100%;
+}
+
+.main-container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+.section1 {
+    background-image: url("../images/mountains-blured.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.section2 {
+    background-color: green;
+}
+
+.section3 {
+    background-color: red;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.section1-img {
+    height: 40vh;
+    width: 70vmax;
+    background-image: url("../images/mountains-dark.png");
+    background-position: center;
+    box-shadow: 10px 10px 4px 0 rgb(15 15 20 / 30%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-self: center;
+}
+
+.section1-header-text {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    font-family: poppinsBold;
+    text-shadow: rgb(9, 9, 9) 1px 2px 5px;
+}
+
+.text-under-header-img {
+    color: white;
+    font-size: 25px;
+}

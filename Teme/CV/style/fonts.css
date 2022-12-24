@@ -1,0 +1,25 @@
+* {
+    font-size: 12px;
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: poppinsBold;
+    src: url(../fonts/Poppins-Bold.ttf);
+}
+
+.main-color {
+    color: #fafafc;
+}
+
+.sec-color {
+    color: #8c8c8e;
+}
+
+.yellow {
+    color: yellow;
+}

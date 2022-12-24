@@ -1,0 +1,119 @@
+/* The side navigation menu */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(30, 30, 40);
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 500px;
+}
+
+.open-btn {
+    font-size: 3em;
+    cursor: pointer;
+    position: absolute;
+    left: 0.3em;
+    top: 0.3em;
+}
+
+.closebtn {
+    z-index: 10;
+}
+
+.side-bar-profile-img {
+    border-radius: 50%;
+    width: 5.625em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.side-bar-align-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(37, 37, 50);
+    height: 15em;
+    width: 100%;
+    top: 1px;
+    position: absolute;
+    flex-direction: column;
+    box-shadow: 0 1px 4px 0 rgb(15 15 20 / 10%);
+}
+
+.profile-text {
+    margin-top: 1em;
+    text-align: center;
+}
+
+.profile-subtext {
+    text-align: center;
+    font-family: serif;
+    margin-top: 1em;
+}
+
+.side-bar-residence {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 13em;
+}
+
+.menu-text-spread {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5em;
+}
+
+.menu-divider {
+    background: #646466;
+    height: 1px;
+    opacity: 0.3;
+    margin-top: 1em;
+    margin-bottom: 3em;
+}
+
+.menu-margins {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.menu-labels {
+    margin: 0px 0px;
+    margin-bottom: 0px;
+}
+
+.progress-bar-bg {
+    background-color: rgba(19, 23, 27, 0.707);
+    margin-top: 5px;
+    margin-bottom: 1em;
+}
+
+.progress-bar-fill {
+    height: 5px;
+    background-color: rgb(255, 187, 0);
+}

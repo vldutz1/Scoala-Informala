@@ -1,0 +1,18 @@
+/* Desktop Compatibility */
+@media only screen and (min-width: 700px) {
+    .closebtn {
+        display: none;
+        z-index: -1;
+    }
+
+    .open-btn {
+        display: none;
+    }
+
+    .sidenav {
+        width: 20em;
+    }
+    .main-container {
+        margin-left: 20em;
+    }
+}
