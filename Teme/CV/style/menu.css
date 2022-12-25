@@ -46,11 +46,25 @@
     z-index: 10;
 }
 
+.img-container {
+    border-radius: 50%;
+    width: 5.625em;
+    height: 5.625em;
+    background-color: rgb(255, 187, 0);
+    background-image: url("../images/profile.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 .side-bar-profile-img {
     border-radius: 50%;
     width: 5.625em;
+    height: 5.625em;
+    overflow: hidden;
     margin-left: auto;
     margin-right: auto;
+    object-fit: cover;
 }
 
 .side-bar-align-profile {
@@ -112,8 +126,63 @@
     margin-top: 5px;
     margin-bottom: 1em;
 }
-
+@keyframes progressAnim1 {
+    0% {width: 0%;}
+    100% {width: 85%;}
+}
+@keyframes progressAnim2 {
+    0% {width: 0%;}
+    100% {width: 70%;}
+}
+@keyframes progressAnim3 {
+    0% {width: 0%;}
+    100% {width: 50%;}
+}
+@keyframes progressAnim4 {
+    0% {width: 0%;}
+    100% {width: 70%;}
+}
+@keyframes progressAnim5 {
+    0% {width: 0%;}
+    100% {width: 65%;}
+}
+@keyframes progressAnim6 {
+    0% {width: 0%;}
+    100% {width: 100%;}
+}
+@keyframes progressAnim7 {
+    0% {width: 0%;}
+    100% {width: 90%;}
+}
 .progress-bar-fill {
     height: 5px;
     background-color: rgb(255, 187, 0);
+}
+
+.progress-bar-anim1 {
+    animation: progressAnim1 1s 0.1s 1 ease-in;
+}
+
+.progress-bar-anim2 {
+    animation: progressAnim2 1s 1 ease-in;
+}
+
+.progress-bar-anim3 {
+    animation: progressAnim3 1s 0.3s 1 ease-in;
+}
+
+.progress-bar-anim4 {
+    animation: progressAnim4 1s 0.4s 1 ease-in;
+}
+
+.progress-bar-anim5 {
+    animation: progressAnim5 1s 0.5s 1 ease-in;
+}
+
+.progress-bar-anim6 {
+    animation: progressAnim6 1s 0.6s 1 ease-in;
+}
+
+.progress-bar-anim7 {
+    animation: progressAnim7 1s 0.7s 1 ease-in;
 }

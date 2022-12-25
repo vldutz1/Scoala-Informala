@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="style/fonts.css">
   <link rel="stylesheet" href="style/responsivness.css">
   <link rel="stylesheet" href="style/right-menu.css">
+  <link rel="icon" type="image/x-icon" href="images/favicon.png">
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -17,23 +18,21 @@
   <aside id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <div class="side-bar-align-profile">
-      <div class="img-container">
-        <img src="images/avatar.png" class="side-bar-profile-img">
-      </div>
+      <div class="img-container"></div>
       <div class="profile-text main-color">Vlad Chereches</div>
       <div class="profile-subtext sec-color">Front-End Developer</div>
     </div>
     <div class="menu-margins">
       <div class="side-bar-residence">
-        <p class="main-color">Country:</p>
+        <p class="main-color" id="country">Country:</p>
         <p class="sec-color">Romania</p>
       </div>
       <div class="menu-text-spread">
-        <p class="main-color">City:</p>
+        <p class="main-color" id="city">City:</p>
         <p class="sec-color">Cluj-Napoca</p>
       </div>
       <div class="menu-text-spread">
-        <p class="main-color">Age:</p>
+        <p class="main-color" id="age">Age:</p>
         <p class="sec-color">25</p>
       </div>
       <div class="menu-divider"></div>
@@ -42,15 +41,15 @@
         <p class="sec-color">85%</p>
       </label>
       <div class="progress-bar-bg">
-        <div class="progress-bar-fill" style="width:85%;">
+        <div class="progress-bar-fill progress-bar-anim1" style="width:85%;">
         </div>
       </div>
       <label class="menu-text-spread">
         <p class="main-color">CSS</p>
-        <p class="sec-color">60%</p>
+        <p class="sec-color">70%</p>
       </label>
       <div class="progress-bar-bg">
-        <div class="progress-bar-fill" style="width:60%">
+        <div class="progress-bar-fill progress-bar-anim2" style="width:70%">
         </div>
       </div>
       <label class="menu-text-spread">
@@ -58,7 +57,7 @@
         <p class="sec-color">50%</p>
       </label>
       <div class="progress-bar-bg">
-        <div class="progress-bar-fill" style="width:50%;">
+        <div class="progress-bar-fill progress-bar-anim3" style="width:50%;">
         </div>
       </div>
       <label class="menu-text-spread">
@@ -66,24 +65,24 @@
         <p class="sec-color">70%</p>
       </label>
       <div class="progress-bar-bg">
-        <div class="progress-bar-fill" style="width:70%;">
+        <div class="progress-bar-fill progress-bar-anim4" style="width:70%;">
         </div>
       </div>
       <label class="menu-text-spread menu-labels">
         <p class="main-color">Photoshop</p>
-        <p class="sec-color">60%</p>
+        <p class="sec-color">65%</p>
       </label>
       <div class="progress-bar-bg">
-        <div class="progress-bar-fill" style="width:60%;">
+        <div class="progress-bar-fill progress-bar-anim5" style="width:65%;">
         </div>
       </div>
       <div class="menu-divider"></div>
       <label class="menu-text-spread">
-        <p class="main-color">Romanian</p>
+        <p class="main-color" id="romanian">Romanian</p>
         <p class="sec-color">100%</p>
       </label>
       <div class="progress-bar-bg">
-        <div class="progress-bar-fill" style="width:100%;">
+        <div class="progress-bar-fill progress-bar-anim6" style="width:100%;">
         </div>
       </div>
       <label class="menu-text-spread">
@@ -91,15 +90,17 @@
         <p class="sec-color">90%</p>
       </label>
       <div class="progress-bar-bg">
-        <div class="progress-bar-fill" style="width:90%;">
+        <div class="progress-bar-fill progress-bar-anim7" style="width:90%;">
         </div>
       </div>
       <div class="menu-divider"></div>
-      <p class="sec-color"><span class="yellow">&#x2713;</span> Git Knowledge</p>
-      <p class="sec-color"><span class="yellow">&#x2713;</span> Visual Studio Code Knowledge</p>
-      <p class="sec-color"><span class="yellow">&#x2713;</span> Video Editing</p>
+      <p class="sec-color"><span class="yellow">&#x2713;</span> <span id="git-knowledge">Git Knowledge</span></p>
+      <p class="sec-color"><span class="yellow">&#x2713;</span> Visual Studio Code</p>
+      <p class="sec-color"><span class="yellow">&#x2713;</span> <span id="vid-editing">Video&Image Editing</span></p>
       <div class="menu-divider"></div>
-      <h4 class="sec-color">Download CV<img src="images/download.png"></h4>
+      <a href="#">
+        <h4 class="sec-color"><span id="download-cv">Download CV</span><img src="images/download.png"></h4>
+      </a>
     </div>
   </aside>
   <span class="open-btn" onclick="openNav()">&#9776;</span>
@@ -111,30 +112,104 @@
     <span class="dot" onclick="openRightMenu()"></span>
   </div>
   <aside class="right-menu" id="right-menu">
-      <div class="right-menu-close-btn" onclick="closeRightMenu()">&times;</div>
+    <div class="right-menu-close-btn" onclick="closeRightMenu()">&times;</div>
+    <div class="light-dark-btn-container">
       <img src="images/color-theme.png" width="24px" height="24px" onclick="toggleTheme()" class="color-theme-icon">
+      <div class="light-theme-text">Dark/Light Mode</div>
+    </div>
+    <div class="color-picker-container">
+      <div class="change-color-red" onclick="redTheme()"></div>
+      <div class="change-color-blue" onclick="blueTheme()"></div>
+      <div class="change-color-teal" onclick="tealTheme()"></div>
+      <div class="change-color-green" onclick="greenTheme()"></div>
+      <div class="change-color-yellow" onclick="yellowTheme()"></div>
+    </div>
+    <div class="language-container">
+      <div class="eng-btn lang-btn-active" onclick="setEnglish()" id="eng-btn">EN</div>
+      <div class="ro-btn lang-btn-inactive" onclick="setRomanian()" id="ro-btn">Ro</div>
+    </div>
   </aside>
   <!-- Right Side Menu End -->
-  <div class="main-container">
+  <main class="main-container">
     <section class="section1" id="s1">
       <div class="section1-img">
-        <h1 class="section1-header-text">Discover My Incredible</h1>
-        <h1 class="section1-header-text">Potential</h1>
+        <h1 class="section1-header-text" id="s1-header-text">Discover My Incredible</h1>
+        <h1 class="section1-header-text" id="s1-header-text2">Potential</h1>
       </div>
       <div class="text-under-header-img">
-        <span>Projects Completed: 2</span>
-        <span>Projects Completed: 2</span>
-        <span>Projects Completed: 2</span>
+        <span class="yellow-forever section1-main-text">4</span><span class="section1-sec-text" id="s1-projects-text">
+          Projects
+          Completed</span>
       </div>
     </section>
     <section class="section2" id="s2">
+      <span class="s2-header" id="known-technologies">Known Technologies</span>
+      <div class="s2-items">
+        <div class="s2-item">
+          <div class="s2-item-img visual-studio-code-logo"></div>
+          Visual Studio Code
+        </div>
+        <div class="s2-item">
+          <div class="s2-item-img html-logo"></div>
+          HTML 5
+        </div>
+        <div class="s2-item">
+          <div class="s2-item-img css-logo"></div>
+          CSS 3
+        </div>
+        <div class="s2-item">
+          <div class="s2-item-img js-logo"></div>
+          JavaScript
+        </div>
+      </div>
+      <div class="s2-items">
+        <div class="s2-item">
+          <div class="s2-item-img git-logo"></div>
+          Git
+        </div>
+        <div class="s2-item">
+          <div class="s2-item-img wordpress-logo"></div>
+          WordPress
+        </div>
+        <div class="s2-item">
+          <div class="s2-item-img photoshop-logo"></div>
+          Adobe Photoshop
+        </div>
+        <div class="s2-item">
+          <div class="s2-item-img premiere-pro-logo"></div>
+          Adobe Premiere Pro
+        </div>
+      </div>
     </section>
     <section class="section3" id="s3">
+      <span class="section3-header-text" id="portfolio">Portfolio</span>
+      <div class="portfolio-items">
+        <a href="../Rock Paper Scissors/theGame2.html">
+          <article class="portfolio-item portfolio-item-1">
+            <span class="portfolio-title" id="rps-game">Rock Paper Scissors Game</span>
+          </article>
+        </a>
+        <a href="../../Proiecte Personale/Game1/index.html">
+          <article class="portfolio-item portfolio-item-2">
+            <span class="portfolio-title" id="pawn-game">Simple Pawn Game</span>
+          </article>
+        </a>
+        <article class="portfolio-item">
+          <span class="portfolio-title" id="my-amazing-cv">My Amazing CV</span>
+          <span class="sec-color portfolio-text" id="my-cv-text">You're looking at it</span>
+        </article>
+        <a href="../../Teme/Contact Us/contact.html">
+          <article class="portfolio-item">
+            <span class="portfolio-title" id="contact-form">Contact Form</span>
+            <span class="sec-color portfolio-text" id="contact-form-text">A contact form connected to a database using a PHP script</span>
+          </article>
+        </a>
+      </div>
     </section>
-
-  </div>
+  </main>
   <script src="scripts/menu.js"></script>
   <script src="scripts/colorTheme.js"></script>
+  <script src="scripts/languageChanger.js"></script>
 </body>
 
 </html>

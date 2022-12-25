@@ -11,7 +11,6 @@ section {
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
     height: 100vh;
-    display: flex;
     justify-content: center;
     align-items: center;
     scroll-snap-align: center;
@@ -30,14 +29,6 @@ section {
     background-size: cover;
     display: flex;
     flex-direction: column;
-}
-
-.section2 {
-    background-color: green;
-}
-
-.section3 {
-    background-color: red;
 }
 
 ::-webkit-scrollbar {
@@ -68,4 +59,153 @@ section {
 .text-under-header-img {
     color: white;
     font-size: 25px;
+    text-shadow: rgb(9, 9, 9) 1px 2px 5px;
+}
+
+.section1-main-text {
+    font-size: 30px;
+    font-family: poppinsBold;
+}
+
+.section1-sec-text {
+    font-size: 20px;
+    font-family: poppinsBold;
+}
+
+.section3 {
+    background-color: grey;
+    background-image: url("../images/section3-bg-img.png");
+    padding-top: 5em;
+}
+
+.section3-header-text {
+    color: white;
+    font-size: 40px;
+    text-align: left;
+    font-family: poppinsBold;
+    margin-left: 1em;
+    text-shadow: rgb(9, 9, 9) 1px 2px 5px ;
+}
+
+.portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.portfolio-item {
+    background-color: rgba(49, 38, 51, 0.94);
+    height: 20em;
+    width: 20em;
+    margin: 1em 1em;
+    border-radius: 20%;
+    box-shadow: 0 1px 4px 0 rgb(15 15 20 / 10%);
+    box-shadow: rgb(9, 9, 9) 1px 2px 5px ;
+}
+
+.portfolio-item-1 {
+    background-image: url("../images/rock-paper-scissors.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.portfolio-item-2 {
+    background-image: url("../images/dice-game.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.portfolio-item:hover {
+    /* box-shadow: 0 1px 4px 0 rgba(255, 225, 0, 0.923); */
+    box-shadow: 0 1px 4px 0 var(--yellow);
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.3s ease-in;
+}
+
+.portfolio-title {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    font-family: poppinsBold;
+    margin-bottom: 2em;
+    color: white;
+}
+
+.portfolio-text {
+    padding-left: 1em;
+}
+
+.portfolio-items a {
+    text-decoration: none;
+}
+
+.section2 {
+    background: linear-gradient(rgb(65, 64, 92), rgb(76,62,78));
+    padding-top: 5em;
+}
+
+.s2-header {
+    color: white;
+    font-size: 40px;
+    text-align: left;
+    font-family: poppinsBold;
+    margin-left: 1em;
+    text-shadow: rgb(9, 9, 9) 1px 2px 5px;
+}
+
+.s2-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 5em;
+    text-shadow: rgb(9, 9, 9) 1px 2px 5px;
+}
+
+.s2-item {
+    color: white;
+    text-align: center;
+    font-family: poppinsBold;
+}
+
+.s2-item-img {
+    height: 10em;
+    width: 10em;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.visual-studio-code-logo {
+    background-image: url("../images/visual-studio-code-logo.png");
+}
+
+.html-logo {
+    background-image: url("../images/html-logo.png");
+}
+
+.css-logo {
+    background-image: url("../images/css-logo.png");
+}
+
+.js-logo {
+    background-image: url("../images/js-logo.png");
+}
+
+.git-logo {
+    background-image: url("../images/git-logo.png");
+}
+
+.wordpress-logo {
+    background-image: url("../images/wordpress-logo.png");
+}
+
+.photoshop-logo {
+    background-image: url("../images/photoshop-logo.png");
+}
+
+.premiere-pro-logo {
+    background-image: url("../images/premiere-pro-logo.png");
 }

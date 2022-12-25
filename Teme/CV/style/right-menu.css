@@ -17,6 +17,9 @@
     display: inline-block;
     position: relative;
     margin: 3px 0px;
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
 }
 
 .right-menu {
@@ -29,11 +32,10 @@
     background-color: rgb(30, 30, 40);
     overflow-x: hidden;
     padding-top: 60px;
-    /* Place content 60px from the top */
     transition: 0.5s;
-    /* 0.5 second transition effect to slide in the sidenav */
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -41,15 +43,109 @@
     color: white;
     font-size: 25px;
     position: relative;
-    /* display: flex; */
-    /* right: 1.5em;
-    top: 0.7em; */
-    /* justify-content: center; */
     margin: 0 auto;
     cursor: pointer;
 }
 
+.light-dark-btn-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
 .color-theme-icon {
-    margin-top: 10em;
     cursor: pointer;
+}
+
+.change-color-red {
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+    background-color: red;
+    cursor: pointer;
+}
+
+.change-color-blue {
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+    background-color: #007bff;
+    cursor: pointer;
+}
+
+.change-color-teal {
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+    background-color: teal;
+    cursor: pointer;
+}
+
+.change-color-green {
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+    background-color: green;
+    cursor: pointer;
+}
+
+.change-color-yellow {
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+    background-color: yellow;
+    cursor: pointer;
+}
+
+.light-theme-text {
+    color: var(--yellow);
+}
+
+.color-picker-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-top: 3em;
+}
+
+.language-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3em;
+    height: 5em;
+    justify-content: space-between;
+}
+
+.eng-btn {
+    height: 2em;
+    width: 2em;
+    background-color: grey;
+    border-radius: 50%;
+    font-family: poppinsBold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.ro-btn {
+    height: 2em;
+    width: 2em;
+    background-color: grey;
+    border-radius: 50%;
+    font-family: poppinsBold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.lang-btn-active {
+    background-color: var(--yellow);
+}
+
+.lang-btn-inactive {
+    background-color: grey;
 }
