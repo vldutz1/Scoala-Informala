@@ -21,9 +21,5 @@
 }
 
 .yellow {
-    color: yellow;
-}
-
-.yellow-forever {
-    color: yellow;
+    color: var(--yellow);
 }

@@ -126,37 +126,80 @@
     margin-top: 5px;
     margin-bottom: 1em;
 }
+
 @keyframes progressAnim1 {
-    0% {width: 0%;}
-    100% {width: 85%;}
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 85%;
+    }
 }
+
 @keyframes progressAnim2 {
-    0% {width: 0%;}
-    100% {width: 70%;}
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 70%;
+    }
 }
+
 @keyframes progressAnim3 {
-    0% {width: 0%;}
-    100% {width: 50%;}
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 50%;
+    }
 }
+
 @keyframes progressAnim4 {
-    0% {width: 0%;}
-    100% {width: 70%;}
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 70%;
+    }
 }
+
 @keyframes progressAnim5 {
-    0% {width: 0%;}
-    100% {width: 65%;}
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 65%;
+    }
 }
+
 @keyframes progressAnim6 {
-    0% {width: 0%;}
-    100% {width: 100%;}
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
 }
+
 @keyframes progressAnim7 {
-    0% {width: 0%;}
-    100% {width: 90%;}
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 90%;
+    }
 }
+
 .progress-bar-fill {
     height: 5px;
-    background-color: rgb(255, 187, 0);
+    background-color: var(--yellow);
 }
 
 .progress-bar-anim1 {

@@ -27,7 +27,7 @@ function toggleTheme() {
         }
         const rightMenu = document.querySelectorAll(".right-menu");
         for (let i = 0; i < rightMenu.length; i++) {
-            rightMenu[i].style.backgroundColor = "#f7f7f7";
+            rightMenu[i].style.backgroundColor = "#cccccc";
         }
         const rightMenuCloseBtn = document.querySelectorAll(".right-menu-close-btn");
         for (let i = 0; i < rightMenuCloseBtn.length; i++) {
@@ -243,4 +243,19 @@ function yellowTheme() {
     else {
         console.log("Yellow Theme is Already on");
     }
+}
+
+function customColor() {
+    const color = document.getElementById("custom-color").value;
+    const profile = document.querySelector(".img-container");
+    profile.style.backgroundColor = color;
+    r.style.setProperty('--yellow', color);
+    const progressBars = document.querySelectorAll(".progress-bar-fill");
+    for (i = 0; i < progressBars.length; i++) {
+        progressBars[i].style.backgroundColor = color;
+    }
+    const yellow = document.querySelectorAll(".yellow");
+        for (i = 0; i < yellow.length; i++) {
+            yellow[i].style.color = color;
+        }
 }
