@@ -4,12 +4,11 @@
 <head>
   <title>Vlad Chereches's Online CV</title>
   <link rel="stylesheet" href="style/index.css">
-  <link rel="stylesheet" href="style/menu.css">
+  <link rel="stylesheet" href="style/left-menu.css">
   <link rel="stylesheet" href="style/fonts.css">
   <link rel="stylesheet" href="style/responsivness.css">
   <link rel="stylesheet" href="style/right-menu.css">
   <link rel="icon" type="image/x-icon" href="images/favicon.png">
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -124,6 +123,10 @@
       <div class="change-color-green" onclick="greenTheme()"></div>
       <div class="change-color-yellow" onclick="yellowTheme()"></div>
     </div>
+    <div class="custom-color-container">
+      <input type="color" id="custom-color">
+      <button type="button" onclick="customColor()" class="clr-apply-btn">Apply</button>
+    </div>
     <div class="language-container">
       <div class="eng-btn lang-btn-active" onclick="setEnglish()" id="eng-btn">EN</div>
       <div class="ro-btn lang-btn-inactive" onclick="setRomanian()" id="ro-btn">Ro</div>
@@ -137,7 +140,7 @@
         <h1 class="section1-header-text" id="s1-header-text2">Potential</h1>
       </div>
       <div class="text-under-header-img">
-        <span class="yellow-forever section1-main-text">4</span><span class="section1-sec-text" id="s1-projects-text">
+        <span class="yellow section1-main-text">4</span><span class="section1-sec-text" id="s1-projects-text">
           Projects
           Completed</span>
       </div>
@@ -201,9 +204,22 @@
         <a href="../../Teme/Contact Us/contact.html">
           <article class="portfolio-item">
             <span class="portfolio-title" id="contact-form">Contact Form</span>
-            <span class="sec-color portfolio-text" id="contact-form-text">A contact form connected to a database using a PHP script</span>
+            <span class="sec-color portfolio-text" id="contact-form-text">A contact form connected to a database using a
+              PHP script</span>
           </article>
         </a>
+      </div>
+    </section>
+    <section class="contact-section">
+      <div class="s4-contact">
+        <form>
+          <!-- <label for="text">Name</label>
+          <input type="text">
+          <label for="email">Email</label>
+          <input type="email"> -->
+          <!-- <label for="message">Your Message</label> -->
+          <!-- <textarea></textarea> -->
+        </form>
       </div>
     </section>
   </main>
