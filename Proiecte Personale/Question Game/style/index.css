@@ -1,0 +1,110 @@
+body {
+    margin: 0px;
+    height: 100vh;
+    background: linear-gradient(rgb(1, 7, 95), rgb(71, 0, 101));
+}
+
+.header {
+    /* margin-top: 2em; */
+    margin: 2em 1.1em;
+    border-style: solid;
+    border-color: white;
+    border-width: 3px;
+    height: 4em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    overflow: hidden;
+}
+
+.main {
+    margin: 2em 2em;
+    border-style: solid;
+    border-color: white;
+    border-width: 3px;
+    height: 28em;
+}
+
+.level-container {
+    margin: 2em 2em;
+    border-style: solid;
+    border-color: white;
+    border-width: 3px;
+    height: 2em;
+    width: 10em;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.question-container {
+    margin: 2em 2em;
+    border-style: solid;
+    border-color: white;
+    border-width: 3px;
+    height: 2em;
+    width: 69em;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.game-header {
+    display: flex;
+}
+
+.money-pyramid {
+    margin: 0em 2em;
+    border-style: solid;
+    border-color: white;
+    border-width: 3px;
+    height: 21em;
+    width: 10em;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.game-container {
+    display: flex;
+}
+
+.options-container {
+    color: white;
+    margin: 0em 2em;
+    border-style: solid;
+    border-color: white;
+    border-width: 3px;
+    height: 21em;
+    width: 70em;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.options {
+    color: white;
+    margin: 1em 2em;
+    border-style: solid;
+    border-color: white;
+    border-width: 3px;
+    height: 10em;
+    width: 30em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.options:hover {
+    background-color: blueviolet;
+}
