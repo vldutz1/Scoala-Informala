@@ -556,7 +556,26 @@ const l8Q2Wrong3 = "Indian Ocean";
 const l8Q2Answers = [l8Q2Right, l8Q2Wrong1, l8Q2Wrong2, l8Q2Wrong3];
 
 const l8Q3 = "How many stars are there on the flag of the USA?";
-const l8Q3Right = ""
+const l8Q3Right = "50";
+const l8Q3Wrong1 = "40";
+const l8Q3Wrong2 = "48";
+const l8Q3Wrong3 = "52";
+const l8Q3Answers = [l8Q3Wrong1,l8Q3Wrong2,l8Q3Wrong3,l8Q3Right];
+
+const l8Q4 = "Which bird is able to fly backwards?";
+const l8Q4Right = "Hummingbird";
+const l8Q4Wrong1 = "Finch";
+const l8Q4Wrong2 = "Canary";
+const l8Q4Wrong3 = "Eagle";
+const l8Q4Answers = [l8Q4Wrong1,l8Q4Wrong2,l8Q4Right,l8Q4Wrong3];
+
+const l8Q5 = "Which of the following is a fermented food?";
+const l8Q5Right = "Yogurt";
+const l8Q5Wrong1 = "Cheese";
+const l8Q5Wrong2 = "Sausage";
+const l8Q5Wrong3 = "Sunflower Oil";
+const l8Q5Answers = [l8Q5Wrong1,l8Q5Right,l8Q5Wrong2,l8Q5Wrong3];
+const questionsLvl8 = [l8Q1,l8Q2,l8Q3,l8Q4,l8Q5];
 
 function level8() {
     levelShow.innerText = "Level 8";
@@ -594,6 +613,214 @@ function level8() {
     }
 }
 
+const l9Q1 = "Vanilla is derived from which flower?";
+const l9Q1Right = "Orchid";
+const l9Q1Wrong1 = "Sunflower";
+const l9Q1Wrong2 = "Rose";
+const l9Q1Wrong3 = "Lavender";
+const l9Q1Answers = [l9Q1Wrong1,l9Q1Wrong2,l9Q1Right,l9Q1Wrong3];
+
+const l9Q2 = "Which country does LEGO come from?";
+const l9Q2Right = "Denmark";
+const l9Q2Wrong1 = "Iceland";
+const l9Q2Wrong2 = "Norway";
+const l9Q2Wrong3 = "France";
+const l9Q2Answers = [l9Q2Right,l9Q2Wrong1,l9Q2Wrong2,l9Q2Wrong3];
+
+const l9Q3 = "What is the strongest sense in the human’s body?";
+const l9Q3Right = "Smell";
+const l9Q3Wrong1 = "Sight";
+const l9Q3Wrong2 = "Hear";
+const l9Q3Wrong3 = "Taste";
+const l9Q3Answers = [l9Q3Wrong1,l9Q3Wrong2,l9Q3Right,l9Q3Wrong3];
+
+const l9Q4 = "What is the world’s most spoken language?";
+const l9Q4Right = "Mandarin";
+const l9Q4Wrong1 = "English";
+const l9Q4Wrong2 = "Chinese";
+const l9Q4Wrong3 = "Spanish";
+const l9Q4Answers = [l9Q4Wrong1,l9Q4Right,l9Q4Wrong2,l9Q4Wrong3];
+
+const l9Q5  = "What is the color of a giraffe’s tongue?"
+const l9Q5Right = "Blue";
+const l9Q5Wrong1 = "Red";
+const l9Q5Wrong2 = "Orange";
+const l9Q5Wrong3 = "Purple";
+const l9Q5Answers = [l9Q5Wrong1,l9Q5Right,l9Q5Wrong2,l9Q5Wrong3];
+const questionsLvl9 = [l9Q1,l9Q2,l9Q3,l9Q4,l9Q5];
+
+function level9() {
+    levelShow.innerText = "Level 9";
+    let random = Math.floor(Math.random() * 5);
+    questionArea.innerText = questionsLvl9[random];
+    if (questionArea.innerText === questionsLvl9[0]) {
+        option1Box.innerText = l9Q1Answers[0];
+        option2Box.innerText = l9Q1Answers[1];
+        option3Box.innerText = l9Q1Answers[2];
+        option4Box.innerText = l9Q1Answers[3];
+    }
+    else if (questionArea.innerText === questionsLvl9[1]) {
+        option1Box.innerText = l9Q2Answers[0];
+        option2Box.innerText = l9Q2Answers[1];
+        option3Box.innerText = l9Q2Answers[2];
+        option4Box.innerText = l9Q2Answers[3];
+    }
+    else if (questionArea.innerText === questionsLvl9[2]) {
+        option1Box.innerText = l9Q3Answers[0];
+        option2Box.innerText = l9Q3Answers[1];
+        option3Box.innerText = l9Q3Answers[2];
+        option4Box.innerText = l9Q3Answers[3];
+    }
+    else if (questionArea.innerText === questionsLvl9[3]) {
+        option1Box.innerText = l9Q4Answers[0];
+        option2Box.innerText = l9Q4Answers[1];
+        option3Box.innerText = l9Q4Answers[2];
+        option4Box.innerText = l9Q4Answers[3];
+    }
+    else if (questionArea.innerText === questionsLvl9[4]) {
+        option1Box.innerText = l9Q5Answers[0];
+        option2Box.innerText = l9Q5Answers[1];
+        option3Box.innerText = l9Q5Answers[2];
+        option4Box.innerText = l9Q5Answers[3];
+    }
+}
+
+const l10Q1 = "How many countries in the world have their names starting with the letter Z?";
+const l10Q1Right = "2";
+const l10Q1Wrong1 = "3";
+const l10Q1Wrong2 = "1";
+const l10Q1Wrong3 = "4";
+const l10Q1Answers = [l10Q1Right,l10Q1Wrong1,l10Q1Wrong2,l10Q1Wrong3];
+
+const l10Q2 = "Taco is a traditional dish of which country?";
+const l10Q2Right = "Mexico";
+const l10Q2Wrong1 = "Canada";
+const l10Q2Wrong2 = "Spain";
+const l10Q2Wrong3 = "Germany";
+const l10Q2Answers = [l10Q2Right,l10Q2Wrong1,l10Q2Wrong2,l10Q2Wrong3];
+
+const l10Q3 = "In Roman mythology, the twin brothers Remus and Romulus were brought up by which animal?";
+const l10Q3Right = "Wolf";
+const l10Q3Wrong1 = "Lion";
+const l10Q3Wrong2 = "Monkey";
+const l10Q3Wrong3 = "Tiger";
+const l10Q3Answers = [l10Q3Right,l10Q3Wrong1,l10Q3Wrong2,l10Q3Wrong3];
+
+const l10Q4 = "The leaf of which plant is on the Canadian flag?";
+const l10Q4Right = "Maple";
+const l10Q4Wrong1 = "Oak";
+const l10Q4Wrong2 = "Spruce";
+const l10Q4Wrong3 = "Birch";
+const l10Q4Answers = [l10Q4Right,l10Q4Wrong1,l10Q4Wrong2,l10Q4Wrong3];
+
+const l10Q5 = "What is ailurophobia?";
+const l10Q5Right = "Fear of cats";
+const l10Q5Wrong1 = "Fear of dogs";
+const l10Q5Wrong2 = "Fear of fish";
+const l10Q5Wrong3 = "Fear of frogs";
+const l10Q5Answers = [l10Q5Right,l10Q5Wrong1,l10Q5Wrong2,l10Q5Wrong3];
+const questionsLvl10 = [l10Q1,l10Q2,l10Q3,l10Q4,l10Q5];
+
+function level10() {
+    levelShow.innerText = "Level 10";
+    let random = Math.floor(Math.random() * 5);
+    questionArea.innerText = questionsLvl10[random];
+    if (questionArea.innerText === questionsLvl10[0]) {
+        option1Box.innerText = l10Q1Answers[0];
+        option2Box.innerText = l10Q1Answers[1];
+        option3Box.innerText = l10Q1Answers[2];
+        option4Box.innerText = l10Q1Answers[3];
+    }
+    else if (questionArea.innerText === questionsLvl10[1]) {
+        option1Box.innerText = l10Q2Answers[0];
+        option2Box.innerText = l10Q2Answers[1];
+        option3Box.innerText = l10Q2Answers[2];
+        option4Box.innerText = l10Q2Answers[3];
+    }
+    else if (questionArea.innerText === questionsLvl10[2]) {
+        option1Box.innerText = l10Q3Answers[0];
+        option2Box.innerText = l10Q3Answers[1];
+        option3Box.innerText = l10Q3Answers[2];
+        option4Box.innerText = l10Q3Answers[3];
+    }
+    else if (questionArea.innerText === questionsLvl10[3]) {
+        option1Box.innerText = l10Q4Answers[0];
+        option2Box.innerText = l10Q4Answers[1];
+        option3Box.innerText = l10Q4Answers[2];
+        option4Box.innerText = l10Q4Answers[3];
+    }
+    else if (questionArea.innerText === questionsLvl10[4]) {
+        option1Box.innerText = l10Q5Answers[0];
+        option2Box.innerText = l10Q5Answers[1];
+        option3Box.innerText = l10Q5Answers[2];
+        option4Box.innerText = l10Q5Answers[3];
+    }
+}
+
+const l11Q1 = "What is the official language in Brazil?";
+const l11Q1Right = "Portuguese";
+const l11Q1Wrong1 = "Spanish";
+const l11Q1Wrong2 = "English";
+const l11Q1Wrong3 = "Latin";
+const l11Q1Answers = [l11Q1Wrong1,l11Q1Right,l11Q1Wrong2,l11Q1Wrong3];
+
+const l11Q2 = "Bees cannot see which colour?";
+const l11Q2Right = "Red";
+const l11Q2Wrong1 = "Blue";
+const l11Q2Wrong2 = "Purple";
+const l11Q2Wrong3 = "Green";
+const l11Q2Answers = [l11Q2Right,l11Q2Wrong1,l11Q2Wrong2,l11Q2Wrong3];
+
+const l11Q3 = "The Haka dance is associated with the indigenous culture in which country?";
+const l11Q3Right = "New Zealand";
+const l11Q3Wrong1 = "United Kingdom";
+const l11Q3Wrong2 = "United States";
+const l11Q3Wrong3 = "South Africa";
+const l11Q3Answers = [l11Q3Wrong1,l11Q3Right,l11Q3Wrong2,l11Q3Wrong3];
+
+const l11Q4 = "What is the largest known living land animal?";
+const l11Q4Right = "African elephant";
+const l11Q4Wrong1 = "European elephant";
+const l11Q4Wrong2 = "American elephant";
+const l11Q4Wrong3 = "Asian elephant";
+const l11Q4Answers = [l11Q4Right,l11Q4Wrong1,l11Q4Wrong2,l11Q4Wrong3];
+
+const l11Q5 = ""
+function level11() {
+    levelShow.innerText = "Level 11";
+    let random = Math.floor(Math.random() * 5);
+    questionArea.innerText = questionsLvl11[random];
+    if (questionArea.innerText === questionsLvl11[0]) {
+        option1Box.innerText = l11Q1Answers[0];
+        option2Box.innerText = l11Q1Answers[1];
+        option3Box.innerText = l11Q1Answers[2];
+        option4Box.innerText = l11Q1Answers[3];
+    }
+    else if (questionArea.innerText === questionsLvl11[1]) {
+        option1Box.innerText = l11Q2Answers[0];
+        option2Box.innerText = l11Q2Answers[1];
+        option3Box.innerText = l11Q2Answers[2];
+        option4Box.innerText = l11Q2Answers[3];
+    }
+    else if (questionArea.innerText === questionsLvl11[2]) {
+        option1Box.innerText = l11Q3Answers[0];
+        option2Box.innerText = l11Q3Answers[1];
+        option3Box.innerText = l11Q3Answers[2];
+        option4Box.innerText = l11Q3Answers[3];
+    }
+    else if (questionArea.innerText === questionsLvl11[3]) {
+        option1Box.innerText = l11Q4Answers[0];
+        option2Box.innerText = l11Q4Answers[1];
+        option3Box.innerText = l11Q4Answers[2];
+        option4Box.innerText = l11Q4Answers[3];
+    }
+    else if (questionArea.innerText === questionsLvl11[4]) {
+        option1Box.innerText = l11Q5Answers[0];
+        option2Box.innerText = l11Q5Answers[1];
+        option3Box.innerText = l11Q5Answers[2];
+        option4Box.innerText = l11Q5Answers[3];
+    }
+}
 
 function selectOption1() {
     if (questionArea.innerText === questionsLvl1[0] && option1Box.innerText === l1Q1Right
@@ -665,6 +892,105 @@ function selectOption1() {
         level8();
         setMoneyWhite();
         moneylvl7.style.color = "green";
+        alert("Correct");
+    }
+    else if (questionArea.innerText === questionsLvl8[0] && option1Box.innerText === l8Q1Right
+        || questionArea.innerText === questionsLvl8[1] && option1Box.innerText === l8Q2Right
+        || questionArea.innerText === questionsLvl8[2] && option1Box.innerText === l8Q3Right
+        || questionArea.innerText === questionsLvl8[3] && option1Box.innerText === l8Q4Right
+        || questionArea.innerText === questionsLvl8[4] && option1Box.innerText === l8Q5Right) { //op 1 lvl 8
+        level9();
+        setMoneyWhite();
+        moneylvl8.style.color = "green";
+        alert("Correct");
+    }
+    else if (questionArea.innerText === questionsLvl9[0] && option1Box.innerText === l9Q1Right
+        || questionArea.innerText === questionsLvl9[1] && option1Box.innerText === l9Q2Right
+        || questionArea.innerText === questionsLvl9[2] && option1Box.innerText === l9Q3Right
+        || questionArea.innerText === questionsLvl9[3] && option1Box.innerText === l9Q4Right
+        || questionArea.innerText === questionsLvl9[4] && option1Box.innerText === l9Q5Right) { //op 1 lvl 9
+        level10();
+        setMoneyWhite();
+        moneylvl9.style.color = "green";
+        alert("Correct");
+    }
+    else if (questionArea.innerText === questionsLvl10[0] && option1Box.innerText === l10Q1Right
+        || questionArea.innerText === questionsLvl10[1] && option1Box.innerText === l10Q2Right
+        || questionArea.innerText === questionsLvl10[2] && option1Box.innerText === l10Q3Right
+        || questionArea.innerText === questionsLvl10[3] && option1Box.innerText === l10Q4Right
+        || questionArea.innerText === questionsLvl10[4] && option1Box.innerText === l10Q5Right) { //op 1 lvl 10
+        level11();
+        setMoneyWhite();
+        moneylvl10.style.color = "green";
+        alert("Correct");
+    }
+    else if (questionArea.innerText === questionsLvl11[0] && option1Box.innerText === l11Q1Right
+        || questionArea.innerText === questionsLvl11[1] && option1Box.innerText === l11Q2Right
+        || questionArea.innerText === questionsLvl11[2] && option1Box.innerText === l11Q3Right
+        || questionArea.innerText === questionsLvl11[3] && option1Box.innerText === l11Q4Right
+        || questionArea.innerText === questionsLvl11[4] && option1Box.innerText === l11Q5Right) { //op 1 lvl 11
+        level12();
+        setMoneyWhite();
+        moneylvl11.style.color = "green";
+        alert("Correct");
+    }
+    else if (questionArea.innerText === questionsLvl12[0] && option1Box.innerText === l12Q1Right
+        || questionArea.innerText === questionsLvl12[1] && option1Box.innerText === l12Q2Right
+        || questionArea.innerText === questionsLvl12[2] && option1Box.innerText === l12Q3Right
+        || questionArea.innerText === questionsLvl12[3] && option1Box.innerText === l12Q4Right
+        || questionArea.innerText === questionsLvl12[4] && option1Box.innerText === l12Q5Right) { //op 1 lvl 12
+        level13();
+        setMoneyWhite();
+        moneylvl12.style.color = "green";
+        alert("Correct");
+    }
+    else if (questionArea.innerText === questionsLvl13[0] && option1Box.innerText === l13Q1Right
+        || questionArea.innerText === questionsLvl13[1] && option1Box.innerText === l13Q2Right
+        || questionArea.innerText === questionsLvl13[2] && option1Box.innerText === l13Q3Right
+        || questionArea.innerText === questionsLvl13[3] && option1Box.innerText === l13Q4Right
+        || questionArea.innerText === questionsLvl13[4] && option1Box.innerText === l13Q5Right) { //op 1 lvl 13
+        level14();
+        setMoneyWhite();
+        moneylvl13.style.color = "green";
+        alert("Correct");
+    }
+    else if (questionArea.innerText === questionsLvl14[0] && option1Box.innerText === l14Q1Right
+        || questionArea.innerText === questionsLvl14[1] && option1Box.innerText === l14Q2Right
+        || questionArea.innerText === questionsLvl14[2] && option1Box.innerText === l14Q3Right
+        || questionArea.innerText === questionsLvl14[3] && option1Box.innerText === l14Q4Right
+        || questionArea.innerText === questionsLvl14[4] && option1Box.innerText === l14Q5Right) { //op 1 lvl 14
+        level15();
+        setMoneyWhite();
+        moneylvl14.style.color = "green";
+        alert("Correct");
+    }
+    else if (questionArea.innerText === questionsLvl15[0] && option1Box.innerText === l15Q1Right
+        || questionArea.innerText === questionsLvl15[1] && option1Box.innerText === l15Q2Right
+        || questionArea.innerText === questionsLvl15[2] && option1Box.innerText === l15Q3Right
+        || questionArea.innerText === questionsLvl15[3] && option1Box.innerText === l15Q4Right
+        || questionArea.innerText === questionsLvl15[4] && option1Box.innerText === l15Q5Right) { //op 1 lvl 15
+        level16();
+        setMoneyWhite();
+        moneylvl15.style.color = "green";
+        alert("Correct");
+    }
+    else if (questionArea.innerText === questionsLvl16[0] && option1Box.innerText === l16Q1Right
+        || questionArea.innerText === questionsLvl16[1] && option1Box.innerText === l16Q2Right
+        || questionArea.innerText === questionsLvl16[2] && option1Box.innerText === l16Q3Right
+        || questionArea.innerText === questionsLvl16[3] && option1Box.innerText === l16Q4Right
+        || questionArea.innerText === questionsLvl16[4] && option1Box.innerText === l16Q5Right) { //op 1 lvl 16
+        level17();
+        setMoneyWhite();
+        moneylvl16.style.color = "green";
+        alert("Correct");
+    }
+    else if (questionArea.innerText === questionsLvl17[0] && option1Box.innerText === l17Q1Right
+        || questionArea.innerText === questionsLvl17[1] && option1Box.innerText === l17Q2Right
+        || questionArea.innerText === questionsLvl17[2] && option1Box.innerText === l17Q3Right
+        || questionArea.innerText === questionsLvl17[3] && option1Box.innerText === l17Q4Right
+        || questionArea.innerText === questionsLvl17[4] && option1Box.innerText === l17Q5Right) { //op 1 lvl 17
+        setMoneyWhite();
+        moneylvl17.style.color = "green";
         alert("Correct");
     }
     else {
@@ -742,6 +1068,105 @@ function selectOption2() {
         setMoneyWhite();
         moneylvl7.style.color = "green";
         alert("correct");
+    }
+    else if (questionArea.innerText === questionsLvl8[0] && option2Box.innerText === l8Q1Right
+        || questionArea.innerText === questionsLvl8[1] && option2Box.innerText === l8Q2Right
+        || questionArea.innerText === questionsLvl8[2] && option2Box.innerText === l8Q3Right
+        || questionArea.innerText === questionsLvl8[3] && option2Box.innerText === l8Q4Right
+        || questionArea.innerText === questionsLvl8[4] && option2Box.innerText === l8Q5Right) { //op 2 lvl 8
+        level9();
+        setMoneyWhite();
+        moneylvl8.style.color = "green";
+        alert("Correct");
+    }
+    else if (questionArea.innerText === questionsLvl9[0] && option2Box.innerText === l9Q1Right
+        || questionArea.innerText === questionsLvl9[1] && option2Box.innerText === l9Q2Right
+        || questionArea.innerText === questionsLvl9[2] && option2Box.innerText === l9Q3Right
+        || questionArea.innerText === questionsLvl9[3] && option2Box.innerText === l9Q4Right
+        || questionArea.innerText === questionsLvl9[4] && option2Box.innerText === l9Q5Right) { //op 2 lvl 9
+        level10();
+        setMoneyWhite();
+        moneylvl9.style.color = "green";
+        alert("Correct");
+    }
+    else if (questionArea.innerText === questionsLvl10[0] && option2Box.innerText === l10Q1Right
+        || questionArea.innerText === questionsLvl10[1] && option2Box.innerText === l10Q2Right
+        || questionArea.innerText === questionsLvl10[2] && option2Box.innerText === l10Q3Right
+        || questionArea.innerText === questionsLvl10[3] && option2Box.innerText === l10Q4Right
+        || questionArea.innerText === questionsLvl10[4] && option2Box.innerText === l10Q5Right) { //op 2 lvl 10
+        level11();
+        setMoneyWhite();
+        moneylvl10.style.color = "green";
+        alert("Correct");
+    }
+    else if (questionArea.innerText === questionsLvl11[0] && option2Box.innerText === l11Q1Right
+        || questionArea.innerText === questionsLvl11[1] && option2Box.innerText === l11Q2Right
+        || questionArea.innerText === questionsLvl11[2] && option2Box.innerText === l11Q3Right
+        || questionArea.innerText === questionsLvl11[3] && option2Box.innerText === l11Q4Right
+        || questionArea.innerText === questionsLvl11[4] && option2Box.innerText === l11Q5Right) { //op 2 lvl 11
+        level12();
+        setMoneyWhite();
+        moneylvl11.style.color = "green";
+        alert("Correct");
+    }
+    else if (questionArea.innerText === questionsLvl12[0] && option2Box.innerText === l12Q1Right
+        || questionArea.innerText === questionsLvl12[1] && option2Box.innerText === l12Q2Right
+        || questionArea.innerText === questionsLvl12[2] && option2Box.innerText === l12Q3Right
+        || questionArea.innerText === questionsLvl12[3] && option2Box.innerText === l12Q4Right
+        || questionArea.innerText === questionsLvl12[4] && option2Box.innerText === l12Q5Right) { //op 2 lvl 12
+        level13();
+        setMoneyWhite();
+        moneylvl12.style.color = "green";
+        alert("Correct");
+    }
+    else if (questionArea.innerText === questionsLvl13[0] && option2Box.innerText === l13Q1Right
+        || questionArea.innerText === questionsLvl13[1] && option2Box.innerText === l13Q2Right
+        || questionArea.innerText === questionsLvl13[2] && option2Box.innerText === l13Q3Right
+        || questionArea.innerText === questionsLvl13[3] && option2Box.innerText === l13Q4Right
+        || questionArea.innerText === questionsLvl13[4] && option2Box.innerText === l13Q5Right) { //op 2 lvl 13
+        level14();
+        setMoneyWhite();
+        moneylvl13.style.color = "green";
+        alert("Correct");
+    }
+    else if (questionArea.innerText === questionsLvl14[0] && option2Box.innerText === l14Q1Right
+        || questionArea.innerText === questionsLvl14[1] && option2Box.innerText === l14Q2Right
+        || questionArea.innerText === questionsLvl14[2] && option2Box.innerText === l14Q3Right
+        || questionArea.innerText === questionsLvl14[3] && option2Box.innerText === l14Q4Right
+        || questionArea.innerText === questionsLvl14[4] && option2Box.innerText === l14Q5Right) { //op 2 lvl 14
+        level15();
+        setMoneyWhite();
+        moneylvl14.style.color = "green";
+        alert("Correct");
+    }
+    else if (questionArea.innerText === questionsLvl15[0] && option2Box.innerText === l15Q1Right
+        || questionArea.innerText === questionsLvl15[1] && option2Box.innerText === l15Q2Right
+        || questionArea.innerText === questionsLvl15[2] && option2Box.innerText === l15Q3Right
+        || questionArea.innerText === questionsLvl15[3] && option2Box.innerText === l15Q4Right
+        || questionArea.innerText === questionsLvl15[4] && option2Box.innerText === l15Q5Right) { //op 2 lvl 15
+        level16();
+        setMoneyWhite();
+        moneylvl15.style.color = "green";
+        alert("Correct");
+    }
+    else if (questionArea.innerText === questionsLvl16[0] && option2Box.innerText === l16Q1Right
+        || questionArea.innerText === questionsLvl16[1] && option2Box.innerText === l16Q2Right
+        || questionArea.innerText === questionsLvl16[2] && option2Box.innerText === l16Q3Right
+        || questionArea.innerText === questionsLvl16[3] && option2Box.innerText === l16Q4Right
+        || questionArea.innerText === questionsLvl16[4] && option2Box.innerText === l16Q5Right) { //op 2 lvl 16
+        level17();
+        setMoneyWhite();
+        moneylvl16.style.color = "green";
+        alert("Correct");
+    }
+    else if (questionArea.innerText === questionsLvl17[0] && option2Box.innerText === l17Q1Right
+        || questionArea.innerText === questionsLvl17[1] && option2Box.innerText === l17Q2Right
+        || questionArea.innerText === questionsLvl17[2] && option2Box.innerText === l17Q3Right
+        || questionArea.innerText === questionsLvl17[3] && option2Box.innerText === l17Q4Right
+        || questionArea.innerText === questionsLvl17[4] && option2Box.innerText === l17Q5Right) { //op 2 lvl 17
+        setMoneyWhite();
+        moneylvl17.style.color = "green";
+        alert("Correct");
     }
     else {
         alert("Wrong");
@@ -821,6 +1246,105 @@ function selectOption3() {
         moneylvl7.style.color = "green";
         alert("Correct");
     }
+    else if (questionArea.innerText === questionsLvl8[0] && option3Box.innerText === l8Q1Right
+        || questionArea.innerText === questionsLvl8[1] && option3Box.innerText === l8Q2Right
+        || questionArea.innerText === questionsLvl8[2] && option3Box.innerText === l8Q3Right
+        || questionArea.innerText === questionsLvl8[3] && option3Box.innerText === l8Q4Right
+        || questionArea.innerText === questionsLvl8[4] && option3Box.innerText === l8Q5Right) { //op 3 lvl 8
+        level9();
+        setMoneyWhite();
+        moneylvl8.style.color = "green";
+        alert("Correct");
+    }
+    else if (questionArea.innerText === questionsLvl9[0] && option3Box.innerText === l9Q1Right
+        || questionArea.innerText === questionsLvl9[1] && option3Box.innerText === l9Q2Right
+        || questionArea.innerText === questionsLvl9[2] && option3Box.innerText === l9Q3Right
+        || questionArea.innerText === questionsLvl9[3] && option3Box.innerText === l9Q4Right
+        || questionArea.innerText === questionsLvl9[4] && option3Box.innerText === l9Q5Right) { //op 3 lvl 9
+        level10();
+        setMoneyWhite();
+        moneylvl9.style.color = "green";
+        alert("Correct");
+    }
+    else if (questionArea.innerText === questionsLvl10[0] && option3Box.innerText === l10Q1Right
+        || questionArea.innerText === questionsLvl10[1] && option3Box.innerText === l10Q2Right
+        || questionArea.innerText === questionsLvl10[2] && option3Box.innerText === l10Q3Right
+        || questionArea.innerText === questionsLvl10[3] && option3Box.innerText === l10Q4Right
+        || questionArea.innerText === questionsLvl10[4] && option3Box.innerText === l10Q5Right) { //op 3 lvl 10
+        level11();
+        setMoneyWhite();
+        moneylvl10.style.color = "green";
+        alert("Correct");
+    }
+    else if (questionArea.innerText === questionsLvl11[0] && option3Box.innerText === l11Q1Right
+        || questionArea.innerText === questionsLvl11[1] && option3Box.innerText === l11Q2Right
+        || questionArea.innerText === questionsLvl11[2] && option3Box.innerText === l11Q3Right
+        || questionArea.innerText === questionsLvl11[3] && option3Box.innerText === l11Q4Right
+        || questionArea.innerText === questionsLvl11[4] && option3Box.innerText === l11Q5Right) { //op 3 lvl 11
+        level12();
+        setMoneyWhite();
+        moneylvl11.style.color = "green";
+        alert("Correct");
+    }
+    else if (questionArea.innerText === questionsLvl12[0] && option3Box.innerText === l12Q1Right
+        || questionArea.innerText === questionsLvl12[1] && option3Box.innerText === l12Q2Right
+        || questionArea.innerText === questionsLvl12[2] && option3Box.innerText === l12Q3Right
+        || questionArea.innerText === questionsLvl12[3] && option3Box.innerText === l12Q4Right
+        || questionArea.innerText === questionsLvl12[4] && option3Box.innerText === l12Q5Right) { //op 3 lvl 12
+        level13();
+        setMoneyWhite();
+        moneylvl12.style.color = "green";
+        alert("Correct");
+    }
+    else if (questionArea.innerText === questionsLvl13[0] && option3Box.innerText === l13Q1Right
+        || questionArea.innerText === questionsLvl13[1] && option3Box.innerText === l13Q2Right
+        || questionArea.innerText === questionsLvl13[2] && option3Box.innerText === l13Q3Right
+        || questionArea.innerText === questionsLvl13[3] && option3Box.innerText === l13Q4Right
+        || questionArea.innerText === questionsLvl13[4] && option3Box.innerText === l13Q5Right) { //op 3 lvl 13
+        level14();
+        setMoneyWhite();
+        moneylvl13.style.color = "green";
+        alert("Correct");
+    }
+    else if (questionArea.innerText === questionsLvl14[0] && option3Box.innerText === l14Q1Right
+        || questionArea.innerText === questionsLvl14[1] && option3Box.innerText === l14Q2Right
+        || questionArea.innerText === questionsLvl14[2] && option3Box.innerText === l14Q3Right
+        || questionArea.innerText === questionsLvl14[3] && option3Box.innerText === l14Q4Right
+        || questionArea.innerText === questionsLvl14[4] && option3Box.innerText === l14Q5Right) { //op 3 lvl 14
+        level15();
+        setMoneyWhite();
+        moneylvl14.style.color = "green";
+        alert("Correct");
+    }
+    else if (questionArea.innerText === questionsLvl15[0] && option3Box.innerText === l15Q1Right
+        || questionArea.innerText === questionsLvl15[1] && option3Box.innerText === l15Q2Right
+        || questionArea.innerText === questionsLvl15[2] && option3Box.innerText === l15Q3Right
+        || questionArea.innerText === questionsLvl15[3] && option3Box.innerText === l15Q4Right
+        || questionArea.innerText === questionsLvl15[4] && option3Box.innerText === l15Q5Right) { //op 3 lvl 15
+        level16();
+        setMoneyWhite();
+        moneylvl15.style.color = "green";
+        alert("Correct");
+    }
+    else if (questionArea.innerText === questionsLvl16[0] && option3Box.innerText === l16Q1Right
+        || questionArea.innerText === questionsLvl16[1] && option3Box.innerText === l16Q2Right
+        || questionArea.innerText === questionsLvl16[2] && option3Box.innerText === l16Q3Right
+        || questionArea.innerText === questionsLvl16[3] && option3Box.innerText === l16Q4Right
+        || questionArea.innerText === questionsLvl16[4] && option3Box.innerText === l16Q5Right) { //op 3 lvl 16
+        level17();
+        setMoneyWhite();
+        moneylvl16.style.color = "green";
+        alert("Correct");
+    }
+    else if (questionArea.innerText === questionsLvl17[0] && option3Box.innerText === l17Q1Right
+        || questionArea.innerText === questionsLvl17[1] && option3Box.innerText === l17Q2Right
+        || questionArea.innerText === questionsLvl17[2] && option3Box.innerText === l17Q3Right
+        || questionArea.innerText === questionsLvl17[3] && option3Box.innerText === l17Q4Right
+        || questionArea.innerText === questionsLvl17[4] && option3Box.innerText === l17Q5Right) { //op 3 lvl 17
+        setMoneyWhite();
+        moneylvl17.style.color = "green";
+        alert("Correct");
+    }
     else {
         alert("Wrong");
     }
@@ -895,6 +1419,105 @@ function selectOption4() {
         setMoneyWhite();
         moneylvl7.style.color = "green";
         alert("correct");
+    }
+    else if (questionArea.innerText === questionsLvl8[0] && option4Box.innerText === l8Q1Right
+        || questionArea.innerText === questionsLvl8[1] && option4Box.innerText === l8Q2Right
+        || questionArea.innerText === questionsLvl8[2] && option4Box.innerText === l8Q3Right
+        || questionArea.innerText === questionsLvl8[3] && option4Box.innerText === l8Q4Right
+        || questionArea.innerText === questionsLvl8[4] && option4Box.innerText === l8Q5Right) { //op 4 lvl 8
+        level9();
+        setMoneyWhite();
+        moneylvl8.style.color = "green";
+        alert("Correct");
+    }
+    else if (questionArea.innerText === questionsLvl9[0] && option4Box.innerText === l9Q1Right
+        || questionArea.innerText === questionsLvl9[1] && option4Box.innerText === l9Q2Right
+        || questionArea.innerText === questionsLvl9[2] && option4Box.innerText === l9Q3Right
+        || questionArea.innerText === questionsLvl9[3] && option4Box.innerText === l9Q4Right
+        || questionArea.innerText === questionsLvl9[4] && option4Box.innerText === l9Q5Right) { //op 4 lvl 9
+        level10();
+        setMoneyWhite();
+        moneylvl9.style.color = "green";
+        alert("Correct");
+    }
+    else if (questionArea.innerText === questionsLvl10[0] && option4Box.innerText === l10Q1Right
+        || questionArea.innerText === questionsLvl10[1] && option4Box.innerText === l10Q2Right
+        || questionArea.innerText === questionsLvl10[2] && option4Box.innerText === l10Q3Right
+        || questionArea.innerText === questionsLvl10[3] && option4Box.innerText === l10Q4Right
+        || questionArea.innerText === questionsLvl10[4] && option4Box.innerText === l10Q5Right) { //op 4 lvl 10
+        level11();
+        setMoneyWhite();
+        moneylvl10.style.color = "green";
+        alert("Correct");
+    }
+    else if (questionArea.innerText === questionsLvl11[0] && option4Box.innerText === l11Q1Right
+        || questionArea.innerText === questionsLvl11[1] && option4Box.innerText === l11Q2Right
+        || questionArea.innerText === questionsLvl11[2] && option4Box.innerText === l11Q3Right
+        || questionArea.innerText === questionsLvl11[3] && option4Box.innerText === l11Q4Right
+        || questionArea.innerText === questionsLvl11[4] && option4Box.innerText === l11Q5Right) { //op 4 lvl 11
+        level12();
+        setMoneyWhite();
+        moneylvl11.style.color = "green";
+        alert("Correct");
+    }
+    else if (questionArea.innerText === questionsLvl12[0] && option4Box.innerText === l12Q1Right
+        || questionArea.innerText === questionsLvl12[1] && option4Box.innerText === l12Q2Right
+        || questionArea.innerText === questionsLvl12[2] && option4Box.innerText === l12Q3Right
+        || questionArea.innerText === questionsLvl12[3] && option4Box.innerText === l12Q4Right
+        || questionArea.innerText === questionsLvl12[4] && option4Box.innerText === l12Q5Right) { //op 4 lvl 12
+        level13();
+        setMoneyWhite();
+        moneylvl12.style.color = "green";
+        alert("Correct");
+    }
+    else if (questionArea.innerText === questionsLvl13[0] && option4Box.innerText === l13Q1Right
+        || questionArea.innerText === questionsLvl13[1] && option4Box.innerText === l13Q2Right
+        || questionArea.innerText === questionsLvl13[2] && option4Box.innerText === l13Q3Right
+        || questionArea.innerText === questionsLvl13[3] && option4Box.innerText === l13Q4Right
+        || questionArea.innerText === questionsLvl13[4] && option4Box.innerText === l13Q5Right) { //op 4 lvl 13
+        level14();
+        setMoneyWhite();
+        moneylvl13.style.color = "green";
+        alert("Correct");
+    }
+    else if (questionArea.innerText === questionsLvl14[0] && option4Box.innerText === l14Q1Right
+        || questionArea.innerText === questionsLvl14[1] && option4Box.innerText === l14Q2Right
+        || questionArea.innerText === questionsLvl14[2] && option4Box.innerText === l14Q3Right
+        || questionArea.innerText === questionsLvl14[3] && option4Box.innerText === l14Q4Right
+        || questionArea.innerText === questionsLvl14[4] && option4Box.innerText === l14Q5Right) { //op 4 lvl 14
+        level15();
+        setMoneyWhite();
+        moneylvl14.style.color = "green";
+        alert("Correct");
+    }
+    else if (questionArea.innerText === questionsLvl15[0] && option4Box.innerText === l15Q1Right
+        || questionArea.innerText === questionsLvl15[1] && option4Box.innerText === l15Q2Right
+        || questionArea.innerText === questionsLvl15[2] && option4Box.innerText === l15Q3Right
+        || questionArea.innerText === questionsLvl15[3] && option4Box.innerText === l15Q4Right
+        || questionArea.innerText === questionsLvl15[4] && option4Box.innerText === l15Q5Right) { //op 4 lvl 15
+        level16();
+        setMoneyWhite();
+        moneylvl15.style.color = "green";
+        alert("Correct");
+    }
+    else if (questionArea.innerText === questionsLvl16[0] && option4Box.innerText === l16Q1Right
+        || questionArea.innerText === questionsLvl16[1] && option4Box.innerText === l16Q2Right
+        || questionArea.innerText === questionsLvl16[2] && option4Box.innerText === l16Q3Right
+        || questionArea.innerText === questionsLvl16[3] && option4Box.innerText === l16Q4Right
+        || questionArea.innerText === questionsLvl16[4] && option4Box.innerText === l16Q5Right) { //op 4 lvl 16
+        level17();
+        setMoneyWhite();
+        moneylvl16.style.color = "green";
+        alert("Correct");
+    }
+    else if (questionArea.innerText === questionsLvl17[0] && option4Box.innerText === l17Q1Right
+        || questionArea.innerText === questionsLvl17[1] && option4Box.innerText === l17Q2Right
+        || questionArea.innerText === questionsLvl17[2] && option4Box.innerText === l17Q3Right
+        || questionArea.innerText === questionsLvl17[3] && option4Box.innerText === l17Q4Right
+        || questionArea.innerText === questionsLvl17[4] && option4Box.innerText === l17Q5Right) { //op 4 lvl 17
+        setMoneyWhite();
+        moneylvl17.style.color = "green";
+        alert("Correct");
     }
     else {
         alert("Wrong");
