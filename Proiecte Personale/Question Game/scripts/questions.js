@@ -545,9 +545,9 @@ const l15Q5Wrong3 = "Genetic of plants"
 const l15Q5Answers = [l15Q5Wrong1,l15Q5Wrong2,l15Q5Right,l15Q5Wrong3];
 const questionsLvl15 = [l15Q1,l15Q2,l15Q3,l15Q4,l15Q5];
 //--------------------------------- Level 16 ------------------------------------
-const l17Q1 = "Ecology deals with";
-const l17Q1Right = "Relation between organisms and their environment";
-const l17Q1Wrong1 = "Cell formation";
-const l17Q1Wrong2 = "Tissues";
-const l17Q1Wrong3 = "Environment";
-const l17Q1Answers = [l17Q1Right,l17Q1Wrong1,l17Q1Wrong2,l17Q1Wrong3];
+const l16Q1 = "Ecology deals with";
+const l16Q1Right = "Relation between organisms and their environment";
+const l16Q1Wrong1 = "Cell formation";
+const l16Q1Wrong2 = "Tissues";
+const l16Q1Wrong3 = "Environment";
+const l16Q1Answers = [l17Q1Right,l17Q1Wrong1,l17Q1Wrong2,l17Q1Wrong3];
