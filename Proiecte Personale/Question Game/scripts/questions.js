@@ -550,4 +550,40 @@ const l16Q1Right = "Relation between organisms and their environment";
 const l16Q1Wrong1 = "Cell formation";
 const l16Q1Wrong2 = "Tissues";
 const l16Q1Wrong3 = "Environment";
-const l16Q1Answers = [l17Q1Right,l17Q1Wrong1,l17Q1Wrong2,l17Q1Wrong3];
+const l16Q1Answers = [l16Q1Right,l16Q1Wrong1,l16Q1Wrong2,l16Q1Wrong3];
+
+const l16Q2 = "What is part of a database that holds only one type of information?";
+const l16Q2Right = "Field";
+const l16Q2Wrong1 = "Report";
+const l16Q2Wrong2 = "Record";
+const l16Q2Wrong3 = "File";
+const l16Q2Answers = [l16Q2Wrong1,l16Q2Wrong2,l16Q2Wrong3,l16Q2Right];
+
+const l16Q3 = "In which decade with the first transatlantic radio broadcast occur?";
+const l16Q3Right = "1900s";
+const l16Q3Wrong1 = "1880s";
+const l16Q3Wrong2 = "1910s";
+const l16Q3Wrong3 = "1890s";
+const l16Q3Answers = [l16Q3Right,l16Q3Wrong1,l16Q3Wrong2,l16Q3Wrong3];
+
+const l16Q4 = "Which is a type of Electrically-Erasable Programmable Read-Only Memory?";
+const l16Q4Right = "Flash";
+const l16Q4Wrong1 = "Flange";
+const l16Q4Wrong2 = "Fury";
+const l16Q4Wrong3 = "FRAM";
+const l16Q4Answers = [l16Q4Wrong1,l16Q4Right,l16Q4Wrong2,l16Q4Wrong3];
+
+const l16Q5 = "The purpose of choke in tube light is ?";
+const l16Q5Right = "To increase the voltage momentarily";
+const l16Q5Wrong1 = "To decrease the voltage momentarily";
+const l16Q5Wrong2 = "To increase current";
+const l16Q5Wrong3 = "To decrease current";
+const l16Q5Answers = [l16Q5Wrong1,l16Q5Wrong2,l16Q5Right,l16Q5Wrong3];
+const questionsLvl16 = [l16Q1,l16Q2,l16Q3,l16Q4,l16Q5];
+//--------------------------------- Level 17 ------------------------------------
+const l17Q1 = "Who developed Yahoo?";
+const l17Q1Right = "David Filo & Jerry Yang";
+const l17Q1Wrong1 = "Vint Cerf & Robert Kahn";
+const l17Q1Wrong2 = "Steve Case & Jeff Bezos";
+const l17Q1Wrong3 = "Dennis Ritchie & Ken Thompson";
+const l17Q1Answers = [l17Q1Right,l17Q1Wrong1,l17Q1Wrong2,l17Q1Wrong3];
