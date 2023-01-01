@@ -587,3 +587,32 @@ const l17Q1Wrong1 = "Vint Cerf & Robert Kahn";
 const l17Q1Wrong2 = "Steve Case & Jeff Bezos";
 const l17Q1Wrong3 = "Dennis Ritchie & Ken Thompson";
 const l17Q1Answers = [l17Q1Right,l17Q1Wrong1,l17Q1Wrong2,l17Q1Wrong3];
+
+const l17Q2 = "The Olympic Flame symbolizes";
+const l17Q2Right = "Continuity between the ancient and modern games";
+const l17Q2Wrong1 = "Sports as a means for securing harmony among nations";
+const l17Q2Wrong2 = "Speed, perfection and strength";
+const l17Q2Wrong3 = "Unity among various nations of the world";
+const l17Q2Answers = [l17Q2Wrong1,l17Q2Wrong2,l17Q2Wrong3,l17Q2Right];
+
+const l17Q3 = "The Scottish bacteriologist who discovered penicillin was";
+const l17Q3Right = "Alexander Fleming";
+const l17Q3Wrong1 = "Albert Einstein";
+const l17Q3Wrong2 = "Archimeder";
+const l17Q3Wrong3 = "Aryabhatta";
+const l17Q3Answers = [l17Q3Wrong1,l17Q3Right,l17Q3Wrong2,l17Q3Wrong3];
+
+const l17Q4 = "The purpose of United Nations Fund for Population Activities (UNFPA) is";
+const l17Q4Right = "All of the above";
+const l17Q4Wrong1 = "Studying population dynamics";
+const l17Q4Wrong2 = "Collecting population data";
+const l17Q4Wrong3 = "Evolving population policies, family planning and related programmes";
+const l17Q4Answers = [l17Q4Wrong1,l17Q4Wrong2,l17Q4Wrong3,l17Q4Right];
+
+const l17Q5 = "Plants receive their nutrients mainly from";
+const l17Q5Right = "Soil";
+const l17Q5Wrong1 = "Light";
+const l17Q5Wrong2 = "Atmosphere";
+const l17Q5Wrong3 = "Chlorophyll";
+const l17Q5Answers = [l17Q5Right,l17Q5Wrong1,l17Q5Wrong2,l17Q5Wrong3];
+const questionsLvl17 = [l17Q1,l17Q2,l17Q3,l17Q4,l17Q5];

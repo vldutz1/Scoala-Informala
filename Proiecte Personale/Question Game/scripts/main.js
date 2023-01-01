@@ -30,6 +30,7 @@ const levelShow = document.getElementById("level-container");
 
 function startGame() {
     if (isGameStarted === false) {
+        document.getElementById("game-start-window").classList.toggle("hidden");
         // isGameStarted = true
         let random = Math.floor(Math.random() * 5);
         questionArea.innerText = questionsLvl1[random];
