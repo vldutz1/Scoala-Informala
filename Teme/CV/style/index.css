@@ -117,6 +117,13 @@ section {
     background-repeat: no-repeat;
 }
 
+.portfolio-item-3 {
+    background-image: url("../images/cv-icon.png");
+    background-position: center;
+    /* background-size: contain; */
+    background-repeat: no-repeat;
+}
+
 .portfolio-item:hover {
     /* box-shadow: 0 1px 4px 0 rgba(255, 225, 0, 0.923); */
     box-shadow: 0 1px 4px 0 var(--yellow);
