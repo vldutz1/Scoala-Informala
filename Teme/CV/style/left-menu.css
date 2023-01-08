@@ -229,3 +229,28 @@
 .progress-bar-anim7 {
     animation: progressAnim7 1s 0.7s 1 ease-in;
 }
+
+.social-icons {
+    display: flex;
+}
+
+.social-icon-linkedin {
+    background-image: url("../images/linkedin.png");
+    margin: 0px 0.5em;
+    width: 2em;
+    height: 2em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor:pointer;
+}
+.social-icon-email {
+    background-image: url("../images/email.png");
+    margin: 0px 0.5em;
+    width: 2em;
+    height: 2em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}

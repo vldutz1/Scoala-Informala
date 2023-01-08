@@ -97,9 +97,11 @@
       <p class="sec-color"><span class="yellow">&#x2713;</span> Visual Studio Code</p>
       <p class="sec-color"><span class="yellow">&#x2713;</span> <span id="vid-editing">Video&Image Editing</span></p>
       <div class="menu-divider"></div>
-      <a href="#">
-        <h4 class="sec-color"><span id="download-cv">Download CV</span><img src="images/download.png"></h4>
-      </a>
+      <div class="social-icons">
+        <div class="social-icon-linkedin" onclick="window.location.href='https://www.linkedin.com/in/vlad-chereches-a58510147/'"></div>
+        <div class="social-icon-email" onclick="window.location.href='mailto:vladchereches@yahoo.com'"></div>
+      </div>
+      <h4 class="sec-color"><span id="download-cv">Download CV</span><img src="images/download.png"></h4>
     </div>
   </aside>
   <span class="open-btn" onclick="openNav()">&#9776;</span>
@@ -187,39 +189,44 @@
     <section class="section3" id="s3">
       <span class="section3-header-text" id="portfolio">Portfolio</span>
       <div class="portfolio-items">
-          <article class="portfolio-item portfolio-item-1" onclick="window.location.href='../Rock Paper Scissors/theGame2.html';">
-            <span class="portfolio-title" id="rps-game">Rock Paper Scissors Game</span>
-          </article>
-          <article class="portfolio-item portfolio-item-2" onclick="window.location.href='../../Proiecte Personale/Game1/index.html'">
-            <span class="portfolio-title" id="pawn-game">Simple Pawn Game</span>
-          </article>
+        <article class="portfolio-item portfolio-item-1"
+          onclick="window.location.href='../Rock Paper Scissors/theGame2.html';">
+          <span class="portfolio-title" id="rps-game">Rock Paper Scissors Game</span>
+        </article>
+        <article class="portfolio-item portfolio-item-2"
+          onclick="window.location.href='../../Proiecte Personale/Game1/index.html'">
+          <span class="portfolio-title" id="pawn-game">Simple Pawn Game</span>
+        </article>
         <article class="portfolio-item">
           <span class="portfolio-title" id="my-amazing-cv">My Amazing CV</span>
           <span class="sec-color portfolio-text" id="my-cv-text">You're looking at it</span>
         </article>
-          <article class="portfolio-item portfolio-item-3" onclick="window.location.href='../../Teme/Contact Us/contact.html'">
-            <span class="portfolio-title" id="contact-form">Contact Form</span>
-            <span class="sec-color portfolio-text" id="contact-form-text">A contact form connected to a database using a
-              PHP script</span>
-          </article>
-          <article class="portfolio-item" onclick="window.location.href='../../Proiecte Personale/Question Game/index.html'">
-            <span class="portfolio-title" id="contact-form">Become a Millionaire Game</span>
-            <span class="sec-color portfolio-text" id="contact-form-text">A 17 levels based game with questions and answers</span>
-          </article>
+        <article class="portfolio-item portfolio-item-3"
+          onclick="window.location.href='../../Teme/Contact Us/contact.html'">
+          <span class="portfolio-title" id="contact-form">Contact Form</span>
+          <span class="sec-color portfolio-text" id="contact-form-text">A contact form connected to a database using a
+            PHP script</span>
+        </article>
+        <article class="portfolio-item"
+          onclick="window.location.href='../../Proiecte Personale/Question Game/index.html'">
+          <span class="portfolio-title" id="contact-form">Millionaire Quiz Game</span>
+          <span class="sec-color portfolio-text" id="contact-form-text">A 17 levels based game with questions and
+            answers</span>
+        </article>
       </div>
     </section>
-    <section class="contact-section">
+    <!-- <section class="contact-section">
       <div class="s4-contact">
         <form>
-          <!-- <label for="text">Name</label>
+          <label for="text">Name</label>
           <input type="text">
           <label for="email">Email</label>
-          <input type="email"> -->
-          <!-- <label for="message">Your Message</label> -->
-          <!-- <textarea></textarea> -->
+          <input type="email">
+          <label for="message">Your Message</label>
+          <textarea></textarea>
         </form>
       </div>
-    </section>
+    </section> -->
   </main>
   <script src="scripts/menu.js"></script>
   <script src="scripts/colorTheme.js"></script>
