@@ -101,6 +101,7 @@
 .light-theme-text {
     color: var(--yellow);
     text-align: center;
+    cursor: pointer;
 }
 
 .color-picker-container {

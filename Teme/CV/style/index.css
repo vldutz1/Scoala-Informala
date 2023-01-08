@@ -118,14 +118,25 @@ section {
 }
 
 .portfolio-item-3 {
-    background-image: url("../images/cv-icon.png");
+    background-image: url("../images/contact-icon.png");
     background-position: center;
-    /* background-size: contain; */
+    background-repeat: no-repeat;
+    background-size: 30%;
+}
+
+.portfolio-item-4 {
+    background-image: url("../images/quiz-game.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.portfolio-item-5 {
+    background-image: url("../images/man.png");
+    background-position: center;
     background-repeat: no-repeat;
 }
 
 .portfolio-item:hover {
-    /* box-shadow: 0 1px 4px 0 rgba(255, 225, 0, 0.923); */
     box-shadow: 0 1px 4px 0 var(--yellow);
     cursor: pointer;
     transform: scale(1.1);
@@ -147,10 +158,6 @@ section {
     justify-content: center;
     align-items: center;
     text-align: center;
-}
-
-.portfolio-items a {
-    text-decoration: none;
 }
 
 .section2 {

@@ -97,11 +97,17 @@
       <p class="sec-color"><span class="yellow">&#x2713;</span> Visual Studio Code</p>
       <p class="sec-color"><span class="yellow">&#x2713;</span> <span id="vid-editing">Video&Image Editing</span></p>
       <div class="menu-divider"></div>
-      <div class="social-icons">
-        <div class="social-icon-linkedin" onclick="window.location.href='https://www.linkedin.com/in/vlad-chereches-a58510147/'"></div>
-        <div class="social-icon-email" onclick="window.location.href='mailto:vladchereches@yahoo.com'"></div>
+      <div class="email-menu">
+        <div class="email-option1 sec-color" onclick="window.location.href='mailto:vladchereches@yahoo.com'">Send A Mail</div>
+        <div class="email-option2 sec-color" onclick="copyEmail()">Copy Email</div>
       </div>
-      <h4 class="sec-color"><span id="download-cv">Download CV</span><img src="images/download.png"></h4>
+      <div class="social-icons">
+        <div class="social-icon-linkedin"
+          onclick="window.location.href=`https://www.linkedin.com/in/vlad-chereches-a58510147/`"></div>
+        <div class="social-icon-email social-icon-email-inactive" id="email-icon" onclick="toggleEmailMenu()"></div>
+      </div>
+      <div class="sec-color download-btn"><span id="download-cv">Download CV</span><img src="images/download.png"
+          class="download-icon"></div>
     </div>
   </aside>
   <span class="open-btn" onclick="openNav()">&#9776;</span>
@@ -116,7 +122,7 @@
     <div class="right-menu-close-btn" onclick="closeRightMenu()">&times;</div>
     <div class="light-dark-btn-container">
       <img src="images/color-theme.png" width="24px" height="24px" onclick="toggleTheme()" class="color-theme-icon">
-      <div class="light-theme-text">Dark/Light Mode</div>
+      <div class="light-theme-text" onclick="toggleTheme()">Dark/Light Mode</div>
     </div>
     <div class="color-picker-container">
       <div class="change-color-red" onclick="redTheme()"></div>
@@ -197,17 +203,16 @@
           onclick="window.location.href='../../Proiecte Personale/Game1/index.html'">
           <span class="portfolio-title" id="pawn-game">Simple Pawn Game</span>
         </article>
-        <article class="portfolio-item">
+        <article class="portfolio-item portfolio-item-5">
           <span class="portfolio-title" id="my-amazing-cv">My Amazing CV</span>
           <span class="sec-color portfolio-text" id="my-cv-text">You're looking at it</span>
         </article>
         <article class="portfolio-item portfolio-item-3"
           onclick="window.location.href='../../Teme/Contact Us/contact.html'">
           <span class="portfolio-title" id="contact-form">Contact Form</span>
-          <span class="sec-color portfolio-text" id="contact-form-text">A contact form connected to a database using a
-            PHP script</span>
+          <span class="sec-color portfolio-text" id="contact-form-text">A contact form connected to a database</span>
         </article>
-        <article class="portfolio-item"
+        <article class="portfolio-item portfolio-item-4"
           onclick="window.location.href='../../Proiecte Personale/Question Game/index.html'">
           <span class="portfolio-title" id="contact-form">Millionaire Quiz Game</span>
           <span class="sec-color portfolio-text" id="contact-form-text">A 17 levels based game with questions and

@@ -87,7 +87,7 @@ function toggleTheme() {
 }
 const r = document.querySelector(':root');
 function initialSetShadow() {
-    r.style.setProperty('--yellow', 'yellow');
+    r.style.setProperty('--yellow', 'black');
 }
 initialSetShadow();
 
@@ -223,7 +223,7 @@ function yellowTheme() {
         isYellowTheme = true;
         const yellow = document.querySelectorAll(".yellow");
         for (i = 0; i < yellow.length; i++) {
-            yellow[i].style.color = "yellow";
+            yellow[i].style.color = "rgb(255, 187, 0)";
         }
         const yellow2 = document.querySelectorAll(".yellow-forever");
         for (i = 0; i < yellow2.length; i++) {
@@ -236,7 +236,7 @@ function yellowTheme() {
         const profile = document.querySelector(".img-container");
         profile.style.backgroundColor = "rgb(255, 187, 0)";
         (function boxShadows() {
-            r.style.setProperty('--yellow', 'yellow');
+            r.style.setProperty('--yellow', 'rgb(255, 187, 0)');
         })();
         console.log("Yellow Theme On");
     }
@@ -244,6 +244,7 @@ function yellowTheme() {
         console.log("Yellow Theme is Already on");
     }
 }
+yellowTheme();
 
 function customColor() {
     const color = document.getElementById("custom-color").value;

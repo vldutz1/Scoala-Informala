@@ -243,9 +243,14 @@
     background-repeat: no-repeat;
     background-size: contain;
     cursor:pointer;
+    transition: 0.5s;
 }
+
+.social-icon-linkedin:hover {
+    background-image: url("../images/linkedin-hover.png");
+}
+
 .social-icon-email {
-    background-image: url("../images/email.png");
     margin: 0px 0.5em;
     width: 2em;
     height: 2em;
@@ -253,4 +258,63 @@
     background-repeat: no-repeat;
     background-size: contain;
     cursor: pointer;
+    transition: 0.5s;
+}
+
+.social-icon-email:hover {
+    background-image: url("../images/email-hover.png");
+}
+
+.social-icon-email-inactive {
+    background-image: url("../images/email.png");
+}
+
+.social-icon-email-active {
+    background-image: url("../images/email-hover.png");
+}
+
+.download-btn {
+    text-align: center;
+    font-weight: 900;
+}
+
+#download-cv {
+    cursor: pointer;
+}
+
+.download-icon {
+    cursor: pointer;
+}
+
+.email-menu {
+    height: 0px;
+    width: 0px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.email-option1 {
+    background-color: var(--yellow);
+    cursor: pointer;
+    border-radius: 5%;
+    margin: 1em 0;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.email-option1:hover {
+    background-color: rgb(50, 50, 50);
+}
+
+.email-option2:hover {
+    background-color: rgb(50, 50, 50);
+}
+
+.email-option2 {
+    background-color: var(--yellow);
+    cursor: pointer;
+    border-radius: 5%;
+    margin: 1em 0;
+    text-align: center;
+    transition: 0.5s;
 }
