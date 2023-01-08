@@ -4,12 +4,14 @@ body {
     background: linear-gradient(rgb(1, 7, 95), rgb(71, 0, 101));
 }
 
+.header-new {
+    height: 500px;
+    margin: 0px 0px;
+    width: 100%;
+}
+
 .header {
-    /* margin-top: 2em; */
-    margin: 2em 1.1em;
-    border-style: solid;
-    border-color: white;
-    border-width: 3px;
+    margin: 0em 0em;
     height: 4em;
     color: white;
     display: flex;
@@ -17,40 +19,43 @@ body {
     align-items: center;
     font-size: 30px;
     overflow: hidden;
+    background-image: url("../images/main-box.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
 .main {
     margin: 2em 2em;
-    border-style: solid;
-    border-color: white;
-    border-width: 3px;
     height: 28em;
 }
 
 .level-container {
     margin: 2em 2em;
-    border-style: solid;
-    border-color: white;
-    border-width: 3px;
     height: 2em;
     width: 10em;
     color: white;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
+    background-image: url("../images/level-bg.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .question-container {
     margin: 2em 2em;
-    border-style: solid;
-    border-color: white;
-    border-width: 3px;
     height: 2em;
     width: 69em;
     color: white;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
+    background-image: url("../images/main-box.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .game-header {
@@ -59,16 +64,20 @@ body {
 
 .money-pyramid {
     margin: 0em 2em;
-    border-style: solid;
+    /* border-style: solid;
     border-color: white;
-    border-width: 3px;
+    border-width: 3px; */
     height: 21em;
     width: 10em;
     color: white;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-image: url("../images/money-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .game-container {
@@ -76,11 +85,7 @@ body {
 }
 
 .options-container {
-    color: white;
     margin: 0em 2em;
-    border-style: solid;
-    border-color: white;
-    border-width: 3px;
     height: 21em;
     width: 70em;
     color: white;
@@ -93,9 +98,6 @@ body {
 .options {
     color: white;
     margin: 1em 2em;
-    border-style: solid;
-    border-color: white;
-    border-width: 3px;
     height: 10em;
     width: 30em;
     display: flex;
@@ -103,10 +105,14 @@ body {
     align-items: center;
     cursor: pointer;
     transition: 0.5s;
+    background-image: url("../images/main-box.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .options:hover {
-    background-color: blueviolet;
+    background-image: url("../images/main-box-hover.png");
 }
 
 .game-start-window {
@@ -119,11 +125,38 @@ body {
     top: 0;
     z-index: 1;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     flex-direction: column;
 }
 
 .hidden {
     display: none;
+}
+
+.money-effects {
+    transition: 1s;
+}
+
+.initial-money {
+ color: green;   
+}
+
+.start-btn {
+    width: 28em;
+    height: 3em;
+    background-image: url("../images/main-box.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.start-btn:hover {
+    background-image: url("../images/main-box-hover.png");
 }

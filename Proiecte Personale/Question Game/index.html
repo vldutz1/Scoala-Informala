@@ -7,9 +7,9 @@
 </head>
 
 <body>
-    <div class="start-panel">
+    <!-- <div class="start-panel">
         <button onclick="startGame()">Start</button>
-    </div>
+    </div> -->
     <header class="header">Become a Millionaire</header>
     <main class="main">
         <div class="game-header">
@@ -22,24 +22,24 @@
         </div>
         <div class="game-container">
             <div class="money-pyramid">
-                <div id="1mil">1.000.000$</div>
-                <div id="750k">750.000$</div>
-                <div id="500k">500.000$</div>
-                <div id="250k">250.000$</div>
-                <div id="125k">125.000$</div>
-                <div id="100k">100.000$</div>
-                <div id="75k">75.000$</div>
-                <div id="50k">50.000$</div>
-                <div id="25k">25.000$</div>
-                <div id="15k">15.000$</div>
-                <div id="10k">10.000$</div>
-                <div id="5k">5.000$</div>
-                <div id="2500">2.500$</div>
-                <div id="1k">1.000$</div>
-                <div id="500">500$</div>
-                <div id="250">250$</div>
-                <div id="100">100$</div>
-                <div id="0">0$</div>
+                <div id="1mil" class="money-effects">1.000.000$</div>
+                <div id="750k" class="money-effects">750.000$</div>
+                <div id="500k" class="money-effects">500.000$</div>
+                <div id="250k" class="money-effects">250.000$</div>
+                <div id="125k" class="money-effects">125.000$</div>
+                <div id="100k" class="money-effects">100.000$</div>
+                <div id="75k" class="money-effects">75.000$</div>
+                <div id="50k" class="money-effects">50.000$</div>
+                <div id="25k" class="money-effects">25.000$</div>
+                <div id="15k" class="money-effects">15.000$</div>
+                <div id="10k" class="money-effects">10.000$</div>
+                <div id="5k" class="money-effects">5.000$</div>
+                <div id="2500" class="money-effects">2.500$</div>
+                <div id="1k" class="money-effects">1.000$</div>
+                <div id="500" class="money-effects">500$</div>
+                <div id="250" class="money-effects">250$</div>
+                <div id="100" class="money-effects">100$</div>
+                <div id="0" class="money-effects initial-money">0$</div>
             </div>
             <div class="options-container">
                 <div class="options option-1" id="option1" onclick="selectOption1()">Option 1</div>
@@ -50,8 +50,7 @@
         </div>
     </main>
     <div class="game-start-window" id="game-start-window">
-        <!-- <h1>Become a Millionaire</h1> -->
-        <button onclick="startGame()">Start</button>
+        <div onclick="startGame()"class="start-btn">Start</div>
     </div>
     <script src="scripts/main.js"></script>
     <script src="scripts/questions.js"></script>

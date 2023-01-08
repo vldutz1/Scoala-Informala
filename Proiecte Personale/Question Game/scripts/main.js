@@ -5,7 +5,7 @@ let option3Box = document.getElementById("option3");
 let option4Box = document.getElementById("option4");
 
 const optionsArray = [option1Box, option2Box, option3Box, option4Box];
-let isGameStarted = false;
+const moneylvl0 = document.getElementById("0");
 const moneylvl1 = document.getElementById("100");
 const moneylvl2 = document.getElementById("250");
 const moneylvl3 = document.getElementById("500");
@@ -29,9 +29,9 @@ const levelShow = document.getElementById("level-container");
 
 
 function startGame() {
-    if (isGameStarted === false) {
         document.getElementById("game-start-window").classList.toggle("hidden");
-        // isGameStarted = true
+        moneylvl0.style.color = "green";
+        levelShow.innerText = "Level 1";
         let random = Math.floor(Math.random() * 5);
         questionArea.innerText = questionsLvl1[random];
         if (questionArea.innerText === questionsLvl1[0]) {
@@ -41,19 +41,19 @@ function startGame() {
             option4Box.innerText = l1Q1Answers[3];
         }
         else if (questionArea.innerText === questionsLvl1[1]) {
-            option1Box.innerText = l1Q2Answers[0]; // right
+            option1Box.innerText = l1Q2Answers[0];
             option2Box.innerText = l1Q2Answers[1];
             option3Box.innerText = l1Q2Answers[2];
             option4Box.innerText = l1Q2Answers[3];
         }
         else if (questionArea.innerText === questionsLvl1[2]) {
             option1Box.innerText = l1Q3Answers[0];
-            option2Box.innerText = l1Q3Answers[1]; // right
+            option2Box.innerText = l1Q3Answers[1];
             option3Box.innerText = l1Q3Answers[2];
             option4Box.innerText = l1Q3Answers[3];
         }
         else if (questionArea.innerText === questionsLvl1[3]) {
-            option1Box.innerText = l1Q4Answers[0]; // right
+            option1Box.innerText = l1Q4Answers[0];
             option2Box.innerText = l1Q4Answers[1];
             option3Box.innerText = l1Q4Answers[2];
             option4Box.innerText = l1Q4Answers[3];
@@ -62,12 +62,8 @@ function startGame() {
             option1Box.innerText = l1Q5Answers[0];
             option2Box.innerText = l1Q5Answers[1];
             option3Box.innerText = l1Q5Answers[2];
-            option4Box.innerText = l1Q5Answers[3]; // right
+            option4Box.innerText = l1Q5Answers[3];
         }
-    }
-    // else {
-    //     console.log("The Game has already started")
-    // }
 }
 
 
@@ -82,7 +78,7 @@ function level2() {
         option4Box.innerText = l2Q1Answers[3];
     }
     else if (questionArea.innerText === questionsLvl2[1]) {
-        option1Box.innerText = l2Q2Answers[0]; //right
+        option1Box.innerText = l2Q2Answers[0];
         option2Box.innerText = l2Q2Answers[1];
         option3Box.innerText = l2Q2Answers[2];
         option4Box.innerText = l2Q2Answers[3];
@@ -91,10 +87,10 @@ function level2() {
         option1Box.innerText = l2Q3Answers[0];
         option2Box.innerText = l2Q3Answers[1];
         option3Box.innerText = l2Q3Answers[2];
-        option4Box.innerText = l2Q3Answers[3]; // right
+        option4Box.innerText = l2Q3Answers[3];
     }
     else if (questionArea.innerText === questionsLvl2[3]) {
-        option1Box.innerText = l2Q4Answers[0]; // right
+        option1Box.innerText = l2Q4Answers[0];
         option2Box.innerText = l2Q4Answers[1];
         option3Box.innerText = l2Q4Answers[2];
         option4Box.innerText = l2Q4Answers[3];
@@ -102,7 +98,7 @@ function level2() {
     else if (questionArea.innerText === questionsLvl2[4]) {
         option1Box.innerText = l2Q5Answers[0];
         option2Box.innerText = l2Q5Answers[1];
-        option3Box.innerText = l2Q5Answers[2]; //right
+        option3Box.innerText = l2Q5Answers[2];
         option4Box.innerText = l2Q5Answers[3];
     }
 }
@@ -113,7 +109,7 @@ function level3() {
     questionArea.innerText = questionsLvl3[random];
     if (questionArea.innerText === questionsLvl3[0]) {
         option1Box.innerText = l3Q1Answers[0];
-        option2Box.innerText = l3Q1Answers[1]; // right
+        option2Box.innerText = l3Q1Answers[1];
         option3Box.innerText = l3Q1Answers[2];
         option4Box.innerText = l3Q1Answers[3];
     }
@@ -121,22 +117,22 @@ function level3() {
         option1Box.innerText = l3Q2Answers[0];
         option2Box.innerText = l3Q2Answers[1];
         option3Box.innerText = l3Q2Answers[2];
-        option4Box.innerText = l3Q2Answers[3]; //right
+        option4Box.innerText = l3Q2Answers[3];
     }
     else if (questionArea.innerText === questionsLvl3[2]) {
-        option1Box.innerText = l3Q3Answers[0]; //right
+        option1Box.innerText = l3Q3Answers[0];
         option2Box.innerText = l3Q3Answers[1];
         option3Box.innerText = l3Q3Answers[2];
         option4Box.innerText = l3Q3Answers[3];
     }
     else if (questionArea.innerText === questionsLvl3[3]) {
         option1Box.innerText = l3Q4Answers[0];
-        option2Box.innerText = l3Q4Answers[1]; //right
+        option2Box.innerText = l3Q4Answers[1];
         option3Box.innerText = l3Q4Answers[2];
         option4Box.innerText = l3Q4Answers[3];
     }
     else if (questionArea.innerText === questionsLvl3[4]) {
-        option1Box.innerText = l3Q5Answers[0]; //right
+        option1Box.innerText = l3Q5Answers[0];
         option2Box.innerText = l3Q5Answers[1];
         option3Box.innerText = l3Q5Answers[2];
         option4Box.innerText = l3Q5Answers[3];
@@ -819,7 +815,7 @@ function selectOption1() {
         alert("Correct");
     }
     else {
-        alert("Wrong");
+        wrongAnswer();
     }
 }
 
@@ -994,7 +990,7 @@ function selectOption2() {
         alert("Correct");
     }
     else {
-        alert("Wrong");
+        wrongAnswer();
     }
 
 }
@@ -1171,7 +1167,7 @@ function selectOption3() {
         alert("Correct");
     }
     else {
-        alert("Wrong");
+        wrongAnswer();
     }
 }
 function selectOption4() {
@@ -1345,12 +1341,13 @@ function selectOption4() {
         alert("Correct");
     }
     else {
-        alert("Wrong");
+        wrongAnswer();
     }
 
 }
 
 function setMoneyWhite() {
+    moneylvl0.style.color = "white";
     moneylvl1.style.color = "white";
     moneylvl2.style.color = "white";
     moneylvl3.style.color = "white";
@@ -1368,4 +1365,10 @@ function setMoneyWhite() {
     moneylvl15.style.color = "white";
     moneylvl16.style.color = "white";
     moneylvl17.style.color = "white";
+}
+
+function wrongAnswer() {
+    setMoneyWhite();
+    startGame();
+    alert("Wrong");
 }
