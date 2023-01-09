@@ -87,7 +87,7 @@ function toggleTheme() {
 }
 const r = document.querySelector(':root');
 function initialSetShadow() {
-    r.style.setProperty('--yellow', 'black');
+    r.style.setProperty('--yellow', 'orange');
 }
 initialSetShadow();
 

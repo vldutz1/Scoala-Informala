@@ -24,4 +24,9 @@
         width: 4.5em;
         height: 2.5em;
     }
+    .s2-header {
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 1em;
+    }
 }

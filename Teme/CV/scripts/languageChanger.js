@@ -9,6 +9,7 @@ const country = document.getElementById("country");
 const city = document.getElementById("city");
 const age = document.getElementById("age");
 const romanian = document.getElementById("romanian");
+const english = document.getElementById("english");
 const gitKnowledge = document.getElementById("git-knowledge");
 const vidEditing = document.getElementById("vid-editing");
 const downloadCV = document.getElementById("download-cv");
@@ -20,10 +21,13 @@ const myAmazingCV = document.getElementById("my-amazing-cv");
 const myCVText = document.getElementById("my-cv-text");
 const contactForm = document.getElementById("contact-form");
 const contactFormText = document.getElementById("contact-form-text");
+const themeBtn = document.getElementById("dark-light-btn");
+const quizGameTitle = document.getElementById("quiz-game-title");
+const quizGameText = document.getElementById("quiz-game-text");
 
 let b = document.querySelector(':root');
 function initialVar() {
-    b.style.setProperty('--yellow', 'yellow');
+    b.style.setProperty('--yellow', 'rgb(255, 187, 0)');
 }
 initialVar();
 function setRomanian() {
@@ -37,6 +41,7 @@ function setRomanian() {
         city.innerText = "Oras";
         age.innerText = "Varsta";
         romanian.innerText = "Romana";
+        english.innerText = "Engleza";
         gitKnowledge.innerText = "Cunostinte Git";
         vidEditing.innerText = "Editare Imagini&Video";
         downloadCV.innerText = "Descarca CV";
@@ -47,7 +52,10 @@ function setRomanian() {
         myAmazingCV.innerText = "CV-ul Meu Incredibil";
         myCVText.innerText = "Te uiti la el";
         contactForm.innerText = "Formular de Contact";
-        contactFormText.innerText = "Un formular de contact conectat la o baza de date folosind un script PHP";
+        themeBtn.innerText = "Schimba Modul De Noapte/Zi";
+        contactFormText.innerText = "Un formular de contact conectat la o baza de date";
+        quizGameTitle.innerText = "Joc cu Intrebari";
+        quizGameText.innerText = "Un joc cu intrebari si raspunsuri cu 17 nivele";
         engBtn.classList.add("lang-btn-inactive");
         roBtn.classList.remove("lang-btn-inactive");
         (function initialVar() {
@@ -68,6 +76,7 @@ function setEnglish() {
         city.innerText = "City";
         age.innerText = "Age";
         romanian.innerText = "Romanian";
+        english.innerText = "English";
         gitKnowledge.innerText = "Git Knowledge";
         vidEditing.innerText = "Video&Image Editing";
         downloadCV.innerText = "Download CV";
@@ -78,7 +87,10 @@ function setEnglish() {
         myAmazingCV.innerText = "My Amazing CV";
         myCVText.innerText = "You're looking at it";
         contactForm.innerText = "Contact Form";
-        contactFormText.innerText = "A contact form connected to a database using a PHP script";
+        themeBtn.innerText = "Toggle Dark/Light Mode";
+        contactFormText.innerText = "A contact form connected to a database";
+        quizGameTitle.innerText = "Millionaire Quiz Game";
+        quizGameText.innerText = "A 17 levels based game with questions and answers";
         roBtn.classList.add("lang-btn-inactive");
         engBtn.classList.remove("lang-btn-inactive");
         (function initialVar() {

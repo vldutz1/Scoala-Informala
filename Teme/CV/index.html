@@ -85,7 +85,7 @@
         </div>
       </div>
       <label class="menu-text-spread">
-        <p class="main-color">English</p>
+        <p class="main-color" id="english">English</p>
         <p class="sec-color">90%</p>
       </label>
       <div class="progress-bar-bg">
@@ -98,16 +98,16 @@
       <p class="sec-color"><span class="yellow">&#x2713;</span> <span id="vid-editing">Video&Image Editing</span></p>
       <div class="menu-divider"></div>
       <div class="email-menu">
-        <div class="email-option1 sec-color" onclick="window.location.href='mailto:vladchereches@yahoo.com'">Send A Mail</div>
-        <div class="email-option2 sec-color" onclick="copyEmail()">Copy Email</div>
+        <div class="email-option1" onclick="window.location.href='mailto:vladchereches@yahoo.com'">Send A Mail</div>
+        <div class="email-option2" onclick="copyEmail()">Copy Email</div>
       </div>
       <div class="social-icons">
         <div class="social-icon-linkedin"
           onclick="window.location.href=`https://www.linkedin.com/in/vlad-chereches-a58510147/`"></div>
         <div class="social-icon-email social-icon-email-inactive" id="email-icon" onclick="toggleEmailMenu()"></div>
       </div>
-      <div class="sec-color download-btn"><span id="download-cv">Download CV</span><img src="images/download.png"
-          class="download-icon"></div>
+      <div class="sec-color download-btn"><span class="download-cv-effects"><span id="download-cv">Download
+            CV</span><img src="images/download.png" class="download-icon"></div></span>
     </div>
   </aside>
   <span class="open-btn" onclick="openNav()">&#9776;</span>
@@ -122,7 +122,7 @@
     <div class="right-menu-close-btn" onclick="closeRightMenu()">&times;</div>
     <div class="light-dark-btn-container">
       <img src="images/color-theme.png" width="24px" height="24px" onclick="toggleTheme()" class="color-theme-icon">
-      <div class="light-theme-text" onclick="toggleTheme()">Dark/Light Mode</div>
+      <div class="light-theme-text" onclick="toggleTheme()" id="dark-light-btn">Dark/Light Mode</div>
     </div>
     <div class="color-picker-container">
       <div class="change-color-red" onclick="redTheme()"></div>
@@ -214,8 +214,8 @@
         </article>
         <article class="portfolio-item portfolio-item-4"
           onclick="window.location.href='../../Proiecte Personale/Question Game/index.html'">
-          <span class="portfolio-title" id="contact-form">Millionaire Quiz Game</span>
-          <span class="sec-color portfolio-text" id="contact-form-text">A 17 levels based game with questions and
+          <span class="portfolio-title" id="quiz-game-title">Millionaire Quiz Game</span>
+          <span class="sec-color portfolio-text" id="quiz-game-text">A 17 levels based game with questions and
             answers</span>
         </article>
       </div>
