@@ -7,3 +7,13 @@
     font-family: titilliumBold;
     src: url("fonts/TitilliumWeb-Bold.ttf");
 }
+
+@font-face {
+    font-family: titilliumItalic;
+    src: url("fonts/TitilliumWeb-Italic.ttf");
+}
+
+@font-face {
+    font-family: titilliumLight;
+    src: url("fonts/TitilliumWeb-Light.ttf");
+}

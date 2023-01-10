@@ -5,12 +5,16 @@
     font-family: titillium;
 }
 
+.hidden {
+    display: none;
+}
+
 section {
     height: 100vh;
 }
 
 .main-section {
-    background-image: url("../images/main-section.jpg");
+    background-image: url("../images/main-section.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -28,7 +32,13 @@ section {
     margin-top: 0.7em;
     left: 1em;
     position: fixed;
-    z-index: 1;
+    z-index: 3;
+    width: 11em;
+    height: 4.1em;
+    background-image: url("../images/logo/Logo\ 7.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .nav-container {
@@ -40,7 +50,7 @@ section {
     align-items: center;
     width: 100%;
     font-size: 14px;
-    background-color: rgba(0, 0, 0, 0.326);
+    background-color: rgba(0, 0, 0, 0.726);
     height: 5em;
     color: white;
 }
@@ -48,6 +58,11 @@ section {
 .nav-items {
     margin-top: 0.7em;
     margin: 0px 2em;
+    cursor: pointer;
+}
+
+.nav-items:hover {
+    color: grey;
 }
 
 .nav-menu-btn {
@@ -60,28 +75,240 @@ section {
     z-index: 2;
 }
 
-.aside-buttons-container {
-    display: flex;
-    justify-content: space-around;
-}
-
 .main-section-buttons {
     height: 100%;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     position: absolute;
-    justify-content: center;
+    justify-content: space-evenly;
     font-size: 25px;
-    align-items: center;
+    align-items: flex-end;
     background-color: rgba(0, 0, 0, 0.384);
 }
 
 .main-section-aside-btn {
     transform-origin: 0 0;
     transform: rotate(-90deg);
-    /* margin: 2em 0em; */
+    color: white;
+    margin-left: 1em;
+    cursor: pointer;
 }
 
-#linkedin {
-    margin-top: 0;
+.main-section-aside-btn:hover {
+    color: grey;
+}
+
+.main-section-title {
+    color: white;
+    font-size: 5em;
+    font-family: titilliumLight;
+}
+
+.main-section-text {
+    color: white;
+    font-family: titilliumLight;
+}
+
+.main-section-btn {
+    color: white;
+    cursor: pointer;
+    font-size: 13px;
+    padding: 15px 39px;
+    background-color: rgb(26, 26, 26);
+    margin-top: 2.5em;
+}
+
+.main-section-btn:hover {
+    background-color: white;
+    color: rgb(26, 26, 26);;
+}
+
+.s2 {
+    background-color: white;
+    display: flex;
+}
+
+.s2-left-area {
+    background-image: url("../images/s2-left-img.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    width: 50%;
+}
+
+.s2-split-line {
+    background-color: rgb(210, 210, 210);
+    height: 100%;
+    width: 1px;
+}
+
+.s2-right-area {
+    width: 50%;
+    padding: 4em 4em;
+}
+
+.s2-text1 {
+    color: grey;
+    margin-bottom: 2em;
+}
+
+.s2-text2 {
+    font-size: 2.625em;
+}
+
+.s2-text3 {
+    margin-top: 3em;
+    font-size: 1em;
+}
+
+.knx-partner {
+    background-image: url("../images/KNX_PARTNER.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 10em;
+    width: 10em;
+}
+
+.knx-partner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.s3-text1 {
+    color: grey;
+    margin-bottom: 2em;
+}
+
+.s3-text2 {
+    font-size: 2.625em;
+}
+
+.s3-header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4em;
+}
+
+.s3-logo-bar {
+    background-color: #F4F4F4;
+    height: 12.5em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.s3-logos {
+    background-image: url("../images/logo/Logo\ 8.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20%;
+}
+
+.s3-services {
+    height: 17em;
+    max-height: 17em;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.s3-service1 {
+    height: 100%;
+    width: 100%;
+    background-image: url("../images/s3-home.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.s3-service1:hover {
+    opacity: 0.7;
+}
+
+.s3-service2 {
+    height: 100%;
+    width: 100%;
+    background-image: url("../images/s3-hotel.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    background-color: white;
+}
+
+.s3-service2:hover {
+    opacity: 0.7;
+}
+
+.s3-service3 {
+    height: 100%;
+    width: 100%;
+    background-image: url("../images/s3-building.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.s3-service3:hover {
+    opacity: 0.7;
+}
+
+.s3-services-text {
+    font-size: 40px;
+}
+
+.s3-text3 {
+    margin-top: 4em;
+    color: grey;
+}
+
+.s3-portfolio-btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4em;
+}
+
+.s3-portfolio-btn {
+    color: white;
+    cursor: pointer;
+    font-size: 13px;
+    padding: 15px 39px;
+    background-color: rgb(26, 26, 26);
+    margin-top: 2.5em;
+    transition: 0.5s;
+}
+
+.s3-portfolio-btn:hover {
+    color: rgb(26, 26, 26);
+    background-color: white;
+}
+
+.s4 {
+    height: 50%;
+}
+
+.footer {
+    background-color: #0F0F0F;
+    height: 20em;
 }

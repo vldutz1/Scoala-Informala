@@ -1,0 +1,113 @@
+.nav-menu-btn {
+    cursor: pointer;
+}
+
+.right-menu {
+    background-color: rgb(30, 30, 30);
+    height: 100%;
+    width: 0;
+    position: fixed;
+    right: 0px;
+    padding-top: 10%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.right-menu-info-container {
+    color: white;
+    width: 70%;
+}
+
+.close-right-menu {
+    color: white;
+    font-size: 3em;
+    z-index: 20;
+    position: fixed;
+    top: 3px;
+    right: 0.5em;
+    padding: 3px 0.3em;
+    background-color: rgb(30, 30, 30);
+    cursor: pointer;
+}
+
+.right-menu-logo-container {
+    /* background-color: black; */
+    color: white;
+    width: 70%;
+    height: 15%;
+    background-image: url("../images/logo/Logo\ 1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.contact-icon-location {
+    background-image: url("../images/location-icon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1.3em;
+    width: 1.3em;
+}
+
+.contact-containers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20%;
+}
+
+.contact-icon-email {
+    background-image: url("../images/email-icon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1.3em;
+    width: 1.3em;
+}
+
+.contact-icon-phone {
+    background-image: url("../images/phone-icon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1.3em;
+    width: 1.3em;
+}
+
+.right-menu-social-icons {
+    display: flex;
+    justify-content: space-around;
+    height: 2em;
+    margin-top: 3em;
+}
+
+.right-menu-fb-icon {
+    background-image: url("../images/fb-icon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 1.5em;
+    width: 1.5em;
+}
+
+.right-menu-ig-icon {
+    background-image: url("../images/ig-icon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 1.5em;
+    width: 1.5em;
+}
+
+.right-menu-linkedin-icon {
+    background-image: url("../images/ig-icon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 1.5em;
+    width: 1.5em;
+}
