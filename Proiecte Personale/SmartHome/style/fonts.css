@@ -1,3 +1,10 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: titillium;
+}
+
 @font-face {
     font-family: titillium;
     src: url("fonts/TitilliumWeb-Regular.ttf");

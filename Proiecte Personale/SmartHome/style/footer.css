@@ -1,0 +1,114 @@
+.footer {
+    background-color: #0F0F0F;
+}
+
+.footer-items {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    height: 20em;
+}
+
+.footer-left-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-left-title {
+    color: white;
+    font-size: 20px;
+    margin: 2em;
+}
+
+.footer-left-item {
+    color:#A3A3A3;
+}
+
+.footer-mid-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-right-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-contact-container {
+    display: flex;
+    height: 4em;
+}
+
+.footer-location {
+    width: 2em;
+    height: 2em;
+    background-image: url("../images/location-icon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.footer-email {
+    width: 2em;
+    height: 2em;
+    background-image: url("../images/email-icon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.footer-phone {
+    width: 2em;
+    height: 2em;
+    background-image: url("../images/phone-icon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.copyright {
+    color: #7D7D7D;
+    text-align: center;
+}
+
+.copyright-icon {
+    font-size: 30px;
+    padding: 0;
+    bottom: -6px;
+    position: relative;
+}
+
+.footer-logo {
+    margin: 2em 0;
+    height: 4em;
+    width: 12em;
+    background-image: url("../images/logo/Logo\ 8.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.footer-mid-text {
+    color: #7D7D7D;
+    padding-right: 10%;
+    padding-left: 10%;
+    text-align: center;
+}
+
+.knx-partner-footer {
+    background-image: url("../images/knx-partner-blackbg.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 5em;
+    width: 10em;
+}
