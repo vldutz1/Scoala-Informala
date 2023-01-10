@@ -5,11 +5,12 @@
     <title>Home and Building Automation - NEXT</title>
     <link rel="stylesheet" href="style/index.css">
     <link rel="stylesheet" href="style/fonts.css">
+    <link rel="stylesheet" href="style/right-side-menu.css">
 </head>
 
 <body>
-    <span class="nav-logo">Logo</span>
-    <span class="nav-menu-btn">&#9776;</span>
+    <span class="nav-logo"></span>
+    <span class="nav-menu-btn" onclick="openRightMenu()" id="right-menu-open-btn">&#9776;</span>
     <nav class="nav-container">
         <span class="nav-items">HOME</span>
         <span class="nav-items">SERVICES</span>
@@ -17,23 +18,98 @@
         <span class="nav-items">CONTACT</span>
         <span class="nav-items">FAQ</span>
     </nav>
+    <div class="close-right-menu hidden" onclick="closeRightMenu()" id="right-menu-close-btn">X</div>
+    <div class="right-menu" id="right-menu">
+
+        <div class="right-menu-logo-container"></div>
+        <div class="right-menu-info-container">
+            <span>Contact Information</span>
+            <div class="contact-containers">
+                <div class="contact-icon-location"></div>
+                <div>Location Here</div>
+            </div>
+            <div class="contact-containers">
+                <div class="contact-icon-email"></div>
+                <div>Email Here</div>
+            </div>
+            <div class="contact-containers">
+                <div class="contact-icon-phone"></div>
+                <div>Phone Nr Here</div>
+            </div>
+            <div class="right-menu-social-icons">
+                <div class="right-menu-fb-icon"></div>
+                <div class="right-menu-ig-icon"></div>
+                <div class="right-menu-linkedin-icon"></div>
+            </div>
+        </div>
+    </div>
     <section class="main-section">
         <aside class="main-section-buttons">
-            <div class="aside-buttons-container">
-                <span class="main-section-aside-btn" id="linkedin">Linkedin</span>
-                <span class="main-section-aside-btn">Facebook</span>
-            </div>
+            <span class="main-section-aside-btn" id="linkedin">Linkedin</span>
+            <span class="main-section-aside-btn">Facebook</span>
         </aside>
         <div class="main-section-elements-container">
-            <h1 class="main-section-title">Home & Building Automation</h1>
+            <span class="main-section-title">Home & Building Automation</span>
             <h3 class="main-section-text">We program KNX systems of all sizes and complexities</h3>
             <h3 class="main-section-text">We develop centralized supervision for the management of lightning, scenarios,
                 climate and</h3>
             <h3 class="main-section-text">electricity consumption</h3>
-            <div class="main-section-btn">Portfolio</div>
+            <div class="main-section-btn">PORTFOLIO</div>
         </div>
     </section>
-    <section class="main-section"></section> <!--Test -->
+    <section class="s2">
+        <div class="s2-left-area"></div>
+        <div class="s2-split-line"></div>
+        <div class="s2-right-area">
+            <div class="s2-text1">[ About Company ]</div>
+            <div class="s2-text2">Home Automation & Design</div>
+            <div class="s2-text3">Since 2005, throughout the country, we have been dealing with the programming of home
+                automation systems on KNX standards of all sizes and complexities, both in private homes and in tertiary
+                structures such as hotels, offices, shops.</div>
+            <div class="s2-text3">We think that a house must be beautiful and functional, for this reason we use
+                devices that are
+                characterized by design, attention to detail and cutting-edge technology.
+            </div>
+            <div class="knx-partner-container">
+                <div class="knx-partner"></div>
+            </div>
+    </section>
+    <section class="s3">
+        <div class="s3-header-container">
+            <div class="s3-text1">[ Our Services ]</div>
+            <div class="s3-text2">Products & Services</div>
+        </div>
+        <div class="s3-logo-bar">
+            <div class="s3-logos">Logo1</div>
+            <div class="s3-logos">Logo2</div>
+            <div class="s3-logos">Logo3</div>
+            <div class="s3-logos">Logo4</div>
+        </div>
+        <div class="s3-services">
+            <div class="s3-service1">
+                <div class="s3-services-text s3-services-mutual-css">Home Automation</div>
+            </div>
+            <div class="s3-service2">
+                <div class="s3-services-text s3-services-mutual-css">Hotel</div>
+            </div>
+            <div class="s3-service3">
+                <div class="s3-services-text s3-services-mutual-css">Building</div>
+            </div>
+        </div>
+    </section>
+    <section class="s4">
+        <div class="s3-header-container">
+            <div class="s3-text3">[ Our Works ]</div>
+            <div class="s3-text2">Portfolio</div>
+        </div>
+        <div class="s3-portfolio-btn-container">
+            <span class="s3-portfolio-btn">CHECK OUR PORTFOLIO</span>
+        </div>
+    </section>
+    <footer class="footer">
+        
+    </footer>
+    <script src="scripts/rightMenu.js"></script>
 </body>
 
 </html>
