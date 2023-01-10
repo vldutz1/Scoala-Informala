@@ -1,0 +1,9 @@
+@font-face {
+    font-family: titillium;
+    src: url("fonts/TitilliumWeb-Regular.ttf");
+}
+
+@font-face {
+    font-family: titilliumBold;
+    src: url("fonts/TitilliumWeb-Bold.ttf");
+}
