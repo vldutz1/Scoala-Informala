@@ -5,10 +5,11 @@
     z-index: 3;
     width: 11em;
     height: 4.1em;
-    background-image: url("../images/logo/Logo\ 7.png");
+    background-image: url("../images/logo/Logo\ 8-nobg.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+    cursor: pointer;
 }
 
 .nav-container {

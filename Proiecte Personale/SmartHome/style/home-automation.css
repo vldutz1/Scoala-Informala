@@ -106,7 +106,16 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+}
+
+.s3-items {
+    margin-bottom: 2em;
+    color: rgb(95, 95, 95);
+}
+
+.s3-items-title {
+    font-family: titilliumBold;
+    color: black;
 }
 
 .s3-item1-img {
@@ -119,4 +128,89 @@ section {
     background: url("../images/home-automation/light-bulb.png") center/contain no-repeat;
     width: 5em;
     height: 5em;
+}
+
+.s3-item3-img {
+    background: url("../images/home-automation/media.png") center/contain no-repeat;
+    width: 5em;
+    height: 5em;
+}
+
+.s3-item4-img {
+    background: url("../images/home-automation/voice.png") center/contain no-repeat;
+    width: 5em;
+    height: 5em;
+}
+
+.s4 {
+    background-color: aliceblue;
+    padding: 0em 4em;
+    height: fit-content;
+}
+
+.s4-title {
+    font-size: 36px;
+}
+
+.s4-subtitle {
+    margin-top: 3em;
+    color: rgb(95, 95, 95);
+    font-size: 17px;
+}
+
+.s4-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.s4-items-title {
+    font-size: 25px;
+    margin-top: 1em;
+}
+
+.s4-items-text {
+    color: rgb(91, 91, 91);
+}
+
+.s4-item-img1 {
+    background: url("../images/home-automation/camera.png") center/contain no-repeat;
+    height: 5em;
+    width: 5em;
+}
+
+.s4-item-img2 {
+    background: url("../images/home-automation/door-video.png") center/contain no-repeat;
+    height: 5em;
+    width: 5em;
+}
+
+.s4-item-img3 {
+    background: url("../images/home-automation/phone-hand.png") center/contain no-repeat;
+    height: 5em;
+    width: 5em;
+}
+
+.s5 {
+    padding: 8em 4em 1em 4em;
+}
+
+
+.s5-left {
+    height: 100%;
+    width: 40%;
+}
+
+.s5-title {
+    color: grey;
+}
+
+.s5-right {
+    height: 100%;
+    width: 60%;
+}
+
+.s5-heading-text {
+    font-size: 36px;
+    margin-top: 3em;
+    font-family: titilliumBold;
 }
