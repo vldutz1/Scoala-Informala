@@ -1,0 +1,105 @@
+.nav-logo {
+    margin-top: 0.7em;
+    left: 1em;
+    position: fixed;
+    z-index: 3;
+    width: 11em;
+    height: 4.1em;
+    background-image: url("../images/logo/Logo\ 7.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.nav-container {
+    margin-top: 0.7em;
+    z-index: 1;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.726);
+    height: 5em;
+    color: white;
+}
+
+.nav-items {
+    margin-top: 0.7em;
+    margin: 0px 2em;
+    cursor: pointer;
+}
+
+.nav-items:hover {
+    color: grey;
+}
+
+.nav-menu-btn {
+    margin-top: 0.7em;
+    right: 1em;
+    position: fixed;
+    z-index: 1;
+    font-size: 30px;
+    color: white;
+    z-index: 2;
+}
+
+.services:hover .services-dropdown {
+    display: block;
+}
+
+.services-dropdown:hover {
+    display: block;
+}
+
+.services-dropdown {
+    display: none;
+    position: absolute;
+    background-color: rgb(39, 39, 39);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 11;
+    margin: 1.7em -4em;
+}
+
+.nav-highlight-services {
+    width: 5em;
+    height: 2em;
+    position: absolute;
+}
+
+.nav-highlight-services:hover .services-dropdown {
+    display: block;
+}
+
+.dropdown-items:hover {
+    color: white;
+}
+
+.dropdown-items {
+    font-size: 16px;
+    margin: 1em;
+}
+
+.products-dropdown {
+    display: none;
+    position: absolute;
+    background-color: rgb(39, 39, 39);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 11;
+    margin: 1.7em -4em;
+}
+
+.products:hover .products-dropdown {
+    display: block;
+}
+
+.nav-highlight-products {
+    width: 5em;
+    height: 2em;
+    position: absolute;
+}

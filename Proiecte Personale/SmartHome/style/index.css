@@ -21,53 +21,6 @@ section {
     height: 100%;
 }
 
-.nav-logo {
-    margin-top: 0.7em;
-    left: 1em;
-    position: fixed;
-    z-index: 3;
-    width: 11em;
-    height: 4.1em;
-    background-image: url("../images/logo/Logo\ 7.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.nav-container {
-    margin-top: 0.7em;
-    z-index: 1;
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    font-size: 14px;
-    background-color: rgba(0, 0, 0, 0.726);
-    height: 5em;
-    color: white;
-}
-
-.nav-items {
-    margin-top: 0.7em;
-    margin: 0px 2em;
-    cursor: pointer;
-}
-
-.nav-items:hover {
-    color: grey;
-}
-
-.nav-menu-btn {
-    margin-top: 0.7em;
-    right: 1em;
-    position: fixed;
-    z-index: 1;
-    font-size: 30px;
-    color: white;
-    z-index: 2;
-}
-
 .main-section-buttons {
     height: 100%;
     display: flex;
@@ -113,7 +66,8 @@ section {
 
 .main-section-btn:hover {
     background-color: white;
-    color: rgb(26, 26, 26);;
+    color: rgb(26, 26, 26);
+    ;
 }
 
 .s2 {

@@ -2,20 +2,39 @@
 <html>
 
 <head>
-    <title>Home and Building Automation - NEXT</title>
+    <title>Home and Building Automation - DOMUNEXT</title>
     <link rel="stylesheet" href="style/index.css">
     <link rel="stylesheet" href="style/fonts.css">
     <link rel="stylesheet" href="style/right-side-menu.css">
     <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/nav.css">
 </head>
 
 <body>
     <span class="nav-logo"></span>
     <span class="nav-menu-btn" onclick="openRightMenu()" id="right-menu-open-btn">&#9776;</span>
     <nav class="nav-container">
-        <span class="nav-items">HOME</span>
-        <span class="nav-items">SERVICES</span>
-        <span class="nav-items">PRODUCTS</span>
+        <span class="nav-items" onclick="window.location.href='index.html'">HOME</span>
+        <span class="services nav-items">SERVICES
+            <div class="nav-highlight-services"></div>
+            <div class="services-dropdown">
+                <div class="dropdown-items">Home Automation</div>
+                <div class="dropdown-items">Building Automation</div>
+                <div class="dropdown-items">Hotels</div>
+            </div>
+        </span>
+        <span class="products nav-items">PRODUCTS
+            <div class="nav-highlight-products"></div>
+            <div class="products-dropdown">
+                <div class="dropdown-items">Schneider</div>
+                <div class="dropdown-items">Vimar</div>
+                <div class="dropdown-items">ThinKnx</div>
+                <div class="dropdown-items">Basalts</div>
+                <div class="dropdown-items">Ekinex</div>
+                <div class="dropdown-items">Bticino</div>
+                <div class="dropdown-items">Zennius</div>
+            </div>
+        </span>
         <span class="nav-items">CONTACT</span>
         <span class="nav-items">FAQ</span>
     </nav>
@@ -135,12 +154,12 @@
                 <div class="knx-partner-footer"></div>
             </div>
             <div class="footer-right-container">
-                <div class="footer-left-title">Contacts</div>
-                <div class="footer-left-items">
+                <div class="footer-left-title">Home Automation Services</div>
+                <!-- <div class="footer-left-items">
                     <div class="footer-left-item">Location here</div>
                     <div class="footer-left-item">Email here</div>
                     <div class="footer-left-item">Phone Here</div>
-                </div>
+                </div> -->
             </div>
         </div>
         <div class="copyright">Copyright <span class="copyright-icon">&#169;</span> 2022 DOMUNEXT. All rights reserved.
