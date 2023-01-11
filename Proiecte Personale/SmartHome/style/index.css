@@ -149,11 +149,23 @@ section {
     justify-content: space-between;
 }
 
-.s3-logos {
-    background-image: url("../images/logo/Logo\ 8.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+.s3-logo1 {
+    background: url("../images/elan-home-systems-logo.png") center/contain no-repeat;
+    width: 20%;
+}
+
+.s3-logo2 {
+    background: url("../images/thinknx\ logo.png") center/contain no-repeat;
+    width: 20%;
+}
+
+.s3-logo3 {
+    background: url("../images/lithoss-logo.png") center/contain no-repeat;
+    width: 20%;
+}
+
+.s3-logo4 {
+    background: url("../images/zennio-logo.png") center/contain no-repeat;
     width: 20%;
 }
 
