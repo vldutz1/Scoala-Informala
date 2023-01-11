@@ -31,7 +31,7 @@ function initialVar() {
 }
 initialVar();
 function setRomanian() {
-    if (isRomanian === false) {
+    if (!isRomanian) {
         isRomanian = true;
         isEnglish = false;
         s1HeaderText.innerText = "Descopera-mi Potentialul";
