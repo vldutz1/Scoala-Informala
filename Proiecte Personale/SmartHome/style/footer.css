@@ -76,15 +76,23 @@
     background-size: contain;
 }
 
+.copyright-container {
+    display: flex;
+    justify-content: center;
+}
+
 .copyright {
     color: #7D7D7D;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .copyright-icon {
-    font-size: 30px;
-    padding: 0;
-    bottom: -6px;
+    width: 1em;
+    height: 1em;
+    background: url("../images/copyright-icon.png") center/contain no-repeat;
+    bottom: -5px;
     position: relative;
 }
 
@@ -112,4 +120,24 @@
     background-size: contain;
     height: 5em;
     width: 10em;
+}
+
+@media screen and (max-width: 547px) {
+    .footer-right-container {
+        display: none;
+    }
+  }
+@media screen and (max-width: 471px) {
+    .footer-contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-items {
+        display: flex;
+        flex-direction: column-reverse;
+        height: fit-content;
+    }
+    .footer {
+        height: fit-content;
+    }
 }

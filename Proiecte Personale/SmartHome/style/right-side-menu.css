@@ -13,7 +13,7 @@
     align-items: center;
     flex-direction: column;
     transition: 0.5s;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .right-menu-info-container {
@@ -34,10 +34,9 @@
 }
 
 .right-menu-logo-container {
-    /* background-color: black; */
     color: white;
-    width: 70%;
-    height: 15%;
+    width: 10em;
+    min-height: 3em;
     background-image: url("../images/logo/Logo\ 8-nobg.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -111,3 +110,23 @@
     height: 1.5em;
     width: 1.5em;
 }
+
+.right-menu-mobile-navs {
+    color: white;
+    padding: 1em;
+    cursor: pointer;
+}
+
+.right-menu-mobile-navs:hover {
+    color: grey;
+}
+
+.mobile-menu {
+    margin-left: 1.5em;
+}
+
+@media screen and (min-width: 860px) {
+    .mobile-menu {
+      display: none;
+    }
+  }

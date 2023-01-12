@@ -1,0 +1,17 @@
+@media screen and (max-width: 991px) {
+    .main-section-title {
+      font-size: 50px;
+    }
+    .main-section-text {
+        font-size: 14px;
+    }
+  }
+
+  @media screen and (max-width: 634px) {
+    .main-section-title {
+      font-size: 30px;
+    }
+    .main-section-text {
+        font-size: 10px;
+    }
+  }

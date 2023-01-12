@@ -48,11 +48,13 @@ section {
     color: white;
     font-size: 5em;
     font-family: titilliumLight;
+    text-align: center;
 }
 
 .main-section-text {
     color: white;
     font-family: titilliumLight;
+    text-align: center;
 }
 
 .main-section-btn {
@@ -73,6 +75,7 @@ section {
 .s2 {
     background-color: white;
     display: flex;
+    height: fit-content;
 }
 
 .s2-left-area {
@@ -80,7 +83,6 @@ section {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    height: 100%;
     width: 50%;
 }
 
@@ -129,6 +131,10 @@ section {
     margin-bottom: 2em;
 }
 
+.s3 {
+    height: fit-content;
+}
+
 .s3-text2 {
     font-size: 2.625em;
 }
@@ -172,7 +178,6 @@ section {
 .s3-services {
     height: 17em;
     max-height: 17em;
-    background-color: aqua;
     display: flex;
     justify-content: space-between;
     color: white;
@@ -183,14 +188,12 @@ section {
 .s3-service1 {
     height: 100%;
     width: 100%;
-    background-image: url("../images/s3-home.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
+    background: url("../images/s3-home.jpg") center/cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: 0.5s;
+    text-align: center;
 }
 
 .s3-service1:hover {
@@ -200,10 +203,7 @@ section {
 .s3-service2 {
     height: 100%;
     width: 100%;
-    background-image: url("../images/s3-hotel.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
+    background: url("../images/s3-hotel.jpg") center/cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -218,10 +218,7 @@ section {
 .s3-service3 {
     height: 100%;
     width: 100%;
-    background-image: url("../images/s3-building.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
+    background: url("../images/s3-building.jpg") center/cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -264,5 +261,28 @@ section {
 }
 
 .s4 {
-    height: 50%;
+    height: 100vh;
+}
+
+@media screen and (max-width: 730px) {
+    .s2 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .s2-right-area {
+        width: 100%;
+    }
+    .s2-left-area {
+        height: 100vh;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .s3-services {
+        flex-direction: column;
+        max-height: 50em;
+        height: 50em;
+    }
 }

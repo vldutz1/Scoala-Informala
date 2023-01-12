@@ -3,11 +3,13 @@
 
 <head>
     <title>Home and Building Automation - DOMUNEXT</title>
+    <link rel="stylesheet" href="style/nav.css">
     <link rel="stylesheet" href="style/index.css">
     <link rel="stylesheet" href="style/fonts.css">
     <link rel="stylesheet" href="style/right-side-menu.css">
     <link rel="stylesheet" href="style/footer.css">
-    <link rel="stylesheet" href="style/nav.css">
+    <link rel="stylesheet" href="style/responsive/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
@@ -18,7 +20,8 @@
         <span class="services nav-items">SERVICES
             <div class="nav-highlight-services"></div>
             <div class="services-dropdown">
-                <div class="dropdown-items" onclick="window.location.href='pages/home-automation.html'">Home Automation</div>
+                <div class="dropdown-items" onclick="window.location.href='pages/home-automation.html'">Home Automation
+                </div>
                 <div class="dropdown-items" onclick="window.location.href='pages/building-automation.html'">Building
                     Automation</div>
                 <div class="dropdown-items" onclick="window.location.href='pages/hotel.html'">Hotels</div>
@@ -43,8 +46,38 @@
     <div class="right-menu" id="right-menu">
 
         <div class="right-menu-logo-container"></div>
+        <div class="mobile-menu">
+            <div class="right-menu-mobile-navs">Home</div>
+            <div class="right-menu-mobile-navs" onclick="mobileServices()">Services</div>
+            <div class="hidden" id="right-menu-services">
+                <div class="right-menu-mobile-navs mobile-menu">Home Automation</div>
+                <div class="right-menu-mobile-navs mobile-menu">Building Automation</div>
+                <div class="right-menu-mobile-navs mobile-menu">Hotels Automation</div>
+            </div>
+            <div class="right-menu-mobile-navs" onclick="mobileProducts()">Products</div>
+            <div id="right-menu-products" class="hidden">
+                <div class="right-menu-mobile-navs mobile-menu" onclick="window.location.href='pages/schneider.html'">
+                    Schneider</div>
+                <div class="right-menu-mobile-navs mobile-menu" onclick="window.location.href='pages/vimar.html'">Vimar
+                </div>
+                <div class="right-menu-mobile-navs mobile-menu" onclick="window.location.href='pages/thinknx.html'">
+                    ThinKnx</div>
+                <div class="right-menu-mobile-navs mobile-menu" onclick="window.location.href='pages/basalts.html'">
+                    Basalts</div>
+                <div class="right-menu-mobile-navs mobile-menu" onclick="window.location.href='pages/ekinex.html'">
+                    Ekinex</div>
+                <div class="right-menu-mobile-navs mobile-menu" onclick="window.location.href='pages/bticino.html'">
+                    Bticino</div>
+                <div class="right-menu-mobile-navs mobile-menu" onclick="window.location.href='pages/zennius.html'">
+                    Zennius</div>
+            </div>
+            <div class="right-menu-mobile-navs" onclick="window.location.href='pages/contact.html'">Contact</div>
+            <div class="right-menu-mobile-navs" onclick="window.location.href='pages/faq.html'">FAQ</div>
+        </div>
+
         <div class="right-menu-info-container">
             <span>Contact Information</span>
+
             <!-- <div class="contact-containers">
                 <div class="contact-icon-location"></div>
                 <div>Location Here</div>
@@ -163,7 +196,11 @@
                         </div> -->
             </div>
         </div>
-        <div class="copyright">Copyright <span class="copyright-icon">&#169;</span> 2022 DOMUNEXT. All rights reserved.
+        <div class="copyright-container">
+            <div class="copyright">Copyright </div>
+            <div class="copyright-icon"></div>
+            <div class="copyright"> 2023 DOMUNEXT. All rights reserved.</div>
+            </span>
         </div>
     </footer>
     <script src="scripts/rightMenu.js"></script>
