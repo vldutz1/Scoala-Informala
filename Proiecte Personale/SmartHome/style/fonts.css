@@ -5,6 +5,10 @@
     font-family: titillium;
 }
 
+.hidden {
+    display: none;
+}
+
 @font-face {
     font-family: titillium;
     src: url("fonts/TitilliumWeb-Regular.ttf");

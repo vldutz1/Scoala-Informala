@@ -1,0 +1,84 @@
+.s1 {
+    background: url("../images/building-automation/s1-bg.jpg") center/cover no-repeat;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.s1-title {
+    color: white;
+    font-size: 5em;
+}
+
+.s2 {
+    height: 100vh;
+    padding: 2em 5em;
+}
+
+.s2-special-texts {
+    color: rgb(2, 148, 2);
+    font-size: 1.5em;
+}
+
+.titles {
+    font-size: 2em;
+}
+
+.texts {
+    color: grey;
+}
+
+.s2-bottom-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.s2-img {
+    background: url("../images/building-automation/s2-img.jpg") center/contain no-repeat;
+    height: 50%;
+    width: 90%;
+}
+
+.s2-info {
+    width: 50%;
+}
+
+.progress-labels {
+    font-family: titilliumBold;
+}
+
+.progress-bar-container {
+    background-color: grey;
+    height: 0.7em;
+}
+
+.progress-bar-fill {
+    background-color: chartreuse;
+    height: 100%;
+    font-size: 0.7em;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.s3 {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.s3-left {
+    text-align: right;
+    width: 50%;
+}
+
+.s3-right {
+    width: 50%;
+    background: url("../images/building-automation/s3-img.jpg") center/contain no-repeat;
+    height: 100%;
+}

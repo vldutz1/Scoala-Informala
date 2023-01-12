@@ -1,0 +1,92 @@
+.s1 {
+    background: url("../images/hotel/s1.jpg") center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.s1-header {
+    color: white;
+    font-size: 5em;
+}
+
+.s2 {
+    height: 100vh;
+    padding: 7em 7em;
+}
+
+.s2-special-text {
+    color: grey;
+}
+
+.s2-title {
+    font-size: 3em;
+}
+
+.s2-text {
+    color: grey;
+    font-size: 1em;
+    margin-bottom: 3em;
+}
+
+.s2-img-container {
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+}
+
+.s2-img1 {
+    background: url("../images/hotel/s2-img1.png") center/contain no-repeat;
+    height: 20em;
+    width: 30%;
+}
+
+.s2-img2 {
+    background: url("../images/hotel/s2-img2.png") center/contain no-repeat;
+    height: 20em;
+    width: 30%;
+}
+
+.s2-img3 {
+    background: url("../images/hotel/s2-img3.png") center/contain no-repeat;
+    height: 20em;
+    width: 30%;
+}
+
+.s3 {
+    height: 100vh;
+    padding: 7em 7em;
+}
+
+.s3-images {
+    display: flex;   
+    height: 30vh;
+    justify-content: space-evenly;
+}
+
+.s3-titles {
+    font-size: 1.5em;
+}
+
+.s3-texts {
+    color: grey;
+}
+
+.s3-img3 {
+    background: url("../images/hotel/hotel-icon.png") center/contain no-repeat;
+    height: 3em;
+    width: 3em;
+}
+
+.s3-img1 {
+    background: url("../images/hotel/climate-icon.png") center/contain no-repeat;
+    height: 3em;
+    width: 3em;
+}
+
+.s3-img2 {
+    background: url("../images/hotel/savings-icon.png") center/contain no-repeat;
+    height: 3em;
+    width: 3em;
+}

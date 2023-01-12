@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Schneider - DOMUNEXT</title>
+    <link rel="stylesheet" href="../style/fonts.css">
+    <link rel="stylesheet" href="../style/right-side-menu.css">
+    <link rel="stylesheet" href="../style/footer.css">
+    <link rel="stylesheet" href="../style/nav.css">
+    <link rel="stylesheet" href="../style/schneider.css">
+</head>
+<body>
+    <span class="nav-logo" onclick="window.location.href='../index.html'"></span>
+    <span class="nav-menu-btn" onclick="openRightMenu()" id="right-menu-open-btn">&#9776;</span>
+    <nav class="nav-container">
+        <span class="nav-items" onclick="window.location.href='../index.html'">HOME</span>
+        <span class="services nav-items">SERVICES
+            <div class="nav-highlight-services"></div>
+            <div class="services-dropdown">
+                <div class="dropdown-items" onclick="window.location.href='home-automation.html'">Home Automation</div>
+                <div class="dropdown-items" onclick="window.location.href='building-automation.html'">Building
+                    Automation</div>
+                <div class="dropdown-items" onclick="window.location.href='hotel.html'">Hotels</div>
+            </div>
+        </span>
+        <span class="products nav-items">PRODUCTS
+            <div class="nav-highlight-products"></div>
+            <div class="products-dropdown">
+                <div class="dropdown-items" onclick="window.location.href='schneider.html'">Schneider</div>
+                <div class="dropdown-items" onclick="window.location.href='vimar.html'">Vimar</div>
+                <div class="dropdown-items" onclick="window.location.href='thinknx.html'">ThinKnx</div>
+                <div class="dropdown-items" onclick="window.location.href='basalts.html'">Basalts</div>
+                <div class="dropdown-items" onclick="window.location.href='ekinex.html'">Ekinex</div>
+                <div class="dropdown-items" onclick="window.location.href='bticino.html'">Bticino</div>
+                <div class="dropdown-items" onclick="window.location.href='zennius.html'">Zennius</div>
+            </div>
+        </span>
+        <span class="nav-items" onclick="window.location.href='contact.html'">CONTACT</span>
+        <span class="nav-items" onclick="window.location.href='faq.html'">FAQ</span>
+    </nav>
+    <div class="close-right-menu hidden" onclick="closeRightMenu()" id="right-menu-close-btn">X</div>
+    <div class="right-menu" id="right-menu">
+
+        <div class="right-menu-logo-container"></div>
+        <div class="right-menu-info-container">
+            <span>Contact Information</span>
+            <!-- <div class="contact-containers">
+                <div class="contact-icon-location"></div>
+                <div>Location Here</div>
+            </div> -->
+            <div class="contact-containers">
+                <div class="contact-icon-email"></div>
+                <div>service@domunext.com</div>
+            </div>
+            <div class="contact-containers">
+                <div class="contact-icon-phone"></div>
+                <div>+39 3935313425</div>
+            </div>
+            <!-- <div class="right-menu-social-icons">
+                <div class="right-menu-fb-icon"></div>
+                <div class="right-menu-ig-icon"></div>
+                <div class="right-menu-linkedin-icon"></div>
+            </div> -->
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-items">
+            <div class="footer-left-container">
+                <div class="footer-left-title">Contacts</div>
+                <div class="footer-left-items">
+                    <!-- <div class="footer-contact-container">
+                        <div class="footer-location"></div>
+                        <div class="footer-left-item">Location here</div>
+                    </div> -->
+                    <div class="footer-contact-container">
+                        <div class="footer-email"></div>
+                        <div class="footer-left-item">service@domunext.com</div>
+                    </div>
+                    <div class="footer-contact-container">
+                        <div class="footer-phone"></div>
+                        <div class="footer-left-item">+39 3935313425</div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-mid-container">
+                <div class="footer-logo"></div>
+                <div class="footer-mid-text">
+                    We program KNX systems and develop centralized supervision for the management of lighting,
+                    scenarios, climate and electricity consumption.
+                </div>
+                <div class="knx-partner-footer"></div>
+            </div>
+            <div class="footer-right-container">
+                <div class="footer-left-title">Home Automation Services</div>
+                <!-- <div class="footer-left-items">
+                            <div class="footer-left-item">Location here</div>
+                            <div class="footer-left-item">Email here</div>
+                            <div class="footer-left-item">Phone Here</div>
+                        </div> -->
+            </div>
+        </div>
+        <div class="copyright">Copyright <span class="copyright-icon">&#169;</span> 2022 DOMUNEXT. All rights reserved.
+        </div>
+    </footer>
+    <script src="../scripts/rightMenu.js"></script>
+</body>
+</html>
