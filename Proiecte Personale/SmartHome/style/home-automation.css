@@ -338,3 +338,59 @@ section {
         display: flex;
     }
 }
+
+@media screen and (max-width: 856px) {
+    .s1-title {
+        font-size: 4em;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .s1-title {
+        font-size: 3em;
+    }
+    .s2-images {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .s3 {
+        padding: 0;
+    }
+    .s5 {
+        padding: 0;
+    }
+    .s5-left {
+        width: 100%;
+    }
+    .s5-left-text {
+        padding: 0em 4em;
+    }
+}
+
+@media screen and (max-width: 469px) {
+    .s2-img1 {
+        width: 20em;
+    }
+    .s2-img2 {
+        width: 20em;
+    }
+    .s2-img3 {
+        width: 20em;
+    }
+}
+
+@media screen and (max-width: 391px) {
+    .s1-title {
+        font-size: 2em;
+    }
+    .s2-img1 {
+        width: 15em;
+    }
+    .s2-img2 {
+        width: 15em;
+    }
+    .s2-img3 {
+        width: 15em;
+    }
+}
