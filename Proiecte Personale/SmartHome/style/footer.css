@@ -1,5 +1,7 @@
 .footer {
     background-color: #0F0F0F;
+    height: fit-content;
+    bottom: 0px;
 }
 
 .footer-items {
