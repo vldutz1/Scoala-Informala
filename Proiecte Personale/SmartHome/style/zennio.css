@@ -4,7 +4,7 @@
 }
 
 .s1-logo {
-    background: url("../images/bticino/s1-logo.png") center/contain no-repeat;
+    background: url("../images/zennio/s1-logo.jpg") center/contain no-repeat;
     height: 40vh;
     margin: 7em 0em 0em 0em;
 }
@@ -22,4 +22,25 @@
 .s2 {
     height: max-content;
     padding: 4em;
+}
+
+.s2-img {
+    background: url("../images/zennio/s2-img.png") center/contain no-repeat;
+    height: 80vh;
+    margin: 3em 0em;
+}
+
+.s2-products {
+    background: url("../images/zennio/products.jpg") center/contain no-repeat;
+    height: 80vh;
+    margin: 3em 0em;
+}
+
+@media screen and (max-width: 500px) {
+    .s2 {
+        padding: 0.5em;
+    }
+    .titles {
+        text-align: center;
+    }
 }

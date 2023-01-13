@@ -1,0 +1,21 @@
+.s1 {
+    height: max-content;
+    padding-bottom: 3em;
+    background: url("../images/contact/logo.jpg") center/cover no-repeat;
+    height: 40vh;
+}
+
+.titles {
+    font-size: 2em;
+    font-family: titilliumBold;
+    margin: 1em 0em;
+}
+
+.texts {
+    color: grey;
+}
+
+.s2 {
+    height: max-content;
+    padding: 4em;
+}
