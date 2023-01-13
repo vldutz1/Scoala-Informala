@@ -1,0 +1,25 @@
+.s1 {
+    height: max-content;
+    padding-bottom: 3em;
+}
+
+.s1-logo {
+    background: url("../images/bticino/s1-logo.png") center/contain no-repeat;
+    height: 40vh;
+    margin: 7em 0em 0em 0em;
+}
+
+.titles {
+    font-size: 2em;
+    font-family: titilliumBold;
+    margin: 1em 0em;
+}
+
+.texts {
+    color: grey;
+}
+
+.s2 {
+    height: max-content;
+    padding: 4em;
+}

@@ -4,7 +4,7 @@
 }
 
 .s1-logo {
-    background: url("../images/basalte/s1-logo.png") center/cover no-repeat;
+    background: url("../images/basalte/s1-logo.png") center/contain no-repeat;
     height: 40vh;
     margin: 7em 0em 0em 0em;
 }
@@ -17,4 +17,35 @@
 
 .texts {
     color: grey;
+}
+
+.s2 {
+    height: max-content;
+    padding: 4em;
+}
+
+.s2-img {
+    background: url("../images/basalte/s2-img.jpg") center/contain no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+.s3 {
+    height: max-content;
+    padding: 4em;
+}
+
+.s3-img {
+    margin: 4em 0em;
+    background: url("../images/basalte/s3-img.png") center/contain no-repeat;
+    height: 100vh;
+}
+
+@media screen and (max-width: 919px) {
+    .s2 {
+        padding: 2em;
+    }
+    .s3 {
+        padding: 2em;
+    }
 }
