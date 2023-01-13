@@ -83,3 +83,36 @@
     height: 100%;
     width: 33%;
 }
+
+@media screen and (max-width: 839px) {
+    .s2 {
+        padding: 1em 1em;
+    }
+    .s3 {
+        padding: 1em 1em;
+    }
+    .s4 {
+        padding: 1em 1em;
+    }
+    .imgs {
+        flex-direction: column;
+        width: 100%;
+        height: max-content;
+    }
+    .img1 {
+        width: 100%;
+        height: 30em;
+    }
+    .img2 {
+        width: 100%;
+        height: 30em;
+    }
+    .img3 {
+        width: 100%;
+        height: 30em;
+    }
+    .img4 {
+        width: 100%;
+        height: 30em;
+    }
+}

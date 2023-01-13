@@ -12,8 +12,8 @@
 }
 
 .s2 {
-    height: 100vh;
-    padding: 7em 7em;
+    height: max-content;
+    padding: 7em 7em 0em 7em;
 }
 
 .s2-special-text {
@@ -31,7 +31,7 @@
 }
 
 .s2-img-container {
-    height: fit-content;
+    height: max-content;
     display: flex;
     justify-content: space-between;
 }
@@ -55,7 +55,7 @@
 }
 
 .s3 {
-    height: 100vh;
+    height: max-content;
     padding: 7em 7em;
 }
 
@@ -89,4 +89,60 @@
     background: url("../images/hotel/savings-icon.png") center/contain no-repeat;
     height: 3em;
     width: 3em;
+}
+
+@media screen and (max-width: 874px) {
+    .s3-images {
+        flex-direction: column;
+        height: max-content;
+    }
+    .s2-img-container {
+        flex-direction: column;
+    }
+    .s2-img1 {
+        width: 100%;
+    }
+    .s2-img2 {
+        width: 100%;
+    }
+    .s2-img3 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 589px) {
+    .s1-header {
+        font-size: 4em;
+    }
+    .s2 {
+        padding: 3em 1em 3em 1em;
+    }
+    .s2-special-text {
+        text-align: center;
+    }
+    .s2-text {
+        text-align: center;
+    }
+    .s3 {
+        padding: 0em 1em 3em 1em;
+    }
+    .s3-img1 {
+        margin: 0 50%;
+    }
+    .s3-img2 {
+        margin: 0 50%;
+    }
+    .s3-img3 {
+        margin: 0 50%;
+    }
+    .s3-titles {
+        text-align: center;
+    }
+    .s3-texts {
+        text-align: center;
+    }
+    .s2-title {
+        font-size: 2em;
+        text-align: center;
+    }
 }

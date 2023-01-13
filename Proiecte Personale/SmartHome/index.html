@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="style/fonts.css">
     <link rel="stylesheet" href="style/right-side-menu.css">
     <link rel="stylesheet" href="style/footer.css">
-    <link rel="stylesheet" href="style/responsive/index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -47,12 +46,12 @@
 
         <div class="right-menu-logo-container"></div>
         <div class="mobile-menu">
-            <div class="right-menu-mobile-navs">Home</div>
+            <div class="right-menu-mobile-navs" onclick="window.location.href='index.html'">Home</div>
             <div class="right-menu-mobile-navs" onclick="mobileServices()">Services</div>
             <div class="hidden" id="right-menu-services">
-                <div class="right-menu-mobile-navs mobile-menu">Home Automation</div>
-                <div class="right-menu-mobile-navs mobile-menu">Building Automation</div>
-                <div class="right-menu-mobile-navs mobile-menu">Hotels Automation</div>
+                <div class="right-menu-mobile-navs mobile-menu" onclick="window.location.href='pages/home-automation.html'">Home Automation</div>
+                <div class="right-menu-mobile-navs mobile-menu" onclick="window.location.href='pages/building-automation.html'">Building Automation</div>
+                <div class="right-menu-mobile-navs mobile-menu" onclick="window.location.href='pages/hotel.html'">Hotels Automation</div>
             </div>
             <div class="right-menu-mobile-navs" onclick="mobileProducts()">Products</div>
             <div id="right-menu-products" class="hidden">
