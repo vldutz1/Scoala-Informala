@@ -136,6 +136,13 @@ section {
     background-repeat: no-repeat;
 }
 
+.portfolio-item-6 {
+    background-image: url("../images/Logo\ 8-nobg.png");
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+
 .portfolio-item:hover {
     box-shadow: 0 1px 4px 0 var(--yellow);
     cursor: pointer;
@@ -187,6 +194,12 @@ section {
     color: white;
     text-align: center;
     font-family: poppinsBold;
+    margin: 1em 1em;
+}
+
+.s2-item:hover {
+    transform: scale(1.2);
+    transition: 0.3s ease-in;
 }
 
 .s2-item-img {
@@ -227,6 +240,14 @@ section {
 
 .premiere-pro-logo {
     background-image: url("../images/premiere-pro-logo.png");
+}
+
+.ts-logo {
+    background-image: url("../images/typescript-logo.png");
+}
+
+.angular-logo {
+    background-image: url("../images/angular-logo.png");
 }
 
 .contact-section {

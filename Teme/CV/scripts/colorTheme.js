@@ -96,6 +96,7 @@ let isBlueTheme = false;
 let isTealTheme = false;
 let isGreenTheme = false;
 let isYellowTheme = false;
+let isOrangeTheme = false;
 
 function themeReset() {
     isRedTheme = false;
@@ -103,6 +104,7 @@ function themeReset() {
     isTealTheme = false;
     isGreenTheme = false;
     isYellowTheme = false;
+    isOrangeTheme = false;
 }
 
 function redTheme() {
@@ -242,6 +244,34 @@ function yellowTheme() {
     }
     else {
         console.log("Yellow Theme is Already on");
+    }
+}
+
+function orangeTheme() {
+    if (isOrangeTheme === false) {
+        themeReset()
+        isOrangeTheme = true;
+        const yellow = document.querySelectorAll(".yellow");
+        for (i = 0; i < yellow.length; i++) {
+            yellow[i].style.color = "#ff3300";
+        }
+        const yellow2 = document.querySelectorAll(".yellow-forever");
+        for (i = 0; i < yellow2.length; i++) {
+            yellow2[i].style.color = "#ff3300";
+        }
+        const progressBars = document.querySelectorAll(".progress-bar-fill");
+        for (i = 0; i < progressBars.length; i++) {
+            progressBars[i].style.backgroundColor = "#ff3300";
+        }
+        const profile = document.querySelector(".img-container");
+        profile.style.backgroundColor = "#ff3300";
+        (function boxShadows() {
+            r.style.setProperty('--yellow', '#ff3300');
+        })();
+        console.log("Orange Theme On");
+    }
+    else {
+        console.log("Orange Theme is Already on");
     }
 }
 yellowTheme();
