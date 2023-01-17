@@ -1,5 +1,7 @@
-<p *ngFor="let people of peoples" class="people-list">{{people.name}} - {{people.gender}} - {{people.height}}cm -
-  {{people.weight}}kg - HTML BMI:{{people.weight / (people.height/100 * people.height/100)}}
-  - TS BMI: {{people.bmi}}</p>
-<button (click)="loadAllPeople()">Load people</button>
-
+<div class="people-container">
+  <div *ngFor="let people of peoples" class="people-list">{{people.name}} - {{people.gender}} - {{people.height}}cm -
+    {{people.weight}}kg - HTML BMI:{{people.weight / (people.height/100 * people.height/100)}}
+    - TS BMI: {{people.bmi}}<button (click)="moreDetails()">More Details</button>
+  </div>
+</div>
+<button (click)="loadAllPeople()">Load peoples</button>

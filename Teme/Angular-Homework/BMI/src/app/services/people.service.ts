@@ -10,10 +10,10 @@ export class PeopleService implements People{
   id: number = 1;
   name: string = "Mircea";
   weight: number = 90;
-  height: number = 100;
+  height: number = 1.70;
   gender: string = "M";
   // bmi: number = this.weight;
-  bmi: number = (this.weight / (this.height * this.height));
+  bmi: number = this.weight / (this.height * this.height);
 
   getAllPeople(): People[] {
     if (this.weight > 0){
@@ -26,7 +26,7 @@ export class PeopleService implements People{
         weight: 90,
         height: 170,
         gender: 'M',
-        bmi: this.bmi,
+        bmi: (this.weight / (this.height * this.height)),
       },
       {
         id: 2,
@@ -34,7 +34,7 @@ export class PeopleService implements People{
         weight: 100,
         height: 175,
         gender: 'M',
-        bmi: this.bmi,
+        bmi: (this.weight / (this.height/100 * this.height/100)),
       },
       {
         id: 3,

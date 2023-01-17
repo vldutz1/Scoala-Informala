@@ -10,12 +10,12 @@ import { PeopleService } from '../services/people.service';
 export class BmiComponent {
 
   constructor(private peopleService: PeopleService) {}
-
-  isColorRed: boolean = false;
-  highlightColor: string = '';
-  defaultColor: string = '';
   peoples: People[] = [];
   loadAllPeople() {
     this.peoples = this.peopleService.getAllPeople();
+  }
+
+  moreDetails() {
+    //idk
   }
 }
