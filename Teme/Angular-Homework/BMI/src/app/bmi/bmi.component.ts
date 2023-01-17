@@ -16,6 +16,6 @@ export class BmiComponent {
   }
 
   moreDetails() {
-    //idk
+    alert("N-am reusit :(")
   }
 }
