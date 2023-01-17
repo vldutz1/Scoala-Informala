@@ -34,7 +34,7 @@ class person {
 const person1 = new person("Mary Jane", "F", 1.80, 40);
 person1.Share();
 const person2 = new person("John Doe", "M", 1.75, 60);
-person2.Share();8
+person2.Share();
 const person3 = new person("Jenica Blindatu", "M", 1.84, 80);
 person3.Share();
 const person4 = new person("Mihai Viteazu", "M", 1.50, 70);

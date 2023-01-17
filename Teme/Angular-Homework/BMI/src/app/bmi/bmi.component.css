@@ -1,3 +1,13 @@
 app-bmi {
   height: 100vh;
 }
+
+.people-list {
+  font-size: 20px;
+  background-color: rgba(49, 49, 49, 0.575);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+}
