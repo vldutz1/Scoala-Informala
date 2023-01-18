@@ -114,9 +114,7 @@
   <!-- menu end -->
   <!-- Right Side Menu -->
   <div class="right-side-menu-btn" onclick="openRightMenu()">
-    <span class="dot" onclick="openRightMenu()"></span>
-    <span class="dot" onclick="openRightMenu()"></span>
-    <span class="dot" onclick="openRightMenu()"></span>
+    <div class="setting-btn"></div>
   </div>
   <aside class="right-menu" id="right-menu">
     <div class="right-menu-close-btn" onclick="closeRightMenu()">&times;</div>
@@ -133,12 +131,13 @@
       <div class="change-color-orange change-color-buttons" onclick="orangeTheme()"></div>
     </div>
     <div class="custom-color-container">
-      <input type="color" id="custom-color">
+      <label for="color" class="custom-color-label">Custom Color</label>
+      <input name="color" type="color" id="custom-color" value="#43da86">
       <button type="button" onclick="customColor()" class="clr-apply-btn">Apply</button>
     </div>
     <div class="language-container">
       <div class="eng-btn lang-btn-active" onclick="setEnglish()" id="eng-btn">EN</div>
-      <div class="ro-btn lang-btn-inactive" onclick="setRomanian()" id="ro-btn">Ro</div>
+      <div class="ro-btn lang-btn-inactive" onclick="setRomanian()" id="ro-btn">RO</div>
     </div>
   </aside>
   <!-- Right Side Menu End -->
@@ -177,8 +176,6 @@
           <div class="s2-item-img ts-logo"></div>
           TypeScript
         </div>
-      </div>
-      <div class="s2-items">
         <div class="s2-item">
           <div class="s2-item-img angular-logo"></div>
           Angular
@@ -235,15 +232,22 @@
     </section>
     <section class="contact-section">
       <div class="s4-contact">
-        <form class="contact-form">
-          <label for="text" required>Name</label>
-          <input type="text">
-          <label for="email">Email</label>
-          <input type="email" required>
-          <label for="message">Your Message</label>
-          <textarea required></textarea>
-          <button type="submit" class="contact-btn">Send</button>
-        </form>
+        <div class="s4-header">Let's talk!</div>
+        <div class="s4-text">Find me on social media</div>
+        <div class="s4-social-media">
+          <div class="s4-linkedin s4-social-media-icons"></div>
+        </div>
+      </div>
+      <div class="s4-text">Or use the form below and send me an email</div>
+      <form class="contact-form" action="https://formspree.io/f/xbjelage" method="POST">
+        <label for="text" class="s4-labels">Name</label>
+        <input type="text" class="s4-inputs" placeholder="Your Name">
+        <label for="email" class="s4-labels">Email</label>
+        <input type="email" required class="s4-inputs" placeholder="YourEmail@YourEmail.com">
+        <label for="message" class="s4-labels">Your Message</label>
+        <textarea required name="message" placeholder="Your Message Here" class="s4-inputs s4-textarea"></textarea>
+        <button type="submit" class="contact-btn">Send</button>
+      </form>
       </div>
     </section>
   </main>

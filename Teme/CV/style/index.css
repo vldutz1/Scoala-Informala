@@ -74,8 +74,9 @@ section {
 
 .section3 {
     background-color: grey;
-    background: linear-gradient(rgb(76,62,78), rgb(108, 88, 111));
+    background: linear-gradient(rgb(76, 62, 78), rgb(108, 88, 111));
     padding-top: 5em;
+    min-height: 100vh;
 }
 
 .section3-header-text {
@@ -84,7 +85,7 @@ section {
     text-align: left;
     font-family: poppinsBold;
     margin-left: 1em;
-    text-shadow: rgb(9, 9, 9) 1px 2px 5px ;
+    text-shadow: rgb(9, 9, 9) 1px 2px 5px;
 }
 
 .portfolio-items {
@@ -97,10 +98,10 @@ section {
     background-color: rgba(49, 38, 51, 0.94);
     height: 20em;
     width: 20em;
-    margin: 1em 1em;
+    margin: 3em;
     border-radius: 20%;
     box-shadow: 0 1px 4px 0 rgb(15 15 20 / 10%);
-    box-shadow: rgb(9, 9, 9) 1px 2px 5px ;
+    box-shadow: rgb(9, 9, 9) 1px 2px 5px;
 }
 
 .portfolio-item-1 {
@@ -168,8 +169,10 @@ section {
 }
 
 .section2 {
-    background: linear-gradient(rgb(65, 64, 92), rgb(76,62,78));
+    background: linear-gradient(rgb(65, 64, 92), rgb(76, 62, 78));
     padding-top: 5em;
+    height: max-content;
+    min-height: 100vh;
 }
 
 .s2-header {
@@ -186,15 +189,16 @@ section {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: 5em;
+    /* margin-top: 5em; */
     text-shadow: rgb(9, 9, 9) 1px 2px 5px;
+    height: 100%;
 }
 
 .s2-item {
     color: white;
     text-align: center;
     font-family: poppinsBold;
-    margin: 1em 1em;
+    margin: 4em;
 }
 
 .s2-item:hover {
@@ -252,13 +256,32 @@ section {
 
 .contact-section {
     background: linear-gradient(rgb(30, 30, 40), rgb(14, 14, 19));
+    /* flex-direction: column;
+    display: flex;
+    justify-content: space-between; */
+    min-height: 100vh;
+    height: max-content;
+    padding: 4em;
 }
 
 .s4-contact {
     display: flex;
     flex-direction: column;
+    color: white;   
+    height: 100%;
+}
+
+.s4-header {
     color: white;
-    padding: 16em;
+    font-size: 40px;
+    text-align: left;
+    font-family: poppinsBold;
+    margin-left: 1em;
+    text-shadow: rgb(9 9 9) 1px 2px 5px;
+}
+
+.s4-text {
+    color: white;
 }
 
 .contact-form {
@@ -267,5 +290,48 @@ section {
 }
 
 .contact-btn {
-    height: 10em;
+    height: 5em;
+    width: 14em;
+    background-color: var(--yellow);
+    color: rgb(39, 39, 39);
+    cursor: pointer;
+    font-family: poppinsBold;
+    transition: 0.5s;
+    border: none;
+}
+
+.contact-btn:hover {
+    transform: scale(1.1);
+}
+
+.s4-inputs {
+    border: none;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    background-color: #20202a2b;
+    color: white;
+    font-family: poppinsBold;
+    margin-bottom: 1em;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+.s4-inputs:focus {
+    border-bottom: 2px solid var(--yellow);
+}
+
+.s4-labels {
+    color: white;
+    font-family: poppinsBold;
+    margin-bottom: 1em;
+}
+
+.s4-textarea {
+    height: 13vh;
+}
+
+.s4-social-media-icons {
+    height: 5vh;
+    width: 5vh;
+    background-color: white;
 }
