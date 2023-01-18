@@ -258,4 +258,14 @@ section {
     display: flex;
     flex-direction: column;
     color: white;
+    padding: 16em;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-btn {
+    height: 10em;
 }
