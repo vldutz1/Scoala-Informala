@@ -256,12 +256,9 @@ section {
 
 .contact-section {
     background: linear-gradient(rgb(30, 30, 40), rgb(14, 14, 19));
-    /* flex-direction: column;
-    display: flex;
-    justify-content: space-between; */
     min-height: 100vh;
     height: max-content;
-    padding: 4em;
+    padding: 20em 4em;
 }
 
 .s4-contact {

@@ -30,7 +30,13 @@
         margin-left: 1em;
     }
     .contact-section {
-        padding: 4em;
+        padding: 20em 4em;
+    }
+}
+
+@media screen and (min-width: 837px) {
+    .contact-section {
+        padding: 20em 8em;
     }
 }
 
@@ -40,8 +46,3 @@
     }
 }
 
-@media screen and (min-width: 837px) {
-    .contact-section {
-        padding: 8em;
-    }
-}
