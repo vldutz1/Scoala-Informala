@@ -3,6 +3,7 @@
 
 <head>
   <title>Vlad Chereches's Online CV</title>
+  <meta charset="UTF-8">
   <meta name="description" content="Discover Vlad Chereches's CV">
   <meta name="keywords"
     content="CV, online CV, junior frontend developer, developer, websites, hire a frontend developer, front end dev">
@@ -155,7 +156,7 @@
     </div>
     <div class="custom-color-container">
       <input name="color" type="color" id="custom-color" value="#43da86">
-      <button type="button" onclick="customColor()" class="clr-apply-btn">Apply</button>
+      <button type="button" onclick="customColor()" class="clr-apply-btn" id="apply-btn">Apply</button>
     </div>
     <div class="language-container">
       <div class="eng-btn lang-btn-active" onclick="setEnglish()" id="eng-btn">EN</div>
@@ -273,7 +274,7 @@
         <input type="email" required class="s4-inputs" placeholder="YourEmail@YourEmail.com" name="email">
         <label for="message" class="s4-labels" id="s4-message">Your Message</label>
         <textarea required name="message" placeholder="Your Message Here" class="s4-inputs s4-textarea"></textarea>
-        <button type="submit" class="send-btn">Send</button>
+        <button type="submit" class="send-btn" id="s4-send-btn">Send</button>
       </form>
       </div>
     </section>
