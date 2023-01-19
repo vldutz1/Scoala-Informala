@@ -31,6 +31,7 @@ const s4Name = document.getElementById("s4-name");
 const s4Message = document.getElementById("s4-message");
 const applyBtn = document.getElementById("apply-btn");
 const sendBtn = document.getElementById("s4-send-btn");
+const romania = document.getElementById("romania");
 
 let b = document.querySelector(':root');
 function initialVar() {
@@ -44,7 +45,8 @@ function setRomanian() {
         s1HeaderText.innerText = "Descoperă-mi Potențialul";
         s1HeaderText2.innerText = "Incredibil";
         s1ProjectsText.innerText = " Proiecte Realizate";
-        country.innerText = "Țara";
+        romania.innerText = "România";
+        country.innerText = "Țară";
         city.innerText = "Oraș";
         age.innerText = "Vârstă";
         romanian.innerText = "Română";
@@ -89,6 +91,7 @@ function setEnglish() {
         s1HeaderText.innerText = "Discover My Amazing";
         s1HeaderText2.innerText = "Potential";
         s1ProjectsText.innerText = " Projects Completed";
+        romania.innerText = "Romania";
         country.innerText = "Country";
         city.innerText = "City";
         age.innerText = "Age";
