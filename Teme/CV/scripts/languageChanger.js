@@ -24,6 +24,11 @@ const contactFormText = document.getElementById("contact-form-text");
 const themeBtn = document.getElementById("dark-light-btn");
 const quizGameTitle = document.getElementById("quiz-game-title");
 const quizGameText = document.getElementById("quiz-game-text");
+const s4Heading = document.getElementById("s4-heading");
+const s4Text1 = document.getElementById("s4-text1");
+const s4Text2 = document.getElementById("s4-text2");
+const s4Name = document.getElementById("s4-name");
+const s4Message = document.getElementById("s4-message");
 
 let b = document.querySelector(':root');
 function initialVar() {
@@ -56,6 +61,11 @@ function setRomanian() {
         contactFormText.innerText = "Un formular de contact conectat la o baza de date";
         quizGameTitle.innerText = "Joc cu Intrebari";
         quizGameText.innerText = "Un joc cu intrebari si raspunsuri cu 17 nivele";
+        s4Heading.innerText = "Hai sa vorbim!";
+        s4Text1.innerText = "Gaseste-ma pe retelele de socializare";
+        s4Text2.innerText = "Sau foloseste formularul de contact de mai jos";
+        s4Name.innerText = "Nume";
+        s4Message.innerText = "Mesajul Tau";
         engBtn.classList.add("lang-btn-inactive");
         roBtn.classList.remove("lang-btn-inactive");
         (function initialVar() {
@@ -91,6 +101,11 @@ function setEnglish() {
         contactFormText.innerText = "A contact form connected to a database";
         quizGameTitle.innerText = "Millionaire Quiz Game";
         quizGameText.innerText = "A 17 levels based game with questions and answers";
+        s4Heading.innerText = "Let's talk!";
+        s4Text1.innerText = "Find me on social media";
+        s4Text2.innerText = "Or use the form below and send me an email";
+        s4Name.innerText = "Name";
+        s4Message.innerText = "Your Message";
         roBtn.classList.add("lang-btn-inactive");
         engBtn.classList.remove("lang-btn-inactive");
         (function initialVar() {

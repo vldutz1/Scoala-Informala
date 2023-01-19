@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="style/right-menu.css">
   <link rel="icon" type="image/x-icon" href="images/favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+
 </head>
 
 <body>
@@ -42,26 +42,42 @@
       <div class="menu-divider"></div>
       <label class="menu-text-spread">
         <p class="main-color">HTML</p>
-        <p class="sec-color">85%</p>
+        <p class="sec-color">95%</p>
       </label>
       <div class="progress-bar-bg">
-        <div class="progress-bar-fill progress-bar-anim1" style="width:85%;">
+        <div class="progress-bar-fill progress-bar-anim1" style="width:95%;">
         </div>
       </div>
       <label class="menu-text-spread">
         <p class="main-color">CSS</p>
-        <p class="sec-color">70%</p>
+        <p class="sec-color">80%</p>
       </label>
       <div class="progress-bar-bg">
-        <div class="progress-bar-fill progress-bar-anim2" style="width:70%">
+        <div class="progress-bar-fill progress-bar-anim2" style="width:80%">
         </div>
       </div>
       <label class="menu-text-spread">
         <p class="main-color">JavaScript</p>
-        <p class="sec-color">50%</p>
+        <p class="sec-color">70%</p>
       </label>
       <div class="progress-bar-bg">
-        <div class="progress-bar-fill progress-bar-anim3" style="width:50%;">
+        <div class="progress-bar-fill progress-bar-anim3" style="width:70%;">
+        </div>
+      </div>
+      <label class="menu-text-spread">
+        <p class="main-color">TypeScript</p>
+        <p class="sec-color">60%</p>
+      </label>
+      <div class="progress-bar-bg">
+        <div class="progress-bar-fill progress-bar-anim4" style="width:60%;">
+        </div>
+      </div>
+      <label class="menu-text-spread">
+        <p class="main-color">Angular</p>
+        <p class="sec-color">30%</p>
+      </label>
+      <div class="progress-bar-bg">
+        <div class="progress-bar-fill progress-bar-anim5" style="width:30%;">
         </div>
       </div>
       <label class="menu-text-spread">
@@ -69,7 +85,7 @@
         <p class="sec-color">70%</p>
       </label>
       <div class="progress-bar-bg">
-        <div class="progress-bar-fill progress-bar-anim4" style="width:70%;">
+        <div class="progress-bar-fill progress-bar-anim6" style="width:70%;">
         </div>
       </div>
       <label class="menu-text-spread menu-labels">
@@ -77,7 +93,7 @@
         <p class="sec-color">65%</p>
       </label>
       <div class="progress-bar-bg">
-        <div class="progress-bar-fill progress-bar-anim5" style="width:65%;">
+        <div class="progress-bar-fill progress-bar-anim7" style="width:65%;">
         </div>
       </div>
       <div class="menu-divider"></div>
@@ -111,8 +127,10 @@
           onclick="window.location.href=`https://www.linkedin.com/in/vlad-chereches-a58510147/`"></div>
         <div class="social-icon-email social-icon-email-inactive" id="email-icon" onclick="toggleEmailMenu()"></div>
       </div>
-      <div class="sec-color download-btn"><span class="download-cv-effects"><span id="download-cv">Download
-            CV</span><img src="images/download.png" class="download-icon"></div></span>
+      <a href="#" target="_blank">
+        <div class="sec-color download-btn"><span class="download-cv-effects"><span id="download-cv">Download
+              CV</span><img src="images/download.png" class="download-icon"></div></span>
+      </a>
     </div>
   </aside>
   <span class="open-btn" onclick="openNav()">&#9776;</span>
@@ -136,7 +154,6 @@
       <div class="change-color-orange change-color-buttons" onclick="orangeTheme()"></div>
     </div>
     <div class="custom-color-container">
-      <label for="color" class="custom-color-label">Custom Color</label>
       <input name="color" type="color" id="custom-color" value="#43da86">
       <button type="button" onclick="customColor()" class="clr-apply-btn">Apply</button>
     </div>
@@ -237,21 +254,26 @@
     </section>
     <section class="section4">
       <div class="s4-contact">
-        <div class="s4-header">Let's talk!</div>
-        <div class="s4-text">Find me on social media</div>
+        <div class="s4-header" id="s4-heading">Let's talk!</div>
+        <div class="s4-text" id="s4-text1">Find me on social media</div>
         <div class="s4-social-media">
-          <div class="s4-linkedin s4-social-media-icons"></div>
+          <a href="https://www.linkedin.com/in/vlad-chereches-a58510147/" target="_blank">
+            <div class="s4-linkedin s4-social-media-icons"></div>
+          </a>
+          <a href="https://github.com/vldutz1" target="_blank">
+            <div class="s4-github s4-social-media-icons"></div>
+          </a>
         </div>
       </div>
-      <div class="s4-text">Or use the form below and send me an email</div>
+      <div class="s4-text" id="s4-text2">Or use the form below and send me an email</div>
       <form class="contact-form" action="https://formspree.io/f/xbjelage" method="POST">
-        <label for="text" class="s4-labels">Name</label>
+        <label for="text" class="s4-labels" id="s4-name">Name</label>
         <input type="text" class="s4-inputs" placeholder="Your Name">
         <label for="email" class="s4-labels">Email</label>
         <input type="email" required class="s4-inputs" placeholder="YourEmail@YourEmail.com">
-        <label for="message" class="s4-labels">Your Message</label>
+        <label for="message" class="s4-labels" id="s4-message">Your Message</label>
         <textarea required name="message" placeholder="Your Message Here" class="s4-inputs s4-textarea"></textarea>
-        <button type="submit" class="contact-btn">Send</button>
+        <button type="submit" class="send-btn">Send</button>
       </form>
       </div>
     </section>
