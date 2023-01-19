@@ -66,6 +66,9 @@ function setRomanian() {
         s4Text2.innerText = "Sau foloseste formularul de contact de mai jos";
         s4Name.innerText = "Nume";
         s4Message.innerText = "Mesajul Tau";
+        document.getElementsByName('name')[0].placeholder='Numele tau aici';
+        document.getElementsByName('email')[0].placeholder='NumeleTau@email.com';
+        document.getElementsByName('message')[0].placeholder='Mesajul tau aici';
         engBtn.classList.add("lang-btn-inactive");
         roBtn.classList.remove("lang-btn-inactive");
         (function initialVar() {
@@ -106,6 +109,9 @@ function setEnglish() {
         s4Text2.innerText = "Or use the form below and send me an email";
         s4Name.innerText = "Name";
         s4Message.innerText = "Your Message";
+        document.getElementsByName('name')[0].placeholder='Your name here';
+        document.getElementsByName('email')[0].placeholder='YourEmail@YourEmail.com';
+        document.getElementsByName('message')[0].placeholder='Your Message Here';
         roBtn.classList.add("lang-btn-inactive");
         engBtn.classList.remove("lang-btn-inactive");
         (function initialVar() {
