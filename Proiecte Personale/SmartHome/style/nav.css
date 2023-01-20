@@ -109,4 +109,12 @@
     .nav-items {
       display: none;
     }
+    .nav-logo {
+        position: static;
+        height: 10vh;
+    }
+    .nav-container {
+        display: flex;
+        justify-content: center;
+    }
   }

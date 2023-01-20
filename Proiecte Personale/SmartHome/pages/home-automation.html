@@ -3,21 +3,24 @@
 
 <head>
     <title>Home Automation - DOMUNEXT</title>
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="../style/fonts.css">
     <link rel="stylesheet" href="../style/right-side-menu.css">
     <link rel="stylesheet" href="../style/footer.css">
     <link rel="stylesheet" href="../style/nav.css">
     <link rel="stylesheet" href="../style/home-automation.css">
+    <link rel="stylesheet" href="../style/fonts/swiffy-slider.css">
+    <script src="../scripts/swiffy-slider.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="../images/favicon.png">
 </head>
 
 <body>
-    <span class="nav-logo" onclick="window.location.href='../index.html'"></span>
     <span class="nav-menu-btn" onclick="openRightMenu()" id="right-menu-open-btn">&#9776;</span>
     <nav class="nav-container">
+        <div class="nav-logo" onclick="window.location.href='../index.html'"></div>
         <span class="nav-items" onclick="window.location.href='../index.html'">HOME</span>
-        <span class="services nav-items">SERVICES
+        <span class="services nav-items">SERVICE
             <div class="nav-highlight-services"></div>
             <div class="services-dropdown">
                 <div class="dropdown-items" onclick="window.location.href='home-automation.html'">Home Automation
@@ -27,7 +30,7 @@
                 <div class="dropdown-items" onclick="window.location.href='hotel.html'">Hotels</div>
             </div>
         </span>
-        <span class="products nav-items">PRODUCTS
+        <!-- <span class="products nav-items">PRODUCTS
             <div class="nav-highlight-products"></div>
             <div class="products-dropdown">
                 <div class="dropdown-items" onclick="window.location.href='schneider.html'">Schneider</div>
@@ -38,7 +41,7 @@
                 <div class="dropdown-items" onclick="window.location.href='bticino.html'">Bticino</div>
                 <div class="dropdown-items" onclick="window.location.href='zennio.html'">Zennio</div>
             </div>
-        </span>
+        </span> -->
         <span class="nav-items" onclick="window.location.href='contact.html'">CONTACT</span>
         <span class="nav-items" onclick="window.location.href='faq.html'">FAQ</span>
     </nav>
@@ -48,13 +51,16 @@
         <div class="right-menu-logo-container"></div>
         <div class="mobile-menu">
             <div class="right-menu-mobile-navs" onclick="window.location.href='../index.html'">Home</div>
-            <div class="right-menu-mobile-navs" onclick="mobileServices()">Services</div>
+            <div class="right-menu-mobile-navs" onclick="mobileServices()">Service</div>
             <div class="hidden" id="right-menu-services">
-                <div class="right-menu-mobile-navs mobile-menu" onclick="window.location.href='home-automation.html'">Home Automation</div>
-                <div class="right-menu-mobile-navs mobile-menu" onclick="window.location.href='building-automation.html'">Building Automation</div>
-                <div class="right-menu-mobile-navs mobile-menu" onclick="window.location.href='hotel.html'">Hotels Automation</div>
+                <div class="right-menu-mobile-navs mobile-menu" onclick="window.location.href='home-automation.html'">
+                    Home Automation</div>
+                <div class="right-menu-mobile-navs mobile-menu"
+                    onclick="window.location.href='building-automation.html'">Building Automation</div>
+                <div class="right-menu-mobile-navs mobile-menu" onclick="window.location.href='hotel.html'">Hotels
+                    Automation</div>
             </div>
-            <div class="right-menu-mobile-navs" onclick="mobileProducts()">Products</div>
+            <!-- <div class="right-menu-mobile-navs" onclick="mobileProducts()">Products</div>
             <div id="right-menu-products" class="hidden">
                 <div class="right-menu-mobile-navs mobile-menu" onclick="window.location.href='schneider.html'">
                     Schneider</div>
@@ -70,7 +76,7 @@
                     Bticino</div>
                 <div class="right-menu-mobile-navs mobile-menu" onclick="window.location.href='zennio.html'">
                     Zennio</div>
-            </div>
+            </div> -->
             <div class="right-menu-mobile-navs" onclick="window.location.href='contact.html'">Contact</div>
             <div class="right-menu-mobile-navs" onclick="window.location.href='faq.html'">FAQ</div>
         </div>
@@ -130,11 +136,38 @@
     </section>
     <section class="s2">
         <div class="s2-title">Our job is to simplify your days. Yours? Enjoy them.</div>
-        <div class="s2-testo">TESTO</div>
+        <div class="s2-testo">
+            Difficult day, you gave your 100% at work, now you want to enjoy your evening at 100%.<br>
+            You come home, feel cold, turn on the heating and wait for the right temperature to spread.<br>
+            You start preparing dinner, meanwhile you go into the living room and turn on the TV.<br>
+            Run back to the kitchen, you can't get away for too long…<br>
+            You finish cooking and head back to the living room to enjoy dinner and a glass of wine on the couch while
+            watching a movie.<br>
+            You left the lights on… you don't want to (you want to enjoy some well-deserved relaxation), but you have
+            to. Get up and go turn off the lights.<br>
+            How nice it would be if everything were more comfortable and easier, just think…<br>
+            Now imagine: you come home tired from work and you want to enjoy your evening, but when you get back, the
+            perfect temperature is already waiting for you.<br>
+            You cross the threshold, the lights turn on, and when you leave each room, the lights automatically turn
+            off.<br>
+            While cooking, with a click, you hear the TV turn on. Prepare dinner. Leave the kitchen, the lights go out.
+            You sit on the sofa. Everything is perfect…<br>
+            Enjoy your next evenings like that.
+        </div>
         <div class="s2-images">
             <div class="s2-img1"></div>
             <div class="s2-img2"></div>
             <div class="s2-img3"></div>
+        </div>
+        <div class="s2-images-mobile">
+            <div class="pic-ctn">
+                <img src="../images/home-automation/s2-img1.png" alt="" class="pic">
+                <img src="../images/home-automation/s2-img2.png" alt="" class="pic">
+                <img src="../images/home-automation/s2-img3.png" alt="" class="pic">
+                <img src="../images/home-automation/s2-img1.png" alt="" class="pic">
+                <img src="../images/home-automation/s2-img2.png" alt="" class="pic">
+                <img src="../images/home-automation/s2-img3.png" alt="" class="pic">
+              </div>
         </div>
     </section>
     <section class="s3">
@@ -149,7 +182,7 @@
             <div class="s3-img7 s3-img"></div>
             <div class="s3-img8 s3-img"></div>
         </div>
-        <div class="s3-last-text">ALTRO</div>
+        <div class="s3-last-text">later</div>
     </section>
     <section class="s4">
         <div class="s4-title">You don't have to change your habbits</div>
@@ -157,18 +190,33 @@
         <div class="s4-title">Home automation must adapt to your habbits</div>
         <div class="s4-title">And improve them.</div>
         <div class="s4-text">What you can do with Home Automation:</div>
-        <div class="s4-images">
-            <div class="s4-img1 s4-img"></div>
-            <div class="s4-img2 s4-img"></div>
-            <div class="s4-img3 s4-img"></div>
-            <div class="s4-img4 s4-img"></div>
-            <div class="s4-img5 s4-img"></div>
+        <div class="slider">
+            <div class="slide-track">
+                <div class="slide">
+                    <img src="../images/home-automation/s4-img1.jpg" height="250" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="../images/home-automation/s4-img2.jpg" height="250" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="../images/home-automation/s4-img3.jpg" height="250" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="../images/home-automation/s4-img4.jpg" height="250" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="../images/home-automation/s4-img5.jpg" height="250" width="250" alt="" />
+                </div>
+            </div>
         </div>
     </section>
     <section class="s5">
         <div class="s5-text">Why choose DomuNext?</div>
         <div class="s5-images">
-            <div class="s5-img1 s5-img"></div>
+            <div class="s5-img1 s5-img">
+                <div class="s5-img1-text">We constantly update our services so that you can have the best experience
+                </div>
+            </div>
             <div class="s5-img2 s5-img"></div>
             <div class="s5-img3 s5-img"></div>
             <div class="s5-img4 s5-img"></div>
@@ -180,7 +228,7 @@
     </section>
     <section class="s6">
         <div class="s5-text">Do you need someone to take care of your home for you?</div>
-        <button class="main-btn"  onclick="window.location.href='contact.html'">Click to setup your Dream Home</button>
+        <button class="main-btn" onclick="window.location.href='contact.html'">Click to setup your Dream Home</button>
     </section>
     <footer class="footer">
         <div class="footer-items">

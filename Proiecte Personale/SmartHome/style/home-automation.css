@@ -46,6 +46,7 @@ section {
     font-weight: bold;
     margin-top: 3vh;
 }
+
 .s1-sub-title-box {
     display: flex;
 }
@@ -53,6 +54,7 @@ section {
 .s2 {
     height: fit-content;
     padding: 0em 4em;
+    overflow: hidden;
 }
 
 .s2-title {
@@ -63,20 +65,95 @@ section {
 }
 
 .s2-testo {
-    font-size: 50px;
+    font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60vh;
+    height: max-content;
     border-color: black;
     border-width: 3px;
     border-style: solid;
 }
 
+.pic-ctn {
+    width: 100vw;
+    height: 200px;
+}
+
+@keyframes display {
+    0% {
+        transform: translateX(200px);
+        opacity: 0;
+    }
+
+    10% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    20% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    30% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+}
+
+.s2-images-mobile {
+    display: none;
+    display: flex;
+    justify-content: center;
+}
+
+.pic {
+    height: 30vh;
+    width: 35vh;
+}
+
+.pic-ctn {
+    position: relative;
+    /* width: 100vh; */
+    height: 300px;
+    overflow: hidden;
+}
+
+.pic-ctn>img {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 200px);
+    opacity: 0;
+    animation: display 10s infinite;
+}
+
+img:nth-child(2) {
+    animation-delay: 2s;
+}
+
+img:nth-child(3) {
+    animation-delay: 4s;
+}
+
+img:nth-child(4) {
+    animation-delay: 6s;
+}
+
+img:nth-child(5) {
+    animation-delay: 8s;
+}
+
 .s2-images {
+    display: none;
     margin-top: 2em;
     display: flex;
     height: fit-content;
@@ -244,9 +321,8 @@ section {
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    margin: 1em;
+    /* margin: 1em; */
     font-weight: bold;
-    width: 100%;
 }
 
 .s5-images {
@@ -264,6 +340,19 @@ section {
 .s5-img1 {
     background: url("../images/home-automation/s5-img1.jpg") center/contain no-repeat;
     box-shadow: 7px 5px 5px grey;
+}
+
+.s5-img1-text {
+    background-color: grey;
+    color: white;
+    position: absolute;
+    width: 40vh;
+    margin-top: 7vh;
+    display: none;
+}
+
+.s5-img1:hover .s5-img1-text {
+    display: block;
 }
 
 .s5-img2 {
@@ -311,13 +400,77 @@ section {
     padding-bottom: 5vh;
 }
 
-@media screen and (max-width: 432px) {
-    .s1-title {
-        height: 7vh;
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
     }
+
+    100% {
+        transform: translateX(calc(-250px * 7));
+    }
+}
+
+.slider {
+    background: white;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+    height: 250px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.slider::before,
+.slider::after {
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+}
+
+.slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+.slider::before {
+    left: 0;
+    top: 0;
+}
+
+.slider .slide-track {
+    animation: scroll 100s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+}
+
+.slider .slide {
+    height: 40vh;
+    width: 40vh;
+}
+
+@media screen and (max-width: 432px) {
+    .s2 {
+        padding: 0.2em;
+    }
+    .s3 {
+        padding: 0.2em;
+    }
+    .s4 {
+        padding: 0.2em;
+    }
+    .s1-title {
+        height: 5vh;
+        width: 32vh;
+    }
+
     .s1-text {
         font-size: 30px;
     }
+
     .s1-text2 {
         font-size: 30px;
     }
@@ -328,23 +481,40 @@ section {
         flex-direction: column;
         align-items: center;
     }
+
     .s4-title {
         font-size: 1.5em;
     }
+
     .s4-images {
         flex-direction: column;
         align-items: center;
     }
+
     .faq {
         font-size: 100px;
     }
+
     .s2-img1 {
         height: 10em;
     }
+
     .s2-img2 {
         height: 10em;
     }
+
     .s2-img3 {
         height: 10em;
+    }
+}
+
+@media screen and (max-width: 855px) {
+    .s2-images {
+        display: none;
+    }
+
+    .s2-images-mobile {
+        overflow: hidden;
+        display: block;
     }
 }
