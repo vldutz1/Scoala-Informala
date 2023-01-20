@@ -341,6 +341,7 @@ section {
     cursor: pointer;
     transition: 0.5s;
     margin: 0em 1em;
+    border-radius: 50%;
 }
 
 .s4-social-media-icons:hover {
@@ -351,11 +352,9 @@ section {
 .s4-linkedin {
     background: url("../images/linkedin-circle.png") center/70% no-repeat;
     background-color: var(--yellow);
-    border-radius: 50%;
 }
 
 .s4-github {
     background: url("../images/github-icon.png") center/70% no-repeat;
     background-color: var(--yellow);
-    border-radius: 50%;
 }

@@ -40,6 +40,7 @@
     position: absolute;
     left: 0.3em;
     top: 0.3em;
+    color: white;
 }
 
 .closebtn {
@@ -232,45 +233,69 @@
 
 .social-icons {
     display: flex;
+    justify-content: space-between;
 }
 
 .social-icon-linkedin {
-    background-image: url("../images/linkedin.png");
+    background: url("../images/linkedin-circle.png") center/80% no-repeat;
     margin: 0px 0.5em;
     width: 2em;
     height: 2em;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
     cursor:pointer;
     transition: 0.5s;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 50%;
+    background-color: var(--yellow);
 }
 
 .social-icon-linkedin:hover {
-    background-image: url("../images/linkedin-hover.png");
+    transform: scale(1.1);
+    box-shadow: 0px 0px 7px white;
 }
 
 .social-icon-email {
+    background: url("../images/email.png") center/80% no-repeat;
     margin: 0px 0.5em;
     width: 2em;
     height: 2em;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+    cursor:pointer;
+    transition: 0.5s;
+    background-color: white;
     cursor: pointer;
     transition: 0.5s;
+    border-radius: 50%;
+    background-color: var(--yellow);
 }
 
 .social-icon-email:hover {
-    background-image: url("../images/email-hover.png");
-}
-
-.social-icon-email-inactive {
-    background-image: url("../images/email.png");
+    transform: scale(1.1);
+    box-shadow: 0px 0px 7px white;
 }
 
 .social-icon-email-active {
-    background-image: url("../images/email-hover.png");
+    transform: scale(1.1);
+    box-shadow: 0px 0px 7px white;
+}
+
+.social-icon-github {
+    background: url("../images/github-icon.png") center/80% no-repeat;
+    margin: 0px 0.5em;
+    width: 2em;
+    height: 2em;
+    cursor:pointer;
+    transition: 0.5s;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 50%;
+    background-color: var(--yellow);
+}
+
+.social-icon-github:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 7px white;
 }
 
 .download-btn {

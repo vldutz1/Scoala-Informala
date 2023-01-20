@@ -115,10 +115,6 @@ function redTheme() {
         for (i = 0; i < yellow.length; i++) {
             yellow[i].style.color = "red";
         }
-        const yellow2 = document.querySelectorAll(".yellow-forever");
-        for (i = 0; i < yellow2.length; i++) {
-            yellow2[i].style.color = "red";
-        }
         const progressBars = document.querySelectorAll(".progress-bar-fill");
         for (i = 0; i < progressBars.length; i++) {
             progressBars[i].style.backgroundColor = "red";
@@ -142,10 +138,6 @@ function blueTheme() {
         const yellow = document.querySelectorAll(".yellow");
         for (i = 0; i < yellow.length; i++) {
             yellow[i].style.color = "#007bff";
-        }
-        const yellow2 = document.querySelectorAll(".yellow-forever");
-        for (i = 0; i < yellow2.length; i++) {
-            yellow2[i].style.color = "#007bff";
         }
         const progressBars = document.querySelectorAll(".progress-bar-fill");
         for (i = 0; i < progressBars.length; i++) {
@@ -171,10 +163,6 @@ function tealTheme() {
         for (i = 0; i < yellow.length; i++) {
             yellow[i].style.color = "teal";
         }
-        const yellow2 = document.querySelectorAll(".yellow-forever");
-        for (i = 0; i < yellow2.length; i++) {
-            yellow2[i].style.color = "teal";
-        }
         const progressBars = document.querySelectorAll(".progress-bar-fill");
         for (i = 0; i < progressBars.length; i++) {
             progressBars[i].style.backgroundColor = "teal";
@@ -198,10 +186,6 @@ function greenTheme() {
         const yellow = document.querySelectorAll(".yellow");
         for (i = 0; i < yellow.length; i++) {
             yellow[i].style.color = "green";
-        }
-        const yellow2 = document.querySelectorAll(".yellow-forever");
-        for (i = 0; i < yellow2.length; i++) {
-            yellow2[i].style.color = "green";
         }
         const progressBars = document.querySelectorAll(".progress-bar-fill");
         for (i = 0; i < progressBars.length; i++) {
@@ -227,10 +211,6 @@ function yellowTheme() {
         for (i = 0; i < yellow.length; i++) {
             yellow[i].style.color = "rgb(255, 187, 0)";
         }
-        const yellow2 = document.querySelectorAll(".yellow-forever");
-        for (i = 0; i < yellow2.length; i++) {
-            yellow2[i].style.color = "yellow";
-        }
         const progressBars = document.querySelectorAll(".progress-bar-fill");
         for (i = 0; i < progressBars.length; i++) {
             progressBars[i].style.backgroundColor = "rgb(255, 187, 0)";
@@ -254,10 +234,6 @@ function orangeTheme() {
         const yellow = document.querySelectorAll(".yellow");
         for (i = 0; i < yellow.length; i++) {
             yellow[i].style.color = "#ff3300";
-        }
-        const yellow2 = document.querySelectorAll(".yellow-forever");
-        for (i = 0; i < yellow2.length; i++) {
-            yellow2[i].style.color = "#ff3300";
         }
         const progressBars = document.querySelectorAll(".progress-bar-fill");
         for (i = 0; i < progressBars.length; i++) {

@@ -27,7 +27,6 @@ function toggleEmailMenu() {
     isEmailMenuOpen = true;
     document.querySelector(".email-menu").style.height = "100%";
     document.querySelector(".email-menu").style.width = "100%";
-    document.getElementById("email-icon").classList.remove("social-icon-email-inactive");
     document.getElementById("email-icon").classList.add("social-icon-email-active");
   }
   else {
@@ -35,7 +34,6 @@ function toggleEmailMenu() {
     document.querySelector(".email-menu").style.height = "0";
     document.querySelector(".email-menu").style.width = "0";
     document.getElementById("email-icon").classList.remove("social-icon-email-active");
-    document.getElementById("email-icon").classList.add("social-icon-email-inactive");
     document.querySelector(".email-option2").innerText = "Copy Email";
   }
 }

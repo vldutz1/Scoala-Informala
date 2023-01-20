@@ -38,6 +38,12 @@
     }
 }
 
+@media screen and (max-width: 792px) {
+    .section1-img {
+        width: 60vmax;
+    }
+}
+
 @media screen and (min-width: 837px) {
     .section4 {
         padding: 20em 8em;
@@ -46,7 +52,7 @@
 
 @media screen and (min-width: 1110px) {
     .section4 {
-        padding: 20em;
+        padding: 7em 20em;
     }
 }
 
