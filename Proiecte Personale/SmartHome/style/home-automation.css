@@ -4,6 +4,7 @@
 
 section {
     height: 100vh;
+    background-color: white;
 }
 
 .s1 {
@@ -19,10 +20,32 @@ section {
 }
 
 .s1-title {
-    font-size: 5em;
+    background: url("../images/home-automation/s1-logo.png") center/contain no-repeat;
+    height: 10vh;
+    width: 50vh;
     color: white;
 }
 
+.s1-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    text-align: center;
+}
+
+.s1-text2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+.main-btn {
+    padding: 10px;
+    background-color: #c5dbe9;
+    border-color: #69c8fe;
+    font-weight: bold;
+    margin-top: 3vh;
+}
 .s1-sub-title-box {
     display: flex;
 }
@@ -32,53 +55,49 @@ section {
     padding: 0em 4em;
 }
 
-.s2-text1 {
-    color: gray;
-    margin-top: 3em;
-    font-family: titilliumBold;
-}
-
 .s2-title {
+    color: black;
     font-size: 3em;
     margin-top: 1em;
+    text-align: center;
 }
 
-.s2-text {
-    color: rgb(94, 94, 94);
-    margin-top: 3em;
-    margin-bottom: 3em;
+.s2-testo {
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
 }
 
 .s2-images {
+    margin-top: 2em;
     display: flex;
     height: fit-content;
     justify-content: space-around;
 }
 
 .s2-img1 {
-    background-image: url("../images/home-automation/elan-product1.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: url("../images/home-automation/s2-img1.png") center/contain no-repeat;
     height: 16em;
     width: 29em;
 }
 
 .s2-img2 {
-    background-image: url("../images/home-automation/elan-product2.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: url("../images/home-automation/s2-img2.png") center/contain no-repeat;
     height: 16em;
     width: 29em;
     margin-left: 5px;
 }
 
 .s2-img3 {
-    background-image: url("../images/home-automation/elan-product3.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: url("../images/home-automation/s2-img3.png") center/contain no-repeat;
     height: 16em;
     width: 29em;
     margin-left: 5px;
@@ -87,310 +106,245 @@ section {
 .s3 {
     padding: 0em 4em;
     display: flex;
-    height: fit-content;
-}
-
-.s3-left-container {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    height: 100%;
-    height: fit-content;
-}
-
-.s2-left-text {
-    font-size: 36px;
-
-}
-
-.s3-right-container {
-    width: 70%;
-    margin-top: 4em;
-    display: flex;
-    flex-direction: column;
+    height: max-content;
+    border-style: solid none;
+    border-width: 3px;
+    border-color: #69c8fe;
     justify-content: center;
-    height: fit-content;
+    flex-direction: column;
 }
 
-.s3-items {
-    margin-bottom: 2em;
-    color: rgb(95, 95, 95);
+.s3-title {
+    font-size: 30px;
 }
 
-.s3-items-title {
-    font-family: titilliumBold;
-    color: black;
+.s3-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
-.s3-item1-img {
-    background: url("../images/home-automation/temperature.png") center/contain no-repeat;
-    width: 5em;
-    height: 5em;
+.s3-img {
+    height: 22vh;
+    width: 40vh;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #d8dbec;
+    border-radius: 2%;
+    margin: 1px;
 }
 
-.s3-item2-img {
-    background: url("../images/home-automation/light-bulb.png") center/contain no-repeat;
-    width: 5em;
-    height: 5em;
+.s3-img1 {
+    background: url("../images/home-automation/s3-img1.jpg") center/contain no-repeat;
 }
 
-.s3-item3-img {
-    background: url("../images/home-automation/media.png") center/contain no-repeat;
-    width: 5em;
-    height: 5em;
+.s3-img2 {
+    background: url("../images/home-automation/s3-img2.jpg") center/contain no-repeat;
 }
 
-.s3-item4-img {
-    background: url("../images/home-automation/voice.png") center/contain no-repeat;
-    width: 5em;
-    height: 5em;
+.s3-img3 {
+    background: url("../images/home-automation/s3-img3.jpg") center/contain no-repeat;
+}
+
+.s3-img4 {
+    background: url("../images/home-automation/s3-img4.jpg") center/contain no-repeat;
+}
+
+.s3-img5 {
+    background: url("../images/home-automation/s3-img5.jpg") center/contain no-repeat;
+}
+
+.s3-img6 {
+    background: url("../images/home-automation/s3-img6.jpg") center/contain no-repeat;
+}
+
+.s3-img7 {
+    background: url("../images/home-automation/s3-img7.jpg") center/contain no-repeat;
+}
+
+.s3-img8 {
+    background: url("../images/home-automation/s3-img8.jpg") center/contain no-repeat;
+}
+
+.s3-last-text {
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    text-align: center;
 }
 
 .s4 {
-    background-color: aliceblue;
     padding: 0em 4em;
-    height: fit-content;
+    display: flex;
+    height: max-content;
+    border-style: none none solid none;
+    border-width: 3px;
+    border-color: #69c8fe;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .s4-title {
-    font-size: 36px;
-}
-
-.s4-subtitle {
-    margin-top: 3em;
-    color: rgb(95, 95, 95);
-    font-size: 17px;
-}
-
-.s4-items {
-    display: flex;
-    justify-content: space-between;
-}
-
-.s4-items-title {
-    font-size: 25px;
+    color: black;
+    font-size: 2.5em;
     margin-top: 1em;
+    text-align: center;
+    margin-top: 0;
+    font-weight: bold;
 }
 
-.s4-items-text {
-    color: rgb(91, 91, 91);
+.s4-text {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 1em;
 }
 
-.s4-item-img1 {
-    background: url("../images/home-automation/camera.png") center/contain no-repeat;
-    height: 5em;
-    width: 5em;
+.s4-images {
+    display: flex;
+    justify-content: center;
 }
 
-.s4-item-img2 {
-    background: url("../images/home-automation/door-video.png") center/contain no-repeat;
-    height: 5em;
-    width: 5em;
+.s4-img {
+    height: 40vh;
+    width: 40vh;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #d8dbec;
+    border-radius: 2%;
+    margin: 1px;
 }
 
-.s4-item-img3 {
-    background: url("../images/home-automation/phone-hand.png") center/contain no-repeat;
-    height: 5em;
-    width: 5em;
+.s4-img1 {
+    background: url("../images/home-automation/s4-img1.jpg") center/contain no-repeat;
+}
+
+.s4-img2 {
+    background: url("../images/home-automation/s4-img2.jpg") center/contain no-repeat;
+}
+
+.s4-img3 {
+    background: url("../images/home-automation/s4-img3.jpg") center/contain no-repeat;
+}
+
+.s4-img4 {
+    background: url("../images/home-automation/s4-img4.jpg") center/contain no-repeat;
+}
+
+.s4-img5 {
+    background: url("../images/home-automation/s4-img5.jpg") center/contain no-repeat;
 }
 
 .s5 {
-    padding: 8em 4em 1em 4em;
-    display: flex;
-    height: fit-content;
+    height: max-content;
 }
 
-
-.s5-left {
-    height: 100%;
-    width: 40%;
-}
-
-.s5-title .s5-left-text {
-    color: grey;
-}
-
-.s5-heading-text {
-    font-size: 36px;
-    font-family: titilliumBold;
+.s5-text {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-}
-
-.s5-btn-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: fit-content;
-}
-
-.s5-btn-container-mobile {
-    display: none;
-    justify-content: center;
-    align-items: center;
-    height: fit-content;
+    margin: 1em;
+    font-weight: bold;
     width: 100%;
 }
 
-.s5-btn {
-    color: white;
-    cursor: pointer;
-    font-size: 13px;
-    padding: 15px 39px;
-    background-color: rgb(26, 26, 26);
-    margin-top: 2.5em;
-    width: 30%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.2s;
-}
-
-.s5-btn:hover {
-    background-color: white;
-    color: rgb(26, 26, 26);
-}
-
-.s5-right {
-    display: flex;
-    flex-wrap: wrap;
-    height: 100%;
-    width: 100%;
-}
-
-.s5-right-container1 {
+.s5-images {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.s5-img {
+    height: 7vh;
+    width: 40vh;
+    margin-bottom: 5px;
+}
+
+.s5-img1 {
+    background: url("../images/home-automation/s5-img1.jpg") center/contain no-repeat;
+    box-shadow: 7px 5px 5px grey;
+}
+
+.s5-img2 {
+    background: url("../images/home-automation/s5-img2.jpg") center/contain no-repeat;
+}
+
+.s5-img3 {
+    background: url("../images/home-automation/s5-img3.jpg") center/contain no-repeat;
+}
+
+.s5-img4 {
+    background: url("../images/home-automation/s5-img4.jpg") center/contain no-repeat;
+}
+
+.s5-img5 {
+    background: url("../images/home-automation/s5-img5.jpg") center/contain no-repeat;
+}
+
+.s5-img6 {
+    background: url("../images/home-automation/s5-img6.jpg") center/contain no-repeat;
+}
+
+.s5-img7 {
+    background: url("../images/home-automation/s5-img7.jpg") center/contain no-repeat;
+}
+
+.faq {
+    font-size: 180px;
+    font-weight: bold;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0.5em 0;
+}
+
+.s6 {
+    height: max-content;
+    border-style: solid none none none;
+    border-width: 3px;
+    border-color: #69c8fe;
     justify-content: center;
-    width: 50%;
-}
-
-.s5-right-img1 {
-    background: url("../images/home-automation/elan-product1.jpg") center/contain no-repeat;
-    height: 10em;
-    width: 100%;
-}
-
-.s5-right-container2 {
+    flex-direction: column;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 50%;
-    min-height: 100%;
+    padding-bottom: 5vh;
 }
 
-.s5-right-img2 {
-    background: url("../images/home-automation/thinknx-product1.jpg") center/contain no-repeat;
-    height: 10em;
-    width: 100%;
-}
-
-.s5-right-texts {
-    text-align: center;
-    margin: 2em 2em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 5em;
-}
-
-.s5-right-titles {
-    margin-top: 1em;
-    font-size: 20px;
-    font-family: titilliumBold;
-}
-
-@media screen and (max-width: 782px) {
-    .s3 {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .s3-left-container {
-        width: 100%;
-    }
-    .s2-left-text {
-        text-align: center;
-    }
-    .s2-text1 {
-        text-align: center;
-    }
-    .s2-title {
-        text-align: center;
-    }
-    .s4-items {
-        flex-direction: column;
-    }
-    .s5 {
-        flex-direction: column;
-        align-items: center;
-    }
-    .s5-right-container1 {
-        width: 100%;
-        padding: 1em;
-    }
-    .s5-btn-container {
-        display: none;
-    }
-    .s5-btn-container-mobile {
-        display: flex;
-    }
-}
-
-@media screen and (max-width: 856px) {
+@media screen and (max-width: 432px) {
     .s1-title {
-        font-size: 4em;
+        height: 7vh;
+    }
+    .s1-text {
+        font-size: 30px;
+    }
+    .s1-text2 {
+        font-size: 30px;
     }
 }
 
-@media screen and (max-width: 680px) {
-    .s1-title {
-        font-size: 3em;
-    }
+@media screen and (max-width: 750px) {
     .s2-images {
         flex-direction: column;
-        justify-content: center;
         align-items: center;
     }
-    .s3 {
-        padding: 0;
+    .s4-title {
+        font-size: 1.5em;
     }
-    .s5 {
-        padding: 0;
+    .s4-images {
+        flex-direction: column;
+        align-items: center;
     }
-    .s5-left {
-        width: 100%;
-    }
-    .s5-left-text {
-        padding: 0em 4em;
-    }
-}
-
-@media screen and (max-width: 469px) {
-    .s2-img1 {
-        width: 20em;
-    }
-    .s2-img2 {
-        width: 20em;
-    }
-    .s2-img3 {
-        width: 20em;
-    }
-}
-
-@media screen and (max-width: 391px) {
-    .s1-title {
-        font-size: 2em;
+    .faq {
+        font-size: 100px;
     }
     .s2-img1 {
-        width: 15em;
+        height: 10em;
     }
     .s2-img2 {
-        width: 15em;
+        height: 10em;
     }
     .s2-img3 {
-        width: 15em;
+        height: 10em;
     }
 }

@@ -3,7 +3,7 @@
 }
 
 .right-menu {
-    background-color: rgb(30, 30, 30);
+    background-color: rgb(255, 255, 255);
     height: 100%;
     width: 0;
     position: fixed;
@@ -17,37 +17,30 @@
 }
 
 .right-menu-info-container {
-    color: white;
+    color: rgb(0, 0, 0);
     width: 70%;
 }
 
 .close-right-menu {
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 3em;
     z-index: 20;
     position: fixed;
     top: 3px;
     right: 0.5em;
     padding: 3px 0.3em;
-    background-color: rgb(30, 30, 30);
     cursor: pointer;
 }
 
 .right-menu-logo-container {
-    color: white;
+    color: rgb(0, 0, 0);
     width: 10em;
     min-height: 3em;
-    background-image: url("../images/logo/Logo\ 8-nobg.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+    background: url("../images/logo/logo.png") center/contain no-repeat;
 }
 
 .contact-icon-location {
-    background-image: url("../images/location-icon.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    background: url("../images/location-icon.png") center/contain no-repeat;
     height: 1.3em;
     width: 1.3em;
 }
@@ -60,19 +53,13 @@
 }
 
 .contact-icon-email {
-    background-image: url("../images/email-icon.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    background: url("../images/email-icon.png") center/contain no-repeat;
     height: 1.3em;
     width: 1.3em;
 }
 
 .contact-icon-phone {
-    background-image: url("../images/phone-icon.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    background: url("../images/phone-icon.png") center/contain no-repeat;
     height: 1.3em;
     width: 1.3em;
 }
@@ -112,7 +99,7 @@
 }
 
 .right-menu-mobile-navs {
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 1em;
     cursor: pointer;
 }

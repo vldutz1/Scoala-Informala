@@ -61,7 +61,7 @@
 .footer-email {
     width: 2em;
     height: 2em;
-    background-image: url("../images/email-icon.png");
+    background-image: url("../images/footer-email.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -70,7 +70,7 @@
 .footer-phone {
     width: 2em;
     height: 2em;
-    background-image: url("../images/phone-icon.png");
+    background-image: url("../images/footer-phone.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -100,7 +100,7 @@
     margin: 2em 0;
     height: 4em;
     width: 12em;
-    background-image: url("../images/logo/Logo\ 8-nobg.png");
+    background-image: url("../images/logo/logo.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;

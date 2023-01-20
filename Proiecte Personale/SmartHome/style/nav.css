@@ -5,10 +5,7 @@
     z-index: 3;
     width: 11em;
     height: 4.1em;
-    background-image: url("../images/logo/Logo\ 8-nobg.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+    background: url("../images/logo/logo.png") center/contain no-repeat;
     cursor: pointer;
     top: 1em;
 }
@@ -22,9 +19,9 @@
     align-items: center;
     width: 100%;
     font-size: 14px;
-    background-color: rgba(0, 0, 0, 0.726);
+    background-color: rgba(255, 255, 255, 0.726);
     height: 5em;
-    color: white;
+    color: rgb(0, 0, 0);
     top: 1em;
 }
 
@@ -39,12 +36,11 @@
 }
 
 .nav-menu-btn {
-    /* margin-top: 0.7em; */
     right: 1em;
     position: fixed;
     z-index: 1;
     font-size: 30px;
-    color: white;
+    color: rgb(0, 0, 0);
     z-index: 2;
     top: 1.2em;
 }
