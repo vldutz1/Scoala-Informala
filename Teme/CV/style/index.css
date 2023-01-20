@@ -74,7 +74,8 @@ section {
 
 .section3 {
     background-color: grey;
-    background: linear-gradient(rgb(76, 62, 78), rgb(108, 88, 111));
+    /* background: linear-gradient(rgb(76, 62, 78), rgb(108, 88, 111)); */
+    background: url("../images/s3-bg.png") center/cover no-repeat;
     padding-top: 5em;
     min-height: 100vh;
 }
@@ -169,7 +170,8 @@ section {
 }
 
 .section2 {
-    background: linear-gradient(rgb(65, 64, 92), rgb(76, 62, 78));
+    /* background: linear-gradient(rgb(26, 26, 37), rgb(38, 33, 39)); */
+    background: url("../images/s2-bg2.png") bottom/cover no-repeat;
     padding-top: 5em;
     height: max-content;
     min-height: 100vh;

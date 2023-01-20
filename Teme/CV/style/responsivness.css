@@ -24,6 +24,10 @@
         width: 4.5em;
         height: 2.5em;
     }
+
+    .section1-img {
+        width: 68vmax;
+    }
     .s2-header {
         display: flex;
         justify-content: flex-start;
@@ -46,3 +50,17 @@
     }
 }
 
+@media screen and (max-width: 510px) {
+    .section1-img {
+        width: 55vmax;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .section1-img {
+        width: 40vmax;
+    }
+    .section1-header-text {
+        font-size: 40px;
+    }
+}
