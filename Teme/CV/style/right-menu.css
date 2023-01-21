@@ -115,7 +115,6 @@
     color: var(--yellow);
     text-align: center;
     cursor: pointer;
-    margin: 1em;
 }
 
 .color-picker-container {
@@ -168,6 +167,11 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+}
+
+.btn-hover:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 7px white;
 }
 
 .lang-btn-active {
