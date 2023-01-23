@@ -45,6 +45,13 @@ section {
     border-color: #69c8fe;
     font-weight: bold;
     margin-top: 3vh;
+    cursor: pointer;
+}
+
+.main-btn:hover {
+    background-color: #445863;
+    border-color: #1d3848;
+    color: white;
 }
 
 .s1-sub-title-box {
@@ -210,6 +217,11 @@ img:nth-child(5) {
     border-color: #d8dbec;
     border-radius: 2%;
     margin: 1px;
+    transition: 0.5s ease-in-out;
+}
+
+.s3-img:hover {
+    transform: scale(1.3);
 }
 
 .s3-img1 {
@@ -321,7 +333,6 @@ img:nth-child(5) {
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    /* margin: 1em; */
     font-weight: bold;
 }
 
@@ -335,11 +346,15 @@ img:nth-child(5) {
     height: 7vh;
     width: 40vh;
     margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.s5-img:hover {
+    box-shadow: 7px 5px 5px grey;
 }
 
 .s5-img1 {
     background: url("../images/home-automation/s5-img1.jpg") center/contain no-repeat;
-    box-shadow: 7px 5px 5px grey;
 }
 
 .s5-img1-text {
@@ -452,7 +467,7 @@ img:nth-child(5) {
     width: 40vh;
 }
 
-@media screen and (max-width: 432px) {
+@media screen and (max-width: 439px) {
     .s2 {
         padding: 0.2em;
     }
@@ -473,6 +488,9 @@ img:nth-child(5) {
 
     .s1-text2 {
         font-size: 30px;
+    }
+    .s3-img:hover {
+        transform: scale(1.2);
     }
 }
 
@@ -506,6 +524,10 @@ img:nth-child(5) {
     .s2-img3 {
         height: 10em;
     }
+
+    .s3-img {
+
+    }
 }
 
 @media screen and (max-width: 855px) {
@@ -516,5 +538,11 @@ img:nth-child(5) {
     .s2-images-mobile {
         overflow: hidden;
         display: block;
+    }
+}
+
+@media screen and (max-width: 407px) {
+    .s3-img:hover {
+        transform: scale(1.2);
     }
 }
