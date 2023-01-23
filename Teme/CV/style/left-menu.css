@@ -134,7 +134,7 @@
     }
 
     100% {
-        width: 85%;
+        width: 95%;
     }
 }
 
@@ -144,7 +144,7 @@
     }
 
     100% {
-        width: 70%;
+        width: 80%;
     }
 }
 
@@ -154,7 +154,7 @@
     }
 
     100% {
-        width: 50%;
+        width: 70%;
     }
 }
 
@@ -164,7 +164,7 @@
     }
 
     100% {
-        width: 70%;
+        width: 60%;
     }
 }
 
@@ -174,7 +174,7 @@
     }
 
     100% {
-        width: 65%;
+        width: 30%;
     }
 }
 
@@ -184,11 +184,31 @@
     }
 
     100% {
-        width: 100%;
+        width: 70%;
     }
 }
 
 @keyframes progressAnim7 {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 65%;
+    }
+}
+
+@keyframes progressAnim8 {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes progressAnim9 {
     0% {
         width: 0%;
     }
@@ -229,6 +249,14 @@
 
 .progress-bar-anim7 {
     animation: progressAnim7 1s 0.7s 1 ease-in;
+}
+
+.progress-bar-anim8 {
+    animation: progressAnim8 1s 0.8s 1 ease-in;
+}
+
+.progress-bar-anim9 {
+    animation: progressAnim9 1s 0.9s 1 ease-in;
 }
 
 .social-icons {
