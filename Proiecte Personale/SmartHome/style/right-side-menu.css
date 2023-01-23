@@ -50,6 +50,7 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 20%;
+    cursor: pointer;
 }
 
 .contact-icon-email {
@@ -117,3 +118,9 @@
       display: none;
     }
   }
+
+@media screen and (max-width: 860px) {
+    .right-menu-logo-container {
+        display: none;
+    }
+}
