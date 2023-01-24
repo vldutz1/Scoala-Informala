@@ -28,3 +28,8 @@
     font-family: titilliumLight;
     src: url("fonts/TitilliumWeb-Light.ttf");
 }
+
+@font-face {
+    font-family: montserrat;
+    src: url("fonts/Montserrat-Regular.ttf");
+}
