@@ -73,6 +73,7 @@ section {
 
 .s2-testo {
     font-family: montserrat;
+    font-weight: 0;
     font-size: 20px;
     text-align: center;
     display: flex;
