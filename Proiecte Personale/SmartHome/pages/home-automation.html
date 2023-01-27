@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="../style/footer.css">
     <link rel="stylesheet" href="../style/nav.css">
     <link rel="stylesheet" href="../style/home-automation.css">
-    <link rel="stylesheet" href="../style/fonts/swiffy-slider.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="../images/favicon.png">
 </head>
@@ -161,14 +160,15 @@
     <section class="s3">
         <div class="s2-title">You may never want to leave your home anymore...</div>
         <div class="s3-images">
-            <div class="s3-img1 s3-img"></div>
-            <div class="s3-img2 s3-img"></div>
-            <div class="s3-img3 s3-img"></div>
-            <div class="s3-img4 s3-img"></div>
-            <div class="s3-img5 s3-img"></div>
-            <div class="s3-img6 s3-img"></div>
-            <div class="s3-img7 s3-img"></div>
-            <div class="s3-img8 s3-img"></div>
+            <div class="s3-img-black-screen hidden"></div>
+            <div class="s3-img1 s3-img" onclick="activeItem1()" id="s3-img1"></div>
+            <div class="s3-img2 s3-img" onclick="activeItem2()" id="s3-img2"></div>
+            <div class="s3-img3 s3-img" onclick="activeItem3()" id="s3-img3"></div>
+            <div class="s3-img4 s3-img" onclick="activeItem4()" id="s3-img4"></div>
+            <div class="s3-img5 s3-img" onclick="activeItem5()" id="s3-img5"></div>
+            <div class="s3-img6 s3-img" onclick="activeItem6()" id="s3-img6"></div>
+            <div class="s3-img7 s3-img" onclick="activeItem7()" id="s3-img7"></div>
+            <div class="s3-img8 s3-img" onclick="activeItem8()" id="s3-img8"></div>
         </div>
         <!-- <div class="s3-last-text">later</div> -->
     </section>
@@ -309,6 +309,7 @@
             </span>
         </div>
     </footer>
+    <script src="../scripts/homeAutomationItems.js"></script>
     <script src="../scripts/slideshow.js"></script>
     <script src="../scripts/rightMenu.js"></script>
 </body>
