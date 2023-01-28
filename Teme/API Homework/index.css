@@ -1,0 +1,83 @@
+body {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+#posts-container {
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+}
+
+.post-title {
+    text-transform: capitalize;
+}
+
+.post-title h2 {
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.modalHidden {
+    border: 1px solid rgb(50, 155, 216);
+    width: 25%;
+    border-radius: 1%;
+    background-color: rgb(218, 228, 255);
+    position: absolute;
+    z-index: 5;
+    top: 35%;
+    left: 35%;
+    display: none;
+}
+
+.modalDisplayed {
+    border: 2px solid rgb(255, 255, 255);
+    width: 25%;
+    border-radius: 1%;
+    box-shadow: 5px 5px 5px 5px gray;
+    background-color: rgb(6, 0, 0);
+    position: fixed;
+    z-index: 5;
+    top: 35%;
+    left: 35%;
+    display: block;
+}
+
+.modalWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.buttonsWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.modalWrapper button {
+    background: black;
+    margin: 20px;
+    width: 80px;
+    color: rgb(255, 255, 255);
+}
+
+.modalWrapper button:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+#cancel:hover {
+    color: rgb(255, 255, 255);
+    background-color: red;
+}
+
+.modalWrapper input {
+    margin: 20px;
+    align-self: center;
+    width: 80%;
+    height: 30px;
+}
+
+.modalWrapper textarea {
+    width: 80%;
+    align-self: center;
+}
