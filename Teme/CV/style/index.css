@@ -144,6 +144,13 @@ section {
     background-repeat: no-repeat;
 }
 
+.portfolio-item-7 {
+    background-image: url("../images/amazing-design-logo.png");
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+
 .portfolio-item:hover {
     box-shadow: 0 1px 4px 0 var(--yellow);
     cursor: pointer;
@@ -168,11 +175,42 @@ section {
     text-align: center;
 }
 
+.portfolio-modal1 {
+    background-color: rgba(0, 0, 0, 0.582);
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0px;
+    padding: 4em 25em 4em 4em;
+    display: none;
+}
+
+.modal1-img {
+    /* background: url("../images/rock-paper-scissors.gif") center/contain no-repeat; */
+    height: 50%;
+    color: white;
+    font-size: 5em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.modal1-buttons {
+    margin: 2em 0;
+    display: flex;
+    justify-content: center;
+}
+
 .section2 {
     background: url("../images/s2-bg2.png") bottom/cover no-repeat;
     padding-top: 5em;
     height: max-content;
     min-height: 100vh;
+}
+
+.modal-btn {
+    margin:0 1em
 }
 
 .s2-header {

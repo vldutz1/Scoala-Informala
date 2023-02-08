@@ -126,8 +126,7 @@
       <div class="social-icons">
         <div class="social-icon-linkedin"><a href="https://www.linkedin.com/in/vlad-chereches-a58510147/"
             target="_blank"></a></div>
-        <div class="social-icon-github"><a href="https://github.com/vldutz1"
-            target="_blank"></a></div>
+        <div class="social-icon-github"><a href="https://github.com/vldutz1" target="_blank"></a></div>
         <div class="social-icon-email social-icon-email-inactive" id="email-icon" onclick="toggleEmailMenu()"></div>
       </div>
       <a href="files/cv.pdf" target="_blank">
@@ -173,7 +172,7 @@
         <h1 class="section1-header-text" id="s1-header-text2">Potential</h1>
       </div>
       <div class="text-under-header-img">
-        <span class="yellow section1-main-text">6</span><span class="section1-sec-text" id="s1-projects-text">
+        <span class="yellow section1-main-text">7</span><span class="section1-sec-text" id="s1-projects-text">
           Projects
           Completed</span>
       </div>
@@ -226,33 +225,39 @@
     <section class="section3" id="s3">
       <span class="section3-header-text" id="portfolio">Portfolio</span>
       <div class="portfolio-items">
-        <article class="portfolio-item portfolio-item-1"
-          onclick="window.location.href='../Rock Paper Scissors/theGame2.html';">
+        <article class="portfolio-item portfolio-item-1" onclick="openPortfolio1()">
           <span class="portfolio-title" id="rps-game">Rock Paper Scissors Game</span>
         </article>
-        <article class="portfolio-item portfolio-item-2"
-          onclick="window.location.href='../../Proiecte Personale/Game1/index.html'">
+        <article class="portfolio-item portfolio-item-2" onclick="openPortfolio2()">
           <span class="portfolio-title" id="pawn-game">Simple Pawn Game</span>
         </article>
-        <article class="portfolio-item portfolio-item-3"
-          onclick="window.location.href='../../Teme/Contact Us/contact.html'">
+        <article class="portfolio-item portfolio-item-3" onclick="openPortfolio3()">
           <span class="portfolio-title" id="contact-form">Contact Form</span>
           <span class="sec-color portfolio-text" id="contact-form-text">A contact form connected to a database</span>
         </article>
-        <article class="portfolio-item portfolio-item-4"
-          onclick="window.location.href='../../Proiecte Personale/Question Game/index.html'">
+        <article class="portfolio-item portfolio-item-4" onclick="openPortfolio4()">
           <span class="portfolio-title" id="quiz-game-title">Millionaire Quiz Game</span>
           <span class="sec-color portfolio-text" id="quiz-game-text">A 17 levels based game with questions and
             answers</span>
         </article>
-        <article class="portfolio-item portfolio-item-5">
+        <article class="portfolio-item portfolio-item-5" onclick="openPortfolio5()">
           <span class="portfolio-title" id="my-amazing-cv">My Amazing CV</span>
           <span class="sec-color portfolio-text" id="my-cv-text">You're looking at it</span>
         </article>
-        <article class="portfolio-item portfolio-item-6"
-          onclick="window.location.href='../../Proiecte Personale/SmartHome/index.html'">
+        <article class="portfolio-item portfolio-item-6" onclick="openPortfolio6()">
           <span class="portfolio-title" id="quiz-game-title">DOMUNEXT</span>
         </article>
+        <article class="portfolio-item portfolio-item-7" onclick="openPortfolio7()">
+          <span class="portfolio-title" id="quiz-game-title">Amazing Design</span>
+        </article>
+      </div>
+      <div class="portfolio-modal1">
+        <div class="modal1-img" id="modal1-img"></div>
+        <div class="modal1-buttons">
+          <button class="send-btn modal-btn" id="modal-btn1" onclick="goToWebsite()">Access the website</button>
+          <button class="send-btn modal-btn" onclick="goToGithub()" id="modal-btn2">See on GitHub</button>
+          <button class="send-btn modal-btn" onclick="closeModal()">Close</button>
+        </div>
       </div>
     </section>
     <section class="section4">
@@ -284,6 +289,7 @@
   <script src="scripts/menu.js"></script>
   <script src="scripts/colorTheme.js"></script>
   <script src="scripts/languageChanger.js"></script>
+  <script src="scripts/modal.js"></script>
 </body>
 
 </html>
