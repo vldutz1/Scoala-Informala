@@ -13,11 +13,11 @@
 </head>
 
 <body>
-    <span class="nav-logo" onclick="window.location.href='../index.html'"></span>
     <span class="nav-menu-btn" onclick="openRightMenu()" id="right-menu-open-btn">&#9776;</span>
     <nav class="nav-container">
+        <div class="nav-logo" onclick="window.location.href='../index.html'"></div>
         <span class="nav-items" onclick="window.location.href='../index.html'">HOME</span>
-        <span class="services nav-items">SERVICES
+        <span class="services nav-items">SERVICE
             <div class="nav-highlight-services"></div>
             <div class="services-dropdown">
                 <div class="dropdown-items" onclick="window.location.href='home-automation.html'">Home Automation
@@ -27,7 +27,7 @@
                 <div class="dropdown-items" onclick="window.location.href='hotel.html'">Hotels</div>
             </div>
         </span>
-        <span class="products nav-items">PRODUCTS
+        <!-- <span class="products nav-items">PRODUCTS
             <div class="nav-highlight-products"></div>
             <div class="products-dropdown">
                 <div class="dropdown-items" onclick="window.location.href='schneider.html'">Schneider</div>
@@ -38,7 +38,7 @@
                 <div class="dropdown-items" onclick="window.location.href='bticino.html'">Bticino</div>
                 <div class="dropdown-items" onclick="window.location.href='zennio.html'">Zennio</div>
             </div>
-        </span>
+        </span> -->
         <span class="nav-items" onclick="window.location.href='contact.html'">CONTACT</span>
         <span class="nav-items" onclick="window.location.href='faq.html'">FAQ</span>
     </nav>
@@ -48,13 +48,16 @@
         <div class="right-menu-logo-container"></div>
         <div class="mobile-menu">
             <div class="right-menu-mobile-navs" onclick="window.location.href='../index.html'">Home</div>
-            <div class="right-menu-mobile-navs" onclick="mobileServices()">Services</div>
+            <div class="right-menu-mobile-navs" onclick="mobileServices()">Service</div>
             <div class="hidden" id="right-menu-services">
-                <div class="right-menu-mobile-navs mobile-menu" onclick="window.location.href='home-automation.html'">Home Automation</div>
-                <div class="right-menu-mobile-navs mobile-menu" onclick="window.location.href='building-automation.html'">Building Automation</div>
-                <div class="right-menu-mobile-navs mobile-menu" onclick="window.location.href='hotel.html'">Hotels Automation</div>
+                <div class="right-menu-mobile-navs mobile-menu" onclick="window.location.href='home-automation.html'">
+                    Home Automation</div>
+                <div class="right-menu-mobile-navs mobile-menu"
+                    onclick="window.location.href='building-automation.html'">Building Automation</div>
+                <div class="right-menu-mobile-navs mobile-menu" onclick="window.location.href='hotel.html'">Hotels
+                    Automation</div>
             </div>
-            <div class="right-menu-mobile-navs" onclick="mobileProducts()">Products</div>
+            <!-- <div class="right-menu-mobile-navs" onclick="mobileProducts()">Products</div>
             <div id="right-menu-products" class="hidden">
                 <div class="right-menu-mobile-navs mobile-menu" onclick="window.location.href='schneider.html'">
                     Schneider</div>
@@ -70,7 +73,7 @@
                     Bticino</div>
                 <div class="right-menu-mobile-navs mobile-menu" onclick="window.location.href='zennio.html'">
                     Zennio</div>
-            </div>
+            </div> -->
             <div class="right-menu-mobile-navs" onclick="window.location.href='contact.html'">Contact</div>
             <div class="right-menu-mobile-navs" onclick="window.location.href='faq.html'">FAQ</div>
         </div>
@@ -82,11 +85,36 @@
                 <div class="contact-icon-location"></div>
                 <div>Location Here</div>
             </div> -->
-            <div class="contact-containers">
+            <div class="contact-containers" onclick="window.location.href='mailto:service@domunext.com'">
                 <div class="contact-icon-email"></div>
                 <div>service@domunext.com</div>
             </div>
-            <div class="contact-containers">
+            <div class="contact-containers" onclick="window.location.href='tel:+393935313425'">
+                <div class="contact-icon-phone"></div>
+                <div>+39 3935313425</div>
+            </div>
+            <!-- <div class="right-menu-social-icons">
+                <div class="right-menu-fb-icon"></div>
+                <div class="right-menu-ig-icon"></div>
+                <div class="right-menu-linkedin-icon"></div>
+            </div> -->
+        </div>
+    </div>
+    <div class="close-right-menu hidden" onclick="closeRightMenu()" id="right-menu-close-btn">X</div>
+    <div class="right-menu" id="right-menu">
+
+        <div class="right-menu-logo-container"></div>
+        <div class="right-menu-info-container">
+            <span>Contact Information</span>
+            <!-- <div class="contact-containers">
+                <div class="contact-icon-location"></div>
+                <div>Location Here</div>
+            </div> -->
+            <div class="contact-containers" onclick="window.location.href='mailto:service@domunext.com'">
+                <div class="contact-icon-email"></div>
+                <div onclick="window.location.href='contact.html'">service@domunext.com</div>
+            </div>
+            <div class="contact-containers" onclick="window.location.href='tel:+393935313425'">
                 <div class="contact-icon-phone"></div>
                 <div>+39 3935313425</div>
             </div>
