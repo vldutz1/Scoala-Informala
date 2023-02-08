@@ -15,9 +15,9 @@ main {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    position: absolute;
-    left: 2vh;
-    top: 2vh;
+    /* position: absolute; */
+    /* left: 2vh;
+    top: 2vh; */
     border-radius: 10%;
 }
 
@@ -55,9 +55,9 @@ main {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    position: absolute;
-    right: 2vh;
-    top: 2vh;
+    /* position: absolute; */
+    /* right: 2vh;
+    top: 2vh; */
     border-radius: 10%;
 }
 
@@ -69,9 +69,9 @@ main {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    position: absolute;
+    /* position: absolute;
     right: 25vh;
-    top: 2vh;
+    top: 2vh; */
     border-radius: 10%;
 }
 
@@ -100,12 +100,10 @@ main {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    position: absolute;
-    left: 25vh;
-    top: 2vh;
     border-radius: 10%;
     background-image: url("../images/grey-pawn.png");
     background-size: contain;
+    background-repeat: no-repeat;
     display: flex;
 }
 
@@ -118,7 +116,7 @@ main {
     text-align: center;
     color: white;
     -webkit-text-stroke: 0.7px black;
-    font-size: larger;
+    font-size: 1em;
     font-family: Squirk;
     margin: 0.6em 0.6em;
 }
@@ -130,12 +128,13 @@ main {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    position: absolute;
+    /* position: absolute;
     left: 50vh;
-    top: 2vh;
+    top: 2vh; */
     border-radius: 10%;
     background-image: url("../images/red-pawn.png");
     background-size: contain;
+    background-repeat: no-repeat;
     display: flex;
 }
 
@@ -151,8 +150,8 @@ main {
 
 .board {
     background-color: darkseagreen;
-    height: 80vh;
-    margin-top: 25vh;
+    height: max-content;
+    margin-top: 2vh;
     display: flex;
     flex-wrap: wrap;
 }
@@ -252,7 +251,7 @@ main {
     cursor: pointer;
     color: #ffffff;
     font-family: Squirk, Arial;
-    font-size: 17px;
+    font-size: 16px;
     padding: 6px 34px;
     text-decoration: none;
     text-shadow: 5px 1px 4px #810e05;
@@ -274,7 +273,7 @@ main {
     cursor: pointer;
     color: #ffffff;
     font-family: Squirk, Arial;
-    font-size: 17px;
+    font-size: 0.5em;
     padding: 6px 34px;
     text-decoration: none;
     text-shadow: 5px 1px 4px #810e05;
@@ -391,26 +390,14 @@ main {
     animation-iteration-count: 1;
 }
 
-/* .tooltip {
-    border-bottom: 1px dotted black;
-    cursor: help;
-}
-
-.tooltiptext {
-    visibility: hidden;
-}
-
-.tooltip:hover .tooltiptext {
-    visibility: visible;
-} */
 .tooltip {
     position: relative;
     display: inline-block;
     border-bottom: 1px dotted black;
     cursor: help;
-  }
-  
-  .tooltip .tooltiptext {
+}
+
+.tooltip .tooltiptext {
     visibility: hidden;
     width: 120px;
     background-color: black;
@@ -423,8 +410,58 @@ main {
     top: 100%;
     left: 50%;
     margin-left: -60px;
-  }
-  
-  .tooltip:hover .tooltiptext {
+}
+
+.tooltip:hover .tooltiptext {
     visibility: visible;
-  }
+}
+
+.control-panel {
+    display: flex;
+    justify-content: center;
+}
+
+.top-panel-items {
+    margin: 2vh;
+}
+
+@media screen and (max-width: 434px) {
+    * {
+        font-size: 30px;
+    }
+    .dicebtn,
+    .jumpbtn,
+    .musicbtn,
+    .dice-result {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 559px) {
+    * {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 775px) {
+    #dice-img {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .control-panel {
+        flex-wrap: wrap;
+    }
+
+    .dicebtn,
+    .jumpbtn,
+    .musicbtn {
+        height: 20%;
+        width: 70%;
+    }
+
+    * {
+        font-size: 20px;
+    }
+}
