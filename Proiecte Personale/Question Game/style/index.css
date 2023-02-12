@@ -160,3 +160,9 @@ body {
 .start-btn:hover {
     background-image: url("../images/main-box-hover.png");
 }
+
+@media screen and (min-width: 760px) {
+    .game-container {
+        flex-direction: column;
+    }
+}

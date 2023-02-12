@@ -1,49 +1,83 @@
 .nav-logo {
-    margin-top: 1.2em;
-    left: 1em;
+    left: 93px;
+    top: 2em;
     position: fixed;
     z-index: 3;
-    width: 11em;
-    height: 4.1em;
-    background: url("../images/logo/logo.png") center/contain no-repeat;
+    width: 313px;
+    height: 73px;
+    background: url("../images/logo/LogoPNG-NERO.png") center/contain no-repeat;
     cursor: pointer;
-    top: 1em;
 }
 
 .nav-container {
-    margin-top: 0.7em;
     z-index: 1;
     position: fixed;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     width: 100%;
     font-size: 14px;
-    background-color: rgba(255, 255, 255, 0.726);
-    height: 5em;
-    color: rgb(0, 0, 0);
-    top: 1em;
+    background-color: rgba(255, 255, 255, 0);
+    height: 9em;
+    color: rgb(255, 255, 255);
+    padding-right: 2em;
 }
 
 .nav-items {
     margin-top: 0.7em;
-    margin: 0px 2em;
+    margin: 0px 1em;
     cursor: pointer;
-    font-weight: bold;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: Poppins;
 }
 
 .nav-items:hover {
     color: grey;
 }
 
+.nav-items-active {
+    font-weight: 700;
+}
+
+.active-bar {
+    height: 1px;
+    background-color: white;
+    width: 68px;
+    margin-left: 15px;
+}
+
+.nav-contact-btn {
+    margin-top: 0.7em;
+    margin: 0px 1em;
+    cursor: pointer;
+    color: #1E6585;
+    padding: 10px 30px;
+    background-color: white;
+    border-radius: 7px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+    transition: 0.5s;
+}
+
+.nav-contact-btn:hover {
+    background-color: #1E6585;
+    color: white;
+}
+
 .nav-menu-btn {
-    right: 1em;
+    display: none;
+    left: 1em;
     position: fixed;
     z-index: 1;
     font-size: 30px;
     color: rgb(0, 0, 0);
     z-index: 2;
-    top: 1.2em;
+    top: 1em;
 }
 
 .services:hover .services-dropdown {
@@ -106,16 +140,22 @@
 }
 
 /* Mobile Responsive */
-@media screen and (max-width: 860px) {
-    .nav-items {
-      display: none;
+@media screen and (max-width: 950px) {
+    .nav-items, .nav-contact-btn {
+        display: none;
     }
+
     .nav-logo {
         position: static;
         height: 10vh;
     }
+
     .nav-container {
         display: flex;
         justify-content: center;
     }
-  }
+
+    .nav-menu-btn {
+        display: block;
+    }
+}

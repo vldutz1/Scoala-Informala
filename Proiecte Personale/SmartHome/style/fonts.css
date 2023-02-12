@@ -33,3 +33,33 @@
     font-family: montserrat;
     src: url("fonts/Montserrat-Regular.ttf");
 }
+
+@font-face {
+    font-family: MontserratExtraBold;
+    src: url("fonts/Montserrat-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url("fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: PoppinsSemiBold;
+    src: url("fonts/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: PoppinsBold;
+    src: url("fonts/Poppins-Bold.ttf");
+}
+
+@font-face {
+    font-family: DMSans;
+    src: url("fonts/DMSans-Bold.ttf");
+}
+
+@font-face {
+    font-family: Palanquin;
+    src: url("fonts/Palanquin-Regular.ttf");
+}

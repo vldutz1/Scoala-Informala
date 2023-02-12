@@ -2,6 +2,10 @@
     cursor: pointer;
 }
 
+.burger-btn {
+    width: max-content;
+}
+
 .right-menu {
     background-color: rgb(255, 255, 255);
     height: 100%;

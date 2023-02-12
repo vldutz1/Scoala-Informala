@@ -13,12 +13,14 @@
     <link rel="icon" type="image/x-icon" href="../images/favicon.png">
 </head>
 
-<body>
-    <span class="nav-menu-btn" onclick="openRightMenu()" id="right-menu-open-btn">&#9776;</span>
+<body onscroll="scroll()">
+    <span class="nav-menu-btn" onclick="openRightMenu()" id="right-menu-open-btn">
+    <img src="../images/nav-burger.png" class="burger-btn"></span>
     <nav class="nav-container">
         <div class="nav-logo" onclick="window.location.href='../index.html'"></div>
-        <span class="nav-items" onclick="window.location.href='../index.html'">HOME</span>
-        <span class="services nav-items">SERVICE
+        <span class="nav-items" onclick="window.location.href='../index.html'">Home</span>
+        <span class="services nav-items nav-items-active">Services
+            <div class="active-bar"></div>
             <div class="nav-highlight-services"></div>
             <div class="services-dropdown">
                 <div class="dropdown-items" onclick="window.location.href='home-automation.html'">Home Automation
@@ -40,25 +42,28 @@
                 <div class="dropdown-items" onclick="window.location.href='zennio.html'">Zennio</div>
             </div>
         </span> -->
-        <span class="nav-items" onclick="window.location.href='contact.html'">CONTACT</span>
         <span class="nav-items" onclick="window.location.href='faq.html'">FAQ</span>
+        <span class="nav-contact-btn" onclick="window.location.href='contact.html'">CONTACT US</span>
+        <span class="nav-items">ENG</span>
     </nav>
     <div class="close-right-menu hidden" onclick="closeRightMenu()" id="right-menu-close-btn">X</div>
-    <div class="right-menu" id="right-menu">
+            <div class="right-menu" id="right-menu">
 
-        <div class="right-menu-logo-container"></div>
-        <div class="mobile-menu">
-            <div class="right-menu-mobile-navs" onclick="window.location.href='../index.html'">Home</div>
-            <div class="right-menu-mobile-navs" onclick="mobileServices()">Service</div>
-            <div class="hidden" id="right-menu-services">
-                <div class="right-menu-mobile-navs mobile-menu" onclick="window.location.href='home-automation.html'">
-                    Home Automation</div>
-                <div class="right-menu-mobile-navs mobile-menu"
-                    onclick="window.location.href='building-automation.html'">Building Automation</div>
-                <div class="right-menu-mobile-navs mobile-menu" onclick="window.location.href='hotel.html'">Hotels
-                    Automation</div>
-            </div>
-            <!-- <div class="right-menu-mobile-navs" onclick="mobileProducts()">Products</div>
+                <div class="right-menu-logo-container"></div>
+                <div class="mobile-menu">
+                    <div class="right-menu-mobile-navs" onclick="window.location.href='../index.html'">Home</div>
+                    <div class="right-menu-mobile-navs" onclick="mobileServices()">Service</div>
+                    <div class="hidden" id="right-menu-services">
+                        <div class="right-menu-mobile-navs mobile-menu"
+                            onclick="window.location.href='home-automation.html'">
+                            Home Automation</div>
+                        <div class="right-menu-mobile-navs mobile-menu"
+                            onclick="window.location.href='building-automation.html'">Building Automation</div>
+                        <div class="right-menu-mobile-navs mobile-menu" onclick="window.location.href='hotel.html'">
+                            Hotels
+                            Automation</div>
+                    </div>
+                    <!-- <div class="right-menu-mobile-navs" onclick="mobileProducts()">Products</div>
             <div id="right-menu-products" class="hidden">
                 <div class="right-menu-mobile-navs mobile-menu" onclick="window.location.href='schneider.html'">
                     Schneider</div>
@@ -75,243 +80,346 @@
                 <div class="right-menu-mobile-navs mobile-menu" onclick="window.location.href='zennio.html'">
                     Zennio</div>
             </div> -->
-            <div class="right-menu-mobile-navs" onclick="window.location.href='contact.html'">Contact</div>
-            <div class="right-menu-mobile-navs" onclick="window.location.href='faq.html'">FAQ</div>
-        </div>
+                    <div class="right-menu-mobile-navs" onclick="window.location.href='contact.html'">Contact</div>
+                    <div class="right-menu-mobile-navs" onclick="window.location.href='faq.html'">FAQ</div>
+                </div>
 
-        <div class="right-menu-info-container">
-            <span>Contact Information</span>
+                <div class="right-menu-info-container">
+                    <span>Contact Information</span>
 
-            <!-- <div class="contact-containers">
+                    <!-- <div class="contact-containers">
                 <div class="contact-icon-location"></div>
                 <div>Location Here</div>
             </div> -->
-            <div class="contact-containers" onclick="window.location.href='mailto:service@domunext.com'">
-                <div class="contact-icon-email"></div>
-                <div>service@domunext.com</div>
-            </div>
-            <div class="contact-containers" onclick="window.location.href='tel:+393935313425'">
-                <div class="contact-icon-phone"></div>
-                <div>+39 3935313425</div>
-            </div>
-            <!-- <div class="right-menu-social-icons">
+                    <div class="contact-containers" onclick="window.location.href='mailto:service@domunext.com'">
+                        <div class="contact-icon-email"></div>
+                        <div>service@domunext.com</div>
+                    </div>
+                    <div class="contact-containers" onclick="window.location.href='tel:+393935313425'">
+                        <div class="contact-icon-phone"></div>
+                        <div>+39 3935313425</div>
+                    </div>
+                    <!-- <div class="right-menu-social-icons">
                 <div class="right-menu-fb-icon"></div>
                 <div class="right-menu-ig-icon"></div>
                 <div class="right-menu-linkedin-icon"></div>
             </div> -->
-        </div>
-    </div>
-    <div class="close-right-menu hidden" onclick="closeRightMenu()" id="right-menu-close-btn">X</div>
-    <div class="right-menu" id="right-menu">
+                </div>
+            </div>
+            <div class="close-right-menu hidden" onclick="closeRightMenu()" id="right-menu-close-btn">X</div>
+            <div class="right-menu" id="right-menu">
 
-        <div class="right-menu-logo-container"></div>
-        <div class="right-menu-info-container">
-            <span>Contact Information</span>
-            <!-- <div class="contact-containers">
+                <div class="right-menu-logo-container"></div>
+                <div class="right-menu-info-container">
+                    <span>Contact Information</span>
+                    <!-- <div class="contact-containers">
                 <div class="contact-icon-location"></div>
                 <div>Location Here</div>
             </div> -->
-            <div class="contact-containers" onclick="window.location.href='mailto:service@domunext.com'">
-                <div class="contact-icon-email"></div>
-                <div onclick="window.location.href='contact.html'">service@domunext.com</div>
-            </div>
-            <div class="contact-containers" onclick="window.location.href='tel:+393935313425'">
-                <div class="contact-icon-phone"></div>
-                <div>+39 3935313425</div>
-            </div>
-            <!-- <div class="right-menu-social-icons">
+                    <div class="contact-containers" onclick="window.location.href='mailto:service@domunext.com'">
+                        <div class="contact-icon-email"></div>
+                        <div onclick="window.location.href='contact.html'">service@domunext.com</div>
+                    </div>
+                    <div class="contact-containers" onclick="window.location.href='tel:+393935313425'">
+                        <div class="contact-icon-phone"></div>
+                        <div>+39 3935313425</div>
+                    </div>
+                    <!-- <div class="right-menu-social-icons">
                 <div class="right-menu-fb-icon"></div>
                 <div class="right-menu-ig-icon"></div>
                 <div class="right-menu-linkedin-icon"></div>
             </div> -->
-        </div>
-    </div>
-    <section class="s1">
-        <span class="s1-title"></span>
-        <div class="s1-text">Your Everyday, Everywhere, with a click.</div>
-        <div class="s1-text2">Safety, Control, Efficiency and Comfort.</div>
-        <button class="main-btn" onclick="window.location.href='contact.html'">Click to setup your Dream Home</button>
-    </section>
-    <section class="s2">
-        <div class="s2-title">Our job is to simplify your days. Yours? Enjoy them.</div>
-        <div class="s2-testo">
-            Difficult day, you gave your 100% at work, now you want to enjoy your evening at 100%.<br>
-            You come home, feel cold, turn on the heating and wait for the right temperature to spread.<br>
-            You start preparing dinner, meanwhile you go into the living room and turn on the TV.<br>
-            Run back to the kitchen, you can't get away for too long…<br>
-            You finish cooking and head back to the living room to enjoy dinner and a glass of wine on the couch while
-            watching a movie.<br>
-            You left the lights on… you don't want to (you want to enjoy some well-deserved relaxation), but you have
-            to. Get up and go turn off the lights.<br>
-            How nice it would be if everything were more comfortable and easier, just think…<br>
-            Now imagine: you come home tired from work and you want to enjoy your evening, but when you get back, the
-            perfect temperature is already waiting for you.<br>
-            You cross the threshold, the lights turn on, and when you leave each room, the lights automatically turn
-            off.<br>
-            While cooking, with a click, you hear the TV turn on. Prepare dinner. Leave the kitchen, the lights go out.
-            You sit on the sofa. Everything is perfect…<br>
-            Enjoy your next evenings like that.
-        </div>
-        <div class="s2-images" id="images">
-            <div class="s2-left-btn" onclick="left()"></div>
-            <div class="s2-right-btn" onclick="right()"></div>
-        </div>
-    </section>
-    <section class="s3">
-        <div class="s2-title">You may never want to leave your home anymore...</div>
-        <div class="s3-images">
-            <div class="s3-img-black-screen hidden"></div>
-            <div class="s3-img1 s3-img" onclick="activeItem1()" id="s3-img1"></div>
-            <div class="s3-img2 s3-img" onclick="activeItem2()" id="s3-img2"></div>
-            <div class="s3-img3 s3-img" onclick="activeItem3()" id="s3-img3"></div>
-            <div class="s3-img4 s3-img" onclick="activeItem4()" id="s3-img4"></div>
-            <div class="s3-img5 s3-img" onclick="activeItem5()" id="s3-img5"></div>
-            <div class="s3-img6 s3-img" onclick="activeItem6()" id="s3-img6"></div>
-            <div class="s3-img7 s3-img" onclick="activeItem7()" id="s3-img7"></div>
-            <div class="s3-img8 s3-img" onclick="activeItem8()" id="s3-img8"></div>
-        </div>
-        <!-- <div class="s3-last-text">later</div> -->
-    </section>
-    <section class="s4">
-        <div class="s4-title">You don't have to change your habbits</div>
-        <div class="s4-title">For home automation.</div>
-        <div class="s4-title">Home automation must adapt to your habbits</div>
-        <div class="s4-title">And improve them.</div>
-        <div class="s4-text">What you can do with Home Automation:</div>
-        <div class="slider">
-            <div class="slide-track">
-                <div class="slide">
-                    <img src="../images/home-automation/s4-img1.jpg" height="250" width="250" alt="" />
-                </div>
-                <div class="slide">
-                    <img src="../images/home-automation/s4-img2.jpg" height="250" width="250" alt="" />
-                </div>
-                <div class="slide">
-                    <img src="../images/home-automation/s4-img3.jpg" height="250" width="250" alt="" />
-                </div>
-                <div class="slide">
-                    <img src="../images/home-automation/s4-img4.jpg" height="250" width="250" alt="" />
-                </div>
-                <div class="slide">
-                    <img src="../images/home-automation/s4-img5.jpg" height="250" width="250" alt="" />
-                </div>
-                <div class="slide">
-                    <img src="../images/home-automation/s4-img1.jpg" height="250" width="250" alt="" />
-                </div>
-                <div class="slide">
-                    <img src="../images/home-automation/s4-img2.jpg" height="250" width="250" alt="" />
-                </div>
-                <div class="slide">
-                    <img src="../images/home-automation/s4-img3.jpg" height="250" width="250" alt="" />
-                </div>
-                <div class="slide">
-                    <img src="../images/home-automation/s4-img4.jpg" height="250" width="250" alt="" />
-                </div>
-                <div class="slide">
-                    <img src="../images/home-automation/s4-img5.jpg" height="250" width="250" alt="" />
-                </div>
-                <div class="slide">
-                    <img src="../images/home-automation/s4-img1.jpg" height="250" width="250" alt="" />
-                </div>
-                <div class="slide">
-                    <img src="../images/home-automation/s4-img2.jpg" height="250" width="250" alt="" />
-                </div>
-                <div class="slide">
-                    <img src="../images/home-automation/s4-img3.jpg" height="250" width="250" alt="" />
-                </div>
-                <div class="slide">
-                    <img src="../images/home-automation/s4-img4.jpg" height="250" width="250" alt="" />
-                </div>
-                <div class="slide">
-                    <img src="../images/home-automation/s4-img5.jpg" height="250" width="250" alt="" />
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="s5">
-        <div class="s5-text">Why choose DomuNext?</div>
-        <div class="s5-images">
-            <div class="s5-img1 s5-img">
-                <div class="s5-img-texts">We constantly update our services so that you can have the best experience
-                </div>
-            </div>
-            <div class="s5-img2 s5-img">
-                <div class="s5-img-texts">Our work is covered in passion
-                </div>
-            </div>
-            <div class="s5-img3 s5-img">
-                <div class="s5-img-texts">Our mission is to change the way you see your home
-                </div>
-            </div>
-            <div class="s5-img4 s5-img">
-                <div class="s5-img-texts">The only limit is your imagination
-                </div>
-            </div>
-            <div class="s5-img5 s5-img">
-                <div class="s5-img-texts">You're working with the best in this field
-                </div>
-            </div>
-            <div class="s5-img6 s5-img">
-                <div class="s5-img-texts">We take care of your needs
-                </div>
-            </div>
-            <div class="s5-img7 s5-img">
-                <div class="s5-img-texts">Anyone can do it
-                </div>
-            </div>
-        </div>
-        <div class="faq">FAQ</div>
-    </section>
-    <section class="s6">
-        <div class="s5-text">Do you need someone to take care of your home for you?</div>
-        <button class="main-btn" onclick="window.location.href='contact.html'">Click to setup your Dream Home</button>
-    </section>
-    <footer class="footer">
-        <div class="footer-items">
-            <div class="footer-left-container">
-                <div class="footer-left-title">Contacts</div>
-                <div class="footer-left-items">
-                    <!-- <div class="footer-contact-container">
-                        <div class="footer-location"></div>
-                        <div class="footer-left-item">Location here</div>
-                    </div> -->
-                    <div class="footer-contact-container">
-                        <div class="footer-email"></div>
-                        <div class="footer-left-item">service@domunext.com</div>
+            <section class="s1">
+                <span class="s1-title"></span>
+                <div class="s1-text">Your Everyday,<br>Everywhere,<br>with a click.</div>
+                <div class="s1-text2">Safety, Control, Efficiency and Comfort</div>
+                <button class="main-btn" onclick="window.location.href='contact.html'">Click to setup your Dream
+                    Home</button>
+            </section>
+            <section class="s2">
+                <div class="s2-title">Our job is to simplify your days. Yours?</div>
+                <div class="s2-title2">ENJOY THEM</div>
+                <div class="s2-main">
+                    <div class="s2-textandimg">
+                        <div class="s2-left-img1"></div>
+                        <div class="text-and-title-container">
+                            <div class="s2-title-and-icon">
+                                <div class="s2-title-icons"></div>
+                                <div class="s2-main-titles">ENJOYING YOUR HOME AT THE END OF THE DAY
+                                    IS ALL YOU WANT?</div>
+                            </div>
+                            <div class="s2-right-text1">Difficult day, you want to enjoy your evening at 100%.
+                                You come home, feel cold, turn on the heating and wait for the right temperature to
+                                spread.
+                                You start preparing dinner, meanwhile you go into the living room and turn on the TV.
+                                Run back to the kitchen, you can't get away for too long...
+                                You finish cooking and head back to the living room to enjoy dinner and a glass of wine
+                                on
+                                the
+                                couch while watching a movie.
+                                You left the lights on... you don't want to, but you have to. Get up and go turn off the
+                                lights.
+                                How nice it would be if everything were more comfortable and easier, just think...
+                            </div>
+                        </div>
                     </div>
-                    <div class="footer-contact-container">
-                        <div class="footer-phone"></div>
-                        <div class="footer-left-item">+39 3935313425</div>
+                    <div class="s2-textandimg">
+                        <div class="s2-right-img2" id="s2-img2-mobile"></div>
+                        <div class="text-and-title-container">
+                            <div class="s2-title-and-icon">
+                                <div class="s2-title-icons"></div>
+                                <div class="s2-main-titles">DO IT AT THE BEST</div>
+                            </div>
+                            <div class="s2-right-text1">Now imagine: you come home tired and you want to enjoy your
+                                evening, but when you get back, the perfect temperature is already waiting for you.
+                                You cross the threshold, the lights turn on, and when you leave each room, the lights
+                                automatically turn off.
+                                While cooking, with a click, you hear the TV turn on. Prepare dinner. Leave the kitchen,
+                                the lights turn off.
+                                You sit on the sofa. Everything is perfect.
+                                Enjoy your next evenings like that...
+                            </div>
+                        </div>
+                        <div class="s2-left-img3"></div>
+                    </div>
+                    <div class="s2-textandimg">
+                        <div class="s2-right-img2" id="s2-img2-desktop"></div>
+                        <div class="text-and-title-container">
+                            <div class="s2-title-and-icon">
+                                <div class="s2-title-icons"></div>
+                                <div class="s2-main-titles">HERE'S WHAT IT MEANS</div>
+                            </div>
+                            <div class="s2-right-text1">This is what it means to automate your home.
+                                It means treating yourself to unlimited comfort, thanks to the system's infinite
+                                customization possibilities: it means safetv. thanks to automated
+                                alarm systems; it means simplicity, because you can control your home 100% with your
+                                voice or with a click;
+                                it means investment, because all this will give your home an higher value in the eyes of
+                                anyone;
+                                It means realizing a dream
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <section class="s3">
+                <div class="s3-text-img"></div>
+                <div class="s3-title">You may never want to leave your<br>home anymore...</div>
+                <div class="s3-images">
+                    <div class="s3-img s3-img1"></div>
+                    <div class="s3-img s3-img2"></div>
+                    <div class="s3-img s3-img3"></div>
+                    <div class="s3-img s3-img4"></div>
+                    <div class="s3-img s3-img5"></div>
+                    <div class="s3-img s3-img6"></div>
+                    <div class="s3-img s3-img7"></div>
+                    <div class="s3-img s3-img8"></div>
+                </div>
+                <div class="s3-arrows">
+                    <div class="s3-arrow-left"></div>
+                    <div class="s3-arrow-right"></div>
+                </div>
+            </section>
+            <section class="s4"></section>
+            <section class="s5">
+                <div class="s5-title">What you can do with Home Automation:</div>
+                <div class="s5-text">Don’t waste time on search manual tasks. Let Automation do it for you. Simplify
+                    workflows, reduce errors, and save time.</div>
+                <div class="s5-slider-system">
+                    <div class="s5-arrow-left" onclick="left()"></div>
+                    <div class="s5-slider">
+                        <div class="s5-slider-items s5-img1"></div>
+                        <div class="s5-slider-items s5-img2"></div>
+                        <div class="s5-slider-items s5-img3"></div>
+                        <div class="s5-slider-items s5-img4"></div>
+                        <div class="s5-slider-items s5-img5"></div>
+                        <div class="s5-slider-items s5-img6"></div>
+                        <div class="s5-slider-items s5-img7"></div>
+                        <div class="s5-slider-items s5-img8"></div>
+                        <div class="s5-slider-items s5-img9"></div>
+                        <div class="s5-slider-items s5-img10"></div>
+                        <div class="s5-slider-items s5-img11"></div>
+                        <div class="s5-slider-items s5-img12"></div>
+                        <div class="s5-slider-items s5-img13"></div>
+                        <div class="s5-slider-items s5-img14"></div>
+                        <div class="s5-slider-items s5-img15"></div>
+                        <div class="s5-slider-items s5-img16"></div>
+                    </div>
+                    <div class="s5-arrow-right" onclick="right()"></div>
+                </div>
+            </section>
+            <section class="s6">
+                <div class="s6-left">
+                    <div class="s6-title">What product we work with</div>
+                    <div class="s6-left-logo"></div>
+                    <div class="s6-left-image"></div>
+                    <div class="s6-left-text">ThinKnx is a supervisory system for automation, which allows you to
+                        comfortably and easily manage all the system functions from home and for work.
+                    </div>
+                    <div class="s6-left-text2">
+                        For more Information about our product, please
+                        visit their official website:
+                        <br><a href="https://www.thinknx.com/">https://www.thinknx.com/</a>
                     </div>
                 </div>
-            </div>
-            <div class="footer-mid-container">
-                <div class="footer-logo"></div>
-                <div class="footer-mid-text">
+                <div class="s6-right">
+                    <div class="s6-right-cards">
+                        <div class="s6-right-cards-img">
+                            <img src="../images/home-automation/s6-right-icon1.png" class="s6-right-cards-img">
+                        </div>
+                        <div class="s6-right-texts">Simple and customizable interface</div>
+                    </div>
+                    <div class="s6-right-cards">
+                        <div class="s6-right-cards-img s6-img2">
+                            <img src="../images/home-automation/s6-right-icon2.png" class="s6-right-cards-img">
+                        </div>
+                        <div class="s6-right-texts">Fluid and immediate interaction with the home automation system via
+                            any touch screen device (Apple,Android, Windows...)</div>
+                    </div>
+                    <div class="s6-right-cards">
+                        <div class="s6-right-cards-img">
+                            <img src="../images/home-automation/s6-right-icon3.png" class="s6-right-cards-img">
+                        </div>
+                        <div class="s6-right-texts">The intelligent, practical and fast way to transform the automation
+                            of your home into a real advantage</div>
+                    </div>
+                    <div class="s6-right-cards">
+                        <div class="s6-right-cards-img">
+                            <img src="../images/home-automation/s6-right-icon4.png" class="s6-right-cards-img">
+                        </div>
+                        <div class="s6-right-texts">It integrates with the most common home automation buses within a
+                            single product (KNX, Z-Wave, Lutron, Modbus, Btc ino MyHome)</div>
+                    </div>
+                </div>
+            </section>
+            <section class="s7">
+                <div class="s7-title">Why choose DomuNext?</div>
+                <div class="s7-main">
+                    <div class="s7-left">
+                        <div class="s7-left1 s7-images"></div>
+                        <div class="s7-left2 s7-images"></div>
+                        <div class="s7-left3 s7-images"></div>
+                        <div class="s7-left4 s7-images"></div>
+                    </div>
+                    <img src="../images/home-automation/s7-bar.png" class="s7-bar">
+                    <div class="s7-right">
+                        <div class="s7-right1 s7-images"></div>
+                        <div class="s7-right2 s7-images"></div>
+                        <div class="s7-right3 s7-images"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="s8">
+                <div class="s8-title">Frequently Asked<br>Questions</div>
+                <div class="s8-faq">
+                    <div class="faq-title-container">
+                        <div class="s8-titles">1. How much does it cost to migrate data or integrate
+                            existing technologies ?
+                        </div>
+                        <div class="faq-btn" onclick="answer1()" id="faq-btn1"></div>
+                    </div>
+                    <div class="s8-answers" id="answer1">
+                        Symbol of femininity and even social status. Jewelry has always made women feel beautiful and
+                        confident. Everywhere in the world, women are wearing an ample variety of jewelry. Whether it is
+                        about necklaces, bracelets or earrings, jewelry is extremely popular.
+                    </div>
+                    <div class="faq-bar"></div>
+                    <div class="faq-title-container">
+                        <div class="s8-titles">2. What's included in your support?</div>
+                        <div class="faq-btn" onclick="answer2()" id="faq-btn2"></div>
+                    </div>
+                    <div class="s8-answers" id="answer2">
+                        Symbol of femininity and even social status. Jewelry has always made women feel beautiful and
+                        confident. Everywhere in the world, women are wearing an ample variety of jewelry. Whether it is
+                        about necklaces, bracelets or earrings, jewelry is extremely popular.
+                    </div>
+                    <div class="faq-bar"></div>
+                    <div class="faq-title-container">
+                        <div class="s8-titles">3. Are there other costs?</div>
+                        <div class="faq-btn" onclick="answer3()" id="faq-btn3"></div>
+                    </div>
+                    <div class="s8-answers" id="answer3">
+                        Symbol of femininity and even social status. Jewelry has always made women feel beautiful and
+                        confident. Everywhere in the world, women are wearing an ample variety of jewelry. Whether it is
+                        about necklaces, bracelets or earrings, jewelry is extremely popular.
+                    </div>
+                </div>
+                <div class="s8-link"><a href="faq.html">Click here if you have more questions</a></div>
+            </section>
+            <section class="s9">
+                <div class="s9-title">
+                    Our home is no longer just a shelter, it's a refuge from the outside world, a social space that
+                    reflects the identity of those who live there and we all love to transform it into an efficient,
+                    comfortable and safe solution
+                </div>
+                <div class="s9-card">
+                    <div class="s9-card-title">Do you need someone to take<br> care of your home for you?</div>
+                    <div class="s9-card-text">
+                        Explaining every benefit you can derive from every feature of home automation is a journey we
+                        reserve the right to take you on once we get in touch.<br>Just click the button below to send us
+                        a
+                        request and we'll respond as soon as possible to build your Automated system
+                    </div>
+                    <button class="s9-card-btn">CLICK TO SETUP YOUR DREAM HOME</button>
+                </div>
+            </section>
+            <section class="s10">
+                <div class="s10-text">
                     We program KNX systems and develop centralized supervision for the management of lighting,
                     scenarios, climate and electricity consumption.
                 </div>
-                <div class="knx-partner-footer"></div>
-            </div>
-            <div class="footer-right-container">
-                <div class="footer-left-title">Home Automation Services</div>
-                <!-- <div class="footer-left-items">
+                <div class="s10-img"></div>
+            </section>
+            <footer class="footer">
+                <div class="footer-items">
+                    <div class="footer-left-container">
+                        <div class="footer-left-title">Contacts</div>
+                        <div class="footer-left-items">
+                            <!-- <div class="footer-contact-container">
+                        <div class="footer-location"></div>
+                        <div class="footer-left-item">Location here</div>
+                    </div> -->
+                            <div class="footer-contact-container">
+                                <div class="footer-email"></div>
+                                <div class="footer-left-item">service@domunext.com</div>
+                            </div>
+                            <div class="footer-contact-container">
+                                <div class="footer-phone"></div>
+                                <div class="footer-left-item">+39 3935313425</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-mid-container">
+                        <div class="footer-logo"></div>
+                        <div class="footer-mid-text">
+                            We program KNX systems and develop centralized supervision for the management of lighting,
+                            scenarios, climate and electricity consumption.
+                        </div>
+                        <div class="knx-partner-footer"></div>
+                    </div>
+                    <div class="footer-right-container">
+                        <div class="footer-left-title">Home Automation Services</div>
+                        <!-- <div class="footer-left-items">
                             <div class="footer-left-item">Location here</div>
                             <div class="footer-left-item">Email here</div>
                             <div class="footer-left-item">Phone Here</div>
                         </div> -->
-            </div>
+                    </div>
+                </div>
+                <div class="copyright-container">
+                    <div class="copyright">Copyright </div>
+                    <div class="copyright-icon"></div>
+                    <div class="copyright"> 2023 DOMUNEXT. All rights reserved.</div>
+        </span>
         </div>
-        <div class="copyright-container">
-            <div class="copyright">Copyright </div>
-            <div class="copyright-icon"></div>
-            <div class="copyright"> 2023 DOMUNEXT. All rights reserved.</div>
-            </span>
-        </div>
-    </footer>
-    <script src="../scripts/homeAutomationItems.js"></script>
-    <script src="../scripts/slideshow.js"></script>
-    <script src="../scripts/rightMenu.js"></script>
+        </footer>
+        <script src="../scripts/homeAutomationItems.js"></script>
+        <script src="../scripts/slideshow.js"></script>
+        <script src="../scripts/rightMenu.js"></script>
+        <script src="../scripts/nav.js"></script>
 </body>
 
 </html>

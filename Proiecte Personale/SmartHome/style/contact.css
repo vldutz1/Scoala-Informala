@@ -1,8 +1,16 @@
 .s1 {
     height: max-content;
     padding-bottom: 3em;
-    background: url("../images/contact/logo.jpg") center/cover no-repeat;
-    height: 40vh;
+    background: url("../images/contact/logo2.jpg") center/cover no-repeat;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.s1-title {
+    font-family: PoppinsSemiBold;
+    font-size: 56px;
 }
 
 .titles {
@@ -18,4 +26,92 @@
 .s2 {
     height: max-content;
     padding: 4em;
+    display: flex;
+    justify-content: center;
+    flex-direction:row;
+}
+
+
+.red-star {
+    color: red;
+}
+
+.inputs {
+    width: 80%;
+    border-radius: 15px;
+    border: 2px solid #13A1E2;
+    height: 50px;
+    padding: 10px;
+}
+
+.labels {
+    margin: 20px 0 10px 0;
+}
+
+.contact-left, .contact-right {
+    width: 100%;
+}
+
+form {
+    width: 50%;
+    display: flex;
+    margin-bottom: 250px;
+    font-family: Poppins;
+    background-color: white;
+    transform: translateY(-150px);
+    padding: 60px 30px;
+}
+
+.textarea {
+    height: 80%;
+    text-align: start;
+}
+
+.contact-btn {
+    padding: 15px 37px;
+    background-color: #63B2DD;
+    color: white;
+    border: 0px;
+    border-radius: 15px;
+    font-family: Poppins;
+    font-size: 19px;
+    width: 80%;
+    margin: 15px 0;
+}
+
+.contact-right-text {
+    font-size: 12px;
+}
+
+@media screen and (max-width:1600px) {
+    form {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:1320px) {
+    form {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:950px) {
+    form {
+        flex-direction: column;
+    }
+    .inputs, .contact-btn {
+        width: 100%;
+    }
+    .s1-title {
+        font-size: 25px;
+    }
+    .labels {
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width:534px) {
+    .s2 {
+        padding: 2em 0;
+    }
 }
