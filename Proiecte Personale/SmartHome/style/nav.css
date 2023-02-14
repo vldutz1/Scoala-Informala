@@ -140,6 +140,12 @@
 }
 
 /* Mobile Responsive */
+@media screen and (max-width: 464px) {
+    .nav-logo {
+        width: 205px;
+    }
+}
+
 @media screen and (max-width: 950px) {
     .nav-items, .nav-contact-btn {
         display: none;
@@ -159,3 +165,4 @@
         display: block;
     }
 }
+

@@ -805,6 +805,16 @@ section {
     .s5-arrow-right {
         margin-top: 19%;
     }
+
+    .s7-right1,
+    .s7-right2,
+    .s7-right3,
+    .s7-left1,
+    .s7-left2,
+    .s7-left3,
+    .s7-left4 {
+        background-size: 100%;
+    }
 }
 
 @media screen and (max-width: 808px) {
